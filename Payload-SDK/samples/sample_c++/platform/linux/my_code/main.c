@@ -50,6 +50,4 @@ int main()
     USER_LOG_INFO("Mounted position %d camera's firmware is V%02d.%02d.%02d.%02d\r\n", mountPosition,
                 firmwareVersion.firmware_version[0], firmwareVersion.firmware_version[1],
                 firmwareVersion.firmware_version[2], firmwareVersion.firmware_version[3]);
-
-    
 }

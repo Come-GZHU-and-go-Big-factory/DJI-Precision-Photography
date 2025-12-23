@@ -15,6 +15,7 @@ add_compile_definitions(
 )
 
 include_directories(
+    ../my_code
     ../../../module_sample
     ../../../../sample_c/module_sample
     ../common
@@ -37,6 +38,7 @@ file(GLOB_RECURSE MODULE_SAMPLE_SRC
     ../../../../sample_c/module_sample/widget_interaction_test/*.c
     ../../../module_sample/positioning/*.c 
 )
+file(GLOB_RECURSE MY_CODE ../my_code/*.c*)
 file(GLOB_RECURSE MODULE_COMMON_SRC ../common/*.c*)
 file(GLOB_RECURSE MODULE_HAL_SRC hal/*.c*)
 file(GLOB_RECURSE MODULE_APP_SRC application/*.c*)

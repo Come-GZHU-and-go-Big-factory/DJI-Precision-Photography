@@ -35,11 +35,11 @@ extern "C" {
 /* Exported constants --------------------------------------------------------*/
 // ATTENTION: User must goto https://developer.dji.com/user/apps/#all to create your own dji sdk application, get dji sdk application
 // information then fill in the application information here.
-#define USER_APP_NAME               "your_app_name"
-#define USER_APP_ID                 "your_app_id"
-#define USER_APP_KEY                "your_app_key"
-#define USER_APP_LICENSE            "your_app_license"
-#define USER_DEVELOPER_ACCOUNT      "your_developer_account"
+#define USER_APP_NAME               "test"
+#define USER_APP_ID                 "174358"
+#define USER_APP_KEY                "01a0202c33a0c82c75045863b012c65"
+#define USER_APP_LICENSE            "YlCSIk2T44D1rR0Nz8CoMpsG74vlQVWYl8iBgcta+4YTei3xQyJOq1e8pTRkTWI5nieU8s1xxlIvNbaZ5AdKtWqKye31Why3f/crfyL+3j2H9MnkX4p192BXspnwSzR432lT7ID80lXTeYtFtu1Zg4T+dsf5wJni+Lor7UbLTSQSXuUd45DKfGeeN1F6khjCWukt+56Shhk+zS+T/QQc4FWvKUXDdL+WbL7VXIWycMu7oEF0jV9i38BBYTNXDxdLULdm5YV9dhq/i9kkN74aWfHupd1GoTro2fW6Oprez8Zw6PsydsZEIwWadwz/PkPTFeHuG3fUsjWR8y7gSMvjVQ=="
+#define USER_DEVELOPER_ACCOUNT      "2411957706@qq.com"
 #define USER_BAUD_RATE              "460800"
 
 /* Exported types ------------------------------------------------------------*/

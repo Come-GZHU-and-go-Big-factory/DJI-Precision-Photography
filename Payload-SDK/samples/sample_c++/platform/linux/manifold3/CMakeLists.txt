@@ -1,4 +1,5 @@
 cmake_minimum_required(VERSION 3.5)
+
 project(dji_sdk_demo_on_manifold3_cxx LANGUAGES CXX C)
 
 set(CMAKE_C_COMPILER "aarch64-linux-gnu-gcc" CACHE STRING "C compiler")
@@ -7,7 +8,8 @@ set(CMAKE_CXX_COMPILER "aarch64-linux-gnu-g++" CACHE STRING "C++ compiler")
 set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -pthread -std=gnu99")
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11 -pthread")
 set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} -pthread")
-
+# 开启自动生成 compile_commands.json
+set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 add_compile_definitions(
     _GNU_SOURCE
     PLATFORM_ARCH_AARCH64=1
@@ -47,6 +49,7 @@ set(TOOLCHAIN_NAME aarch64-linux-gnu-gcc)
 link_directories(${CMAKE_CURRENT_LIST_DIR}/../../../../../psdk_lib/lib/${TOOLCHAIN_NAME})
 
 add_executable(${PROJECT_NAME}
+    ${MY_CODE}
     ${MODULE_APP_SRC}
     ${MODULE_SAMPLE_SRC}
     ${MODULE_COMMON_SRC}

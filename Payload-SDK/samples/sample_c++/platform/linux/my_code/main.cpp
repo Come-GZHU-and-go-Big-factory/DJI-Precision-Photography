@@ -39,6 +39,9 @@ int main(int argc, char **argv)
 
     E_DjiCameraZoomSpeed zoomSpeed;
 
+    dji_f32_t factor;
+
+    factor = 1.0;
     // 2. 赋值：设置在画面正中心
     focusPoint.focusX = 0.5f;
     focusPoint.focusY = 0.5f;
@@ -70,7 +73,7 @@ int main(int argc, char **argv)
                 firmwareVersion.firmware_version[0], firmwareVersion.firmware_version[1],
                 firmwareVersion.firmware_version[2], firmwareVersion.firmware_version[3]);
 
-    MY_CameraManagerStartContinuousZoom(mountPosition,zoomDirection,zoomSpeed);
+    MY_CameraManagerStartShootSinglePhoto(mountPosition);
 
     exitCameraModule:
         returnCode = DjiCameraManager_DeInit();

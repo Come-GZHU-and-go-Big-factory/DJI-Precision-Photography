@@ -44,12 +44,12 @@ int main(int argc, char **argv)
 
     dji_f32_t factor;
 
-    factor = 1.0;
+    factor = 10.0f;
     // 2. 赋值：设置在画面正中心
     focusPoint.focusX = 0.5f;
     focusPoint.focusY = 0.5f;
     // 设置变焦方向
-    zoomDirection = 
+    zoomDirection = DJI_CAMERA_ZOOM_DIRECTION_IN;
 
 
     //Step1:初始化相机
@@ -80,7 +80,8 @@ int main(int argc, char **argv)
 
     MY_CameraSourceSet(mountPosition,camerasource);
     
-    MY_CameraManagerOpticalZoom()
+    MY_CameraAllDirectionOpticalZoom(mountPosition,factor);
+    // MY_CameraManagerOpticalZoom(mountPosition,zoomDirection,factor);
 
     MY_CameraManagerStartShootSinglePhoto(mountPosition);
 

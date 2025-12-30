@@ -536,3 +536,48 @@ T_DjiReturnCode MY_CameraSourceSet(E_DjiMountPosition position,E_DjiCameraManage
     
     return returnCode;
 }
+/*! @brief 使用PSDK进行任意方向变焦的函数
+ *
+ * @note 实现任意方向变焦的逻辑，获取当前的放大倍数，比较，选择变焦方向
+ * @param position 负载挂载位置索引：输入限制详见枚举 DJI::OSDK::PayloadIndexType
+ * @param zoomDirection 变焦方向选择：输入限制详见枚举 DJI::OSDK::E_DjiCameraZoomDirection
+ * @param factor 变焦倍数:此变量为浮点数
+ * @return T_DjiReturnCode 错误码
+ */
+ T_DjiReturnCode MY_CameraAllDirectionOpticalZoom(E_DjiMountPosition position,
+                                                 dji_f32_t factor)
+{
+    //定义错误代码
+    T_DjiReturnCode returnCode;
+    //定义变焦方向
+    E_DjiCameraZoomDirection zoomDirection;
+    
+    USER_LOG_INFO("Mounted position %d camera Start Zooming to %f x.", position,factor);
+    // 变焦参数
+    T_DjiCameraManagerOpticalZoomParam zoomParam;
+    // 获取变焦相关参数
+    returnCode = DjiCameraManager_GetOpticalZoomParam(position, &zoomParam);
+    // 
+    if (returnCode != DJI_ERROR_SYSTEM_MODULE_CODE_SUCCESS &&
+        returnCode != DJI_ERROR_CAMERA_MANAGER_MODULE_CODE_UNSUPPORTED_COMMAND) {
+        USER_LOG_ERROR("Mounted position %d get zoom param failed,"
+           " error code:0x%08X.", position, returnCode);
+    }
+    float current_foc = zoomParam.currentOpticalZoomFactor;
+    USER_LOG_INFO("Mounted position %d camera's curren foc is %f", position,current_foc);
+    if (factor>current_foc) {
+        zoomDirection = DJI_CAMERA_ZOOM_DIRECTION_IN;
+    }else {
+        zoomDirection = DJI_CAMERA_ZOOM_DIRECTION_OUT;
+    }
+
+    returnCode = MY_CameraManagerOpticalZoom(position,zoomDirection,factor);
+    if (returnCode != DJI_ERROR_SYSTEM_MODULE_CODE_SUCCESS &&
+        returnCode != DJI_ERROR_CAMERA_MANAGER_MODULE_CODE_UNSUPPORTED_COMMAND) {
+        USER_LOG_ERROR("Mounted position %d get satrt zoom failed,"
+           " error code:0x%08X.", position, returnCode);
+    }
+    USER_LOG_INFO("Mounted position %d camera start zoom to %f x", position,factor);
+
+    return returnCode;
+}

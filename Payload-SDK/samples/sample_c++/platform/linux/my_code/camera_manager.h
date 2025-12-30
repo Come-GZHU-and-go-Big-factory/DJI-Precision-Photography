@@ -138,13 +138,16 @@ T_DjiReturnCode MY_CameraManagerStopRecordVideo(E_DjiMountPosition position);
  */
 T_DjiReturnCode MY_CameraSourceSet(E_DjiMountPosition position,E_DjiCameraManagerStreamSource source);
 
-/*! @brief 变焦至指定放大倍数的方案
+/*! @brief 使用PSDK进行任意方向变焦的函数
  *
- * @note 在此接口中，可以将视频流切换为广角、红外、变焦、全景等镜头
- * @param position 负载挂载位置索引，输入限制详见枚举 DJI::OSDK::PayloadIndexType
- * @param source 视频流选择，输入限制详见枚举 DJI::OSDK::DjiCameraManager_SetStreamSource
+ * @note 实现任意方向变焦的逻辑，获取当前的放大倍数，比较，选择变焦方向
+ * @param position 负载挂载位置索引：输入限制详见枚举 DJI::OSDK::PayloadIndexType
+ * @param zoomDirection 变焦方向选择：输入限制详见枚举 DJI::OSDK::E_DjiCameraZoomDirection
+ * @param factor 变焦倍数:此变量为浮点数
  * @return T_DjiReturnCode 错误码
  */
+T_DjiReturnCode MY_CameraAllDirectionOpticalZoom(E_DjiMountPosition position,dji_f32_t factor);
+
 #ifdef __cplusplus
 }
 #endif

@@ -10,7 +10,6 @@
 //PSDK 头文件
 #include "dji_platform.h"
 
-
 int main(int argc, char **argv)
 {
     //创建signal，以便安全退出
@@ -39,12 +38,18 @@ int main(int argc, char **argv)
 
     E_DjiCameraZoomSpeed zoomSpeed;
 
+    E_DjiCameraManagerStreamSource camerasource;
+
+    camerasource = DJI_CAMERA_MANAGER_SOURCE_ZOOM_CAM;
+
     dji_f32_t factor;
 
     factor = 1.0;
     // 2. 赋值：设置在画面正中心
     focusPoint.focusX = 0.5f;
     focusPoint.focusY = 0.5f;
+    // 设置变焦方向
+    zoomDirection = 
 
 
     //Step1:初始化相机
@@ -72,6 +77,10 @@ int main(int argc, char **argv)
     USER_LOG_INFO("Mounted position %d camera's firmware is V%02d.%02d.%02d.%02d\r\n", mountPosition,
                 firmwareVersion.firmware_version[0], firmwareVersion.firmware_version[1],
                 firmwareVersion.firmware_version[2], firmwareVersion.firmware_version[3]);
+
+    MY_CameraSourceSet(mountPosition,camerasource);
+    
+    MY_CameraManagerOpticalZoom()
 
     MY_CameraManagerStartShootSinglePhoto(mountPosition);
 

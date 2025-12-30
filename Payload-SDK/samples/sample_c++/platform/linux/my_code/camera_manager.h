@@ -129,7 +129,22 @@ T_DjiReturnCode MY_CameraManagerStartRecordVideo(E_DjiMountPosition position);
  */
 T_DjiReturnCode MY_CameraManagerStopRecordVideo(E_DjiMountPosition position);
 
+/*! @brief 使用PSDK切换视频流的实例
+ *
+ * @note 在此接口中，可以将视频流切换为广角、红外、变焦、全景等镜头
+ * @param position 负载挂载位置索引，输入限制详见枚举 DJI::OSDK::PayloadIndexType
+ * @param source 视频流选择，输入限制详见枚举 DJI::OSDK::DjiCameraManager_SetStreamSource
+ * @return T_DjiReturnCode 错误码
+ */
+T_DjiReturnCode MY_CameraSourceSet(E_DjiMountPosition position,E_DjiCameraManagerStreamSource source);
 
+/*! @brief 变焦至指定放大倍数的方案
+ *
+ * @note 在此接口中，可以将视频流切换为广角、红外、变焦、全景等镜头
+ * @param position 负载挂载位置索引，输入限制详见枚举 DJI::OSDK::PayloadIndexType
+ * @param source 视频流选择，输入限制详见枚举 DJI::OSDK::DjiCameraManager_SetStreamSource
+ * @return T_DjiReturnCode 错误码
+ */
 #ifdef __cplusplus
 }
 #endif

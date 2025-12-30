@@ -515,3 +515,24 @@ T_DjiReturnCode MY_CameraManagerStopRecordVideo(E_DjiMountPosition position)
 
     return returnCode;
 }
+/*! @brief 使用PSDK切换视频流的实例
+ *
+ * @note 在此接口中，可以将视频流切换为广角、红外、变焦、全景等镜头
+ * @param position 负载挂载位置索引，输入限制详见枚举 DJI::OSDK::PayloadIndexType
+ * @param source 视频流选择，输入限制详见枚举 DJI::OSDK::DjiCameraManager_SetStreamSource
+ * @return T_DjiReturnCode 错误码
+ */
+T_DjiReturnCode MY_CameraSourceSet(E_DjiMountPosition position,E_DjiCameraManagerStreamSource source)
+{
+    T_DjiReturnCode returnCode;
+    USER_LOG_INFO("Mounted position %d camera set camera source %c.", position,source);
+
+    returnCode = DjiCameraManager_SetStreamSource(position,source);
+    if (returnCode != DJI_ERROR_SYSTEM_MODULE_CODE_SUCCESS &&
+        returnCode != DJI_ERROR_CAMERA_MANAGER_MODULE_CODE_UNSUPPORTED_COMMAND) {
+        USER_LOG_ERROR("Mounted position %d set camera source failed,"
+                       " error code:0x%08X.", position, returnCode);
+    }
+    
+    return returnCode;
+}

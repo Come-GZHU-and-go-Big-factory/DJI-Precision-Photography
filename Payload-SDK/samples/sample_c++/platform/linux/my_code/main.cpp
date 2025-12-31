@@ -46,6 +46,16 @@ int main(int argc, char **argv)
     //云台旋转模式
     T_DjiGimbalManagerRotation rotation;
 
+    //数据订阅相关内容
+    //云台角度
+    T_DjiFcSubscriptionGimbalAngles gimbalAngles = {0};
+    //时间戳
+    T_DjiDataTimestamp angle_timestamp = {0};
+    //云台状态
+    T_DjiFcSubscriptionGimbalStatus gimbalStatus = {0};
+    //时间戳
+    T_DjiDataTimestamp status_timestamp = {0};
+
     camerasource = DJI_CAMERA_MANAGER_SOURCE_ZOOM_CAM;
 
     dji_f32_t factor;
@@ -74,8 +84,7 @@ int main(int argc, char **argv)
         goto exitCameraModule;
     }
 
-    // 云台状态订阅设置
-
+    
 
     //Step1:初始化相机
     USER_LOG_INFO("--> Step 1: Init camera manager module");
@@ -113,15 +122,29 @@ int main(int argc, char **argv)
     //  Step 2:云台设置为自由运动模式
     USER_LOG_INFO("--> Step 2: Set gimbal to free mode");
     returnCode = DjiGimbalManager_SetMode(mountPosition, gimbalMode);
-    // //  Step 3:重置云台角度
-    // USER_LOG_INFO("--> Step 3: Reset gimbal angles.\r\n");
-    // returnCode = DjiGimbalManager_Reset(mountPosition, DJI_GIMBAL_RESET_MODE_PITCH_AND_YAW);
-    // if (returnCode != DJI_ERROR_SYSTEM_MODULE_CODE_SUCCESS) {
-    //     USER_LOG_ERROR("Reset gimbal failed, error code: 0x%08X", returnCode);
-    // }
+    //  Step 3:重置云台角度
+    USER_LOG_INFO("--> Step 3: Reset gimbal angles.\r\n");
+    returnCode = DjiGimbalManager_Reset(mountPosition, DJI_GIMBAL_RESET_MODE_PITCH_AND_YAW);
+    if (returnCode != DJI_ERROR_SYSTEM_MODULE_CODE_SUCCESS) {
+        USER_LOG_ERROR("Reset gimbal failed, error code: 0x%08X", returnCode);
+    }
 
-    // osalHandler->TaskSleepMs(2000);
+    // 云台状态订阅设置
+    USER_LOG_INFO("--> Step 1: Init data subscribation");
+    DjiFcSubscription_Init();
+    // 利用函数将数据获取到指定空间
+    MY_SubGimbalAngle();
 
+    osalHandler->TaskSleepMs(2000);
+
+    while(1)
+    {
+        MY_DataSubGimbalAngle((uint8_t *) &gimbalAngles,&angle_timestamp);
+
+        USER_LOG_INFO("gimbal angle :%f,%f,%f",gimbalAngles.x,gimbalAngles.y,gimbalAngles.z);
+
+        osalHandler->TaskSleepMs(100);
+    }
     MY_GimbalRotate(mountPosition,rotation);
     // MY_CameraSourceSet(mountPosition,camerasource);
     

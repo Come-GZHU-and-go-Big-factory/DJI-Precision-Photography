@@ -42,9 +42,9 @@ T_DjiReturnCode MY_GimbalSetAllMaxSpeed(E_DjiMountPosition mountPosition, uint8_
         {
             switch(axis)
             {
-                case 0:USER_LOG_INFO("Gimbal's Pitch set max speed %f fail! code:0x%08X",returnCode,maxSpeedPercentage);
-                case 1:USER_LOG_INFO("Gimbal's Roll set max speed %f fail! code:0x%08X",returnCode,maxSpeedPercentage);
-                case 2:USER_LOG_INFO("Gimbal's Yaw set max speed %f fail! code:0x%08X",returnCode,maxSpeedPercentage);
+                case 0:USER_LOG_ERROR("Gimbal's Pitch set max speed %f fail! code:0x%08X",returnCode,maxSpeedPercentage);
+                case 1:USER_LOG_ERROR("Gimbal's Roll set max speed %f fail! code:0x%08X",returnCode,maxSpeedPercentage);
+                case 2:USER_LOG_ERROR("Gimbal's Yaw set max speed %f fail! code:0x%08X",returnCode,maxSpeedPercentage);
             }
         }
     }
@@ -74,9 +74,9 @@ T_DjiReturnCode MY_GimbalSetAllSmoothFactor(E_DjiMountPosition mountPosition, ui
         {
             switch(axis)
             {
-                case 0:USER_LOG_INFO("Gimbal's Pitch set max speed %f fail! code:0x%08X",returnCode,smoothingFactor);
-                case 1:USER_LOG_INFO("Gimbal's Roll set max speed %f fail! code:0x%08X",returnCode,smoothingFactor);
-                case 2:USER_LOG_INFO("Gimbal's Yaw set max speed %f fail! code:0x%08X",returnCode,smoothingFactor);
+                case 0:USER_LOG_ERROR("Gimbal's Pitch set max speed %f fail! code:0x%08X",returnCode,smoothingFactor);
+                case 1:USER_LOG_ERROR("Gimbal's Roll set max speed %f fail! code:0x%08X",returnCode,smoothingFactor);
+                case 2:USER_LOG_ERROR("Gimbal's Yaw set max speed %f fail! code:0x%08X",returnCode,smoothingFactor);
             }
         }
     }
@@ -95,7 +95,86 @@ T_DjiReturnCode MY_GimbalResetParam(E_DjiMountPosition mountPosition)
 
     returnCode = DjiGimbalManager_RestoreFactorySettings(mountPosition);
     if(returnCode != DJI_ERROR_SYSTEM_MODULE_CODE_SUCCESS) {
-        USER_LOG_INFO("Gimbal Restor fail! error code:0x%08X",returnCode);
+        USER_LOG_ERROR("Gimbal Restor fail! error code:0x%08X",returnCode);
+    }
+    return returnCode;
+}
+/*! @brief 获取云台角度数据
+ *
+ * @note 调用这个函数，从缓冲区主动获取云台角度数据，需要先使用DjiFcSubscription_Init函数来初始化数据订阅相关内容
+ * @param data uint8_t 类型的指针，传入来获取数据
+ * @param timestamp T_DjiDataTimestamp类型的指针，传入来获取对应的时间戳
+ * @return T_DjiReturnCode 错误码
+ */
+T_DjiReturnCode MY_DataSubGimbalAngle(uint8_t *data,T_DjiDataTimestamp *timestamp)
+{
+    T_DjiReturnCode returnCode;
+
+    returnCode = DjiFcSubscription_GetLatestValueOfTopic(DJI_FC_SUBSCRIPTION_TOPIC_GIMBAL_ANGLES,
+                                                        data, sizeof(T_DjiFcSubscriptionGimbalAngles),
+                                                        timestamp);
+    if(returnCode != DJI_ERROR_SYSTEM_MODULE_CODE_SUCCESS)
+    {
+        USER_LOG_ERROR("Data get data error fail to get gimbal angle! error code:0x%08X",returnCode);
+    }
+    return returnCode;
+}
+/*! @brief 获取云台状态
+ *
+ * @note 调用这个函数，从缓冲区主动获取云台状态数据，需要先使用DjiFcSubscription_Init函数来初始化数据订阅相关内容
+ * @param data uint8_t 类型的指针，传入来获取数据
+ * @param timestamp T_DjiDataTimestamp类型的指针，传入来获取对应的时间戳
+ * @return T_DjiReturnCode 错误码
+ */
+T_DjiReturnCode MY_DataSubGimbalStatus(uint8_t *data,T_DjiDataTimestamp *timestamp)
+{
+    T_DjiReturnCode returnCode;
+
+    returnCode = DjiFcSubscription_GetLatestValueOfTopic(DJI_FC_SUBSCRIPTION_TOPIC_GIMBAL_STATUS,
+                                                        data, sizeof(T_DjiFcSubscriptionGimbalStatus),
+                                                        timestamp);
+    if(returnCode != DJI_ERROR_SYSTEM_MODULE_CODE_SUCCESS)
+    {
+        USER_LOG_ERROR("Data get data error fail to get gimbal status! error code:0x%08X",returnCode);
+    }
+    return returnCode;
+}
+/*! @brief 订阅云台状态
+ *
+ * @note 调用这个函数订阅云台状态，将数据传入到指定缓冲区
+ * @return T_DjiReturnCode 错误码
+ */
+T_DjiReturnCode MY_SubGimbalStatus()
+{
+    T_DjiReturnCode returnCode;
+
+    returnCode = DjiFcSubscription_SubscribeTopic(
+    DJI_FC_SUBSCRIPTION_TOPIC_GIMBAL_STATUS, // 获取云台角度主题
+    DJI_DATA_SUBSCRIPTION_TOPIC_50_HZ,       // 采样频率：50Hz
+    NULL                                     // 不使用回调函数
+    );
+    if (returnCode != DJI_ERROR_SYSTEM_MODULE_CODE_SUCCESS) {
+        USER_LOG_ERROR("Data Subscription error fail to sub gimbal status! error code:0x%08X",returnCode);
+    }
+    return returnCode;
+}
+
+/*! @brief 订阅云台角度
+ *
+ * @note 调用这个函数订阅云台状态，将数据传入到指定缓冲区
+ * @return T_DjiReturnCode 错误码
+ */
+T_DjiReturnCode MY_SubGimbalAngle()
+{
+    T_DjiReturnCode returnCode;
+
+    returnCode = DjiFcSubscription_SubscribeTopic(
+    DJI_FC_SUBSCRIPTION_TOPIC_GIMBAL_ANGLES, // 获取云台角度主题
+    DJI_DATA_SUBSCRIPTION_TOPIC_50_HZ,       // 采样频率：50Hz
+    NULL                                     // 不使用回调函数
+    );
+    if (returnCode != DJI_ERROR_SYSTEM_MODULE_CODE_SUCCESS) {
+        USER_LOG_ERROR("Data Subscription error fail to sub gimbal angle! error code:0x%08X",returnCode);
     }
     return returnCode;
 }

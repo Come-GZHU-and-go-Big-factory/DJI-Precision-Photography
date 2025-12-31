@@ -55,6 +55,37 @@ T_DjiReturnCode MY_GimbalSetSmoothFactor(E_DjiMountPosition mountPosition, E_Dji
  */
 T_DjiReturnCode MY_GimbalResetParam(E_DjiMountPosition mountPosition);
 
+/*! @brief 获取云台角度数据
+ *
+ * @note 调用这个函数，从缓冲区主动获取云台角度数据，需要先使用DjiFcSubscription_Init函数来初始化数据订阅相关内容
+ * @param data uint8_t 类型的指针，传入来获取数据
+ * @param timestamp T_DjiDataTimestamp类型的指针，传入来获取对应的时间戳
+ * @return T_DjiReturnCode 错误码
+ */
+T_DjiReturnCode MY_DataSubGimbalAngle(uint8_t *data,T_DjiDataTimestamp *timestamp);
+
+/*! @brief 获取云台状态
+ *
+ * @note 调用这个函数，从缓冲区主动获取云台状态数据，需要先使用DjiFcSubscription_Init函数来初始化数据订阅相关内容
+ * @param data uint8_t 类型的指针，传入来获取数据
+ * @param timestamp T_DjiDataTimestamp类型的指针，传入来获取对应的时间戳
+ * @return T_DjiReturnCode 错误码
+ */
+T_DjiReturnCode MY_DataSubGimbalStatus(uint8_t *data,T_DjiDataTimestamp *timestamp);
+
+/*! @brief 订阅云台状态
+ *
+ * @note 调用这个函数订阅云台状态，将数据传入到指定缓冲区
+ * @return T_DjiReturnCode 错误码
+ */
+T_DjiReturnCode MY_SubGimbalStatus();
+
+/*! @brief 订阅云台角度
+ *
+ * @note 调用这个函数订阅云台状态，将数据传入到指定缓冲区
+ * @return T_DjiReturnCode 错误码
+ */
+T_DjiReturnCode MY_SubGimbalAngle();
 #ifdef __cplusplus
 }
 #endif

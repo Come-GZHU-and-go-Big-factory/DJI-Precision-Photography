@@ -75,7 +75,7 @@ T_DjiReturnCode DjiTest_GimbalManagerRunSample(E_DjiMountPosition mountPosition,
     T_DjiOsalHandler *osalHandler = DjiPlatform_GetOsalHandler();
     T_DjiReturnCode returnCode;
     T_DjiGimbalManagerRotation rotation;
-    T_DjiAircrafdinbtInfoBaseInfo baseInfo;
+    T_DjiAircraftInfoBaseInfo baseInfo;
     E_DjiAircraftSeries aircraftSeries;
     bool gimbalAnglesSubscribedFlag = false;
 

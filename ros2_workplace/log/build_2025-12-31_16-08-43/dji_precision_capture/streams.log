@@ -1,0 +1,42 @@
+[0.023s] Invoking command in '/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/build/dji_precision_capture': CONDA_PROMPT_MODIFIER=(ros2_humble) /open_app/miniconda3/envs/ros2_humble/bin/cmake /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/dji_precision_capture -DCMAKE_INSTALL_PREFIX=/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/dji_precision_capture
+[0.218s] -- The C compiler identification is GNU 14.3.0
+[0.443s] -- The CXX compiler identification is GNU 14.3.0
+[0.470s] -- Detecting C compiler ABI info
+[0.592s] -- Detecting C compiler ABI info - done
+[0.619s] -- Check for working C compiler: /open_app/miniconda3/envs/ros2_humble/bin/aarch64-conda-linux-gnu-cc - skipped
+[0.620s] -- Detecting C compile features
+[0.621s] -- Detecting C compile features - done
+[0.628s] -- Detecting CXX compiler ABI info
+[0.755s] -- Detecting CXX compiler ABI info - done
+[0.783s] -- Check for working CXX compiler: /open_app/miniconda3/envs/ros2_humble/bin/aarch64-conda-linux-gnu-c++ - skipped
+[0.783s] -- Detecting CXX compile features
+[0.784s] -- Detecting CXX compile features - done
+[0.797s] -- Found ament_cmake: 1.3.3 (/open_app/miniconda3/envs/ros2_humble/share/ament_cmake/cmake)
+[2.918s] -- Found Python3: /open_app/miniconda3/envs/ros2_humble/bin/python3.10 (found version "3.10.13") found components: Interpreter 
+[3.157s] -- Found ament_lint_auto: 0.12.5 (/open_app/miniconda3/envs/ros2_humble/share/ament_lint_auto/cmake)
+[3.368s] -- Added test 'lint_cmake' to check CMake code style
+[3.370s] -- Added test 'xmllint' to check XML markup files
+[3.374s] -- Configuring done (3.3s)
+[3.381s] -- Generating done (0.0s)
+[3.384s] -- Build files have been written to: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/build/dji_precision_capture
+[3.396s] Invoked command in '/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/build/dji_precision_capture' returned '0': CONDA_PROMPT_MODIFIER=(ros2_humble) /open_app/miniconda3/envs/ros2_humble/bin/cmake /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/dji_precision_capture -DCMAKE_INSTALL_PREFIX=/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/dji_precision_capture
+[3.399s] Invoking command in '/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/build/dji_precision_capture': CONDA_PROMPT_MODIFIER=(ros2_humble) /open_app/miniconda3/envs/ros2_humble/bin/cmake --build /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/build/dji_precision_capture -- -j4 -l4
+[3.438s] Invoked command in '/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/build/dji_precision_capture' returned '0': CONDA_PROMPT_MODIFIER=(ros2_humble) /open_app/miniconda3/envs/ros2_humble/bin/cmake --build /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/build/dji_precision_capture -- -j4 -l4
+[3.455s] Invoking command in '/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/build/dji_precision_capture': CONDA_PROMPT_MODIFIER=(ros2_humble) /open_app/miniconda3/envs/ros2_humble/bin/cmake --install /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/build/dji_precision_capture
+[3.462s] -- Install configuration: ""
+[3.462s] -- Installing: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/dji_precision_capture/share/ament_index/resource_index/package_run_dependencies/dji_precision_capture
+[3.463s] -- Installing: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/dji_precision_capture/share/ament_index/resource_index/parent_prefix_path/dji_precision_capture
+[3.463s] -- Installing: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/dji_precision_capture/share/dji_precision_capture/environment/ament_prefix_path.sh
+[3.464s] -- Installing: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/dji_precision_capture/share/dji_precision_capture/environment/ament_prefix_path.dsv
+[3.464s] -- Installing: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/dji_precision_capture/share/dji_precision_capture/environment/path.sh
+[3.464s] -- Installing: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/dji_precision_capture/share/dji_precision_capture/environment/path.dsv
+[3.465s] -- Installing: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/dji_precision_capture/share/dji_precision_capture/local_setup.bash
+[3.465s] -- Installing: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/dji_precision_capture/share/dji_precision_capture/local_setup.sh
+[3.465s] -- Installing: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/dji_precision_capture/share/dji_precision_capture/local_setup.zsh
+[3.466s] -- Installing: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/dji_precision_capture/share/dji_precision_capture/local_setup.dsv
+[3.466s] -- Installing: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/dji_precision_capture/share/dji_precision_capture/package.dsv
+[3.467s] -- Installing: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/dji_precision_capture/share/ament_index/resource_index/packages/dji_precision_capture
+[3.467s] -- Installing: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/dji_precision_capture/share/dji_precision_capture/cmake/dji_precision_captureConfig.cmake
+[3.467s] -- Installing: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/dji_precision_capture/share/dji_precision_capture/cmake/dji_precision_captureConfig-version.cmake
+[3.468s] -- Installing: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/dji_precision_capture/share/dji_precision_capture/package.xml
+[3.471s] Invoked command in '/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/build/dji_precision_capture' returned '0': CONDA_PROMPT_MODIFIER=(ros2_humble) /open_app/miniconda3/envs/ros2_humble/bin/cmake --install /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/build/dji_precision_capture

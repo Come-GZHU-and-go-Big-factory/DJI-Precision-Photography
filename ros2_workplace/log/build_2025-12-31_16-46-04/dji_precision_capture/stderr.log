@@ -1,0 +1,160 @@
+[0m
+dji_precision_capture...[0m
+In file included from [01m[K/home/dji/DJI_workshop/LZP_PSDK/Payload-SDK/samples/sample_c++/platform/linux/my_code/camera_controller.cpp:1[m[K:
+[01m[K/home/dji/DJI_workshop/LZP_PSDK/Payload-SDK/samples/sample_c++/platform/linux/my_code/camera_controller.h:7:10:[m[K [01;31m[Kfatal error: [m[Krcl: No such file or directory
+    7 | #include [01;31m[K"rcl"[m[K
+      |          [01;31m[K^~~~~[m[K
+compilation terminated.
+[01m[K/home/dji/DJI_workshop/LZP_PSDK/Payload-SDK/samples/sample_c++/platform/linux/my_code/camera_manager.cpp:51:27:[m[K [01;35m[Kwarning: [m[KISO C++11 requires at least one argument for the "..." in a variadic macro
+   51 |     USER_LOG_INFO("Finish"[01;35m[K)[m[K;
+      |                           [01;35m[K^[m[K
+[01m[K/home/dji/DJI_workshop/LZP_PSDK/Payload-SDK/samples/sample_c++/platform/linux/my_code/camera_manager.cpp:269:34:[m[K [01;35m[Kwarning: [m[KISO C++11 requires at least one argument for the "..." in a variadic macro
+  269 |     USER_LOG_INFO("Sleep 0.5s..."[01;35m[K)[m[K;
+      |                                  [01;35m[K^[m[K
+[01m[K/home/dji/DJI_workshop/LZP_PSDK/Payload-SDK/samples/sample_c++/platform/linux/my_code/camera_manager.cpp:331:34:[m[K [01;35m[Kwarning: [m[KISO C++11 requires at least one argument for the "..." in a variadic macro
+  331 |     USER_LOG_INFO("Sleep 0.5s..."[01;35m[K)[m[K;
+      |                                  [01;35m[K^[m[K
+[01m[K/home/dji/DJI_workshop/LZP_PSDK/Payload-SDK/samples/sample_c++/platform/linux/my_code/camera_manager.cpp:403:34:[m[K [01;35m[Kwarning: [m[KISO C++11 requires at least one argument for the "..." in a variadic macro
+  403 |     USER_LOG_INFO("Sleep 0.5s..."[01;35m[K)[m[K;
+      |                                  [01;35m[K^[m[K
+[01m[K/home/dji/DJI_workshop/LZP_PSDK/Payload-SDK/samples/sample_c++/platform/linux/my_code/camera_manager.cpp:418:34:[m[K [01;35m[Kwarning: [m[KISO C++11 requires at least one argument for the "..." in a variadic macro
+  418 |     USER_LOG_INFO("Sleep 0.5s..."[01;35m[K)[m[K;
+      |                                  [01;35m[K^[m[K
+make[2]: *** [CMakeFiles/dji_precision_capture.dir/build.make:76: CMakeFiles/dji_precision_capture.dir/home/dji/DJI_workshop/LZP_PSDK/Payload-SDK/samples/sample_c++/platform/linux/my_code/camera_controller.cpp.o] Error 1
+make[2]: *** Waiting for unfinished jobs....
+In file included from [01m[K/home/dji/DJI_workshop/LZP_PSDK/Payload-SDK/samples/sample_c++/platform/linux/my_code/gimbal_manager.h:12[m[K,
+                 from [01m[K/home/dji/DJI_workshop/LZP_PSDK/Payload-SDK/samples/sample_c++/platform/linux/my_code/gimbale_manager.cpp:1[m[K:
+[01m[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/dji_precision_capture/../../../Payload-SDK/samples/sample_c++/platform/linux/manifold3/../../../../../psdk_lib/include/dji_fc_subscription.h:1210:16:[m[K [01;35m[Kwarning: [m[KISO C++ prohibits anonymous structs [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-14.3.0/gcc/Warning-Options.html#index-Wno-pedantic-Wpedantic]8;;[m[K]
+ 1210 |         struct [01;35m[K{[m[K
+      |                [01;35m[K^[m[K
+[01m[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/dji_precision_capture/../../../Payload-SDK/samples/sample_c++/platform/linux/manifold3/../../../../../psdk_lib/include/dji_fc_subscription.h:1219:16:[m[K [01;35m[Kwarning: [m[KISO C++ prohibits anonymous structs [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-14.3.0/gcc/Warning-Options.html#index-Wno-pedantic-Wpedantic]8;;[m[K]
+ 1219 |         struct [01;35m[K{[m[K
+      |                [01;35m[K^[m[K
+In file included from [01m[K/home/dji/DJI_workshop/LZP_PSDK/Payload-SDK/samples/sample_c++/platform/linux/my_code/gimbal_manager.h:8[m[K:
+[01m[K/home/dji/DJI_workshop/LZP_PSDK/Payload-SDK/samples/sample_c++/platform/linux/my_code/gimbale_manager.cpp:[m[K In function '[01m[KT_DjiReturnCode[01;32m[K MY_GimbalSetAllMaxSpeed[m[K(E_DjiMountPosition, uint8_t)[m[K':
+[01m[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/dji_precision_capture/../../../Payload-SDK/samples/sample_c++/platform/linux/manifold3/../../../../../psdk_lib/include/dji_logger.h:122:32:[m[K [01;35m[Kwarning: [m[Kthis statement may fall through [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-14.3.0/gcc/Warning-Options.html#index-Wimplicit-fallthrough-Wimplicit-fallthrough=]8;;[m[K]
+  122 |         [01;35m[KDjiLogger_UserLogOutput(DJI_LOGGER_CONSOLE_LOG_LEVEL_ERROR, USER_LOG_PREFIX_FMT fmt, USER_LOG_PREFIX_ARG, ##__VA_ARGS__)[m[K
+      |         [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/dji/DJI_workshop/LZP_PSDK/Payload-SDK/samples/sample_c++/platform/linux/my_code/gimbale_manager.cpp:45:24:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[KUSER_LOG_ERROR[m[K'
+   45 |                 case 0:[01;36m[KUSER_LOG_ERROR[m[K("Gimbal's Pitch set max speed %f fail! code:0x%08X",returnCode,maxSpeedPercentage);
+      |                        [01;36m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/dji/DJI_workshop/LZP_PSDK/Payload-SDK/samples/sample_c++/platform/linux/my_code/gimbale_manager.cpp:46:17:[m[K [01;36m[Knote: [m[Khere
+   46 |                 [01;36m[Kcase[m[K 1:USER_LOG_ERROR("Gimbal's Roll set max speed %f fail! code:0x%08X",returnCode,maxSpeedPercentage);
+      |                 [01;36m[K^~~~[m[K
+[01m[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/dji_precision_capture/../../../Payload-SDK/samples/sample_c++/platform/linux/manifold3/../../../../../psdk_lib/include/dji_logger.h:122:32:[m[K [01;35m[Kwarning: [m[Kthis statement may fall through [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-14.3.0/gcc/Warning-Options.html#index-Wimplicit-fallthrough-Wimplicit-fallthrough=]8;;[m[K]
+  122 |         [01;35m[KDjiLogger_UserLogOutput(DJI_LOGGER_CONSOLE_LOG_LEVEL_ERROR, USER_LOG_PREFIX_FMT fmt, USER_LOG_PREFIX_ARG, ##__VA_ARGS__)[m[K
+      |         [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/dji/DJI_workshop/LZP_PSDK/Payload-SDK/samples/sample_c++/platform/linux/my_code/gimbale_manager.cpp:46:24:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[KUSER_LOG_ERROR[m[K'
+   46 |                 case 1:[01;36m[KUSER_LOG_ERROR[m[K("Gimbal's Roll set max speed %f fail! code:0x%08X",returnCode,maxSpeedPercentage);
+      |                        [01;36m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/dji/DJI_workshop/LZP_PSDK/Payload-SDK/samples/sample_c++/platform/linux/my_code/gimbale_manager.cpp:47:17:[m[K [01;36m[Knote: [m[Khere
+   47 |                 [01;36m[Kcase[m[K 2:USER_LOG_ERROR("Gimbal's Yaw set max speed %f fail! code:0x%08X",returnCode,maxSpeedPercentage);
+      |                 [01;36m[K^~~~[m[K
+[01m[K/home/dji/DJI_workshop/LZP_PSDK/Payload-SDK/samples/sample_c++/platform/linux/my_code/gimbale_manager.cpp:[m[K In function '[01m[KT_DjiReturnCode[01;32m[K MY_GimbalSetAllSmoothFactor[m[K(E_DjiMountPosition, uint8_t)[m[K':
+[01m[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/dji_precision_capture/../../../Payload-SDK/samples/sample_c++/platform/linux/manifold3/../../../../../psdk_lib/include/dji_logger.h:122:32:[m[K [01;35m[Kwarning: [m[Kthis statement may fall through [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-14.3.0/gcc/Warning-Options.html#index-Wimplicit-fallthrough-Wimplicit-fallthrough=]8;;[m[K]
+  122 |         [01;35m[KDjiLogger_UserLogOutput(DJI_LOGGER_CONSOLE_LOG_LEVEL_ERROR, USER_LOG_PREFIX_FMT fmt, USER_LOG_PREFIX_ARG, ##__VA_ARGS__)[m[K
+      |         [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/dji/DJI_workshop/LZP_PSDK/Payload-SDK/samples/sample_c++/platform/linux/my_code/gimbale_manager.cpp:77:24:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[KUSER_LOG_ERROR[m[K'
+   77 |                 case 0:[01;36m[KUSER_LOG_ERROR[m[K("Gimbal's Pitch set max speed %f fail! code:0x%08X",returnCode,smoothingFactor);
+      |                        [01;36m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/dji/DJI_workshop/LZP_PSDK/Payload-SDK/samples/sample_c++/platform/linux/my_code/gimbale_manager.cpp:78:17:[m[K [01;36m[Knote: [m[Khere
+   78 |                 [01;36m[Kcase[m[K 1:USER_LOG_ERROR("Gimbal's Roll set max speed %f fail! code:0x%08X",returnCode,smoothingFactor);
+      |                 [01;36m[K^~~~[m[K
+[01m[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/dji_precision_capture/../../../Payload-SDK/samples/sample_c++/platform/linux/manifold3/../../../../../psdk_lib/include/dji_logger.h:122:32:[m[K [01;35m[Kwarning: [m[Kthis statement may fall through [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-14.3.0/gcc/Warning-Options.html#index-Wimplicit-fallthrough-Wimplicit-fallthrough=]8;;[m[K]
+  122 |         [01;35m[KDjiLogger_UserLogOutput(DJI_LOGGER_CONSOLE_LOG_LEVEL_ERROR, USER_LOG_PREFIX_FMT fmt, USER_LOG_PREFIX_ARG, ##__VA_ARGS__)[m[K
+      |         [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/dji/DJI_workshop/LZP_PSDK/Payload-SDK/samples/sample_c++/platform/linux/my_code/gimbale_manager.cpp:78:24:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[KUSER_LOG_ERROR[m[K'
+   78 |                 case 1:[01;36m[KUSER_LOG_ERROR[m[K("Gimbal's Roll set max speed %f fail! code:0x%08X",returnCode,smoothingFactor);
+      |                        [01;36m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/dji/DJI_workshop/LZP_PSDK/Payload-SDK/samples/sample_c++/platform/linux/my_code/gimbale_manager.cpp:79:17:[m[K [01;36m[Knote: [m[Khere
+   79 |                 [01;36m[Kcase[m[K 2:USER_LOG_ERROR("Gimbal's Yaw set max speed %f fail! code:0x%08X",returnCode,smoothingFactor);
+      |                 [01;36m[K^~~~[m[K
+[01m[K/home/dji/DJI_workshop/LZP_PSDK/Payload-SDK/samples/sample_c++/platform/linux/my_code/main.cpp:90:59:[m[K [01;35m[Kwarning: [m[KISO C++11 requires at least one argument for the "..." in a variadic macro
+   90 |     USER_LOG_INFO("--> Step 1: Init camera manager module"[01;35m[K)[m[K;
+      |                                                           [01;35m[K^[m[K
+[01m[K/home/dji/DJI_workshop/LZP_PSDK/Payload-SDK/samples/sample_c++/platform/linux/my_code/main.cpp:97:60:[m[K [01;35m[Kwarning: [m[KISO C++11 requires at least one argument for the "..." in a variadic macro
+   97 |     USER_LOG_INFO("--> Step 2: Get camera type and version"[01;35m[K)[m[K;
+      |                                                            [01;35m[K^[m[K
+[01m[K/home/dji/DJI_workshop/LZP_PSDK/Payload-SDK/samples/sample_c++/platform/linux/my_code/main.cpp:116:59:[m[K [01;35m[Kwarning: [m[KISO C++11 requires at least one argument for the "..." in a variadic macro
+  116 |     USER_LOG_INFO("--> Step 1: Init gimbal manager module"[01;35m[K)[m[K;
+      |                                                           [01;35m[K^[m[K
+[01m[K/home/dji/DJI_workshop/LZP_PSDK/Payload-SDK/samples/sample_c++/platform/linux/my_code/main.cpp:123:56:[m[K [01;35m[Kwarning: [m[KISO C++11 requires at least one argument for the "..." in a variadic macro
+  123 |     USER_LOG_INFO("--> Step 2: Set gimbal to free mode"[01;35m[K)[m[K;
+      |                                                        [01;35m[K^[m[K
+[01m[K/home/dji/DJI_workshop/LZP_PSDK/Payload-SDK/samples/sample_c++/platform/linux/my_code/main.cpp:126:57:[m[K [01;35m[Kwarning: [m[KISO C++11 requires at least one argument for the "..." in a variadic macro
+  126 |     USER_LOG_INFO("--> Step 3: Reset gimbal angles.\r\n"[01;35m[K)[m[K;
+      |                                                         [01;35m[K^[m[K
+[01m[K/home/dji/DJI_workshop/LZP_PSDK/Payload-SDK/samples/sample_c++/platform/linux/my_code/main.cpp:133:56:[m[K [01;35m[Kwarning: [m[KISO C++11 requires at least one argument for the "..." in a variadic macro
+  133 |     USER_LOG_INFO("--> Step 1: Init data subscribation"[01;35m[K)[m[K;
+      |                                                        [01;35m[K^[m[K
+In file included from [01m[K/home/dji/DJI_workshop/LZP_PSDK/Payload-SDK/samples/sample_c++/platform/linux/my_code/gimbal_manager.h:12[m[K,
+                 from [01m[K/home/dji/DJI_workshop/LZP_PSDK/Payload-SDK/samples/sample_c++/platform/linux/my_code/main.cpp:13[m[K:
+[01m[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/dji_precision_capture/../../../Payload-SDK/samples/sample_c++/platform/linux/manifold3/../../../../../psdk_lib/include/dji_fc_subscription.h:1210:16:[m[K [01;35m[Kwarning: [m[KISO C++ prohibits anonymous structs [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-14.3.0/gcc/Warning-Options.html#index-Wno-pedantic-Wpedantic]8;;[m[K]
+ 1210 |         struct [01;35m[K{[m[K
+      |                [01;35m[K^[m[K
+[01m[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/dji_precision_capture/../../../Payload-SDK/samples/sample_c++/platform/linux/manifold3/../../../../../psdk_lib/include/dji_fc_subscription.h:1219:16:[m[K [01;35m[Kwarning: [m[KISO C++ prohibits anonymous structs [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-14.3.0/gcc/Warning-Options.html#index-Wno-pedantic-Wpedantic]8;;[m[K]
+ 1219 |         struct [01;35m[K{[m[K
+      |                [01;35m[K^[m[K
+[01m[K/home/dji/DJI_workshop/LZP_PSDK/Payload-SDK/samples/sample_c++/platform/linux/my_code/main.cpp:[m[K In lambda function:
+[01m[K/home/dji/DJI_workshop/LZP_PSDK/Payload-SDK/samples/sample_c++/platform/linux/my_code/main.cpp:18:27:[m[K [01;35m[Kwarning: [m[Kunused parameter '[01m[KsignalNum[m[K' [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-14.3.0/gcc/Warning-Options.html#index-Wno-unused-parameter-Wunused-parameter]8;;[m[K]
+   18 |     signal(SIGINT, []([01;35m[Kint signalNum[m[K) -> void { exit(0); });
+      |                       [01;35m[K~~~~^~~~~~~~~[m[K
+[01m[K/home/dji/DJI_workshop/LZP_PSDK/Payload-SDK/samples/sample_c++/platform/linux/my_code/main.cpp:[m[K In function '[01m[Kint[01;32m[K main[m[K(int, char**)[m[K':
+[01m[K/home/dji/DJI_workshop/LZP_PSDK/Payload-SDK/samples/sample_c++/platform/linux/my_code/main.cpp:51:54:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member '[01m[KVector3f::y[m[K' [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-14.3.0/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+   51 |     T_DjiFcSubscriptionGimbalAngles gimbalAngles = {0[01;35m[K}[m[K;
+      |                                                      [01;35m[K^[m[K
+[01m[K/home/dji/DJI_workshop/LZP_PSDK/Payload-SDK/samples/sample_c++/platform/linux/my_code/main.cpp:51:54:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member '[01m[KVector3f::z[m[K' [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-14.3.0/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[01m[K/home/dji/DJI_workshop/LZP_PSDK/Payload-SDK/samples/sample_c++/platform/linux/my_code/main.cpp:53:44:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member '[01m[KT_DjiDataTimestamp::microsecond[m[K' [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-14.3.0/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+   53 |     T_DjiDataTimestamp angle_timestamp = {0[01;35m[K}[m[K;
+      |                                            [01;35m[K^[m[K
+[01m[K/home/dji/DJI_workshop/LZP_PSDK/Payload-SDK/samples/sample_c++/platform/linux/my_code/main.cpp:55:54:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member '[01m[KGimbalStatus::isBusy[m[K' [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-14.3.0/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+   55 |     T_DjiFcSubscriptionGimbalStatus gimbalStatus = {0[01;35m[K}[m[K;
+      |                                                      [01;35m[K^[m[K
+[01m[K/home/dji/DJI_workshop/LZP_PSDK/Payload-SDK/samples/sample_c++/platform/linux/my_code/main.cpp:55:54:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member '[01m[KGimbalStatus::pitchLimited[m[K' [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-14.3.0/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[01m[K/home/dji/DJI_workshop/LZP_PSDK/Payload-SDK/samples/sample_c++/platform/linux/my_code/main.cpp:55:54:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member '[01m[KGimbalStatus::rollLimited[m[K' [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-14.3.0/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[01m[K/home/dji/DJI_workshop/LZP_PSDK/Payload-SDK/samples/sample_c++/platform/linux/my_code/main.cpp:55:54:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member '[01m[KGimbalStatus::yawLimited[m[K' [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-14.3.0/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[01m[K/home/dji/DJI_workshop/LZP_PSDK/Payload-SDK/samples/sample_c++/platform/linux/my_code/main.cpp:55:54:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member '[01m[KGimbalStatus::calibrating[m[K' [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-14.3.0/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[01m[K/home/dji/DJI_workshop/LZP_PSDK/Payload-SDK/samples/sample_c++/platform/linux/my_code/main.cpp:55:54:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member '[01m[KGimbalStatus::prevCalibrationgResult[m[K' [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-14.3.0/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[01m[K/home/dji/DJI_workshop/LZP_PSDK/Payload-SDK/samples/sample_c++/platform/linux/my_code/main.cpp:55:54:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member '[01m[KGimbalStatus::installedDirection[m[K' [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-14.3.0/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[01m[K/home/dji/DJI_workshop/LZP_PSDK/Payload-SDK/samples/sample_c++/platform/linux/my_code/main.cpp:55:54:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member '[01m[KGimbalStatus::disabled_mvo[m[K' [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-14.3.0/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[01m[K/home/dji/DJI_workshop/LZP_PSDK/Payload-SDK/samples/sample_c++/platform/linux/my_code/main.cpp:55:54:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member '[01m[KGimbalStatus::gear_show_unable[m[K' [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-14.3.0/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[01m[K/home/dji/DJI_workshop/LZP_PSDK/Payload-SDK/samples/sample_c++/platform/linux/my_code/main.cpp:55:54:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member '[01m[KGimbalStatus::gyroFalut[m[K' [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-14.3.0/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[01m[K/home/dji/DJI_workshop/LZP_PSDK/Payload-SDK/samples/sample_c++/platform/linux/my_code/main.cpp:55:54:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member '[01m[KGimbalStatus::escPitchStatus[m[K' [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-14.3.0/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[01m[K/home/dji/DJI_workshop/LZP_PSDK/Payload-SDK/samples/sample_c++/platform/linux/my_code/main.cpp:55:54:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member '[01m[KGimbalStatus::escRollStatus[m[K' [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-14.3.0/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[01m[K/home/dji/DJI_workshop/LZP_PSDK/Payload-SDK/samples/sample_c++/platform/linux/my_code/main.cpp:55:54:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member '[01m[KGimbalStatus::escYawStatus[m[K' [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-14.3.0/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[01m[K/home/dji/DJI_workshop/LZP_PSDK/Payload-SDK/samples/sample_c++/platform/linux/my_code/main.cpp:55:54:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member '[01m[KGimbalStatus::droneDataRecv[m[K' [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-14.3.0/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[01m[K/home/dji/DJI_workshop/LZP_PSDK/Payload-SDK/samples/sample_c++/platform/linux/my_code/main.cpp:55:54:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member '[01m[KGimbalStatus::initUnfinished[m[K' [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-14.3.0/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[01m[K/home/dji/DJI_workshop/LZP_PSDK/Payload-SDK/samples/sample_c++/platform/linux/my_code/main.cpp:55:54:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member '[01m[KGimbalStatus::FWUpdating[m[K' [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-14.3.0/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[01m[K/home/dji/DJI_workshop/LZP_PSDK/Payload-SDK/samples/sample_c++/platform/linux/my_code/main.cpp:55:54:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member '[01m[KGimbalStatus::reserved2[m[K' [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-14.3.0/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[01m[K/home/dji/DJI_workshop/LZP_PSDK/Payload-SDK/samples/sample_c++/platform/linux/my_code/main.cpp:57:45:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member '[01m[KT_DjiDataTimestamp::microsecond[m[K' [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-14.3.0/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+   57 |     T_DjiDataTimestamp status_timestamp = {0[01;35m[K}[m[K;
+      |                                             [01;35m[K^[m[K
+[01m[K/home/dji/DJI_workshop/LZP_PSDK/Payload-SDK/samples/sample_c++/platform/linux/my_code/main.cpp:30:36:[m[K [01;35m[Kwarning: [m[Kunused variable '[01m[KfocusPosData[m[K' [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-14.3.0/gcc/Warning-Options.html#index-Wno-unused-variable-Wunused-variable]8;;[m[K]
+   30 |     T_DjiCameraManagerFocusPosData [01;35m[KfocusPosData[m[K;
+      |                                    [01;35m[K^~~~~~~~~~~~[m[K
+[01m[K/home/dji/DJI_workshop/LZP_PSDK/Payload-SDK/samples/sample_c++/platform/linux/my_code/main.cpp:32:38:[m[K [01;35m[Kwarning: [m[Kunused variable '[01m[KtapZoomPosData[m[K' [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-14.3.0/gcc/Warning-Options.html#index-Wno-unused-variable-Wunused-variable]8;;[m[K]
+   32 |     T_DjiCameraManagerTapZoomPosData [01;35m[KtapZoomPosData[m[K;
+      |                                      [01;35m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/dji/DJI_workshop/LZP_PSDK/Payload-SDK/samples/sample_c++/platform/linux/my_code/main.cpp:37:36:[m[K [01;35m[Kwarning: [m[Kvariable '[01m[KfocusPoint[m[K' set but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-14.3.0/gcc/Warning-Options.html#index-Wno-unused-but-set-variable-Wunused-but-set-variable]8;;[m[K]
+   37 |     T_DjiCameraManagerFocusPosData [01;35m[KfocusPoint[m[K;
+      |                                    [01;35m[K^~~~~~~~~~[m[K
+[01m[K/home/dji/DJI_workshop/LZP_PSDK/Payload-SDK/samples/sample_c++/platform/linux/my_code/main.cpp:39:30:[m[K [01;35m[Kwarning: [m[Kvariable '[01m[KzoomDirection[m[K' set but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-14.3.0/gcc/Warning-Options.html#index-Wno-unused-but-set-variable-Wunused-but-set-variable]8;;[m[K]
+   39 |     E_DjiCameraZoomDirection [01;35m[KzoomDirection[m[K;
+      |                              [01;35m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/dji/DJI_workshop/LZP_PSDK/Payload-SDK/samples/sample_c++/platform/linux/my_code/main.cpp:41:26:[m[K [01;35m[Kwarning: [m[Kunused variable '[01m[KzoomSpeed[m[K' [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-14.3.0/gcc/Warning-Options.html#index-Wno-unused-variable-Wunused-variable]8;;[m[K]
+   41 |     E_DjiCameraZoomSpeed [01;35m[KzoomSpeed[m[K;
+      |                          [01;35m[K^~~~~~~~~[m[K
+[01m[K/home/dji/DJI_workshop/LZP_PSDK/Payload-SDK/samples/sample_c++/platform/linux/my_code/main.cpp:43:36:[m[K [01;35m[Kwarning: [m[Kvariable '[01m[Kcamerasource[m[K' set but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-14.3.0/gcc/Warning-Options.html#index-Wno-unused-but-set-variable-Wunused-but-set-variable]8;;[m[K]
+   43 |     E_DjiCameraManagerStreamSource [01;35m[Kcamerasource[m[K;
+      |                                    [01;35m[K^~~~~~~~~~~~[m[K
+[01m[K/home/dji/DJI_workshop/LZP_PSDK/Payload-SDK/samples/sample_c++/platform/linux/my_code/main.cpp:55:37:[m[K [01;35m[Kwarning: [m[Kunused variable '[01m[KgimbalStatus[m[K' [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-14.3.0/gcc/Warning-Options.html#index-Wno-unused-variable-Wunused-variable]8;;[m[K]
+   55 |     T_DjiFcSubscriptionGimbalStatus [01;35m[KgimbalStatus[m[K = {0};
+      |                                     [01;35m[K^~~~~~~~~~~~[m[K
+[01m[K/home/dji/DJI_workshop/LZP_PSDK/Payload-SDK/samples/sample_c++/platform/linux/my_code/main.cpp:57:24:[m[K [01;35m[Kwarning: [m[Kunused variable '[01m[Kstatus_timestamp[m[K' [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-14.3.0/gcc/Warning-Options.html#index-Wno-unused-variable-Wunused-variable]8;;[m[K]
+   57 |     T_DjiDataTimestamp [01;35m[Kstatus_timestamp[m[K = {0};
+      |                        [01;35m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/dji/DJI_workshop/LZP_PSDK/Payload-SDK/samples/sample_c++/platform/linux/my_code/main.cpp:61:15:[m[K [01;35m[Kwarning: [m[Kvariable '[01m[Kfactor[m[K' set but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-14.3.0/gcc/Warning-Options.html#index-Wno-unused-but-set-variable-Wunused-but-set-variable]8;;[m[K]
+   61 |     dji_f32_t [01;35m[Kfactor[m[K;
+      |               [01;35m[K^~~~~~[m[K
+make[1]: *** [CMakeFiles/Makefile2:85: CMakeFiles/dji_precision_capture.dir/all] Error 2
+make: *** [Makefile:146: all] Error 2

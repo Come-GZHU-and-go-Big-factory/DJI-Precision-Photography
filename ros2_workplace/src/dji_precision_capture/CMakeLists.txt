@@ -5,7 +5,7 @@ if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
   add_compile_options(-Wall -Wextra -Wpedantic)
 endif()
 # PSDK相关内容
-set(PSDK_DIR ../../Payload-SDK/samples/sample_c++/platform/linux/manifold3/)
+set(PSDK_DIR ../../../Payload-SDK/samples/sample_c++/platform/linux/manifold3/)
 # 设定交叉编译器
 set(CMAKE_C_COMPILER "aarch64-linux-gnu-gcc" CACHE STRING "C compiler")
 set(CMAKE_CXX_COMPILER "aarch64-linux-gnu-g++" CACHE STRING "C++ compiler")
@@ -16,6 +16,12 @@ set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} -pthread")
 
 # 开启自动生成 compile_commands.json
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
+
+add_compile_definitions(
+    _GNU_SOURCE
+    PLATFORM_ARCH_AARCH64=1
+    SYSTEM_ARCH_LINUX=1
+)
 
 # 文件
 include_directories(
@@ -47,6 +53,60 @@ file(GLOB_RECURSE MY_CODE ${PSDK_DIR}/../my_code/*.c*)
 file(GLOB_RECURSE MODULE_COMMON_SRC ${PSDK_DIR}/../common/*.c*)
 file(GLOB_RECURSE MODULE_HAL_SRC ${PSDK_DIR}/hal/*.c*)
 file(GLOB_RECURSE MODULE_APP_SRC ${PSDK_DIR}/application/*.c*)
+
+set(TOOLCHAIN_NAME aarch64-linux-gnu-gcc)
+
+link_directories(${PSDK_DIR}/../../../../../psdk_lib/lib/${TOOLCHAIN_NAME})
+
+add_executable(${PROJECT_NAME}
+    ${MY_CODE}
+    ${MODULE_APP_SRC}
+    ${MODULE_SAMPLE_SRC}
+    ${MODULE_COMMON_SRC}
+    ${MODULE_HAL_SRC}
+)
+
+target_link_libraries(${PROJECT_NAME}
+    PRIVATE
+        ${PSDK_DIR}/../../../../../psdk_lib/lib/${TOOLCHAIN_NAME}/libpayloadsdk.a
+        stdc++
+        m
+        dl
+)
+
+set(CMAKE_PREFIX_PATH "/usr/local/aarch64;${CMAKE_PREFIX_PATH}")
+set(OpenCV_DIR "/usr/local/aarch64/lib/cmake/opencv4")
+
+# OpenCV
+find_package(OpenCV QUIET)
+if (OpenCV_FOUND)
+    message("\n${PROJECT_NAME}...")
+    message(STATUS "Found OpenCV installed in the system, will use it to display image in AdvancedSensing APIs")
+    message(STATUS " - Includes: ${OpenCV_INCLUDE_DIRS}")
+    message(STATUS " - Libraries: ${OpenCV_LIBRARIES}")
+    add_definitions(-DOPEN_CV_INSTALLED)
+    target_include_directories(${PROJECT_NAME} PRIVATE ${OpenCV_INCLUDE_DIRS})
+    target_link_libraries(${PROJECT_NAME} PRIVATE ${OpenCV_LIBRARIES})
+else ()
+    message(STATUS "Did not find OpenCV in the system, image data is inside RecvContainer as raw data")
+endif ()
+
+# FFMPEG
+find_package(PkgConfig)
+# pkg_check_modules(FFMPEG REQUIRED libavcodec libavformat libavutil libswscale)
+if (FFMPEG_FOUND)
+    message(STATUS "Found FFMPEG installed in the system")
+    message(STATUS " - Includes: ${FFMPEG_INCLUDE_DIRS}")
+    message(STATUS " - Libraries: ${FFMPEG_LIBRARIES}")
+
+    target_link_libraries(${PROJECT_NAME} PRIVATE ${FFMPEG_LIBRARIES})
+    target_include_directories(${PROJECT_NAME} PRIVATE ${FFMPEG_INCLUDE_DIRS})
+    target_compile_definitions(${PROJECT_NAME} PRIVATE FFMPEG_INSTALLED)
+else()
+    message(STATUS "Cannot Find FFMPEG")
+endif()
+
+set(EXECUTABLE_OUTPUT_PATH ${CMAKE_BINARY_DIR}/bin)
 
 # find dependencies
 find_package(ament_cmake REQUIRED)

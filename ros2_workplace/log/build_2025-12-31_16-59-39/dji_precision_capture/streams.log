@@ -1,0 +1,21 @@
+[0.025s] Invoking command in '/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/build/dji_precision_capture': CONDA_PROMPT_MODIFIER=(ros2_humble) /open_app/miniconda3/envs/ros2_humble/bin/cmake --build /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/build/dji_precision_capture -- -j4 -l4
+[0.073s] [0m
+[0.073s] -- Found OpenCV installed in the system, will use it to display image in AdvancedSensing APIs
+[0.073s] --  - Includes: /open_app/miniconda3/envs/ros2_humble/include/opencv4
+[0.074s] dji_precision_capture...[0m
+[0.074s] --  - Libraries: opencv_calib3d;opencv_core;opencv_dnn;opencv_features2d;opencv_flann;opencv_gapi;opencv_highgui;opencv_imgcodecs;opencv_imgproc;opencv_ml;opencv_objdetect;opencv_photo;opencv_stitching;opencv_video;opencv_videoio;opencv_alphamat;opencv_aruco;opencv_barcode;opencv_bgsegm;opencv_bioinspired;opencv_ccalib;opencv_cvv;opencv_datasets;opencv_dnn_objdetect;opencv_dnn_superres;opencv_dpm;opencv_face;opencv_freetype;opencv_fuzzy;opencv_hdf;opencv_hfs;opencv_img_hash;opencv_intensity_transform;opencv_line_descriptor;opencv_mcc;opencv_optflow;opencv_phase_unwrapping;opencv_plot;opencv_quality;opencv_rapid;opencv_reg;opencv_rgbd;opencv_saliency;opencv_shape;opencv_stereo;opencv_structured_light;opencv_superres;opencv_surface_matching;opencv_text;opencv_tracking;opencv_videostab;opencv_wechat_qrcode;opencv_xfeatures2d;opencv_ximgproc;opencv_xobjdetect;opencv_xphoto
+[0.098s] -- Cannot Find FFMPEG
+[0.098s] -- Found ament_cmake: 1.3.3 (/open_app/miniconda3/envs/ros2_humble/share/ament_cmake/cmake)
+[0.293s] -- Found ament_lint_auto: 0.12.5 (/open_app/miniconda3/envs/ros2_humble/share/ament_lint_auto/cmake)
+[0.468s] -- Added test 'lint_cmake' to check CMake code style
+[0.470s] -- Added test 'xmllint' to check XML markup files
+[0.472s] -- Configuring done (0.4s)
+[0.512s] -- Generating done (0.0s)
+[0.518s] -- Build files have been written to: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/build/dji_precision_capture
+[0.638s] [  1%] [32m[1mLinking CXX executable bin/dji_precision_capture[0m
+[0.673s] /open_app/miniconda3/envs/ros2_humble/bin/../libexec/gcc/aarch64-conda-linux-gnu/14.3.0/ld: cannot find -l../../../Payload-SDK/samples/sample_c++/platform/linux/manifold3//../../../../../psdk_lib/lib/aarch64-linux-gnu-gcc/libpayloadsdk.a: No such file or directory
+[0.997s] collect2: error: ld returned 1 exit status
+[0.999s] make[2]: *** [CMakeFiles/dji_precision_capture.dir/build.make:1193: bin/dji_precision_capture] Error 1
+[1.000s] make[1]: *** [CMakeFiles/Makefile2:85: CMakeFiles/dji_precision_capture.dir/all] Error 2
+[1.000s] make: *** [Makefile:146: all] Error 2
+[1.004s] Invoked command in '/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/build/dji_precision_capture' returned '2': CONDA_PROMPT_MODIFIER=(ros2_humble) /open_app/miniconda3/envs/ros2_humble/bin/cmake --build /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/build/dji_precision_capture -- -j4 -l4

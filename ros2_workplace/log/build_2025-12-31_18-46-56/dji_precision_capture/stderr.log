@@ -1,0 +1,5 @@
+[0m
+dji_precision_capture...[0m
+make[2]: *** No rule to make target '/../../../Payload-SDK/samples/sample_c++/platform/linux/manifold3/../../../../../psdk_lib/lib/aarch64-linux-gnu-gcc/libpayloadsdk.a', needed by 'bin/dji_precision_capture'.  Stop.
+make[1]: *** [CMakeFiles/Makefile2:85: CMakeFiles/dji_precision_capture.dir/all] Error 2
+make: *** [Makefile:146: all] Error 2

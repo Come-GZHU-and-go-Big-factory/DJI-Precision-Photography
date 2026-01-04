@@ -1,0 +1,16 @@
+-- Install configuration: ""
+-- Installing: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/test_pkg/share/ament_index/resource_index/package_run_dependencies/test_pkg
+-- Installing: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/test_pkg/share/ament_index/resource_index/parent_prefix_path/test_pkg
+-- Up-to-date: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/test_pkg/share/test_pkg/environment/ament_prefix_path.sh
+-- Installing: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/test_pkg/share/test_pkg/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/test_pkg/share/test_pkg/environment/path.sh
+-- Installing: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/test_pkg/share/test_pkg/environment/path.dsv
+-- Installing: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/test_pkg/share/test_pkg/local_setup.bash
+-- Installing: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/test_pkg/share/test_pkg/local_setup.sh
+-- Installing: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/test_pkg/share/test_pkg/local_setup.zsh
+-- Installing: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/test_pkg/share/test_pkg/local_setup.dsv
+-- Installing: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/test_pkg/share/test_pkg/package.dsv
+-- Installing: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/test_pkg/share/ament_index/resource_index/packages/test_pkg
+-- Installing: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/test_pkg/share/test_pkg/cmake/test_pkgConfig.cmake
+-- Installing: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/test_pkg/share/test_pkg/cmake/test_pkgConfig-version.cmake
+-- Up-to-date: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/test_pkg/share/test_pkg/package.xml

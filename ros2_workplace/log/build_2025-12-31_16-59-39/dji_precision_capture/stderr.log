@@ -1,7 +1,0 @@
-[0m
-dji_precision_capture...[0m
-/open_app/miniconda3/envs/ros2_humble/bin/../libexec/gcc/aarch64-conda-linux-gnu/14.3.0/ld: cannot find -l../../../Payload-SDK/samples/sample_c++/platform/linux/manifold3//../../../../../psdk_lib/lib/aarch64-linux-gnu-gcc/libpayloadsdk.a: No such file or directory
-collect2: error: ld returned 1 exit status
-make[2]: *** [CMakeFiles/dji_precision_capture.dir/build.make:1193: bin/dji_precision_capture] Error 1
-make[1]: *** [CMakeFiles/Makefile2:85: CMakeFiles/dji_precision_capture.dir/all] Error 2
-make: *** [Makefile:146: all] Error 2

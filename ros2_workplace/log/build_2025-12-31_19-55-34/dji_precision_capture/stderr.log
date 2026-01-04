@@ -1,0 +1,16 @@
+[0m
+dji_precision_capture...[0m
+[31mCMake Error at /open_app/miniconda3/envs/ros2_humble/share/ament_cmake_target_dependencies/cmake/ament_target_dependencies.cmake:145 (target_link_libraries):
+  The keyword signature for target_link_libraries has already been used with
+  the target "dji_precision_capture".  All uses of target_link_libraries with
+  a target must be either all-keyword or all-plain.
+
+  The uses of the keyword signature are here:
+
+   * CMakeLists.txt:74 (target_link_libraries)
+   * CMakeLists.txt:96 (target_link_libraries)
+
+Call Stack (most recent call first):
+  CMakeLists.txt:126 (ament_target_dependencies)
+
+[0m

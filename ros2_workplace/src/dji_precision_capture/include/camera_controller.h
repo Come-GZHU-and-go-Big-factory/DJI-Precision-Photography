@@ -35,6 +35,14 @@ enum class TaskState{
     Capture        //该状态执行:照片捕获
 };
 
+enum class TestState{
+    IDLE,       //云台复位，等待信息
+    Calculate,
+    GimbalAct,  //云台执行动作，运动到指定位置
+    CameraAct,  //相机执行动作，进行变焦
+    Capture,    //捕获照片
+};
+
 class camera_controller:public rclcpp::Node
 {
 public:
@@ -74,6 +82,11 @@ public:
         USER_LOG_INFO("Mounted position %d camera's firmware is V%02d.%02d.%02d.%02d\r\n", mountPosition,
                     firmwareVersion.firmware_version[0], firmwareVersion.firmware_version[1],
                     firmwareVersion.firmware_version[2], firmwareVersion.firmware_version[3]);
+        returnCode = MY_CameraSourceSet(mountPosition,camerasource);
+        if (returnCode != DJI_ERROR_SYSTEM_MODULE_CODE_SUCCESS) {
+            USER_LOG_ERROR("init position %d camera's camera source failed, error code: 0x%08X\r\n",
+                        mountPosition, returnCode);
+        }
 
         //云台初始化
         //  Step 1:云台初始化
@@ -118,6 +131,8 @@ public:
 private:
     //状态机变量
     TaskState taskstate = TaskState::IDLE;
+    //测试状态机
+    TestState teststate = TestState::IDLE;
     //系统级别变量
     //创建系统句柄
     T_DjiOsalHandler *osalHandler;
@@ -141,6 +156,8 @@ private:
     E_DjiCameraZoomDirection zoomDirection;
     //创建变焦速度变量
     E_DjiCameraZoomSpeed zoomSpeed;
+    //设置相机使用的视频源
+    E_DjiCameraManagerStreamSource camerasource = DJI_CAMERA_MANAGER_SOURCE_ZOOM_CAM;
     
     //云台
     //云台工作模式
@@ -157,16 +174,16 @@ private:
     rclcpp::TimerBase::SharedPtr camera_controller_loop_timer;
 
     //识别结果
-    int x;
-    int y;
+    float x;
+    float y;
     //指点计算
     float foc_phy = 7.1;
     //当前放大倍数
-    float now_factor = 0;
+    dji_f32_t now_factor = 0;
     //上一次期望放大倍数
-    float last_desire_factor = 0;
+    dji_f32_t last_desire_factor = 0;
     //这次计算的期望放大倍数
-    float desire_factor = 0;
+    dji_f32_t desire_factor = 0;
     //目标高度
     float detect_high = 0;
     //目标宽度
@@ -192,13 +209,20 @@ private:
 
     float desire_yaw = 0;
 
-    float deisre_pitch = 0;
+    float desire_pitch = 0;
     //设定期望的大小为画面高度的1/4
     float desire_high = 1/4;
 
-    rclcpp::Time last_received_time = 0;
+    T_DjiCameraManagerOpticalZoomParam now_zoom_param;
 
-    rclcpp::Time receive_time = 0;
+    rclcpp::Time last_received_time{0};
+
+    rclcpp::Time receive_time{0};
+
+
+    //其他标志位
+    bool IsGimbalCommandSend = false;
+    bool IsCameraCommandSend = false;
 };
 
 bool camera_controller::nearEqual(const T_DjiFcSubscriptionGimbalAngles& gimbalAngles, const T_DjiFcSubscriptionGimbalAngles& last_desire_GimbalAngle, double eps)
@@ -230,32 +254,62 @@ int camera_controller::camera_control()
 
 int camera_controller::camera_control_loop()
 {
-    //检查信息是否有更新  
-    if (receive_time==last_received_time) {return 0;}
+    switch (teststate) {
+        case TestState::IDLE:
+            //等待相机获取目标信息
+            break;
+        case TestState::Calculate:
+            //进行计算
+            //需要注意当前相机使用的是广角端视频流还是变焦段视频流
+            //Step 1:计算像素焦距
+            if (camerasource == DJI_CAMERA_MANAGER_SOURCE_ZOOM_CAM) {
+                foc_pix = (foc_phy*now_factor)*image_wide/sensor_wide;
+            }else if (camerasource == DJI_CAMERA_MANAGER_SOURCE_WIDE_CAM) {
+                foc_pix = foc_phy*image_wide/sensor_wide;
+            }
+            //Step 2:计算旋转角度
+            desire_yaw = (x-center_x)/foc_pix;
+            desire_pitch = (y-center_y)/foc_pix;
+            desire_GimbalAngle.z = desire_yaw;
+            desire_GimbalAngle.y = desire_pitch;
+            //Step 3:计算放大倍数
+            desire_factor = now_factor*(image_high*desire_high/detect_high);
 
-    //检查云台角度是否到位
-    //获取云台角度
-    MY_DataSubGimbalAngle((uint8_t *) &this->gimbalAngles,&this->angle_timestamp);
-    //对比云台角度，判断是否到位
-    if(!nearEqual(gimbalAngles, last_desire_GimbalAngle,3)){return 0;}
-    //对比放大倍数，判断是否到位
-    if(!(sqrt((now_factor-last_desire_factor)*(now_factor-last_desire_factor)<0.5))){return 0;}
-    //计算云台角度
-    foc_pix = (foc_phy*now_factor)*image_wide/sensor_wide;
-
-    
-
-
-    USER_LOG_INFO("gimbal angle :%f,%f,%f",gimbalAngles.x,gimbalAngles.y,gimbalAngles.z);
-
-    // osalHandler->TaskSleepMs(100);
-    //计算变焦大小
-    desire_factor = now_factor*(image_high*desire_high/detect_high);
-
-    //检查云台是否到位
-
-
-
-    
+            //状态转换至云台控制
+            teststate = TestState::GimbalAct;
+            break;
+        case TestState::GimbalAct:
+            if (!IsGimbalCommandSend) {
+                //相对角度变焦
+                rotation.rotationMode = DJI_GIMBAL_ROTATION_MODE_RELATIVE_ANGLE;
+                //设定角度
+                rotation.pitch = desire_pitch;
+                rotation.yaw   = desire_yaw;
+                rotation.roll  = 0;
+                MY_GimbalRotate(mountPosition,rotation);
+                IsGimbalCommandSend = true;
+            }
+            //获取云台角度
+            MY_DataSubGimbalAngle((uint8_t *) &this->gimbalAngles,&this->angle_timestamp);
+            if(nearEqual(gimbalAngles, desire_GimbalAngle,3)){
+                //状态转换至相机控制
+                teststate = TestState::CameraAct;
+            }
+            break;
+        case TestState::CameraAct:
+            if (!IsCameraCommandSend) {
+                //发送指令
+                MY_CameraAllDirectionOpticalZoom(mountPosition,desire_factor);
+                IsCameraCommandSend = true;
+            }
+            DjiCameraManager_GetOpticalZoomParam(mountPosition, &now_zoom_param);
+            if(!(sqrt((now_zoom_param.currentOpticalZoomFactor-desire_factor)*(now_zoom_param.currentOpticalZoomFactor-desire_factor)<0.3))){
+                teststate = TestState::Capture;
+            }
+            break;
+        case TestState::Capture:
+                MY_CameraManagerStartShootSinglePhoto(mountPosition);
+            break;
+    }
 }
 #endif

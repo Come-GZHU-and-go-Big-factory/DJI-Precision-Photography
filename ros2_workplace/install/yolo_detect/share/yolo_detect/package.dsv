@@ -1,0 +1,8 @@
+source;share/yolo_detect/hook/cmake_prefix_path.ps1
+source;share/yolo_detect/hook/cmake_prefix_path.dsv
+source;share/yolo_detect/hook/cmake_prefix_path.sh
+source;share/yolo_detect/local_setup.bash
+source;share/yolo_detect/local_setup.dsv
+source;share/yolo_detect/local_setup.ps1
+source;share/yolo_detect/local_setup.sh
+source;share/yolo_detect/local_setup.zsh

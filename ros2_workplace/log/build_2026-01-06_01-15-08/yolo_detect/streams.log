@@ -1,0 +1,42 @@
+[0.078s] Invoking command in '/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/build/yolo_detect': CONDA_PROMPT_MODIFIER=(ros2_humble) /open_app/miniconda3/envs/ros2_humble/bin/cmake /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect -DCMAKE_INSTALL_PREFIX=/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/yolo_detect
+[0.351s] -- The C compiler identification is GNU 14.3.0
+[0.618s] -- The CXX compiler identification is GNU 14.3.0
+[0.653s] -- Detecting C compiler ABI info
+[0.892s] -- Detecting C compiler ABI info - done
+[0.930s] -- Check for working C compiler: /open_app/miniconda3/envs/ros2_humble/bin/aarch64-conda-linux-gnu-cc - skipped
+[0.932s] -- Detecting C compile features
+[0.937s] -- Detecting C compile features - done
+[0.949s] -- Detecting CXX compiler ABI info
+[1.220s] -- Detecting CXX compiler ABI info - done
+[1.269s] -- Check for working CXX compiler: /open_app/miniconda3/envs/ros2_humble/bin/aarch64-conda-linux-gnu-c++ - skipped
+[1.270s] -- Detecting CXX compile features
+[1.270s] -- Detecting CXX compile features - done
+[1.281s] -- Found ament_cmake: 1.3.3 (/open_app/miniconda3/envs/ros2_humble/share/ament_cmake/cmake)
+[6.698s] -- Found Python3: /open_app/miniconda3/envs/ros2_humble/bin/python3.10 (found version "3.10.13") found components: Interpreter 
+[7.287s] -- Found ament_lint_auto: 0.12.5 (/open_app/miniconda3/envs/ros2_humble/share/ament_lint_auto/cmake)
+[7.618s] -- Added test 'lint_cmake' to check CMake code style
+[7.622s] -- Added test 'xmllint' to check XML markup files
+[7.627s] -- Configuring done (7.5s)
+[7.667s] -- Generating done (0.0s)
+[7.673s] -- Build files have been written to: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/build/yolo_detect
+[7.684s] Invoked command in '/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/build/yolo_detect' returned '0': CONDA_PROMPT_MODIFIER=(ros2_humble) /open_app/miniconda3/envs/ros2_humble/bin/cmake /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect -DCMAKE_INSTALL_PREFIX=/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/yolo_detect
+[7.687s] Invoking command in '/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/build/yolo_detect': CONDA_PROMPT_MODIFIER=(ros2_humble) /open_app/miniconda3/envs/ros2_humble/bin/cmake --build /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/build/yolo_detect -- -j4 -l4
+[7.750s] Invoked command in '/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/build/yolo_detect' returned '0': CONDA_PROMPT_MODIFIER=(ros2_humble) /open_app/miniconda3/envs/ros2_humble/bin/cmake --build /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/build/yolo_detect -- -j4 -l4
+[7.754s] Invoking command in '/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/build/yolo_detect': CONDA_PROMPT_MODIFIER=(ros2_humble) /open_app/miniconda3/envs/ros2_humble/bin/cmake --install /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/build/yolo_detect
+[7.764s] -- Install configuration: ""
+[7.764s] -- Installing: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/yolo_detect/share/ament_index/resource_index/package_run_dependencies/yolo_detect
+[7.769s] -- Installing: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/yolo_detect/share/ament_index/resource_index/parent_prefix_path/yolo_detect
+[7.770s] -- Installing: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/yolo_detect/share/yolo_detect/environment/ament_prefix_path.sh
+[7.770s] -- Installing: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/yolo_detect/share/yolo_detect/environment/ament_prefix_path.dsv
+[7.771s] -- Installing: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/yolo_detect/share/yolo_detect/environment/path.sh
+[7.771s] -- Installing: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/yolo_detect/share/yolo_detect/environment/path.dsv
+[7.771s] -- Installing: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/yolo_detect/share/yolo_detect/local_setup.bash
+[7.773s] -- Installing: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/yolo_detect/share/yolo_detect/local_setup.sh
+[7.773s] -- Installing: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/yolo_detect/share/yolo_detect/local_setup.zsh
+[7.773s] -- Installing: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/yolo_detect/share/yolo_detect/local_setup.dsv
+[7.773s] -- Installing: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/yolo_detect/share/yolo_detect/package.dsv
+[7.773s] -- Installing: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/yolo_detect/share/ament_index/resource_index/packages/yolo_detect
+[7.775s] -- Installing: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/yolo_detect/share/yolo_detect/cmake/yolo_detectConfig.cmake
+[7.775s] -- Installing: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/yolo_detect/share/yolo_detect/cmake/yolo_detectConfig-version.cmake
+[7.776s] -- Installing: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/yolo_detect/share/yolo_detect/package.xml
+[7.780s] Invoked command in '/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/build/yolo_detect' returned '0': CONDA_PROMPT_MODIFIER=(ros2_humble) /open_app/miniconda3/envs/ros2_humble/bin/cmake --install /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/build/yolo_detect

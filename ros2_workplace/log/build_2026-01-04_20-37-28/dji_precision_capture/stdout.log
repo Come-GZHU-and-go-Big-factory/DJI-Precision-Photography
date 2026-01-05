@@ -1,0 +1,46 @@
+[  1%] [32mBuilding CXX object CMakeFiles/dji_precision_capture.dir/src/main.cpp.o[0m
+[  4%] [32mBuilding C object CMakeFiles/dji_precision_capture.dir/home/dji/DJI_workshop/LZP_PSDK/Payload-SDK/samples/sample_c/module_sample/widget/test_widget.c.o[0m
+[  4%] [32mBuilding C object CMakeFiles/dji_precision_capture.dir/home/dji/DJI_workshop/LZP_PSDK/Payload-SDK/samples/sample_c/module_sample/widget/test_widget_speaker.c.o[0m
+[  6%] [32mBuilding C object CMakeFiles/dji_precision_capture.dir/home/dji/DJI_workshop/LZP_PSDK/Payload-SDK/samples/sample_c/module_sample/widget_interaction_test/file_binary_array_list_en.c.o[0m
+[  7%] [32mBuilding C object CMakeFiles/dji_precision_capture.dir/home/dji/DJI_workshop/LZP_PSDK/Payload-SDK/samples/sample_c/module_sample/xport/test_payload_xport.c.o[0m
+[ 10%] [32mBuilding CXX object CMakeFiles/dji_precision_capture.dir/home/dji/DJI_workshop/LZP_PSDK/Payload-SDK/samples/sample_c++/module_sample/flight_controller/test_flight_controller_command_flying.cpp.o[0m
+[ 10%] [32mBuilding CXX object CMakeFiles/dji_precision_capture.dir/home/dji/DJI_workshop/LZP_PSDK/Payload-SDK/samples/sample_c++/module_sample/camera_manager/test_camera_manager_entry.cpp.o[0m
+[ 13%] [32mBuilding CXX object CMakeFiles/dji_precision_capture.dir/home/dji/DJI_workshop/LZP_PSDK/Payload-SDK/samples/sample_c++/module_sample/flight_controller/test_flight_controller_entry.cpp.o[0m
+[ 13%] [32mBuilding C object CMakeFiles/dji_precision_capture.dir/home/dji/DJI_workshop/LZP_PSDK/Payload-SDK/samples/sample_c/module_sample/widget_interaction_test/test_widget_interaction.c.o[0m
+[ 16%] [32mBuilding CXX object CMakeFiles/dji_precision_capture.dir/home/dji/DJI_workshop/LZP_PSDK/Payload-SDK/samples/sample_c++/module_sample/gimbal/test_gimbal_entry.cpp.o[0m
+[ 16%] [32mBuilding CXX object CMakeFiles/dji_precision_capture.dir/home/dji/DJI_workshop/LZP_PSDK/Payload-SDK/samples/sample_c++/module_sample/hms_manager/hms_manager_entry.cpp.o[0m
+[ 19%] [32mBuilding CXX object CMakeFiles/dji_precision_capture.dir/home/dji/DJI_workshop/LZP_PSDK/Payload-SDK/samples/sample_c++/module_sample/liveview/dji_liveview_object_detection.cpp.o[0m
+[ 19%] [32mBuilding CXX object CMakeFiles/dji_precision_capture.dir/home/dji/DJI_workshop/LZP_PSDK/Payload-SDK/samples/sample_c++/module_sample/liveview/dji_camera_stream_decoder.cpp.o[0m
+[ 21%] [32mBuilding CXX object CMakeFiles/dji_precision_capture.dir/home/dji/DJI_workshop/LZP_PSDK/Payload-SDK/samples/sample_c++/module_sample/liveview/dji_camera_image_handler.cpp.o[0m
+[ 24%] [32mBuilding CXX object CMakeFiles/dji_precision_capture.dir/home/dji/DJI_workshop/LZP_PSDK/Payload-SDK/samples/sample_c++/module_sample/liveview/test_liveview.cpp.o[0m
+[ 24%] [32mBuilding CXX object CMakeFiles/dji_precision_capture.dir/home/dji/DJI_workshop/LZP_PSDK/Payload-SDK/samples/sample_c++/module_sample/liveview/image_processor_yolovfastest.cpp.o[0m
+[ 27%] [32mBuilding CXX object CMakeFiles/dji_precision_capture.dir/home/dji/DJI_workshop/LZP_PSDK/Payload-SDK/samples/sample_c++/module_sample/liveview/test_liveview_entry.cpp.o[0m
+[ 27%] [32mBuilding CXX object CMakeFiles/dji_precision_capture.dir/home/dji/DJI_workshop/LZP_PSDK/Payload-SDK/samples/sample_c++/module_sample/perception/test_lidar_entry.cpp.o[0m
+[ 30%] [32mBuilding CXX object CMakeFiles/dji_precision_capture.dir/home/dji/DJI_workshop/LZP_PSDK/Payload-SDK/samples/sample_c++/module_sample/perception/test_perception.cpp.o[0m
+[ 30%] [32mBuilding CXX object CMakeFiles/dji_precision_capture.dir/home/dji/DJI_workshop/LZP_PSDK/Payload-SDK/samples/sample_c++/module_sample/perception/test_perception_entry.cpp.o[0m
+[ 33%] [32mBuilding CXX object CMakeFiles/dji_precision_capture.dir/home/dji/DJI_workshop/LZP_PSDK/Payload-SDK/samples/sample_c++/module_sample/widget_manager/test_widget_manager.cpp.o[0m
+[ 33%] [32mBuilding CXX object CMakeFiles/dji_precision_capture.dir/home/dji/DJI_workshop/LZP_PSDK/Payload-SDK/samples/sample_c++/module_sample/perception/test_radar_entry.cpp.o[0m
+[ 36%] [32mBuilding C object CMakeFiles/dji_precision_capture.dir/home/dji/DJI_workshop/LZP_PSDK/Payload-SDK/samples/sample_c++/platform/linux/common/osal/osal_fs.c.o[0m
+[ 36%] [32mBuilding C object CMakeFiles/dji_precision_capture.dir/home/dji/DJI_workshop/LZP_PSDK/Payload-SDK/samples/sample_c++/platform/linux/common/osal/osal.c.o[0m
+[ 39%] [32mBuilding C object CMakeFiles/dji_precision_capture.dir/home/dji/DJI_workshop/LZP_PSDK/Payload-SDK/samples/sample_c++/platform/linux/manifold3/hal/hal_usb_bulk.c.o[0m
+[ 39%] [32mBuilding C object CMakeFiles/dji_precision_capture.dir/home/dji/DJI_workshop/LZP_PSDK/Payload-SDK/samples/sample_c++/platform/linux/common/osal/osal_socket.c.o[0m
+[ 40%] [32m[1mLinking CXX executable bin/dji_precision_capture[0m
+[100%] Built target dji_precision_capture
+-- Install configuration: ""
+-- Installing: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/dji_precision_capture/lib/dji_precision_capture/dji_precision_capture
+-- Set runtime path of "/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/dji_precision_capture/lib/dji_precision_capture/dji_precision_capture" to ""
+-- Installing: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/dji_precision_capture/share/ament_index/resource_index/package_run_dependencies/dji_precision_capture
+-- Installing: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/dji_precision_capture/share/ament_index/resource_index/parent_prefix_path/dji_precision_capture
+-- Installing: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/dji_precision_capture/share/dji_precision_capture/environment/ament_prefix_path.sh
+-- Installing: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/dji_precision_capture/share/dji_precision_capture/environment/ament_prefix_path.dsv
+-- Installing: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/dji_precision_capture/share/dji_precision_capture/environment/path.sh
+-- Installing: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/dji_precision_capture/share/dji_precision_capture/environment/path.dsv
+-- Installing: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/dji_precision_capture/share/dji_precision_capture/local_setup.bash
+-- Installing: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/dji_precision_capture/share/dji_precision_capture/local_setup.sh
+-- Installing: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/dji_precision_capture/share/dji_precision_capture/local_setup.zsh
+-- Installing: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/dji_precision_capture/share/dji_precision_capture/local_setup.dsv
+-- Installing: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/dji_precision_capture/share/dji_precision_capture/package.dsv
+-- Installing: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/dji_precision_capture/share/ament_index/resource_index/packages/dji_precision_capture
+-- Installing: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/dji_precision_capture/share/dji_precision_capture/cmake/dji_precision_captureConfig.cmake
+-- Installing: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/dji_precision_capture/share/dji_precision_capture/cmake/dji_precision_captureConfig-version.cmake
+-- Installing: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/dji_precision_capture/share/dji_precision_capture/package.xml

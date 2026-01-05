@@ -1,0 +1,41 @@
+[0.026s] Invoking command in '/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/build/dji_precision_capture': CONDA_PROMPT_MODIFIER=(ros2_humble) /open_app/miniconda3/envs/ros2_humble/bin/cmake --build /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/build/dji_precision_capture -- -j4 -l4
+[0.181s] [  1%] [32mBuilding CXX object CMakeFiles/dji_precision_capture.dir/src/main.cpp.o[0m
+[0.788s] In file included from [01m[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/dji_precision_capture/src/main.cpp:15[m[K:
+[0.788s] [01m[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/dji_precision_capture/./include/camera_controller.h:46:63:[m[K [01;35m[Kwarning: [m[KISO C++11 requires at least one argument for the "..." in a variadic macro
+[0.789s]    46 |         USER_LOG_INFO("--> Step 1: Init camera manager module"[01;35m[K)[m[K;
+[0.789s]       |                                                               [01;35m[K^[m[K
+[0.789s] [01m[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/dji_precision_capture/./include/camera_controller.h:52:64:[m[K [01;35m[Kwarning: [m[KISO C++11 requires at least one argument for the "..." in a variadic macro
+[0.789s]    52 |         USER_LOG_INFO("--> Step 2: Get camera type and version"[01;35m[K)[m[K;
+[0.789s]       |                                                                [01;35m[K^[m[K
+[0.789s] [01m[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/dji_precision_capture/./include/camera_controller.h:69:63:[m[K [01;35m[Kwarning: [m[KISO C++11 requires at least one argument for the "..." in a variadic macro
+[0.789s]    69 |         USER_LOG_INFO("--> Step 1: Init gimbal manager module"[01;35m[K)[m[K;
+[0.790s]       |                                                               [01;35m[K^[m[K
+[0.790s] [01m[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/dji_precision_capture/./include/camera_controller.h:75:60:[m[K [01;35m[Kwarning: [m[KISO C++11 requires at least one argument for the "..." in a variadic macro
+[0.790s]    75 |         USER_LOG_INFO("--> Step 2: Set gimbal to free mode"[01;35m[K)[m[K;
+[0.790s]       |                                                            [01;35m[K^[m[K
+[0.790s] [01m[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/dji_precision_capture/./include/camera_controller.h:78:61:[m[K [01;35m[Kwarning: [m[KISO C++11 requires at least one argument for the "..." in a variadic macro
+[0.790s]    78 |         USER_LOG_INFO("--> Step 3: Reset gimbal angles.\r\n"[01;35m[K)[m[K;
+[0.790s]       |                                                             [01;35m[K^[m[K
+[1.341s] In file included from [01m[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/dji_precision_capture/../../../Payload-SDK/samples/sample_c++/platform/linux/manifold3/../my_code/gimbal_manager.h:12[m[K,
+[1.341s]                  from [01m[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/dji_precision_capture/src/main.cpp:13[m[K:
+[1.341s] [01m[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/dji_precision_capture/../../../Payload-SDK/samples/sample_c++/platform/linux/manifold3/../../../../../psdk_lib/include/dji_fc_subscription.h:1210:16:[m[K [01;35m[Kwarning: [m[KISO C++ prohibits anonymous structs [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-14.3.0/gcc/Warning-Options.html#index-Wno-pedantic-Wpedantic]8;;[m[K]
+[1.341s]  1210 |         struct [01;35m[K{[m[K
+[1.341s]       |                [01;35m[K^[m[K
+[1.342s] [01m[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/dji_precision_capture/../../../Payload-SDK/samples/sample_c++/platform/linux/manifold3/../../../../../psdk_lib/include/dji_fc_subscription.h:1219:16:[m[K [01;35m[Kwarning: [m[KISO C++ prohibits anonymous structs [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-14.3.0/gcc/Warning-Options.html#index-Wno-pedantic-Wpedantic]8;;[m[K]
+[1.342s]  1219 |         struct [01;35m[K{[m[K
+[1.342s]       |                [01;35m[K^[m[K
+[4.620s] In file included from [01m[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/dji_precision_capture/src/main.cpp:5[m[K:
+[4.620s] [01m[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/dji_precision_capture/./include/camera_controller.h:[m[K In member function '[01m[Kvoid camera_controller::[01;32m[Kcamera_control_loop[m[K()[m[K':
+[4.621s] [01m[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/dji_precision_capture/../../../Payload-SDK/samples/sample_c++/platform/linux/manifold3/../../../../../psdk_lib/include/dji_logger.h:118:9:[m[K [01;31m[Kerror: [m[K'[01m[KDjiLogger_UserLogOutput[m[K' is not a member of '[01m[Krclcpp[m[K'; did you mean '[01m[KDjiLogger_UserLogOutput[m[K'?
+[4.621s]   118 |         [01;31m[KDjiLogger_UserLogOutput[m[K(DJI_LOGGER_CONSOLE_LOG_LEVEL_INFO, USER_LOG_PREFIX_FMT fmt, USER_LOG_PREFIX_ARG, ##__VA_ARGS__)
+[4.621s]       |         [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[4.621s] [01m[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/dji_precision_capture/./include/camera_controller.h:146:5:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[KUSER_LOG_INFO[m[K'
+[4.621s]   146 |     [01;36m[KUSER_LOG_INFO[m[K("gimbal angle :%f,%f,%f",gimbalAngles.x,gimbalAngles.y,gimbalAngles.z);
+[4.621s]       |     [01;36m[K^~~~~~~~~~~~~[m[K
+[4.621s] [01m[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/dji_precision_capture/../../../Payload-SDK/samples/sample_c++/platform/linux/manifold3/../../../../../psdk_lib/include/dji_logger.h:102:6:[m[K [01;36m[Knote: [m[K'[01m[KDjiLogger_UserLogOutput[m[K' declared here
+[4.622s]   102 | void [01;36m[KDjiLogger_UserLogOutput[m[K(E_DjiLoggerConsoleLogLevel level, const char *fmt, ...);
+[4.622s]       |      [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[5.679s] make[2]: *** [CMakeFiles/dji_precision_capture.dir/build.make:76: CMakeFiles/dji_precision_capture.dir/src/main.cpp.o] Error 1
+[5.680s] make[1]: *** [CMakeFiles/Makefile2:85: CMakeFiles/dji_precision_capture.dir/all] Error 2
+[5.680s] make: *** [Makefile:146: all] Error 2
+[5.684s] Invoked command in '/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/build/dji_precision_capture' returned '2': CONDA_PROMPT_MODIFIER=(ros2_humble) /open_app/miniconda3/envs/ros2_humble/bin/cmake --build /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/build/dji_precision_capture -- -j4 -l4

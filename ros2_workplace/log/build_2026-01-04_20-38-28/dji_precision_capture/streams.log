@@ -1,0 +1,10 @@
+[0.022s] Invoking command in '/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/build/dji_precision_capture': CONDA_PROMPT_MODIFIER=(ros2_humble) /open_app/miniconda3/envs/ros2_humble/bin/cmake --build /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/build/dji_precision_capture -- -j4 -l4
+[0.112s] [  1%] [32mBuilding CXX object CMakeFiles/dji_precision_capture.dir/src/main.cpp.o[0m
+[0.305s] [01m[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/dji_precision_capture/src/main.cpp:15:10:[m[K [01;31m[Kfatal error: [m[Krclcpp.hpp: No such file or directory
+[0.306s]    15 | #include [01;31m[K"rclcpp.hpp"[m[K
+[0.306s]       |          [01;31m[K^~~~~~~~~~~~[m[K
+[0.306s] compilation terminated.
+[0.310s] make[2]: *** [CMakeFiles/dji_precision_capture.dir/build.make:76: CMakeFiles/dji_precision_capture.dir/src/main.cpp.o] Error 1
+[0.310s] make[1]: *** [CMakeFiles/Makefile2:85: CMakeFiles/dji_precision_capture.dir/all] Error 2
+[0.311s] make: *** [Makefile:146: all] Error 2
+[0.314s] Invoked command in '/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/build/dji_precision_capture' returned '2': CONDA_PROMPT_MODIFIER=(ros2_humble) /open_app/miniconda3/envs/ros2_humble/bin/cmake --build /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/build/dji_precision_capture -- -j4 -l4

@@ -1,0 +1,27 @@
+[0.031s] Invoking command in '/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/build/dji_precision_capture': CONDA_PROMPT_MODIFIER=(ros2_humble) /open_app/miniconda3/envs/ros2_humble/bin/cmake --build /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/build/dji_precision_capture -- -j4 -l4
+[0.192s] [  1%] [32mBuilding CXX object CMakeFiles/dji_precision_capture.dir/src/main.cpp.o[0m
+[1.399s] In file included from [01m[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/dji_precision_capture/../../../Payload-SDK/samples/sample_c++/platform/linux/manifold3/../my_code/gimbal_manager.h:12[m[K,
+[1.399s]                  from [01m[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/dji_precision_capture/src/main.cpp:13[m[K:
+[1.399s] [01m[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/dji_precision_capture/../../../Payload-SDK/samples/sample_c++/platform/linux/manifold3/../../../../../psdk_lib/include/dji_fc_subscription.h:1210:16:[m[K [01;35m[Kwarning: [m[KISO C++ prohibits anonymous structs [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-14.3.0/gcc/Warning-Options.html#index-Wno-pedantic-Wpedantic]8;;[m[K]
+[1.399s]  1210 |         struct [01;35m[K{[m[K
+[1.399s]       |                [01;35m[K^[m[K
+[1.400s] [01m[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/dji_precision_capture/../../../Payload-SDK/samples/sample_c++/platform/linux/manifold3/../../../../../psdk_lib/include/dji_fc_subscription.h:1219:16:[m[K [01;35m[Kwarning: [m[KISO C++ prohibits anonymous structs [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-14.3.0/gcc/Warning-Options.html#index-Wno-pedantic-Wpedantic]8;;[m[K]
+[1.400s]  1219 |         struct [01;35m[K{[m[K
+[1.400s]       |                [01;35m[K^[m[K
+[4.746s] [01m[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/dji_precision_capture/src/main.cpp:[m[K In function '[01m[Kint[01;32m[K main[m[K(int, char**)[m[K':
+[4.746s] [01m[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/dji_precision_capture/src/main.cpp:27:52:[m[K [01;31m[Kerror: [m[K'[01m[Kcamera_controller[m[K' was not declared in this scope; did you mean '[01m[Kcamera_controller_node[m[K'?
+[4.747s]    27 | _controller_node = std::make_shared<[01;31m[Kcamera_controller[m[K>(Args &&args...)
+[4.747s]       |                                     [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[4.747s]       |                                     [32m[Kcamera_controller_node[m[K
+[4.754s] [01m[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/dji_precision_capture/src/main.cpp:27:71:[m[K [01;31m[Kerror: [m[K'[01m[KArgs[m[K' was not declared in this scope
+[4.755s]    27 | std::make_shared<camera_controller>([01;31m[KArgs[m[K &&args...)
+[4.755s]       |                                     [01;31m[K^~~~[m[K
+[4.755s] 
+[4.763s] [01m[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/dji_precision_capture/src/main.cpp:27:78:[m[K [01;31m[Kerror: [m[K'[01m[Kargs[m[K' was not declared in this scope; did you mean '[01m[Kargc[m[K'?
+[4.763s]    27 | :make_shared<camera_controller>(Args &&[01;31m[Kargs[m[K...)
+[4.764s]       |                                        [01;31m[K^~~~[m[K
+[4.764s]       |                                        [32m[Kargc[m[K
+[5.717s] make[2]: *** [CMakeFiles/dji_precision_capture.dir/build.make:76: CMakeFiles/dji_precision_capture.dir/src/main.cpp.o] Error 1
+[5.718s] make[1]: *** [CMakeFiles/Makefile2:85: CMakeFiles/dji_precision_capture.dir/all] Error 2
+[5.719s] make: *** [Makefile:146: all] Error 2
+[5.723s] Invoked command in '/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/build/dji_precision_capture' returned '2': CONDA_PROMPT_MODIFIER=(ros2_humble) /open_app/miniconda3/envs/ros2_humble/bin/cmake --build /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/build/dji_precision_capture -- -j4 -l4

@@ -1,0 +1,28 @@
+[0.024s] Invoking command in '/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/build/uav_detect_result': CONDA_PROMPT_MODIFIER=(ros2_humble) /open_app/miniconda3/envs/ros2_humble/bin/cmake /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/uav_detect_result -DCMAKE_INSTALL_PREFIX=/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/uav_detect_result
+[0.041s] -- Found ament_cmake: 1.3.3 (/open_app/miniconda3/envs/ros2_humble/share/ament_cmake/cmake)
+[0.255s] -- Found rosidl_default_generators: 1.2.0 (/open_app/miniconda3/envs/ros2_humble/share/rosidl_default_generators/cmake)
+[0.258s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.263s] -- Found rosidl_adapter: 3.1.4 (/open_app/miniconda3/envs/ros2_humble/share/rosidl_adapter/cmake)
+[0.310s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.688s] -- Found ament_cmake_ros: 0.10.0 (/open_app/miniconda3/envs/ros2_humble/share/ament_cmake_ros/cmake)
+[0.809s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.963s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.992s] -- Found python_cmake_module: 0.10.0 (/open_app/miniconda3/envs/ros2_humble/share/python_cmake_module/cmake)
+[1.021s] -- Using PYTHON_EXECUTABLE: /open_app/miniconda3/envs/ros2_humble/bin/python3
+[1.021s] -- Using PYTHON_INCLUDE_DIRS: /open_app/miniconda3/envs/ros2_humble/include/python3.10
+[1.022s] -- Using PYTHON_LIBRARIES: /open_app/miniconda3/envs/ros2_humble/lib/libpython3.10.so
+[1.096s] [31mCMake Error at /open_app/miniconda3/envs/ros2_humble/share/cmake-3.26/Modules/FindPackageHandleStandardArgs.cmake:230 (message):
+[1.097s]   Could NOT find Python3 (missing: Python3_NumPy_INCLUDE_DIRS NumPy) (found
+[1.097s]   version "3.10.13")
+[1.097s] Call Stack (most recent call first):
+[1.097s]   /open_app/miniconda3/envs/ros2_humble/share/cmake-3.26/Modules/FindPackageHandleStandardArgs.cmake:600 (_FPHSA_FAILURE_MESSAGE)
+[1.097s]   /open_app/miniconda3/envs/ros2_humble/share/cmake-3.26/Modules/FindPython/Support.cmake:3766 (find_package_handle_standard_args)
+[1.098s]   /open_app/miniconda3/envs/ros2_humble/share/cmake-3.26/Modules/FindPython3.cmake:551 (include)
+[1.098s]   /open_app/miniconda3/envs/ros2_humble/share/rosidl_generator_py/cmake/rosidl_generator_py_generate_interfaces.cmake:24 (find_package)
+[1.098s]   /open_app/miniconda3/envs/ros2_humble/share/ament_cmake_core/cmake/core/ament_execute_extensions.cmake:48 (include)
+[1.098s]   /open_app/miniconda3/envs/ros2_humble/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:286 (ament_execute_extensions)
+[1.098s]   CMakeLists.txt:16 (rosidl_generate_interfaces)
+[1.098s] 
+[1.099s] [0m
+[1.099s] -- Configuring incomplete, errors occurred!
+[1.109s] Invoked command in '/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/build/uav_detect_result' returned '1': CONDA_PROMPT_MODIFIER=(ros2_humble) /open_app/miniconda3/envs/ros2_humble/bin/cmake /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/uav_detect_result -DCMAKE_INSTALL_PREFIX=/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/uav_detect_result

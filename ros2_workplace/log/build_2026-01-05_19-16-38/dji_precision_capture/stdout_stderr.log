@@ -1,0 +1,136 @@
+[0m
+-- Found OpenCV installed in the system, will use it to display image in AdvancedSensing APIs
+--  - Includes: /open_app/miniconda3/envs/ros2_humble/include/opencv4
+--  - Libraries: opencv_calib3d;opencv_core;opencv_dnn;opencv_features2d;opencv_flann;opencv_gapi;opencv_highgui;opencv_imgcodecs;opencv_imgproc;opencv_ml;opencv_objdetect;opencv_photo;opencv_stitching;opencv_video;opencv_videoio;opencv_alphamat;opencv_aruco;opencv_barcode;opencv_bgsegm;opencv_bioinspired;opencv_ccalib;opencv_cvv;opencv_datasets;opencv_dnn_objdetect;opencv_dnn_superres;opencv_dpm;opencv_face;opencv_freetype;opencv_fuzzy;opencv_hdf;opencv_hfs;opencv_img_hash;opencv_intensity_transform;opencv_line_descriptor;opencv_mcc;opencv_optflow;opencv_phase_unwrapping;opencv_plot;opencv_quality;opencv_rapid;opencv_reg;opencv_rgbd;opencv_saliency;opencv_shape;opencv_stereo;opencv_structured_light;opencv_superres;opencv_surface_matching;opencv_text;opencv_tracking;opencv_videostab;opencv_wechat_qrcode;opencv_xfeatures2d;opencv_ximgproc;opencv_xobjdetect;opencv_xphoto
+dji_precision_capture...[0m
+-- Cannot Find FFMPEG
+-- Found ament_cmake: 1.3.3 (/open_app/miniconda3/envs/ros2_humble/share/ament_cmake/cmake)
+-- Found rclcpp: 16.0.3 (/open_app/miniconda3/envs/ros2_humble/share/rclcpp/cmake)
+-- Found rosidl_generator_c: 3.1.4 (/open_app/miniconda3/envs/ros2_humble/share/rosidl_generator_c/cmake)
+-- Found rosidl_adapter: 3.1.4 (/open_app/miniconda3/envs/ros2_humble/share/rosidl_adapter/cmake)
+-- Found rosidl_generator_cpp: 3.1.4 (/open_app/miniconda3/envs/ros2_humble/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 6.1.1 (/open_app/miniconda3/envs/ros2_humble/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 6.2.2 (/open_app/miniconda3/envs/ros2_humble/share/rmw_fastrtps_cpp/cmake)
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Found std_msgs: 4.2.3 (/open_app/miniconda3/envs/ros2_humble/share/std_msgs/cmake)
+-- Found ament_lint_auto: 0.12.5 (/open_app/miniconda3/envs/ros2_humble/share/ament_lint_auto/cmake)
+-- Added test 'cppcheck' to perform static code analysis on C / C++ code
+-- Configured cppcheck include dirs: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/dji_precision_capture/../../../Payload-SDK/samples/sample_c++/platform/linux/manifold3/../my_code;/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/dji_precision_capture/../../../Payload-SDK/samples/sample_c++/platform/linux/manifold3/../../../module_sample;/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/dji_precision_capture/../../../Payload-SDK/samples/sample_c++/platform/linux/manifold3/../../../../sample_c/module_sample;/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/dji_precision_capture/../../../Payload-SDK/samples/sample_c++/platform/linux/manifold3/../common;/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/dji_precision_capture/../../../Payload-SDK/samples/sample_c++/platform/linux/manifold3/../manifold3/application;/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/dji_precision_capture/include_directories;/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/dji_precision_capture/(;/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/dji_precision_capture/../../../Payload-SDK/samples/sample_c++/platform/linux/manifold3/../../../../../psdk_lib/include;/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/dji_precision_capture/);/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/dji_precision_capture/./include
+-- Configured cppcheck exclude dirs and/or files: 
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'uncrustify' to check C / C++ code style
+-- Configured uncrustify additional arguments: 
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done (1.3s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/build/dji_precision_capture
+[  1%] [32mBuilding CXX object CMakeFiles/dji_precision_capture.dir/src/main.cpp.o[0m
+[01m[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/dji_precision_capture/src/main.cpp:96:59:[m[K [01;35m[Kwarning: [m[KISO C++11 requires at least one argument for the "..." in a variadic macro
+   96 |     USER_LOG_INFO("--> Step 1: Init camera manager module"[01;35m[K)[m[K;
+      |                                                           [01;35m[K^[m[K
+[01m[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/dji_precision_capture/src/main.cpp:103:60:[m[K [01;35m[Kwarning: [m[KISO C++11 requires at least one argument for the "..." in a variadic macro
+  103 |     USER_LOG_INFO("--> Step 2: Get camera type and version"[01;35m[K)[m[K;
+      |                                                            [01;35m[K^[m[K
+[01m[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/dji_precision_capture/src/main.cpp:122:59:[m[K [01;35m[Kwarning: [m[KISO C++11 requires at least one argument for the "..." in a variadic macro
+  122 |     USER_LOG_INFO("--> Step 1: Init gimbal manager module"[01;35m[K)[m[K;
+      |                                                           [01;35m[K^[m[K
+[01m[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/dji_precision_capture/src/main.cpp:129:56:[m[K [01;35m[Kwarning: [m[KISO C++11 requires at least one argument for the "..." in a variadic macro
+  129 |     USER_LOG_INFO("--> Step 2: Set gimbal to free mode"[01;35m[K)[m[K;
+      |                                                        [01;35m[K^[m[K
+[01m[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/dji_precision_capture/src/main.cpp:132:57:[m[K [01;35m[Kwarning: [m[KISO C++11 requires at least one argument for the "..." in a variadic macro
+  132 |     USER_LOG_INFO("--> Step 3: Reset gimbal angles.\r\n"[01;35m[K)[m[K;
+      |                                                         [01;35m[K^[m[K
+[01m[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/dji_precision_capture/src/main.cpp:139:56:[m[K [01;35m[Kwarning: [m[KISO C++11 requires at least one argument for the "..." in a variadic macro
+  139 |     USER_LOG_INFO("--> Step 1: Init data subscribation"[01;35m[K)[m[K;
+      |                                                        [01;35m[K^[m[K
+In file included from [01m[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/dji_precision_capture/../../../Payload-SDK/samples/sample_c++/platform/linux/manifold3/../my_code/gimbal_manager.h:12[m[K,
+                 from [01m[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/dji_precision_capture/src/main.cpp:13[m[K:
+[01m[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/dji_precision_capture/../../../Payload-SDK/samples/sample_c++/platform/linux/manifold3/../../../../../psdk_lib/include/dji_fc_subscription.h:1210:16:[m[K [01;35m[Kwarning: [m[KISO C++ prohibits anonymous structs [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-14.3.0/gcc/Warning-Options.html#index-Wno-pedantic-Wpedantic]8;;[m[K]
+ 1210 |         struct [01;35m[K{[m[K
+      |                [01;35m[K^[m[K
+[01m[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/dji_precision_capture/../../../Payload-SDK/samples/sample_c++/platform/linux/manifold3/../../../../../psdk_lib/include/dji_fc_subscription.h:1219:16:[m[K [01;35m[Kwarning: [m[KISO C++ prohibits anonymous structs [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-14.3.0/gcc/Warning-Options.html#index-Wno-pedantic-Wpedantic]8;;[m[K]
+ 1219 |         struct [01;35m[K{[m[K
+      |                [01;35m[K^[m[K
+[01m[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/dji_precision_capture/src/main.cpp:[m[K In lambda function:
+[01m[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/dji_precision_capture/src/main.cpp:24:27:[m[K [01;35m[Kwarning: [m[Kunused parameter '[01m[KsignalNum[m[K' [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-14.3.0/gcc/Warning-Options.html#index-Wno-unused-parameter-Wunused-parameter]8;;[m[K]
+   24 |     signal(SIGINT, []([01;35m[Kint signalNum[m[K) -> void { exit(0); });
+      |                       [01;35m[K~~~~^~~~~~~~~[m[K
+[01m[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/dji_precision_capture/src/main.cpp:[m[K In function '[01m[Kint[01;32m[K main[m[K(int, char**)[m[K':
+[01m[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/dji_precision_capture/src/main.cpp:57:54:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member '[01m[KVector3f::y[m[K' [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-14.3.0/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+   57 |     T_DjiFcSubscriptionGimbalAngles gimbalAngles = {0[01;35m[K}[m[K;
+      |                                                      [01;35m[K^[m[K
+[01m[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/dji_precision_capture/src/main.cpp:57:54:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member '[01m[KVector3f::z[m[K' [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-14.3.0/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[01m[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/dji_precision_capture/src/main.cpp:59:44:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member '[01m[KT_DjiDataTimestamp::microsecond[m[K' [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-14.3.0/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+   59 |     T_DjiDataTimestamp angle_timestamp = {0[01;35m[K}[m[K;
+      |                                            [01;35m[K^[m[K
+[01m[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/dji_precision_capture/src/main.cpp:61:54:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member '[01m[KGimbalStatus::isBusy[m[K' [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-14.3.0/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+   61 |     T_DjiFcSubscriptionGimbalStatus gimbalStatus = {0[01;35m[K}[m[K;
+      |                                                      [01;35m[K^[m[K
+[01m[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/dji_precision_capture/src/main.cpp:61:54:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member '[01m[KGimbalStatus::pitchLimited[m[K' [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-14.3.0/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[01m[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/dji_precision_capture/src/main.cpp:61:54:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member '[01m[KGimbalStatus::rollLimited[m[K' [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-14.3.0/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[01m[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/dji_precision_capture/src/main.cpp:61:54:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member '[01m[KGimbalStatus::yawLimited[m[K' [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-14.3.0/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[01m[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/dji_precision_capture/src/main.cpp:61:54:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member '[01m[KGimbalStatus::calibrating[m[K' [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-14.3.0/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[01m[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/dji_precision_capture/src/main.cpp:61:54:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member '[01m[KGimbalStatus::prevCalibrationgResult[m[K' [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-14.3.0/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[01m[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/dji_precision_capture/src/main.cpp:61:54:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member '[01m[KGimbalStatus::installedDirection[m[K' [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-14.3.0/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[01m[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/dji_precision_capture/src/main.cpp:61:54:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member '[01m[KGimbalStatus::disabled_mvo[m[K' [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-14.3.0/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[01m[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/dji_precision_capture/src/main.cpp:61:54:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member '[01m[KGimbalStatus::gear_show_unable[m[K' [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-14.3.0/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[01m[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/dji_precision_capture/src/main.cpp:61:54:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member '[01m[KGimbalStatus::gyroFalut[m[K' [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-14.3.0/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[01m[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/dji_precision_capture/src/main.cpp:61:54:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member '[01m[KGimbalStatus::escPitchStatus[m[K' [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-14.3.0/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[01m[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/dji_precision_capture/src/main.cpp:61:54:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member '[01m[KGimbalStatus::escRollStatus[m[K' [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-14.3.0/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[01m[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/dji_precision_capture/src/main.cpp:61:54:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member '[01m[KGimbalStatus::escYawStatus[m[K' [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-14.3.0/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[01m[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/dji_precision_capture/src/main.cpp:61:54:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member '[01m[KGimbalStatus::droneDataRecv[m[K' [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-14.3.0/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[01m[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/dji_precision_capture/src/main.cpp:61:54:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member '[01m[KGimbalStatus::initUnfinished[m[K' [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-14.3.0/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[01m[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/dji_precision_capture/src/main.cpp:61:54:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member '[01m[KGimbalStatus::FWUpdating[m[K' [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-14.3.0/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[01m[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/dji_precision_capture/src/main.cpp:61:54:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member '[01m[KGimbalStatus::reserved2[m[K' [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-14.3.0/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[01m[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/dji_precision_capture/src/main.cpp:63:45:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member '[01m[KT_DjiDataTimestamp::microsecond[m[K' [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-14.3.0/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+   63 |     T_DjiDataTimestamp status_timestamp = {0[01;35m[K}[m[K;
+      |                                             [01;35m[K^[m[K
+[01m[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/dji_precision_capture/src/main.cpp:36:36:[m[K [01;35m[Kwarning: [m[Kunused variable '[01m[KfocusPosData[m[K' [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-14.3.0/gcc/Warning-Options.html#index-Wno-unused-variable-Wunused-variable]8;;[m[K]
+   36 |     T_DjiCameraManagerFocusPosData [01;35m[KfocusPosData[m[K;
+      |                                    [01;35m[K^~~~~~~~~~~~[m[K
+[01m[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/dji_precision_capture/src/main.cpp:38:38:[m[K [01;35m[Kwarning: [m[Kunused variable '[01m[KtapZoomPosData[m[K' [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-14.3.0/gcc/Warning-Options.html#index-Wno-unused-variable-Wunused-variable]8;;[m[K]
+   38 |     T_DjiCameraManagerTapZoomPosData [01;35m[KtapZoomPosData[m[K;
+      |                                      [01;35m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/dji_precision_capture/src/main.cpp:43:36:[m[K [01;35m[Kwarning: [m[Kvariable '[01m[KfocusPoint[m[K' set but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-14.3.0/gcc/Warning-Options.html#index-Wno-unused-but-set-variable-Wunused-but-set-variable]8;;[m[K]
+   43 |     T_DjiCameraManagerFocusPosData [01;35m[KfocusPoint[m[K;
+      |                                    [01;35m[K^~~~~~~~~~[m[K
+[01m[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/dji_precision_capture/src/main.cpp:45:30:[m[K [01;35m[Kwarning: [m[Kvariable '[01m[KzoomDirection[m[K' set but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-14.3.0/gcc/Warning-Options.html#index-Wno-unused-but-set-variable-Wunused-but-set-variable]8;;[m[K]
+   45 |     E_DjiCameraZoomDirection [01;35m[KzoomDirection[m[K;
+      |                              [01;35m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/dji_precision_capture/src/main.cpp:47:26:[m[K [01;35m[Kwarning: [m[Kunused variable '[01m[KzoomSpeed[m[K' [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-14.3.0/gcc/Warning-Options.html#index-Wno-unused-variable-Wunused-variable]8;;[m[K]
+   47 |     E_DjiCameraZoomSpeed [01;35m[KzoomSpeed[m[K;
+      |                          [01;35m[K^~~~~~~~~[m[K
+[01m[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/dji_precision_capture/src/main.cpp:49:36:[m[K [01;35m[Kwarning: [m[Kvariable '[01m[Kcamerasource[m[K' set but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-14.3.0/gcc/Warning-Options.html#index-Wno-unused-but-set-variable-Wunused-but-set-variable]8;;[m[K]
+   49 |     E_DjiCameraManagerStreamSource [01;35m[Kcamerasource[m[K;
+      |                                    [01;35m[K^~~~~~~~~~~~[m[K
+[01m[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/dji_precision_capture/src/main.cpp:61:37:[m[K [01;35m[Kwarning: [m[Kunused variable '[01m[KgimbalStatus[m[K' [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-14.3.0/gcc/Warning-Options.html#index-Wno-unused-variable-Wunused-variable]8;;[m[K]
+   61 |     T_DjiFcSubscriptionGimbalStatus [01;35m[KgimbalStatus[m[K = {0};
+      |                                     [01;35m[K^~~~~~~~~~~~[m[K
+[01m[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/dji_precision_capture/src/main.cpp:63:24:[m[K [01;35m[Kwarning: [m[Kunused variable '[01m[Kstatus_timestamp[m[K' [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-14.3.0/gcc/Warning-Options.html#index-Wno-unused-variable-Wunused-variable]8;;[m[K]
+   63 |     T_DjiDataTimestamp [01;35m[Kstatus_timestamp[m[K = {0};
+      |                        [01;35m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/dji_precision_capture/src/main.cpp:67:15:[m[K [01;35m[Kwarning: [m[Kvariable '[01m[Kfactor[m[K' set but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-14.3.0/gcc/Warning-Options.html#index-Wno-unused-but-set-variable-Wunused-but-set-variable]8;;[m[K]
+   67 |     dji_f32_t [01;35m[Kfactor[m[K;
+      |               [01;35m[K^~~~~~[m[K
+[  3%] [32m[1mLinking CXX executable bin/dji_precision_capture[0m
+[100%] Built target dji_precision_capture
+-- Install configuration: ""
+-- Installing: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/dji_precision_capture/lib/dji_precision_capture/dji_precision_capture
+-- Set runtime path of "/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/dji_precision_capture/lib/dji_precision_capture/dji_precision_capture" to ""
+-- Up-to-date: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/dji_precision_capture/share/ament_index/resource_index/package_run_dependencies/dji_precision_capture
+-- Installing: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/dji_precision_capture/share/ament_index/resource_index/parent_prefix_path/dji_precision_capture
+-- Up-to-date: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/dji_precision_capture/share/dji_precision_capture/environment/ament_prefix_path.sh
+-- Installing: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/dji_precision_capture/share/dji_precision_capture/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/dji_precision_capture/share/dji_precision_capture/environment/path.sh
+-- Installing: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/dji_precision_capture/share/dji_precision_capture/environment/path.dsv
+-- Up-to-date: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/dji_precision_capture/share/dji_precision_capture/local_setup.bash
+-- Up-to-date: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/dji_precision_capture/share/dji_precision_capture/local_setup.sh
+-- Up-to-date: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/dji_precision_capture/share/dji_precision_capture/local_setup.zsh
+-- Installing: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/dji_precision_capture/share/dji_precision_capture/local_setup.dsv
+-- Installing: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/dji_precision_capture/share/dji_precision_capture/package.dsv
+-- Up-to-date: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/dji_precision_capture/share/ament_index/resource_index/packages/dji_precision_capture
+-- Up-to-date: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/dji_precision_capture/share/dji_precision_capture/cmake/dji_precision_captureConfig.cmake
+-- Up-to-date: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/dji_precision_capture/share/dji_precision_capture/cmake/dji_precision_captureConfig-version.cmake
+-- Up-to-date: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/dji_precision_capture/share/dji_precision_capture/package.xml

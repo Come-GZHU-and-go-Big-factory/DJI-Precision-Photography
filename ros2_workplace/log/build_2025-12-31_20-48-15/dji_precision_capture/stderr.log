@@ -1,6 +1,0 @@
-[0m
-dji_precision_capture...[0m
-[31mCMake Error at CMakeLists.txt:94 (target_include_directories):
-  target_include_directories called with invalid arguments
-
-[0m

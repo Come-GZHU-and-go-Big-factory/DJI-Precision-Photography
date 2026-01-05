@@ -1,0 +1,56 @@
+[0.032s] Invoking command in '/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/build/dji_precision_capture': CONDA_PROMPT_MODIFIER=(ros2_humble) /open_app/miniconda3/envs/ros2_humble/bin/cmake --build /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/build/dji_precision_capture -- -j4 -l4
+[0.207s] [  1%] [32mBuilding CXX object CMakeFiles/dji_precision_capture.dir/src/main.cpp.o[0m
+[0.828s] In file included from [01m[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/dji_precision_capture/src/main.cpp:15[m[K:
+[0.829s] [01m[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/dji_precision_capture/./include/camera_controller.h:44:63:[m[K [01;35m[Kwarning: [m[KISO C++11 requires at least one argument for the "..." in a variadic macro
+[0.829s]    44 |         USER_LOG_INFO("--> Step 1: Init camera manager module"[01;35m[K)[m[K;
+[0.829s]       |                                                               [01;35m[K^[m[K
+[0.829s] [01m[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/dji_precision_capture/./include/camera_controller.h:50:64:[m[K [01;35m[Kwarning: [m[KISO C++11 requires at least one argument for the "..." in a variadic macro
+[0.829s]    50 |         USER_LOG_INFO("--> Step 2: Get camera type and version"[01;35m[K)[m[K;
+[0.829s]       |                                                                [01;35m[K^[m[K
+[0.830s] [01m[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/dji_precision_capture/./include/camera_controller.h:67:63:[m[K [01;35m[Kwarning: [m[KISO C++11 requires at least one argument for the "..." in a variadic macro
+[0.830s]    67 |         USER_LOG_INFO("--> Step 1: Init gimbal manager module"[01;35m[K)[m[K;
+[0.830s]       |                                                               [01;35m[K^[m[K
+[0.830s] [01m[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/dji_precision_capture/./include/camera_controller.h:73:60:[m[K [01;35m[Kwarning: [m[KISO C++11 requires at least one argument for the "..." in a variadic macro
+[0.830s]    73 |         USER_LOG_INFO("--> Step 2: Set gimbal to free mode"[01;35m[K)[m[K;
+[0.830s]       |                                                            [01;35m[K^[m[K
+[0.830s] [01m[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/dji_precision_capture/./include/camera_controller.h:76:61:[m[K [01;35m[Kwarning: [m[KISO C++11 requires at least one argument for the "..." in a variadic macro
+[0.831s]    76 |         USER_LOG_INFO("--> Step 3: Reset gimbal angles.\r\n"[01;35m[K)[m[K;
+[0.831s]       |                                                             [01;35m[K^[m[K
+[1.373s] In file included from [01m[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/dji_precision_capture/../../../Payload-SDK/samples/sample_c++/platform/linux/manifold3/../my_code/gimbal_manager.h:12[m[K,
+[1.373s]                  from [01m[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/dji_precision_capture/src/main.cpp:13[m[K:
+[1.373s] [01m[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/dji_precision_capture/../../../Payload-SDK/samples/sample_c++/platform/linux/manifold3/../../../../../psdk_lib/include/dji_fc_subscription.h:1210:16:[m[K [01;35m[Kwarning: [m[KISO C++ prohibits anonymous structs [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-14.3.0/gcc/Warning-Options.html#index-Wno-pedantic-Wpedantic]8;;[m[K]
+[1.373s]  1210 |         struct [01;35m[K{[m[K
+[1.373s]       |                [01;35m[K^[m[K
+[1.374s] [01m[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/dji_precision_capture/../../../Payload-SDK/samples/sample_c++/platform/linux/manifold3/../../../../../psdk_lib/include/dji_fc_subscription.h:1219:16:[m[K [01;35m[Kwarning: [m[KISO C++ prohibits anonymous structs [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-14.3.0/gcc/Warning-Options.html#index-Wno-pedantic-Wpedantic]8;;[m[K]
+[1.374s]  1219 |         struct [01;35m[K{[m[K
+[1.374s]       |                [01;35m[K^[m[K
+[4.777s] [01m[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/dji_precision_capture/./include/camera_controller.h:133:54:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member '[01m[KVector3f::y[m[K' [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-14.3.0/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[4.777s]   133 |     T_DjiFcSubscriptionGimbalAngles gimbalAngles = {0[01;35m[K}[m[K;
+[4.777s]       |                                                      [01;35m[K^[m[K
+[4.778s] [01m[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/dji_precision_capture/./include/camera_controller.h:133:54:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member '[01m[KVector3f::z[m[K' [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-14.3.0/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[4.778s] [01m[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/dji_precision_capture/./include/camera_controller.h:135:44:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member '[01m[KT_DjiDataTimestamp::microsecond[m[K' [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-14.3.0/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[4.778s]   135 |     T_DjiDataTimestamp angle_timestamp = {0[01;35m[K}[m[K;
+[4.778s]       |                                            [01;35m[K^[m[K
+[6.655s] [  3%] [32m[1mLinking CXX executable bin/dji_precision_capture[0m
+[7.994s] [100%] Built target dji_precision_capture
+[8.010s] Invoked command in '/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/build/dji_precision_capture' returned '0': CONDA_PROMPT_MODIFIER=(ros2_humble) /open_app/miniconda3/envs/ros2_humble/bin/cmake --build /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/build/dji_precision_capture -- -j4 -l4
+[8.014s] Invoking command in '/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/build/dji_precision_capture': CONDA_PROMPT_MODIFIER=(ros2_humble) /open_app/miniconda3/envs/ros2_humble/bin/cmake --install /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/build/dji_precision_capture
+[8.022s] -- Install configuration: ""
+[8.024s] -- Installing: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/dji_precision_capture/lib/dji_precision_capture/dji_precision_capture
+[8.029s] -- Set runtime path of "/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/dji_precision_capture/lib/dji_precision_capture/dji_precision_capture" to ""
+[8.029s] -- Up-to-date: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/dji_precision_capture/share/ament_index/resource_index/package_run_dependencies/dji_precision_capture
+[8.029s] -- Up-to-date: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/dji_precision_capture/share/ament_index/resource_index/parent_prefix_path/dji_precision_capture
+[8.030s] -- Up-to-date: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/dji_precision_capture/share/dji_precision_capture/environment/ament_prefix_path.sh
+[8.030s] -- Up-to-date: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/dji_precision_capture/share/dji_precision_capture/environment/ament_prefix_path.dsv
+[8.030s] -- Up-to-date: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/dji_precision_capture/share/dji_precision_capture/environment/path.sh
+[8.030s] -- Up-to-date: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/dji_precision_capture/share/dji_precision_capture/environment/path.dsv
+[8.030s] -- Up-to-date: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/dji_precision_capture/share/dji_precision_capture/local_setup.bash
+[8.030s] -- Up-to-date: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/dji_precision_capture/share/dji_precision_capture/local_setup.sh
+[8.031s] -- Up-to-date: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/dji_precision_capture/share/dji_precision_capture/local_setup.zsh
+[8.031s] -- Up-to-date: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/dji_precision_capture/share/dji_precision_capture/local_setup.dsv
+[8.031s] -- Installing: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/dji_precision_capture/share/dji_precision_capture/package.dsv
+[8.031s] -- Up-to-date: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/dji_precision_capture/share/ament_index/resource_index/packages/dji_precision_capture
+[8.031s] -- Up-to-date: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/dji_precision_capture/share/dji_precision_capture/cmake/dji_precision_captureConfig.cmake
+[8.031s] -- Up-to-date: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/dji_precision_capture/share/dji_precision_capture/cmake/dji_precision_captureConfig-version.cmake
+[8.032s] -- Up-to-date: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/dji_precision_capture/share/dji_precision_capture/package.xml
+[8.035s] Invoked command in '/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/build/dji_precision_capture' returned '0': CONDA_PROMPT_MODIFIER=(ros2_humble) /open_app/miniconda3/envs/ros2_humble/bin/cmake --install /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/build/dji_precision_capture

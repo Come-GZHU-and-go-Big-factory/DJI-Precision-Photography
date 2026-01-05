@@ -28,6 +28,13 @@
 
 using namespace std::chrono_literals;
 
+enum class TaskState{
+    IDLE,           //该状态执行:云台复位、定时拍照
+    WideAngleTask,  //该状态执行:在广角端视频流状态下，实现初步对准
+    ZoomViewTask,   //该状态执行:STEP1:在1x状态下对准目标，STEP2:放大到目标占据画面的1/3，同时控制云台对准目标
+    Capture        //该状态执行:照片捕获
+};
+
 class camera_controller:public rclcpp::Node
 {
 public:
@@ -104,9 +111,13 @@ public:
 
     int camera_control_loop();
 
-    bool nearEqual(const T_DjiFcSubscriptionGimbalAngles& gimbalAngles , const T_DjiFcSubscriptionGimbalAngles& last_desire_GimbalAngle, double eps)
+    int camera_control();
+
+    bool nearEqual(const T_DjiFcSubscriptionGimbalAngles& gimbalAngles , const T_DjiFcSubscriptionGimbalAngles& last_desire_GimbalAngle, double eps);
 
 private:
+    //状态机变量
+    TaskState taskstate = TaskState::IDLE;
     //系统级别变量
     //创建系统句柄
     T_DjiOsalHandler *osalHandler;
@@ -148,8 +159,6 @@ private:
     //识别结果
     int x;
     int y;
-
-
     //指点计算
     float foc_phy = 7.1;
     //当前放大倍数
@@ -198,6 +207,25 @@ bool camera_controller::nearEqual(const T_DjiFcSubscriptionGimbalAngles& gimbalA
     double dy = gimbalAngles.y - last_desire_GimbalAngle.y;
     double dz = gimbalAngles.z - last_desire_GimbalAngle.z;
     return sqrt(dx*dx + dy*dy + dz*dz) < (eps*eps);
+}
+
+int camera_controller::camera_control()
+{
+    switch (this->taskstate) {
+        case TaskState::IDLE:
+            //  复位至90度、后续按照1s每次拍照
+            break;
+        case TaskState::WideAngleTask:
+            //  根据广角端下计算的角度，进行初步对准
+            break;
+        case TaskState::ZoomViewTask:
+            //  STEP1:在1x条件下，初步对准 STEP2:变焦的同时执行云台对准
+            break;
+        case TaskState::Capture:
+            //  捕获照片，同时在队列中删除这一对象
+            break;
+    }       
+    
 }
 
 int camera_controller::camera_control_loop()

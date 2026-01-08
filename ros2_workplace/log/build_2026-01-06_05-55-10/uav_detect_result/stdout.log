@@ -1,0 +1,143 @@
+[  3%] Built target uav_detect_result__cpp
+[  3%] Built target ament_cmake_python_copy_uav_detect_result
+[ 12%] Built target uav_detect_result__rosidl_generator_c
+[ 22%] Built target uav_detect_result__rosidl_typesupport_cpp
+[ 32%] Built target uav_detect_result__rosidl_typesupport_fastrtps_cpp
+[ 41%] Built target uav_detect_result__rosidl_typesupport_fastrtps_c
+running egg_info
+writing uav_detect_result.egg-info/PKG-INFO
+writing dependency_links to uav_detect_result.egg-info/dependency_links.txt
+writing top-level names to uav_detect_result.egg-info/top_level.txt
+reading manifest file 'uav_detect_result.egg-info/SOURCES.txt'
+writing manifest file 'uav_detect_result.egg-info/SOURCES.txt'
+[ 41%] Built target ament_cmake_python_build_uav_detect_result_egg
+[ 51%] Built target uav_detect_result__rosidl_typesupport_c
+[ 61%] Built target uav_detect_result__rosidl_typesupport_introspection_c
+[ 70%] Built target uav_detect_result__rosidl_typesupport_introspection_cpp
+[ 70%] Built target uav_detect_result
+[ 74%] Built target uav_detect_result__py
+[ 80%] Built target uav_detect_result__rosidl_generator_py
+[ 87%] Built target uav_detect_result__rosidl_typesupport_fastrtps_c__pyext
+[ 93%] Built target uav_detect_result__rosidl_typesupport_c__pyext
+[100%] Built target uav_detect_result__rosidl_typesupport_introspection_c__pyext
+-- Install configuration: ""
+-- Up-to-date: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/uav_detect_result/share/ament_index/resource_index/rosidl_interfaces/uav_detect_result
+-- Up-to-date: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/uav_detect_result/include/uav_detect_result/uav_detect_result
+-- Up-to-date: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/uav_detect_result/include/uav_detect_result/uav_detect_result/msg
+-- Up-to-date: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/uav_detect_result/include/uav_detect_result/uav_detect_result/msg/rosidl_generator_c__visibility_control.h
+-- Up-to-date: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/uav_detect_result/include/uav_detect_result/uav_detect_result/msg/detail
+-- Up-to-date: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/uav_detect_result/include/uav_detect_result/uav_detect_result/msg/detail/uav_detect_result__type_support.h
+-- Up-to-date: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/uav_detect_result/include/uav_detect_result/uav_detect_result/msg/detail/uav_detect_result__functions.h
+-- Up-to-date: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/uav_detect_result/include/uav_detect_result/uav_detect_result/msg/detail/uav_detect_result__struct.h
+-- Up-to-date: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/uav_detect_result/include/uav_detect_result/uav_detect_result/msg/detail/uav_detect_result__functions.c
+-- Up-to-date: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/uav_detect_result/include/uav_detect_result/uav_detect_result/msg/uav_detect_result.h
+-- Installing: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/uav_detect_result/lib/libuav_detect_result__rosidl_generator_c.so
+-- Up-to-date: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/uav_detect_result/include/uav_detect_result/uav_detect_result
+-- Up-to-date: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/uav_detect_result/include/uav_detect_result/uav_detect_result/msg
+-- Up-to-date: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/uav_detect_result/include/uav_detect_result/uav_detect_result/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+-- Up-to-date: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/uav_detect_result/include/uav_detect_result/uav_detect_result/msg/detail
+-- Up-to-date: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/uav_detect_result/include/uav_detect_result/uav_detect_result/msg/detail/uav_detect_result__rosidl_typesupport_fastrtps_c.h
+-- Installing: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/uav_detect_result/lib/libuav_detect_result__rosidl_typesupport_fastrtps_c.so
+-- Set runtime path of "/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/uav_detect_result/lib/libuav_detect_result__rosidl_typesupport_fastrtps_c.so" to ""
+-- Up-to-date: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/uav_detect_result/include/uav_detect_result/uav_detect_result
+-- Up-to-date: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/uav_detect_result/include/uav_detect_result/uav_detect_result/msg
+-- Up-to-date: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/uav_detect_result/include/uav_detect_result/uav_detect_result/msg/detail
+-- Up-to-date: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/uav_detect_result/include/uav_detect_result/uav_detect_result/msg/detail/uav_detect_result__type_support.c
+-- Up-to-date: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/uav_detect_result/include/uav_detect_result/uav_detect_result/msg/detail/uav_detect_result__rosidl_typesupport_introspection_c.h
+-- Up-to-date: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/uav_detect_result/include/uav_detect_result/uav_detect_result/msg/rosidl_typesupport_introspection_c__visibility_control.h
+-- Installing: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/uav_detect_result/lib/libuav_detect_result__rosidl_typesupport_introspection_c.so
+-- Set runtime path of "/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/uav_detect_result/lib/libuav_detect_result__rosidl_typesupport_introspection_c.so" to ""
+-- Installing: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/uav_detect_result/lib/libuav_detect_result__rosidl_typesupport_c.so
+-- Set runtime path of "/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/uav_detect_result/lib/libuav_detect_result__rosidl_typesupport_c.so" to ""
+-- Up-to-date: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/uav_detect_result/include/uav_detect_result/uav_detect_result
+-- Up-to-date: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/uav_detect_result/include/uav_detect_result/uav_detect_result/msg
+-- Up-to-date: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/uav_detect_result/include/uav_detect_result/uav_detect_result/msg/detail
+-- Up-to-date: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/uav_detect_result/include/uav_detect_result/uav_detect_result/msg/detail/uav_detect_result__struct.hpp
+-- Up-to-date: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/uav_detect_result/include/uav_detect_result/uav_detect_result/msg/detail/uav_detect_result__traits.hpp
+-- Up-to-date: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/uav_detect_result/include/uav_detect_result/uav_detect_result/msg/detail/uav_detect_result__builder.hpp
+-- Up-to-date: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/uav_detect_result/include/uav_detect_result/uav_detect_result/msg/uav_detect_result.hpp
+-- Up-to-date: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/uav_detect_result/include/uav_detect_result/uav_detect_result
+-- Up-to-date: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/uav_detect_result/include/uav_detect_result/uav_detect_result/msg
+-- Up-to-date: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/uav_detect_result/include/uav_detect_result/uav_detect_result/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+-- Up-to-date: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/uav_detect_result/include/uav_detect_result/uav_detect_result/msg/detail
+-- Up-to-date: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/uav_detect_result/include/uav_detect_result/uav_detect_result/msg/detail/uav_detect_result__rosidl_typesupport_fastrtps_cpp.hpp
+-- Up-to-date: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/uav_detect_result/include/uav_detect_result/uav_detect_result/msg/detail/dds_fastrtps
+-- Installing: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/uav_detect_result/lib/libuav_detect_result__rosidl_typesupport_fastrtps_cpp.so
+-- Up-to-date: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/uav_detect_result/include/uav_detect_result/uav_detect_result
+-- Up-to-date: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/uav_detect_result/include/uav_detect_result/uav_detect_result/msg
+-- Up-to-date: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/uav_detect_result/include/uav_detect_result/uav_detect_result/msg/detail
+-- Up-to-date: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/uav_detect_result/include/uav_detect_result/uav_detect_result/msg/detail/uav_detect_result__rosidl_typesupport_introspection_cpp.hpp
+-- Up-to-date: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/uav_detect_result/include/uav_detect_result/uav_detect_result/msg/detail/uav_detect_result__type_support.cpp
+-- Installing: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/uav_detect_result/lib/libuav_detect_result__rosidl_typesupport_introspection_cpp.so
+-- Installing: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/uav_detect_result/lib/libuav_detect_result__rosidl_typesupport_cpp.so
+-- Up-to-date: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/uav_detect_result/share/uav_detect_result/environment/pythonpath.sh
+-- Up-to-date: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/uav_detect_result/share/uav_detect_result/environment/pythonpath.dsv
+-- Up-to-date: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/uav_detect_result/lib/python3.10/site-packages/uav_detect_result-0.0.0-py3.10.egg-info
+-- Installing: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/uav_detect_result/lib/python3.10/site-packages/uav_detect_result-0.0.0-py3.10.egg-info/top_level.txt
+-- Installing: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/uav_detect_result/lib/python3.10/site-packages/uav_detect_result-0.0.0-py3.10.egg-info/SOURCES.txt
+-- Installing: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/uav_detect_result/lib/python3.10/site-packages/uav_detect_result-0.0.0-py3.10.egg-info/dependency_links.txt
+-- Installing: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/uav_detect_result/lib/python3.10/site-packages/uav_detect_result-0.0.0-py3.10.egg-info/PKG-INFO
+-- Up-to-date: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/uav_detect_result/lib/python3.10/site-packages/uav_detect_result
+-- Up-to-date: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/uav_detect_result/lib/python3.10/site-packages/uav_detect_result/__init__.py
+-- Up-to-date: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/uav_detect_result/lib/python3.10/site-packages/uav_detect_result/_uav_detect_result_s.ep.rosidl_typesupport_introspection_c.c
+-- Up-to-date: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/uav_detect_result/lib/python3.10/site-packages/uav_detect_result/msg
+-- Up-to-date: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/uav_detect_result/lib/python3.10/site-packages/uav_detect_result/msg/_uav_detect_result.py
+-- Up-to-date: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/uav_detect_result/lib/python3.10/site-packages/uav_detect_result/msg/__init__.py
+-- Up-to-date: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/uav_detect_result/lib/python3.10/site-packages/uav_detect_result/msg/_uav_detect_result_s.c
+-- Up-to-date: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/uav_detect_result/lib/python3.10/site-packages/uav_detect_result/uav_detect_result_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so
+-- Up-to-date: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/uav_detect_result/lib/python3.10/site-packages/uav_detect_result/uav_detect_result_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so
+-- Up-to-date: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/uav_detect_result/lib/python3.10/site-packages/uav_detect_result/libuav_detect_result__rosidl_generator_py.so
+-- Up-to-date: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/uav_detect_result/lib/python3.10/site-packages/uav_detect_result/_uav_detect_result_s.ep.rosidl_typesupport_fastrtps_c.c
+-- Up-to-date: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/uav_detect_result/lib/python3.10/site-packages/uav_detect_result/_uav_detect_result_s.ep.rosidl_typesupport_c.c
+-- Up-to-date: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/uav_detect_result/lib/python3.10/site-packages/uav_detect_result/uav_detect_result_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so
+Listing 'lib/python3.10/site-packages/uav_detect_result'...
+Can't list 'lib/python3.10/site-packages/uav_detect_result'
+-- Installing: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/uav_detect_result/lib/python3.10/site-packages/uav_detect_result/uav_detect_result_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so
+-- Set runtime path of "/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/uav_detect_result/lib/python3.10/site-packages/uav_detect_result/uav_detect_result_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so" to ""
+-- Installing: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/uav_detect_result/lib/python3.10/site-packages/uav_detect_result/uav_detect_result_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so
+-- Set runtime path of "/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/uav_detect_result/lib/python3.10/site-packages/uav_detect_result/uav_detect_result_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so" to ""
+-- Installing: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/uav_detect_result/lib/python3.10/site-packages/uav_detect_result/uav_detect_result_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so
+-- Set runtime path of "/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/uav_detect_result/lib/python3.10/site-packages/uav_detect_result/uav_detect_result_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so" to ""
+-- Installing: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/uav_detect_result/lib/libuav_detect_result__rosidl_generator_py.so
+-- Set runtime path of "/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/uav_detect_result/lib/libuav_detect_result__rosidl_generator_py.so" to ""
+-- Up-to-date: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/uav_detect_result/share/uav_detect_result/msg/UavDetectResult.idl
+-- Up-to-date: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/uav_detect_result/share/uav_detect_result/msg/UavDetectResult.msg
+-- Up-to-date: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/uav_detect_result/share/ament_index/resource_index/package_run_dependencies/uav_detect_result
+-- Up-to-date: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/uav_detect_result/share/ament_index/resource_index/parent_prefix_path/uav_detect_result
+-- Up-to-date: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/uav_detect_result/share/uav_detect_result/environment/ament_prefix_path.sh
+-- Up-to-date: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/uav_detect_result/share/uav_detect_result/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/uav_detect_result/share/uav_detect_result/environment/path.sh
+-- Up-to-date: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/uav_detect_result/share/uav_detect_result/environment/path.dsv
+-- Up-to-date: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/uav_detect_result/share/uav_detect_result/local_setup.bash
+-- Up-to-date: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/uav_detect_result/share/uav_detect_result/local_setup.sh
+-- Up-to-date: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/uav_detect_result/share/uav_detect_result/local_setup.zsh
+-- Up-to-date: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/uav_detect_result/share/uav_detect_result/local_setup.dsv
+-- Installing: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/uav_detect_result/share/uav_detect_result/package.dsv
+-- Up-to-date: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/uav_detect_result/share/ament_index/resource_index/packages/uav_detect_result
+-- Up-to-date: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/uav_detect_result/share/uav_detect_result/cmake/export_uav_detect_result__rosidl_generator_cExport.cmake
+-- Up-to-date: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/uav_detect_result/share/uav_detect_result/cmake/export_uav_detect_result__rosidl_generator_cExport-noconfig.cmake
+-- Up-to-date: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/uav_detect_result/share/uav_detect_result/cmake/export_uav_detect_result__rosidl_typesupport_fastrtps_cExport.cmake
+-- Up-to-date: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/uav_detect_result/share/uav_detect_result/cmake/export_uav_detect_result__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+-- Up-to-date: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/uav_detect_result/share/uav_detect_result/cmake/uav_detect_result__rosidl_typesupport_introspection_cExport.cmake
+-- Up-to-date: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/uav_detect_result/share/uav_detect_result/cmake/uav_detect_result__rosidl_typesupport_introspection_cExport-noconfig.cmake
+-- Up-to-date: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/uav_detect_result/share/uav_detect_result/cmake/uav_detect_result__rosidl_typesupport_cExport.cmake
+-- Up-to-date: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/uav_detect_result/share/uav_detect_result/cmake/uav_detect_result__rosidl_typesupport_cExport-noconfig.cmake
+-- Up-to-date: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/uav_detect_result/share/uav_detect_result/cmake/export_uav_detect_result__rosidl_generator_cppExport.cmake
+-- Up-to-date: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/uav_detect_result/share/uav_detect_result/cmake/export_uav_detect_result__rosidl_typesupport_fastrtps_cppExport.cmake
+-- Up-to-date: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/uav_detect_result/share/uav_detect_result/cmake/export_uav_detect_result__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+-- Up-to-date: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/uav_detect_result/share/uav_detect_result/cmake/uav_detect_result__rosidl_typesupport_introspection_cppExport.cmake
+-- Up-to-date: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/uav_detect_result/share/uav_detect_result/cmake/uav_detect_result__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+-- Up-to-date: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/uav_detect_result/share/uav_detect_result/cmake/uav_detect_result__rosidl_typesupport_cppExport.cmake
+-- Up-to-date: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/uav_detect_result/share/uav_detect_result/cmake/uav_detect_result__rosidl_typesupport_cppExport-noconfig.cmake
+-- Up-to-date: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/uav_detect_result/share/uav_detect_result/cmake/export_uav_detect_result__rosidl_generator_pyExport.cmake
+-- Up-to-date: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/uav_detect_result/share/uav_detect_result/cmake/export_uav_detect_result__rosidl_generator_pyExport-noconfig.cmake
+-- Up-to-date: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/uav_detect_result/share/uav_detect_result/cmake/rosidl_cmake-extras.cmake
+-- Up-to-date: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/uav_detect_result/share/uav_detect_result/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Up-to-date: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/uav_detect_result/share/uav_detect_result/cmake/ament_cmake_export_libraries-extras.cmake
+-- Up-to-date: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/uav_detect_result/share/uav_detect_result/cmake/ament_cmake_export_targets-extras.cmake
+-- Up-to-date: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/uav_detect_result/share/uav_detect_result/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+-- Up-to-date: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/uav_detect_result/share/uav_detect_result/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Up-to-date: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/uav_detect_result/share/uav_detect_result/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+-- Up-to-date: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/uav_detect_result/share/uav_detect_result/cmake/uav_detect_resultConfig.cmake
+-- Up-to-date: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/uav_detect_result/share/uav_detect_result/cmake/uav_detect_resultConfig-version.cmake
+-- Up-to-date: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/uav_detect_result/share/uav_detect_result/package.xml

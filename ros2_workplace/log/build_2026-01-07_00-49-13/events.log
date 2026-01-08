@@ -1,0 +1,414 @@
+[0.000000] (-) TimerEvent: {}
+[0.000457] (-) JobUnselected: {'identifier': 'dji_precision_capture'}
+[0.000944] (-) JobUnselected: {'identifier': 'uav_detect_result'}
+[0.001211] (yolo_detect) JobQueued: {'identifier': 'yolo_detect', 'dependencies': OrderedDict()}
+[0.001527] (yolo_detect) JobStarted: {'identifier': 'yolo_detect'}
+[0.018661] (yolo_detect) JobProgress: {'identifier': 'yolo_detect', 'progress': 'cmake'}
+[0.019911] (yolo_detect) JobProgress: {'identifier': 'yolo_detect', 'progress': 'build'}
+[0.021131] (yolo_detect) Command: {'cmd': ['/open_app/miniconda3/envs/ros2_humble/bin/cmake', '--build', '/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/build/yolo_detect', '--', '-j4', '-l4'], 'cwd': '/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/build/yolo_detect', 'env': OrderedDict([('PYTHON_BASIC_REPL', '1'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('CONDA_PROMPT_MODIFIER', '(ros2_humble)'), ('USER', 'dji'), ('SSH_CLIENT', '192.168.42.1 4023 22'), ('CXXFLAGS', '-fvisibility-inlines-hidden -fmessage-length=0 -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O3 -pipe -isystem /open_app/miniconda3/envs/ros2_humble/include'), ('GCC_RANLIB', '/open_app/miniconda3/envs/ros2_humble/bin/aarch64-conda-linux-gnu-gcc-ranlib'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/dji/.vscode-server/cli/servers/Stable-994fd12f8d3a5aa16f17d42c041e5809167e845a/server/extensions/git/dist/askpass.sh'), ('OBJCOPY', '/open_app/miniconda3/envs/ros2_humble/bin/aarch64-conda-linux-gnu-objcopy'), ('DEBUG_CXXFLAGS', '-fvisibility-inlines-hidden -fmessage-length=0 -ftree-vectorize -fPIC -fstack-protector-all -fno-plt -Og -g -Wall -Wextra -fvar-tracking-assignments -pipe -isystem /open_app/miniconda3/envs/ros2_humble/include'), ('ROS_ETC_DIR', '/open_app/miniconda3/envs/ros2_humble/etc/ros'), ('SIZE', '/open_app/miniconda3/envs/ros2_humble/bin/aarch64-conda-linux-gnu-size'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/open_app/miniconda3/envs/ros2_humble/opt/rviz_ogre_vendor/lib:/open_app/install/usr/lib:/open_app/install/usr/lib/aarch64-linux-gnu:/usr/local/cuda-11.4/lib64:/open_app/install/usr/lib:/open_app/install/usr/lib/aarch64-linux-gnu:/open_app/install/usr/lib:/open_app/install/usr/lib/aarch64-linux-gnu:/usr/local/cuda-11.4/lib64:'), ('BROWSER', '/home/dji/.vscode-server/cli/servers/Stable-994fd12f8d3a5aa16f17d42c041e5809167e845a/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/dji'), ('CC_FOR_BUILD', '/open_app/miniconda3/envs/ros2_humble/bin/aarch64-conda-linux-gnu-cc'), ('CONDA_SHLVL', '2'), ('OLDPWD', '/home/dji/DJI_workshop/LZP_PSDK'), ('TERM_PROGRAM_VERSION', '1.107.1'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-530e0388-5ecf-4ebf-bb74-5e4060056a30.sock'), ('CONDA_TOOLCHAIN_BUILD', 'aarch64-conda-linux-gnu'), ('JETSON_L4T', '35.5.0'), ('F90', '/open_app/miniconda3/envs/ros2_humble/bin/aarch64-conda-linux-gnu-gfortran'), ('ROS_PYTHON_VERSION', '3'), ('LDFLAGS', '-Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,--allow-shlib-undefined -Wl,-rpath,/open_app/miniconda3/envs/ros2_humble/lib -Wl,-rpath-link,/open_app/miniconda3/envs/ros2_humble/lib -L/open_app/miniconda3/envs/ros2_humble/lib'), ('JETSON_MODEL', 'NVIDIA Orin NX Developer Kit'), ('CONDA_BACKUP_CMAKE_PREFIX_PATH', '/open_app/install:/open_app/install/usr:/open_app/install:/open_app/install/usr:/open_app/install:/open_app/install/usr:'), ('FC', '/open_app/miniconda3/envs/ros2_humble/bin/aarch64-conda-linux-gnu-gfortran'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/dji/.vscode-server/cli/servers/Stable-994fd12f8d3a5aa16f17d42c041e5809167e845a/server/extensions/git/dist/askpass-main.js'), ('STRINGS', '/open_app/miniconda3/envs/ros2_humble/bin/aarch64-conda-linux-gnu-strings'), ('VSCODE_GIT_ASKPASS_NODE', '/home/dji/.vscode-server/cli/servers/Stable-994fd12f8d3a5aa16f17d42c041e5809167e845a/server/node'), ('SSL_CERT_FILE', '/usr/lib/ssl/certs/ca-certificates.crt'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('BUNDLED_DEBUGPY_PATH', '/home/dji/.vscode-server/extensions/ms-python.debugpy-2025.18.0/bundled/libs/debugpy'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('CPP', '/open_app/miniconda3/envs/ros2_humble/bin/aarch64-conda-linux-gnu-cpp'), ('_CONDA_ROOT', '/open_app/miniconda3'), ('F77', '/open_app/miniconda3/envs/ros2_humble/bin/aarch64-conda-linux-gnu-gfortran'), ('F95', '/open_app/miniconda3/envs/ros2_humble/bin/aarch64-conda-linux-gnu-f95'), ('ELFEDIT', '/open_app/miniconda3/envs/ros2_humble/bin/aarch64-conda-linux-gnu-elfedit'), ('https_proxy', 'http://127.0.0.1:7890'), ('STRIP', '/open_app/miniconda3/envs/ros2_humble/bin/aarch64-conda-linux-gnu-strip'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'dji'), ('GCC', '/open_app/miniconda3/envs/ros2_humble/bin/aarch64-conda-linux-gnu-gcc'), ('JETSON_MODULE', ''), ('JETSON_SERIAL_NUMBER', '1422525003257'), ('http_proxy', 'http://127.0.0.1:7890'), ('_', '/open_app/miniconda3/envs/ros2_humble/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/open_app/install/usr/lib/aarch64-linux-gnu/pkgconfig:/open_app/install/usr/lib/aarch64-linux-gnu/pkgconfig:/open_app/install/usr/lib/aarch64-linux-gnu/pkgconfig:'), ('JETSON_CODENAME', 'P3768'), ('READELF', '/open_app/miniconda3/envs/ros2_humble/bin/aarch64-conda-linux-gnu-readelf'), ('XDG_SESSION_CLASS', 'user'), ('AR', '/open_app/miniconda3/envs/ros2_humble/bin/aarch64-conda-linux-gnu-ar'), ('GXX', '/open_app/miniconda3/envs/ros2_humble/bin/aarch64-conda-linux-gnu-g++'), ('FC_FOR_BUILD', '/open_app/miniconda3/envs/ros2_humble/bin/aarch64-conda-linux-gnu-gfortran'), ('TERM', 'xterm-256color'), ('AS', '/open_app/miniconda3/envs/ros2_humble/bin/aarch64-conda-linux-gnu-as'), ('XDG_SESSION_ID', '48'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('CXXFILT', '/open_app/miniconda3/envs/ros2_humble/bin/aarch64-conda-linux-gnu-c++filt'), ('ROS_OS_OVERRIDE', 'conda:linux'), ('BUILD', 'aarch64-conda-linux-gnu'), ('PATH', '/usr/local/cuda-11.4/bin:/home/dji/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/home/dji/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:/home/dji/.vscode-server/cli/servers/Stable-994fd12f8d3a5aa16f17d42c041e5809167e845a/server/bin/remote-cli:/home/dji/.local/bin:/open_app/miniconda3/envs/ros2_humble/bin:/open_app/miniconda3/condabin:/usr/local/cuda-11.4/bin:/system/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/system/bin:/usr/src/tensorrt/bin:/usr/src/tensorrt/bin/trtexec:/home/dji/.vscode-server/extensions/ms-python.debugpy-2025.18.0/bundled/scripts/noConfigScripts'), ('PROJ_NETWORK', 'ON'), ('build_alias', 'aarch64-conda-linux-gnu'), ('PROJ_DATA', '/open_app/miniconda3/envs/ros2_humble/share/proj'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('CFLAGS', '-ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O3 -pipe -isystem /open_app/miniconda3/envs/ros2_humble/include'), ('MAMBA_ROOT_PREFIX', '/open_app/miniconda3'), ('SSL_CERT_DIR', '/usr/lib/ssl/certs'), ('GCC_AR', '/open_app/miniconda3/envs/ros2_humble/bin/aarch64-conda-linux-gnu-gcc-ar'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/home/dji/.vscode-server/extensions/ms-python.debugpy-2025.18.0/.noConfigDebugAdapterEndpoints/endpoint-bfd3610c699b12ed.txt'), ('LANG', 'en_US.UTF-8'), ('DEBUG_CFLAGS', '-ftree-vectorize -fPIC -fstack-protector-all -fno-plt -Og -g -Wall -Wextra -fvar-tracking-assignments -pipe -isystem /open_app/miniconda3/envs/ros2_humble/include'), ('PYTHONSTARTUP', '/home/dji/.vscode-server/data/User/workspaceStorage/da77dad4a7af79234d1c491d005093cc/ms-python.python/pythonrc.py'), ('CONDA_PREFIX_1', '/open_app/miniconda3'), ('MESON_ARGS', '-Dbuildtype=release'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('JETSON_SOC', 'tegra23x'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-cc1b4e4175.sock'), ('TERM_PROGRAM', 'vscode'), ('XML_CATALOG_FILES', 'file:///open_app/miniconda3/envs/ros2_humble/etc/xml/catalog file:///etc/xml/catalog'), ('GSETTINGS_SCHEMA_DIR', '/open_app/miniconda3/envs/ros2_humble/share/glib-2.0/schemas'), ('AMENT_PREFIX_PATH', '/open_app/miniconda3/envs/ros2_humble'), ('CPPFLAGS', '-DNDEBUG -D_FORTIFY_SOURCE=2 -O2 -isystem /open_app/miniconda3/envs/ros2_humble/include'), ('CONDA_PYTHON_EXE', '/open_app/miniconda3/bin/python'), ('SHELL', '/bin/bash'), ('DEBUG_FFLAGS', '-ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O3 -pipe -isystem /open_app/miniconda3/envs/ros2_humble/include -I/open_app/miniconda3/envs/ros2_humble/include -ftree-vectorize -fPIC -fstack-protector-strong -pipe -Og -g -Wall -Wextra -fcheck=all -fbacktrace -fvar-tracking-assignments -pipe'), ('CMAKE_ARGS', '-DCMAKE_AR=/open_app/miniconda3/envs/ros2_humble/bin/aarch64-conda-linux-gnu-ar -DCMAKE_CXX_COMPILER_AR=/open_app/miniconda3/envs/ros2_humble/bin/aarch64-conda-linux-gnu-gcc-ar -DCMAKE_C_COMPILER_AR=/open_app/miniconda3/envs/ros2_humble/bin/aarch64-conda-linux-gnu-gcc-ar -DCMAKE_RANLIB=/open_app/miniconda3/envs/ros2_humble/bin/aarch64-conda-linux-gnu-ranlib -DCMAKE_CXX_COMPILER_RANLIB=/open_app/miniconda3/envs/ros2_humble/bin/aarch64-conda-linux-gnu-gcc-ranlib -DCMAKE_C_COMPILER_RANLIB=/open_app/miniconda3/envs/ros2_humble/bin/aarch64-conda-linux-gnu-gcc-ranlib -DCMAKE_LINKER=/open_app/miniconda3/envs/ros2_humble/bin/aarch64-conda-linux-gnu-ld -DCMAKE_STRIP=/open_app/miniconda3/envs/ros2_humble/bin/aarch64-conda-linux-gnu-strip -DCMAKE_BUILD_TYPE=Release'), ('HOST', 'aarch64-conda-linux-gnu'), ('CXX', '/open_app/miniconda3/envs/ros2_humble/bin/aarch64-conda-linux-gnu-c++'), ('DEBUG_CPPFLAGS', '-D_DEBUG -D_FORTIFY_SOURCE=2 -Og -isystem /open_app/miniconda3/envs/ros2_humble/include'), ('OPEN_APP_PREFIX', '/open_app/install'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('DEBUG_FORTRANFLAGS', '-ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O3 -pipe -isystem /open_app/miniconda3/envs/ros2_humble/include -I/open_app/miniconda3/envs/ros2_humble/include -ftree-vectorize -fPIC -fstack-protector-strong -pipe -Og -g -Wall -Wextra -fcheck=all -fbacktrace -fvar-tracking-assignments -pipe'), ('CONDA_DEFAULT_ENV', 'ros2_humble'), ('_CONDA_EXE', '/open_app/miniconda3/bin/conda'), ('ADDR2LINE', '/open_app/miniconda3/envs/ros2_humble/bin/aarch64-conda-linux-gnu-addr2line'), ('MAMBA_EXE', '/open_app/miniconda3/bin/mamba'), ('GCC_NM', '/open_app/miniconda3/envs/ros2_humble/bin/aarch64-conda-linux-gnu-gcc-nm'), ('GFORTRAN', '/open_app/miniconda3/envs/ros2_humble/bin/aarch64-conda-linux-gnu-gfortran'), ('CONDA_BUILD_SYSROOT', '/open_app/miniconda3/envs/ros2_humble/aarch64-conda-linux-gnu/sysroot'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('JETSON_CUDA_ARCH_BIN', '8.7'), ('PWD', '/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/build/yolo_detect'), ('CONDA_EXE', '/open_app/miniconda3/bin/conda'), ('FFLAGS', '-ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O3 -pipe -isystem /open_app/miniconda3/envs/ros2_humble/include -I/open_app/miniconda3/envs/ros2_humble/include'), ('LD', '/open_app/miniconda3/envs/ros2_humble/bin/aarch64-conda-linux-gnu-ld'), ('SSH_CONNECTION', '192.168.42.1 4023 192.168.140.2 22'), ('XDG_DATA_DIRS', '/open_app/install/usr/share:/open_app/install/usr/share:/open_app/install/usr/share:/usr/local/share:/usr/share'), ('PYTHONPATH', '/open_app/miniconda3/envs/ros2_humble/lib/python310/site-packages:/open_app/miniconda3/envs/ros2_humble/lib/python3.10/site-packages'), ('GPROF', '/open_app/miniconda3/envs/ros2_humble/bin/aarch64-conda-linux-gnu-gprof'), ('CONDA_PREFIX', '/open_app/miniconda3/envs/ros2_humble'), ('GSETTINGS_SCHEMA_DIR_CONDA_BACKUP', ''), ('CONDA_TOOLCHAIN_HOST', 'aarch64-conda-linux-gnu'), ('host_alias', 'aarch64-conda-linux-gnu'), ('FORTRANFLAGS', '-ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O3 -pipe -isystem /open_app/miniconda3/envs/ros2_humble/include -I/open_app/miniconda3/envs/ros2_humble/include'), ('CC', '/open_app/miniconda3/envs/ros2_humble/bin/aarch64-conda-linux-gnu-cc'), ('RANLIB', '/open_app/miniconda3/envs/ros2_humble/bin/aarch64-conda-linux-gnu-ranlib'), ('COLCON', '1'), ('CXX_FOR_BUILD', '/open_app/miniconda3/envs/ros2_humble/bin/aarch64-conda-linux-gnu-c++'), ('JETSON_JETPACK', '5.1.3'), ('CMAKE_PREFIX_PATH', '/open_app/miniconda3/envs/ros2_humble:/open_app/miniconda3/envs/ros2_humble/aarch64-conda-linux-gnu/sysroot/usr'), ('NM', '/open_app/miniconda3/envs/ros2_humble/bin/aarch64-conda-linux-gnu-nm'), ('OBJDUMP', '/open_app/miniconda3/envs/ros2_humble/bin/aarch64-conda-linux-gnu-objdump')]), 'shell': False}
+[0.084641] (yolo_detect) StderrLine: {'line': b'\x1b[0m\n'}
+[0.085391] (yolo_detect) StderrLine: {'line': b'yolo_detect...\x1b[0m\n'}
+[0.085671] (yolo_detect) StdoutLine: {'line': b'-- Found OpenCV installed in the system, will use it to display image in AdvancedSensing APIs\n'}
+[0.085964] (yolo_detect) StdoutLine: {'line': b'--  - Includes: /open_app/miniconda3/envs/ros2_humble/include/opencv4\n'}
+[0.086122] (yolo_detect) StdoutLine: {'line': b'--  - Libraries: opencv_calib3d;opencv_core;opencv_dnn;opencv_features2d;opencv_flann;opencv_gapi;opencv_highgui;opencv_imgcodecs;opencv_imgproc;opencv_ml;opencv_objdetect;opencv_photo;opencv_stitching;opencv_video;opencv_videoio;opencv_alphamat;opencv_aruco;opencv_barcode;opencv_bgsegm;opencv_bioinspired;opencv_ccalib;opencv_cvv;opencv_datasets;opencv_dnn_objdetect;opencv_dnn_superres;opencv_dpm;opencv_face;opencv_freetype;opencv_fuzzy;opencv_hdf;opencv_hfs;opencv_img_hash;opencv_intensity_transform;opencv_line_descriptor;opencv_mcc;opencv_optflow;opencv_phase_unwrapping;opencv_plot;opencv_quality;opencv_rapid;opencv_reg;opencv_rgbd;opencv_saliency;opencv_shape;opencv_stereo;opencv_structured_light;opencv_superres;opencv_surface_matching;opencv_text;opencv_tracking;opencv_videostab;opencv_wechat_qrcode;opencv_xfeatures2d;opencv_ximgproc;opencv_xobjdetect;opencv_xphoto\n'}
+[0.099478] (-) TimerEvent: {}
+[0.112648] (yolo_detect) StdoutLine: {'line': b'-- Cannot Find FFMPEG\n'}
+[0.113199] (yolo_detect) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.3 (/open_app/miniconda3/envs/ros2_humble/share/ament_cmake/cmake)\n'}
+[0.199620] (-) TimerEvent: {}
+[0.300052] (-) TimerEvent: {}
+[0.320622] (yolo_detect) StdoutLine: {'line': b'-- Found rclcpp: 16.0.3 (/open_app/miniconda3/envs/ros2_humble/share/rclcpp/cmake)\n'}
+[0.381162] (yolo_detect) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.4 (/open_app/miniconda3/envs/ros2_humble/share/rosidl_generator_c/cmake)\n'}
+[0.385730] (yolo_detect) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.4 (/open_app/miniconda3/envs/ros2_humble/share/rosidl_adapter/cmake)\n'}
+[0.398021] (yolo_detect) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.4 (/open_app/miniconda3/envs/ros2_humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.400084] (-) TimerEvent: {}
+[0.419472] (yolo_detect) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.449932] (yolo_detect) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.500291] (-) TimerEvent: {}
+[0.594180] (yolo_detect) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.1 (/open_app/miniconda3/envs/ros2_humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.597447] (yolo_detect) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.2 (/open_app/miniconda3/envs/ros2_humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.600350] (-) TimerEvent: {}
+[0.700664] (-) TimerEvent: {}
+[0.801088] (-) TimerEvent: {}
+[0.820374] (yolo_detect) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.901278] (-) TimerEvent: {}
+[1.001709] (-) TimerEvent: {}
+[1.017616] (yolo_detect) StdoutLine: {'line': b'-- Found std_msgs: 4.2.3 (/open_app/miniconda3/envs/ros2_humble/share/std_msgs/cmake)\n'}
+[1.073743] (yolo_detect) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.5 (/open_app/miniconda3/envs/ros2_humble/share/ament_lint_auto/cmake)\n'}
+[1.101854] (-) TimerEvent: {}
+[1.202214] (-) TimerEvent: {}
+[1.255349] (yolo_detect) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[1.257521] (yolo_detect) StdoutLine: {'line': b'-- Configured cppcheck include dirs: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/../../../Payload-SDK/samples/sample_c++/platform/linux/manifold3/../my_code;/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/../../../Payload-SDK/samples/sample_c++/platform/linux/manifold3/../../../module_sample;/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/../../../Payload-SDK/samples/sample_c++/platform/linux/manifold3/../../../../sample_c/module_sample;/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/../../../Payload-SDK/samples/sample_c++/platform/linux/manifold3/../common;/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/../../../Payload-SDK/samples/sample_c++/platform/linux/manifold3/../manifold3/application;/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/include_directories;/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/(;/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/../../../Payload-SDK/samples/sample_c++/platform/linux/manifold3/../../../../../psdk_lib/include;/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/);/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/./include\n'}
+[1.257861] (yolo_detect) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[1.259606] (yolo_detect) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[1.262385] (yolo_detect) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[1.262594] (yolo_detect) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[1.263058] (yolo_detect) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[1.265458] (yolo_detect) StdoutLine: {'line': b'-- Configuring done (1.2s)\n'}
+[1.302419] (-) TimerEvent: {}
+[1.322971] (yolo_detect) StdoutLine: {'line': b'-- Generating done (0.0s)\n'}
+[1.332718] (yolo_detect) StdoutLine: {'line': b'-- Build files have been written to: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/build/yolo_detect\n'}
+[1.402607] (-) TimerEvent: {}
+[1.472955] (yolo_detect) StdoutLine: {'line': b'[  1%] \x1b[32mBuilding CXX object CMakeFiles/yolo_detect.dir/src/main.cpp.o\x1b[0m\n'}
+[1.502799] (-) TimerEvent: {}
+[1.603317] (-) TimerEvent: {}
+[1.703742] (-) TimerEvent: {}
+[1.804245] (-) TimerEvent: {}
+[1.904693] (-) TimerEvent: {}
+[2.005134] (-) TimerEvent: {}
+[2.027264] (yolo_detect) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/src/main.cpp:18\x1b[m\x1b[K:\n'}
+[2.027935] (yolo_detect) StderrLine: {'line': b'\x1b[01m\x1b[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/./include/ai_detect.h:19:48:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++11 requires at least one argument for the "..." in a variadic macro\n'}
+[2.028168] (yolo_detect) StderrLine: {'line': b'   19 |         USER_LOG_INFO("Input cammera sourece: "\x1b[01;35m\x1b[K)\x1b[m\x1b[K;\n'}
+[2.028324] (yolo_detect) StderrLine: {'line': b'      |                                                \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[2.028470] (yolo_detect) StderrLine: {'line': b'\x1b[01m\x1b[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/./include/ai_detect.h:22:48:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++11 requires at least one argument for the "..." in a variadic macro\n'}
+[2.028612] (yolo_detect) StderrLine: {'line': b'   22 |             case 0:USER_LOG_INFO("app liveview"\x1b[01;35m\x1b[K)\x1b[m\x1b[K;break;\n'}
+[2.028751] (yolo_detect) StderrLine: {'line': b'      |                                                \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[2.028888] (yolo_detect) StderrLine: {'line': b'\x1b[01m\x1b[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/./include/ai_detect.h:23:50:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++11 requires at least one argument for the "..." in a variadic macro\n'}
+[2.029025] (yolo_detect) StderrLine: {'line': b'   23 |             case 1:USER_LOG_INFO("1080P for H30T"\x1b[01;35m\x1b[K)\x1b[m\x1b[K;break;\n'}
+[2.029159] (yolo_detect) StderrLine: {'line': b'      |                                                  \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[2.029292] (yolo_detect) StderrLine: {'line': b'\x1b[01m\x1b[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/./include/ai_detect.h:24:47:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++11 requires at least one argument for the "..." in a variadic macro\n'}
+[2.029427] (yolo_detect) StderrLine: {'line': b'   24 |             case 7:USER_LOG_INFO("4k for H30T"\x1b[01;35m\x1b[K)\x1b[m\x1b[K;break;\n'}
+[2.029560] (yolo_detect) StderrLine: {'line': b'      |                                               \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[2.029693] (yolo_detect) StderrLine: {'line': b'\x1b[01m\x1b[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/./include/ai_detect.h:30:58:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++11 requires at least one argument for the "..." in a variadic macro\n'}
+[2.029828] (yolo_detect) StderrLine: {'line': b'   30 |             USER_LOG_ERROR("get aircraft base info error"\x1b[01;35m\x1b[K)\x1b[m\x1b[K;\n'}
+[2.029961] (yolo_detect) StderrLine: {'line': b'      |                                                          \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[2.030090] (yolo_detect) StderrLine: {'line': b'\x1b[01m\x1b[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/./include/ai_detect.h:73:46:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++11 requires at least one argument for the "..." in a variadic macro\n'}
+[2.030221] (yolo_detect) StderrLine: {'line': b'   73 |         USER_LOG_INFO("step 1: init liveview"\x1b[01;35m\x1b[K)\x1b[m\x1b[K;\n'}
+[2.030352] (yolo_detect) StderrLine: {'line': b'      |                                              \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[2.030481] (yolo_detect) StderrLine: {'line': b'\x1b[01m\x1b[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/./include/ai_detect.h:94:53:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++11 requires at least one argument for the "..." in a variadic macro\n'}
+[2.030612] (yolo_detect) StderrLine: {'line': b'   94 |         USER_LOG_INFO("step 2: reg encoder callback"\x1b[01;35m\x1b[K)\x1b[m\x1b[K;\n'}
+[2.030742] (yolo_detect) StderrLine: {'line': b'      |                                                     \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[2.030874] (yolo_detect) StderrLine: {'line': b'\x1b[01m\x1b[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/./include/ai_detect.h:101:48:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++11 requires at least one argument for the "..." in a variadic macro\n'}
+[2.031024] (yolo_detect) StderrLine: {'line': b'  101 |         USER_LOG_INFO("step 3:start yuv stream"\x1b[01;35m\x1b[K)\x1b[m\x1b[K;\n'}
+[2.031157] (yolo_detect) StderrLine: {'line': b'      |                                                \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[2.031632] (yolo_detect) StderrLine: {'line': b'\x1b[01m\x1b[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/./include/ai_detect.h:253:67:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++11 requires at least one argument for the "..." in a variadic macro\n'}
+[2.031821] (yolo_detect) StderrLine: {'line': b'  253 |         USER_LOG_WARN("The image queue is full. Drop this strike."\x1b[01;35m\x1b[K)\x1b[m\x1b[K;\n'}
+[2.031968] (yolo_detect) StderrLine: {'line': b'      |                                                                   \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[2.105313] (-) TimerEvent: {}
+[2.205898] (-) TimerEvent: {}
+[2.306338] (-) TimerEvent: {}
+[2.406792] (-) TimerEvent: {}
+[2.507236] (-) TimerEvent: {}
+[2.526968] (yolo_detect) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/../../../Payload-SDK/samples/sample_c++/platform/linux/manifold3/../my_code/gimbal_manager.h:12\x1b[m\x1b[K,\n'}
+[2.527430] (yolo_detect) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/src/main.cpp:13\x1b[m\x1b[K:\n'}
+[2.527594] (yolo_detect) StderrLine: {'line': b'\x1b[01m\x1b[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/../../../Payload-SDK/samples/sample_c++/platform/linux/manifold3/../../../../../psdk_lib/include/dji_fc_subscription.h:1210:16:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ prohibits anonymous structs [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc-14.3.0/gcc/Warning-Options.html#index-Wno-pedantic\x07-Wpedantic\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.527790] (yolo_detect) StderrLine: {'line': b' 1210 |         struct \x1b[01;35m\x1b[K{\x1b[m\x1b[K\n'}
+[2.527963] (yolo_detect) StderrLine: {'line': b'      |                \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[2.528131] (yolo_detect) StderrLine: {'line': b'\x1b[01m\x1b[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/../../../Payload-SDK/samples/sample_c++/platform/linux/manifold3/../../../../../psdk_lib/include/dji_fc_subscription.h:1219:16:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ prohibits anonymous structs [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc-14.3.0/gcc/Warning-Options.html#index-Wno-pedantic\x07-Wpedantic\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.528283] (yolo_detect) StderrLine: {'line': b' 1219 |         struct \x1b[01;35m\x1b[K{\x1b[m\x1b[K\n'}
+[2.528423] (yolo_detect) StderrLine: {'line': b'      |                \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[2.607424] (-) TimerEvent: {}
+[2.707866] (-) TimerEvent: {}
+[2.808354] (-) TimerEvent: {}
+[2.908811] (-) TimerEvent: {}
+[3.009286] (-) TimerEvent: {}
+[3.109717] (-) TimerEvent: {}
+[3.210173] (-) TimerEvent: {}
+[3.310618] (-) TimerEvent: {}
+[3.411079] (-) TimerEvent: {}
+[3.511547] (-) TimerEvent: {}
+[3.612001] (-) TimerEvent: {}
+[3.712450] (-) TimerEvent: {}
+[3.812916] (-) TimerEvent: {}
+[3.913846] (-) TimerEvent: {}
+[4.014284] (-) TimerEvent: {}
+[4.114727] (-) TimerEvent: {}
+[4.215178] (-) TimerEvent: {}
+[4.315613] (-) TimerEvent: {}
+[4.416059] (-) TimerEvent: {}
+[4.516503] (-) TimerEvent: {}
+[4.616943] (-) TimerEvent: {}
+[4.717390] (-) TimerEvent: {}
+[4.817851] (-) TimerEvent: {}
+[4.918282] (-) TimerEvent: {}
+[5.018714] (-) TimerEvent: {}
+[5.119168] (-) TimerEvent: {}
+[5.219604] (-) TimerEvent: {}
+[5.320061] (-) TimerEvent: {}
+[5.420498] (-) TimerEvent: {}
+[5.520945] (-) TimerEvent: {}
+[5.621401] (-) TimerEvent: {}
+[5.695786] (yolo_detect) StderrLine: {'line': b"\x1b[01m\x1b[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/./include/ai_detect.h:112:46:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K'\x1b[01m\x1b[KE_DjiLiveViewCameraPosition\x1b[m\x1b[K' has not been declared\n"}
+[5.696387] (yolo_detect) StderrLine: {'line': b'  112 |     static void DjiLiveview_RcvImageCallback(\x1b[01;31m\x1b[KE_DjiLiveViewCameraPosition\x1b[m\x1b[K position, const uint8_t *buf, uint32_t len, T_DjiLiveviewImageInfo imageInfo);\n'}
+[5.696558] (yolo_detect) StderrLine: {'line': b'      |                                              \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[5.696707] (yolo_detect) StderrLine: {'line': b"\x1b[01m\x1b[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/./include/ai_detect.h:112:118:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K'\x1b[01m\x1b[KT_DjiLiveviewImageInfo\x1b[m\x1b[K' has not been declared\n"}
+[5.696851] (yolo_detect) StderrLine: {'line': b'  112 |     static void DjiLiveview_RcvImageCallback(E_DjiLiveViewCameraPosition position, const uint8_t *buf, uint32_t len, \x1b[01;31m\x1b[KT_DjiLiveviewImageInfo\x1b[m\x1b[K imageInfo);\n'}
+[5.696987] (yolo_detect) StderrLine: {'line': b'      |                                                                                                                      \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[5.705600] (yolo_detect) StderrLine: {'line': b"\x1b[01m\x1b[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/./include/ai_detect.h:127:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K'\x1b[01m\x1b[KE_DjiLiveViewCameraSource\x1b[m\x1b[K' does not name a type\n"}
+[5.706003] (yolo_detect) StderrLine: {'line': b'  127 |     \x1b[01;31m\x1b[KE_DjiLiveViewCameraSource\x1b[m\x1b[K MediaResource;\n'}
+[5.706169] (yolo_detect) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[5.706318] (yolo_detect) StderrLine: {'line': b"\x1b[01m\x1b[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/./include/ai_detect.h:130:23:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kredeclaration of '\x1b[01m\x1b[KT_DjiOsalHandler* ai_detect::osalHandler\x1b[m\x1b[K'\n"}
+[5.706477] (yolo_detect) StderrLine: {'line': b'  130 |     T_DjiOsalHandler *\x1b[01;31m\x1b[KosalHandler\x1b[m\x1b[K;\n'}
+[5.706619] (yolo_detect) StderrLine: {'line': b'      |                       \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[5.706754] (yolo_detect) StderrLine: {'line': b"\x1b[01m\x1b[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/./include/ai_detect.h:119:23:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kprevious declaration '\x1b[01m\x1b[KT_DjiOsalHandler* ai_detect::osalHandler\x1b[m\x1b[K'\n"}
+[5.706887] (yolo_detect) StderrLine: {'line': b'  119 |     T_DjiOsalHandler *\x1b[01;36m\x1b[KosalHandler\x1b[m\x1b[K;\n'}
+[5.707022] (yolo_detect) StderrLine: {'line': b'      |                       \x1b[01;36m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[5.707151] (yolo_detect) StderrLine: {'line': b"\x1b[01m\x1b[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/./include/ai_detect.h:132:21:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kredeclaration of '\x1b[01m\x1b[KT_DjiReturnCode ai_detect::returnCode\x1b[m\x1b[K'\n"}
+[5.707282] (yolo_detect) StderrLine: {'line': b'  132 |     T_DjiReturnCode \x1b[01;31m\x1b[KreturnCode\x1b[m\x1b[K;\n'}
+[5.707410] (yolo_detect) StderrLine: {'line': b'      |                     \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[5.707538] (yolo_detect) StderrLine: {'line': b"\x1b[01m\x1b[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/./include/ai_detect.h:121:21:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kprevious declaration '\x1b[01m\x1b[KT_DjiReturnCode ai_detect::returnCode\x1b[m\x1b[K'\n"}
+[5.707667] (yolo_detect) StderrLine: {'line': b'  121 |     T_DjiReturnCode \x1b[01;36m\x1b[KreturnCode\x1b[m\x1b[K;\n'}
+[5.707821] (yolo_detect) StderrLine: {'line': b'      |                     \x1b[01;36m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[5.714849] (yolo_detect) StderrLine: {'line': b"\x1b[01m\x1b[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/./include/ai_detect.h:134:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K'\x1b[01m\x1b[KE_DjiLiveViewCameraPosition\x1b[m\x1b[K' does not name a type\n"}
+[5.715152] (yolo_detect) StderrLine: {'line': b'  134 |     \x1b[01;31m\x1b[KE_DjiLiveViewCameraPosition\x1b[m\x1b[K CameraPostion;\n'}
+[5.715377] (yolo_detect) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[5.721452] (-) TimerEvent: {}
+[5.723482] (yolo_detect) StderrLine: {'line': b"\x1b[01m\x1b[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/./include/ai_detect.h:137:16:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K'\x1b[01m\x1b[KImageProcessorYolovFastest\x1b[m\x1b[K' does not name a type\n"}
+[5.723733] (yolo_detect) StderrLine: {'line': b'  137 |         static \x1b[01;31m\x1b[KImageProcessorYolovFastest\x1b[m\x1b[K processor("YOLOvFastest");\n'}
+[5.724055] (yolo_detect) StderrLine: {'line': b'      |                \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[5.724256] (yolo_detect) StderrLine: {'line': b"\x1b[01m\x1b[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/./include/ai_detect.h:139:21:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K'\x1b[01m\x1b[Kqueue\x1b[m\x1b[K' in namespace '\x1b[01m\x1b[Kstd\x1b[m\x1b[K' does not name a template type\n"}
+[5.724432] (yolo_detect) StderrLine: {'line': b'  139 |         static std::\x1b[01;31m\x1b[Kqueue\x1b[m\x1b[K<cv::Mat> s_imageQueue;\n'}
+[5.724586] (yolo_detect) StderrLine: {'line': b'      |                     \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[5.724725] (yolo_detect) StderrLine: {'line': b"\x1b[01m\x1b[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/./include/ai_detect.h:1:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K'\x1b[01m\x1b[Kstd::queue\x1b[m\x1b[K' is defined in header '\x1b[01m\x1b[K<queue>\x1b[m\x1b[K'; this is probably fixable by adding '\x1b[01m\x1b[K#include <queue>\x1b[m\x1b[K'\n"}
+[5.724865] (yolo_detect) StderrLine: {'line': b'  +++ |+\x1b[32m\x1b[K#include <queue>\x1b[m\x1b[K\n'}
+[5.724997] (yolo_detect) StderrLine: {'line': b'    1 | #ifndef AI_DETECT_H\n'}
+[5.725127] (yolo_detect) StderrLine: {'line': b"\x1b[01m\x1b[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/./include/ai_detect.h:141:21:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K'\x1b[01m\x1b[Kqueue\x1b[m\x1b[K' in namespace '\x1b[01m\x1b[Kstd\x1b[m\x1b[K' does not name a template type\n"}
+[5.725259] (yolo_detect) StderrLine: {'line': b'  141 |         static std::\x1b[01;31m\x1b[Kqueue\x1b[m\x1b[K<T_DjiLiveViewStandardMetaData *> s_metaQueue;\n'}
+[5.725390] (yolo_detect) StderrLine: {'line': b'      |                     \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[5.725521] (yolo_detect) StderrLine: {'line': b"\x1b[01m\x1b[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/./include/ai_detect.h:141:16:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K'\x1b[01m\x1b[Kstd::queue\x1b[m\x1b[K' is defined in header '\x1b[01m\x1b[K<queue>\x1b[m\x1b[K'; this is probably fixable by adding '\x1b[01m\x1b[K#include <queue>\x1b[m\x1b[K'\n"}
+[5.725655] (yolo_detect) StderrLine: {'line': b'  141 |         static \x1b[01;36m\x1b[Kstd\x1b[m\x1b[K::queue<T_DjiLiveViewStandardMetaData *> s_metaQueue;\n'}
+[5.725798] (yolo_detect) StderrLine: {'line': b'      |                \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[5.740478] (yolo_detect) StderrLine: {'line': b"\x1b[01m\x1b[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/./include/ai_detect.h:\x1b[m\x1b[K In constructor '\x1b[01m\x1b[Kai_detect::\x1b[01;32m\x1b[Kai_detect\x1b[m\x1b[K(int, char**)\x1b[m\x1b[K':\n"}
+[5.740809] (yolo_detect) StderrLine: {'line': b"\x1b[01m\x1b[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/./include/ai_detect.h:15:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K'\x1b[01m\x1b[KMediaResource\x1b[m\x1b[K' was not declared in this scope; did you mean '\x1b[01m\x1b[KmediaSource\x1b[m\x1b[K'?\n"}
+[5.740978] (yolo_detect) StderrLine: {'line': b'   15 |         \x1b[01;31m\x1b[KMediaResource\x1b[m\x1b[K = DJI_LIVEVIEW_CAMERA_SOURCE_M30T_ZOOM;\n'}
+[5.741123] (yolo_detect) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[5.741289] (yolo_detect) StderrLine: {'line': b'      |         \x1b[32m\x1b[KmediaSource\x1b[m\x1b[K\n'}
+[5.786303] (yolo_detect) StderrLine: {'line': b"\x1b[01m\x1b[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/./include/ai_detect.h:15:25:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K'\x1b[01m\x1b[KDJI_LIVEVIEW_CAMERA_SOURCE_M30T_ZOOM\x1b[m\x1b[K' was not declared in this scope\n"}
+[5.786773] (yolo_detect) StderrLine: {'line': b'   15 |         MediaResource = \x1b[01;31m\x1b[KDJI_LIVEVIEW_CAMERA_SOURCE_M30T_ZOOM\x1b[m\x1b[K;\n'}
+[5.786949] (yolo_detect) StderrLine: {'line': b'      |                         \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[5.806182] (yolo_detect) StderrLine: {'line': b"\x1b[01m\x1b[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/./include/ai_detect.h:28:51:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K'\x1b[01m\x1b[KaircraftInfoBaseInfo\x1b[m\x1b[K' was not declared in this scope; did you mean '\x1b[01m\x1b[KT_DjiAircraftInfoBaseInfo\x1b[m\x1b[K'?\n"}
+[5.806556] (yolo_detect) StderrLine: {'line': b'   28 |         returnCode = DjiAircraftInfo_GetBaseInfo(&\x1b[01;31m\x1b[KaircraftInfoBaseInfo\x1b[m\x1b[K);\n'}
+[5.806719] (yolo_detect) StderrLine: {'line': b'      |                                                   \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[5.806869] (yolo_detect) StderrLine: {'line': b'      |                                                   \x1b[32m\x1b[KT_DjiAircraftInfoBaseInfo\x1b[m\x1b[K\n'}
+[5.821603] (-) TimerEvent: {}
+[5.830018] (yolo_detect) StderrLine: {'line': b"\x1b[01m\x1b[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/./include/ai_detect.h:35:33:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K'\x1b[01m\x1b[KgetCurrentTimestamp\x1b[m\x1b[K' was not declared in this scope\n"}
+[5.830410] (yolo_detect) StderrLine: {'line': b'   35 |         std::string timestamp = \x1b[01;31m\x1b[KgetCurrentTimestamp\x1b[m\x1b[K();\n'}
+[5.830570] (yolo_detect) StderrLine: {'line': b'      |                                 \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[5.842291] (yolo_detect) StderrLine: {'line': b"\x1b[01m\x1b[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/./include/ai_detect.h:38:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K'\x1b[01m\x1b[Kmkdir\x1b[m\x1b[K' was not declared in this scope\n"}
+[5.842627] (yolo_detect) StderrLine: {'line': b'   38 |         \x1b[01;31m\x1b[Kmkdir\x1b[m\x1b[K ("data", 0755);\n'}
+[5.842778] (yolo_detect) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[5.857212] (yolo_detect) StderrLine: {'line': b"\x1b[01m\x1b[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/./include/ai_detect.h:44:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K'\x1b[01m\x1b[KoutFileH264\x1b[m\x1b[K' was not declared in this scope\n"}
+[5.857538] (yolo_detect) StderrLine: {'line': b'   44 |         \x1b[01;31m\x1b[KoutFileH264\x1b[m\x1b[K.open(h264FileName, std::ios::out | std::ios::binary | std::ios::app);\n'}
+[5.857692] (yolo_detect) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[5.872016] (yolo_detect) StderrLine: {'line': b"\x1b[01m\x1b[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/./include/ai_detect.h:55:17:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K'\x1b[01m\x1b[Kprocessor\x1b[m\x1b[K' was not declared in this scope\n"}
+[5.872449] (yolo_detect) StderrLine: {'line': b'   55 |             if (\x1b[01;31m\x1b[Kprocessor\x1b[m\x1b[K.Init() != 0) {\n'}
+[5.872623] (yolo_detect) StderrLine: {'line': b'      |                 \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[5.885075] (yolo_detect) StderrLine: {'line': b"\x1b[01m\x1b[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/./include/ai_detect.h:61:15:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K'\x1b[01m\x1b[KT_DjiDataChannelBandwidthProportionOfHighspeedChannel\x1b[m\x1b[K' does not name a type\n"}
+[5.885453] (yolo_detect) StderrLine: {'line': b'   61 |         const \x1b[01;31m\x1b[KT_DjiDataChannelBandwidthProportionOfHighspeedChannel\x1b[m\x1b[K bandwidthProportionOfHighspeedChannel =\n'}
+[5.885607] (yolo_detect) StderrLine: {'line': b'      |               \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[5.921703] (-) TimerEvent: {}
+[5.932318] (yolo_detect) StderrLine: {'line': b"\x1b[01m\x1b[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/./include/ai_detect.h:64:69:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K'\x1b[01m\x1b[KbandwidthProportionOfHighspeedChannel\x1b[m\x1b[K' was not declared in this scope\n"}
+[5.932665] (yolo_detect) StderrLine: {'line': b'   64 |         returnCode = DjiHighSpeedDataChannel_SetBandwidthProportion(\x1b[01;31m\x1b[KbandwidthProportionOfHighspeedChannel\x1b[m\x1b[K);\n'}
+[5.932828] (yolo_detect) StderrLine: {'line': b'      |                                                                     \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[5.985985] (yolo_detect) StderrLine: {'line': b"\x1b[01m\x1b[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/./include/ai_detect.h:64:22:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K'\x1b[01m\x1b[KDjiHighSpeedDataChannel_SetBandwidthProportion\x1b[m\x1b[K' was not declared in this scope\n"}
+[5.986344] (yolo_detect) StderrLine: {'line': b'   64 |         returnCode = \x1b[01;31m\x1b[KDjiHighSpeedDataChannel_SetBandwidthProportion\x1b[m\x1b[K(bandwidthProportionOfHighspeedChannel);\n'}
+[5.986509] (yolo_detect) StderrLine: {'line': b'      |                      \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.009215] (yolo_detect) StderrLine: {'line': b"\x1b[01m\x1b[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/./include/ai_detect.h:74:22:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K'\x1b[01m\x1b[KDjiLiveview_Init\x1b[m\x1b[K' was not declared in this scope\n"}
+[6.009662] (yolo_detect) StderrLine: {'line': b'   74 |         returnCode = \x1b[01;31m\x1b[KDjiLiveview_Init\x1b[m\x1b[K();\n'}
+[6.009830] (yolo_detect) StderrLine: {'line': b'      |                      \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.021891] (-) TimerEvent: {}
+[6.028888] (yolo_detect) StderrLine: {'line': b"\x1b[01m\x1b[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/./include/ai_detect.h:83:63:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K'\x1b[01m\x1b[KYOLO_LABLES_NUM\x1b[m\x1b[K' was not declared in this scope\n"}
+[6.029384] (yolo_detect) StderrLine: {'line': b'   83 |             returnCode = DjiLiveview_RegUserAiTargetLableList(\x1b[01;31m\x1b[KYOLO_LABLES_NUM\x1b[m\x1b[K, s_classLables);\n'}
+[6.029567] (yolo_detect) StderrLine: {'line': b'      |                                                               \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.047837] (yolo_detect) StderrLine: {'line': b"\x1b[01m\x1b[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/./include/ai_detect.h:83:80:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K'\x1b[01m\x1b[Ks_classLables\x1b[m\x1b[K' was not declared in this scope\n"}
+[6.048374] (yolo_detect) StderrLine: {'line': b'   83 |             returnCode = DjiLiveview_RegUserAiTargetLableList(YOLO_LABLES_NUM, \x1b[01;31m\x1b[Ks_classLables\x1b[m\x1b[K);\n'}
+[6.048538] (yolo_detect) StderrLine: {'line': b'      |                                                                                \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.095239] (yolo_detect) StderrLine: {'line': b"\x1b[01m\x1b[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/./include/ai_detect.h:83:26:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K'\x1b[01m\x1b[KDjiLiveview_RegUserAiTargetLableList\x1b[m\x1b[K' was not declared in this scope\n"}
+[6.095711] (yolo_detect) StderrLine: {'line': b'   83 |             returnCode = \x1b[01;31m\x1b[KDjiLiveview_RegUserAiTargetLableList\x1b[m\x1b[K(YOLO_LABLES_NUM, s_classLables);\n'}
+[6.095890] (yolo_detect) StderrLine: {'line': b'      |                          \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.120764] (yolo_detect) StderrLine: {'line': b"\x1b[01m\x1b[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/./include/ai_detect.h:95:22:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K'\x1b[01m\x1b[KDjiLiveview_RegEncoderCallback\x1b[m\x1b[K' was not declared in this scope; did you mean '\x1b[01m\x1b[KDjiLiveview_EncoderUseCallback\x1b[m\x1b[K'?\n"}
+[6.121186] (yolo_detect) StderrLine: {'line': b'   95 |         returnCode = \x1b[01;31m\x1b[KDjiLiveview_RegEncoderCallback\x1b[m\x1b[K(DjiLiveview_EncoderUseCallback);\n'}
+[6.121352] (yolo_detect) StderrLine: {'line': b'      |                      \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.121501] (yolo_detect) StderrLine: {'line': b'      |                      \x1b[32m\x1b[KDjiLiveview_EncoderUseCallback\x1b[m\x1b[K\n'}
+[6.121934] (-) TimerEvent: {}
+[6.140880] (yolo_detect) StderrLine: {'line': b"\x1b[01m\x1b[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/./include/ai_detect.h:102:51:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K'\x1b[01m\x1b[KCameraPostion\x1b[m\x1b[K' was not declared in this scope\n"}
+[6.141376] (yolo_detect) StderrLine: {'line': b'  102 |         returnCode = DjiLiveview_StartImageStream(\x1b[01;31m\x1b[KCameraPostion\x1b[m\x1b[K, MediaResource,\n'}
+[6.141544] (yolo_detect) StderrLine: {'line': b'      |                                                   \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.164545] (yolo_detect) StderrLine: {'line': b"\x1b[01m\x1b[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/./include/ai_detect.h:103:49:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K'\x1b[01m\x1b[KPIXFMT_RGB_PACKED\x1b[m\x1b[K' was not declared in this scope\n"}
+[6.165026] (yolo_detect) StderrLine: {'line': b'  103 |                                                 \x1b[01;31m\x1b[KPIXFMT_RGB_PACKED\x1b[m\x1b[K ,DjiLiveview_RcvImageCallback);\n'}
+[6.165231] (yolo_detect) StderrLine: {'line': b'      |                                                 \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.201278] (yolo_detect) StderrLine: {'line': b"\x1b[01m\x1b[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/./include/ai_detect.h:102:22:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K'\x1b[01m\x1b[KDjiLiveview_StartImageStream\x1b[m\x1b[K' was not declared in this scope\n"}
+[6.201702] (yolo_detect) StderrLine: {'line': b'  102 |         returnCode = \x1b[01;31m\x1b[KDjiLiveview_StartImageStream\x1b[m\x1b[K(CameraPostion, MediaResource,\n'}
+[6.201865] (yolo_detect) StderrLine: {'line': b'      |                      \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.202206] (yolo_detect) StderrLine: {'line': b"\x1b[01m\x1b[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/./include/ai_detect.h:78:18:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Klabel '\x1b[01m\x1b[Kinit_failed\x1b[m\x1b[K' used but not defined\n"}
+[6.202393] (yolo_detect) StderrLine: {'line': b'   78 |             goto \x1b[01;31m\x1b[Kinit_failed\x1b[m\x1b[K;\n'}
+[6.202613] (yolo_detect) StderrLine: {'line': b'      |                  \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.202757] (yolo_detect) StderrLine: {'line': b"\x1b[01m\x1b[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/./include/ai_detect.h:99:18:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Klabel '\x1b[01m\x1b[Kreg_encoder_callback_failed\x1b[m\x1b[K' used but not defined\n"}
+[6.202897] (yolo_detect) StderrLine: {'line': b'   99 |             goto \x1b[01;31m\x1b[Kreg_encoder_callback_failed\x1b[m\x1b[K;\n'}
+[6.203032] (yolo_detect) StderrLine: {'line': b'      |                  \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.203272] (yolo_detect) StderrLine: {'line': b"\x1b[01m\x1b[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/./include/ai_detect.h:107:18:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Klabel '\x1b[01m\x1b[Kstart_yuv_stream_failed\x1b[m\x1b[K' used but not defined\n"}
+[6.203451] (yolo_detect) StderrLine: {'line': b'  107 |             goto \x1b[01;31m\x1b[Kstart_yuv_stream_failed\x1b[m\x1b[K;\n'}
+[6.203730] (yolo_detect) StderrLine: {'line': b'      |                  \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.204013] (yolo_detect) StderrLine: {'line': b"\x1b[01m\x1b[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/./include/ai_detect.h:10:19:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter '\x1b[01m\x1b[Kargc\x1b[m\x1b[K' [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc-14.3.0/gcc/Warning-Options.html#index-Wno-unused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n"}
+[6.204171] (yolo_detect) StderrLine: {'line': b'   10 |     ai_detect(\x1b[01;35m\x1b[Kint argc\x1b[m\x1b[K,char ** argv):rclcpp::Node("ai_detect")\n'}
+[6.204309] (yolo_detect) StderrLine: {'line': b'      |               \x1b[01;35m\x1b[K~~~~^~~~\x1b[m\x1b[K\n'}
+[6.204443] (yolo_detect) StderrLine: {'line': b"\x1b[01m\x1b[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/./include/ai_detect.h:10:32:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter '\x1b[01m\x1b[Kargv\x1b[m\x1b[K' [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc-14.3.0/gcc/Warning-Options.html#index-Wno-unused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n"}
+[6.204581] (yolo_detect) StderrLine: {'line': b'   10 |     ai_detect(int argc,\x1b[01;35m\x1b[Kchar ** argv\x1b[m\x1b[K):rclcpp::Node("ai_detect")\n'}
+[6.204737] (yolo_detect) StderrLine: {'line': b'      |                        \x1b[01;35m\x1b[K~~~~~~~~^~~~\x1b[m\x1b[K\n'}
+[6.204873] (yolo_detect) StderrLine: {'line': b'\x1b[01m\x1b[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/./include/ai_detect.h:\x1b[m\x1b[K At global scope:\n'}
+[6.205007] (yolo_detect) StderrLine: {'line': b"\x1b[01m\x1b[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/./include/ai_detect.h:152:68:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kcannot declare member function '\x1b[01m\x1b[Kstatic void* ai_detect::\x1b[01;32m\x1b[KDjiLiveview_ObjectDetectionThread\x1b[m\x1b[K(void*)\x1b[m\x1b[K' to have static linkage [\x1b[01;31m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc-14.3.0/gcc/Warning-Options.html#index-fpermissive\x07-fpermissive\x1b]8;;\x07\x1b[m\x1b[K]\n"}
+[6.205146] (yolo_detect) StderrLine: {'line': b'  152 | static void* ai_detect::DjiLiveview_ObjectDetectionThread(void *arg\x1b[01;31m\x1b[K)\x1b[m\x1b[K {\n'}
+[6.205284] (yolo_detect) StderrLine: {'line': b'      |                                                                    \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[6.205418] (yolo_detect) StderrLine: {'line': b"\x1b[01m\x1b[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/./include/ai_detect.h:\x1b[m\x1b[K In static member function '\x1b[01m\x1b[Kstatic void* ai_detect::\x1b[01;32m\x1b[KDjiLiveview_ObjectDetectionThread\x1b[m\x1b[K(void*)\x1b[m\x1b[K':\n"}
+[6.205554] (yolo_detect) StderrLine: {'line': b"\x1b[01m\x1b[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/./include/ai_detect.h:161:32:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of member '\x1b[01m\x1b[Kai_detect::s_imageQueueMutexHandle\x1b[m\x1b[K' in static member function\n"}
+[6.205685] (yolo_detect) StderrLine: {'line': b'  161 |         osalHandler->MutexLock(\x1b[01;31m\x1b[Ks_imageQueueMutexHandle\x1b[m\x1b[K);\n'}
+[6.205815] (yolo_detect) StderrLine: {'line': b'      |                                \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.205947] (yolo_detect) StderrLine: {'line': b'\x1b[01m\x1b[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/./include/ai_detect.h:147:26:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[6.206074] (yolo_detect) StderrLine: {'line': b'  147 |         T_DjiMutexHandle \x1b[01;36m\x1b[Ks_imageQueueMutexHandle\x1b[m\x1b[K;\n'}
+[6.206204] (yolo_detect) StderrLine: {'line': b'      |                          \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.219678] (yolo_detect) StderrLine: {'line': b"\x1b[01m\x1b[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/./include/ai_detect.h:162:13:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K'\x1b[01m\x1b[Ks_imageQueue\x1b[m\x1b[K' was not declared in this scope; did you mean '\x1b[01m\x1b[Ksigqueue\x1b[m\x1b[K'?\n"}
+[6.220147] (yolo_detect) StderrLine: {'line': b'  162 |         if (\x1b[01;31m\x1b[Ks_imageQueue\x1b[m\x1b[K.empty()) {\n'}
+[6.220310] (yolo_detect) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.220454] (yolo_detect) StderrLine: {'line': b'      |             \x1b[32m\x1b[Ksigqueue\x1b[m\x1b[K\n'}
+[6.220592] (yolo_detect) StderrLine: {'line': b"\x1b[01m\x1b[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/./include/ai_detect.h:164:38:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of member '\x1b[01m\x1b[Kai_detect::s_imageQueueMutexHandle\x1b[m\x1b[K' in static member function\n"}
+[6.220731] (yolo_detect) StderrLine: {'line': b'  164 |             osalHandler->MutexUnlock(\x1b[01;31m\x1b[Ks_imageQueueMutexHandle\x1b[m\x1b[K);\n'}
+[6.220868] (yolo_detect) StderrLine: {'line': b'      |                                      \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.220997] (yolo_detect) StderrLine: {'line': b'\x1b[01m\x1b[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/./include/ai_detect.h:147:26:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[6.221135] (yolo_detect) StderrLine: {'line': b'  147 |         T_DjiMutexHandle \x1b[01;36m\x1b[Ks_imageQueueMutexHandle\x1b[m\x1b[K;\n'}
+[6.221267] (yolo_detect) StderrLine: {'line': b'      |                          \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.221500] (yolo_detect) StderrLine: {'line': b"\x1b[01m\x1b[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/./include/ai_detect.h:168:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K'\x1b[01m\x1b[Kcv\x1b[m\x1b[K' has not been declared\n"}
+[6.221704] (yolo_detect) StderrLine: {'line': b'  168 |         \x1b[01;31m\x1b[Kcv\x1b[m\x1b[K::Mat rgb_image = s_imageQueue.front();\n'}
+[6.221859] (yolo_detect) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[6.222004] (-) TimerEvent: {}
+[6.234732] (yolo_detect) StderrLine: {'line': b"\x1b[01m\x1b[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/./include/ai_detect.h:170:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K'\x1b[01m\x1b[Ks_imageQueue\x1b[m\x1b[K' was not declared in this scope; did you mean '\x1b[01m\x1b[Ksigqueue\x1b[m\x1b[K'?\n"}
+[6.235204] (yolo_detect) StderrLine: {'line': b'  170 |         \x1b[01;31m\x1b[Ks_imageQueue\x1b[m\x1b[K.pop();\n'}
+[6.235366] (yolo_detect) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.235507] (yolo_detect) StderrLine: {'line': b'      |         \x1b[32m\x1b[Ksigqueue\x1b[m\x1b[K\n'}
+[6.235642] (yolo_detect) StderrLine: {'line': b"\x1b[01m\x1b[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/./include/ai_detect.h:172:34:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of member '\x1b[01m\x1b[Kai_detect::s_imageQueueMutexHandle\x1b[m\x1b[K' in static member function\n"}
+[6.235778] (yolo_detect) StderrLine: {'line': b'  172 |         osalHandler->MutexUnlock(\x1b[01;31m\x1b[Ks_imageQueueMutexHandle\x1b[m\x1b[K);\n'}
+[6.235913] (yolo_detect) StderrLine: {'line': b'      |                                  \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.236092] (yolo_detect) StderrLine: {'line': b'\x1b[01m\x1b[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/./include/ai_detect.h:147:26:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[6.236236] (yolo_detect) StderrLine: {'line': b'  147 |         T_DjiMutexHandle \x1b[01;36m\x1b[Ks_imageQueueMutexHandle\x1b[m\x1b[K;\n'}
+[6.236371] (yolo_detect) StderrLine: {'line': b'      |                          \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.236515] (yolo_detect) StderrLine: {'line': b"\x1b[01m\x1b[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/./include/ai_detect.h:174:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K'\x1b[01m\x1b[Kcv\x1b[m\x1b[K' has not been declared\n"}
+[6.236649] (yolo_detect) StderrLine: {'line': b'  174 |         \x1b[01;31m\x1b[Kcv\x1b[m\x1b[K::Mat bgr_image;\n'}
+[6.236779] (yolo_detect) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[6.236909] (yolo_detect) StderrLine: {'line': b"\x1b[01m\x1b[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/./include/ai_detect.h:176:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K'\x1b[01m\x1b[Kcv\x1b[m\x1b[K' has not been declared\n"}
+[6.237039] (yolo_detect) StderrLine: {'line': b'  176 |         \x1b[01;31m\x1b[Kcv\x1b[m\x1b[K::cvtColor(rgb_image, bgr_image, cv::COLOR_RGB2BGR);\n'}
+[6.237170] (yolo_detect) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[6.248880] (yolo_detect) StderrLine: {'line': b"\x1b[01m\x1b[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/./include/ai_detect.h:176:22:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K'\x1b[01m\x1b[Krgb_image\x1b[m\x1b[K' was not declared in this scope\n"}
+[6.249232] (yolo_detect) StderrLine: {'line': b'  176 |         cv::cvtColor(\x1b[01;31m\x1b[Krgb_image\x1b[m\x1b[K, bgr_image, cv::COLOR_RGB2BGR);\n'}
+[6.249376] (yolo_detect) StderrLine: {'line': b'      |                      \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[6.262328] (yolo_detect) StderrLine: {'line': b"\x1b[01m\x1b[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/./include/ai_detect.h:176:33:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K'\x1b[01m\x1b[Kbgr_image\x1b[m\x1b[K' was not declared in this scope\n"}
+[6.262631] (yolo_detect) StderrLine: {'line': b'  176 |         cv::cvtColor(rgb_image, \x1b[01;31m\x1b[Kbgr_image\x1b[m\x1b[K, cv::COLOR_RGB2BGR);\n'}
+[6.262774] (yolo_detect) StderrLine: {'line': b'      |                                 \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[6.262911] (yolo_detect) StderrLine: {'line': b"\x1b[01m\x1b[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/./include/ai_detect.h:176:44:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K'\x1b[01m\x1b[Kcv\x1b[m\x1b[K' has not been declared\n"}
+[6.263046] (yolo_detect) StderrLine: {'line': b'  176 |         cv::cvtColor(rgb_image, bgr_image, \x1b[01;31m\x1b[Kcv\x1b[m\x1b[K::COLOR_RGB2BGR);\n'}
+[6.263180] (yolo_detect) StderrLine: {'line': b'      |                                            \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[6.273652] (yolo_detect) StderrLine: {'line': b"\x1b[01m\x1b[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/./include/ai_detect.h:178:25:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K'\x1b[01m\x1b[Kcv\x1b[m\x1b[K' was not declared in this scope\n"}
+[6.274038] (yolo_detect) StderrLine: {'line': b'  178 |         std::shared_ptr<\x1b[01;31m\x1b[Kcv\x1b[m\x1b[K::Mat> image_ptr = std::make_shared<cv::Mat>(bgr_image);\n'}
+[6.274219] (yolo_detect) StderrLine: {'line': b'      |                         \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[6.274364] (yolo_detect) StderrLine: {'line': b'\x1b[01m\x1b[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/./include/ai_detect.h:178:32:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[6.274507] (yolo_detect) StderrLine: {'line': b'  178 |         std::shared_ptr<cv::Mat\x1b[01;31m\x1b[K>\x1b[m\x1b[K image_ptr = std::make_shared<cv::Mat>(bgr_image);\n'}
+[6.274648] (yolo_detect) StderrLine: {'line': b'      |                                \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[6.274784] (yolo_detect) StderrLine: {'line': b'\x1b[01m\x1b[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/./include/ai_detect.h:178:51:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kparse error in template argument list\n'}
+[6.274921] (yolo_detect) StderrLine: {'line': b'  178 |         std::shared_ptr<cv::Mat> image_ptr = std::\x1b[01;31m\x1b[Kmake_shared<cv::Mat>\x1b[m\x1b[K(bgr_image);\n'}
+[6.275068] (yolo_detect) StderrLine: {'line': b'      |                                                   \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.303358] (yolo_detect) StderrLine: {'line': b"\x1b[01m\x1b[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/./include/ai_detect.h:180:21:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K'\x1b[01m\x1b[KT_DjiLiveViewBoundingBox\x1b[m\x1b[K' was not declared in this scope\n"}
+[6.303691] (yolo_detect) StderrLine: {'line': b'  180 |         std::vector<\x1b[01;31m\x1b[KT_DjiLiveViewBoundingBox\x1b[m\x1b[K> bounding_boxes;\n'}
+[6.303854] (yolo_detect) StderrLine: {'line': b'      |                     \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.304012] (yolo_detect) StderrLine: {'line': b'\x1b[01m\x1b[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/./include/ai_detect.h:180:45:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[6.304162] (yolo_detect) StderrLine: {'line': b'  180 |         std::vector<T_DjiLiveViewBoundingBox\x1b[01;31m\x1b[K>\x1b[m\x1b[K bounding_boxes;\n'}
+[6.304299] (yolo_detect) StderrLine: {'line': b'      |                                             \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[6.304431] (yolo_detect) StderrLine: {'line': b'\x1b[01m\x1b[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/./include/ai_detect.h:180:45:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 2 is invalid\n'}
+[6.317032] (yolo_detect) StderrLine: {'line': b"\x1b[01m\x1b[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/./include/ai_detect.h:183:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K'\x1b[01m\x1b[Kprocessor\x1b[m\x1b[K' was not declared in this scope\n"}
+[6.317386] (yolo_detect) StderrLine: {'line': b'  183 |         \x1b[01;31m\x1b[Kprocessor\x1b[m\x1b[K.Process(image_ptr, bounding_boxes);\n'}
+[6.317549] (yolo_detect) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[6.322131] (-) TimerEvent: {}
+[6.354290] (yolo_detect) StderrLine: {'line': b"\x1b[01m\x1b[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/./include/ai_detect.h:186:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K'\x1b[01m\x1b[KT_DjiLiveViewStandardMetaData\x1b[m\x1b[K' was not declared in this scope\n"}
+[6.354650] (yolo_detect) StderrLine: {'line': b'  186 |         \x1b[01;31m\x1b[KT_DjiLiveViewStandardMetaData\x1b[m\x1b[K *metaData = (T_DjiLiveViewStandardMetaData *)malloc(\n'}
+[6.354801] (yolo_detect) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.367126] (yolo_detect) StderrLine: {'line': b"\x1b[01m\x1b[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/./include/ai_detect.h:186:40:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K'\x1b[01m\x1b[KmetaData\x1b[m\x1b[K' was not declared in this scope\n"}
+[6.367541] (yolo_detect) StderrLine: {'line': b'  186 |         T_DjiLiveViewStandardMetaData *\x1b[01;31m\x1b[KmetaData\x1b[m\x1b[K = (T_DjiLiveViewStandardMetaData *)malloc(\n'}
+[6.367719] (yolo_detect) StderrLine: {'line': b'      |                                        \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[6.367867] (yolo_detect) StderrLine: {'line': b"\x1b[01m\x1b[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/./include/ai_detect.h:186:83:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected primary-expression before '\x1b[01m\x1b[K)\x1b[m\x1b[K' token\n"}
+[6.368029] (yolo_detect) StderrLine: {'line': b'  186 |         T_DjiLiveViewStandardMetaData *metaData = (T_DjiLiveViewStandardMetaData *\x1b[01;31m\x1b[K)\x1b[m\x1b[Kmalloc(\n'}
+[6.368179] (yolo_detect) StderrLine: {'line': b'      |                                                                                   \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[6.368319] (yolo_detect) StderrLine: {'line': b"\x1b[01m\x1b[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/./include/ai_detect.h:188:22:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected unqualified-id before '\x1b[01m\x1b[K=\x1b[m\x1b[K' token\n"}
+[6.368485] (yolo_detect) StderrLine: {'line': b'  188 |         metaData->   \x1b[01;31m\x1b[K=\x1b[m\x1b[K bounding_boxes.size();\n'}
+[6.368622] (yolo_detect) StderrLine: {'line': b'      |                      \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[6.368753] (yolo_detect) StderrLine: {'line': b"\x1b[01m\x1b[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/./include/ai_detect.h:188:39:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Krequest for member '\x1b[01m\x1b[Ksize\x1b[m\x1b[K' in '\x1b[01m\x1b[Kbounding_boxes\x1b[m\x1b[K', which is of non-class type '\x1b[01m\x1b[Kint\x1b[m\x1b[K'\n"}
+[6.368889] (yolo_detect) StderrLine: {'line': b'  188 |         metaData->   = bounding_boxes.\x1b[01;31m\x1b[Ksize\x1b[m\x1b[K();\n'}
+[6.369020] (yolo_detect) StderrLine: {'line': b'      |                                       \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[6.369154] (yolo_detect) StderrLine: {'line': b"\x1b[01m\x1b[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/./include/ai_detect.h:189:44:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Krequest for member '\x1b[01m\x1b[Ksize\x1b[m\x1b[K' in '\x1b[01m\x1b[Kbounding_boxes\x1b[m\x1b[K', which is of non-class type '\x1b[01m\x1b[Kint\x1b[m\x1b[K'\n"}
+[6.369313] (yolo_detect) StderrLine: {'line': b'  189 |         for (int i = 0; i < bounding_boxes.\x1b[01;31m\x1b[Ksize\x1b[m\x1b[K(); i++) {\n'}
+[6.369445] (yolo_detect) StderrLine: {'line': b'      |                                            \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[6.369573] (yolo_detect) StderrLine: {'line': b"\x1b[01m\x1b[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/./include/ai_detect.h:190:50:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid types '\x1b[01m\x1b[Kint[int]\x1b[m\x1b[K' for array subscript\n"}
+[6.369702] (yolo_detect) StderrLine: {'line': b'  190 |             metaData->boxData[i] = bounding_boxes\x1b[01;31m\x1b[K[\x1b[m\x1b[Ki];\n'}
+[6.369830] (yolo_detect) StderrLine: {'line': b'      |                                                  \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[6.404844] (yolo_detect) StderrLine: {'line': b"\x1b[01m\x1b[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/./include/ai_detect.h:193:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K'\x1b[01m\x1b[KDjiLiveview_SendAiMetaToPilot\x1b[m\x1b[K' was not declared in this scope\n"}
+[6.405192] (yolo_detect) StderrLine: {'line': b'  193 |         \x1b[01;31m\x1b[KDjiLiveview_SendAiMetaToPilot\x1b[m\x1b[K(metaData);\n'}
+[6.405351] (yolo_detect) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.405493] (yolo_detect) StderrLine: {'line': b"\x1b[01m\x1b[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/./include/ai_detect.h:195:32:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of member '\x1b[01m\x1b[Kai_detect::s_metaQueueMutexHandle\x1b[m\x1b[K' in static member function\n"}
+[6.405631] (yolo_detect) StderrLine: {'line': b'  195 |         osalHandler->MutexLock(\x1b[01;31m\x1b[Ks_metaQueueMutexHandle\x1b[m\x1b[K);\n'}
+[6.405918] (yolo_detect) StderrLine: {'line': b'      |                                \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.406061] (yolo_detect) StderrLine: {'line': b'\x1b[01m\x1b[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/./include/ai_detect.h:145:26:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[6.406218] (yolo_detect) StderrLine: {'line': b'  145 |         T_DjiMutexHandle \x1b[01;36m\x1b[Ks_metaQueueMutexHandle\x1b[m\x1b[K;\n'}
+[6.406354] (yolo_detect) StderrLine: {'line': b'      |                          \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.419485] (yolo_detect) StderrLine: {'line': b"\x1b[01m\x1b[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/./include/ai_detect.h:197:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K'\x1b[01m\x1b[Ks_metaQueue\x1b[m\x1b[K' was not declared in this scope\n"}
+[6.419912] (yolo_detect) StderrLine: {'line': b'  197 |         \x1b[01;31m\x1b[Ks_metaQueue\x1b[m\x1b[K.push(metaData);\n'}
+[6.420151] (yolo_detect) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.420308] (yolo_detect) StderrLine: {'line': b"\x1b[01m\x1b[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/./include/ai_detect.h:199:34:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of member '\x1b[01m\x1b[Kai_detect::s_metaQueueMutexHandle\x1b[m\x1b[K' in static member function\n"}
+[6.420451] (yolo_detect) StderrLine: {'line': b'  199 |         osalHandler->MutexUnlock(\x1b[01;31m\x1b[Ks_metaQueueMutexHandle\x1b[m\x1b[K);\n'}
+[6.420588] (yolo_detect) StderrLine: {'line': b'      |                                  \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.420721] (yolo_detect) StderrLine: {'line': b'\x1b[01m\x1b[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/./include/ai_detect.h:145:26:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[6.420855] (yolo_detect) StderrLine: {'line': b'  145 |         T_DjiMutexHandle \x1b[01;36m\x1b[Ks_metaQueueMutexHandle\x1b[m\x1b[K;\n'}
+[6.420988] (yolo_detect) StderrLine: {'line': b'      |                          \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.421118] (yolo_detect) StderrLine: {'line': b"\x1b[01m\x1b[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/./include/ai_detect.h:154:21:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable '\x1b[01m\x1b[KDjiStat\x1b[m\x1b[K' [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc-14.3.0/gcc/Warning-Options.html#index-Wno-unused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n"}
+[6.421255] (yolo_detect) StderrLine: {'line': b'  154 |     T_DjiReturnCode \x1b[01;35m\x1b[KDjiStat\x1b[m\x1b[K;\n'}
+[6.421385] (yolo_detect) StderrLine: {'line': b'      |                     \x1b[01;35m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[6.421513] (yolo_detect) StderrLine: {'line': b"\x1b[01m\x1b[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/./include/ai_detect.h:152:65:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter '\x1b[01m\x1b[Karg\x1b[m\x1b[K' [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc-14.3.0/gcc/Warning-Options.html#index-Wno-unused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n"}
+[6.421648] (yolo_detect) StderrLine: {'line': b'  152 | static void* ai_detect::DjiLiveview_ObjectDetectionThread(\x1b[01;35m\x1b[Kvoid *arg\x1b[m\x1b[K) {\n'}
+[6.421779] (yolo_detect) StderrLine: {'line': b'      |                                                           \x1b[01;35m\x1b[K~~~~~~^~~\x1b[m\x1b[K\n'}
+[6.421908] (yolo_detect) StderrLine: {'line': b'\x1b[01m\x1b[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/./include/ai_detect.h:\x1b[m\x1b[K At global scope:\n'}
+[6.422039] (yolo_detect) StderrLine: {'line': b"\x1b[01m\x1b[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/./include/ai_detect.h:209:87:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kcannot declare member function '\x1b[01m\x1b[Kstatic void ai_detect::\x1b[01;32m\x1b[KDjiLiveview_EncoderUseCallback\x1b[m\x1b[K(const uint8_t*, uint32_t)\x1b[m\x1b[K' to have static linkage [\x1b[01;31m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc-14.3.0/gcc/Warning-Options.html#index-fpermissive\x07-fpermissive\x1b]8;;\x07\x1b[m\x1b[K]\n"}
+[6.422175] (-) TimerEvent: {}
+[6.422213] (yolo_detect) StderrLine: {'line': b'  209 | static void ai_detect::DjiLiveview_EncoderUseCallback(const uint8_t *buf, uint32_t len\x1b[01;31m\x1b[K)\x1b[m\x1b[K\n'}
+[6.422368] (yolo_detect) StderrLine: {'line': b'      |                                                                                       \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[6.436510] (yolo_detect) StderrLine: {'line': b"\x1b[01m\x1b[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/./include/ai_detect.h:\x1b[m\x1b[K In static member function '\x1b[01m\x1b[Kstatic void ai_detect::\x1b[01;32m\x1b[KDjiLiveview_EncoderUseCallback\x1b[m\x1b[K(const uint8_t*, uint32_t)\x1b[m\x1b[K':\n"}
+[6.436828] (yolo_detect) StderrLine: {'line': b"\x1b[01m\x1b[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/./include/ai_detect.h:214:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K'\x1b[01m\x1b[KoutH264Tofile\x1b[m\x1b[K' was not declared in this scope\n"}
+[6.436991] (yolo_detect) StderrLine: {'line': b'  214 |     \x1b[01;31m\x1b[KoutH264Tofile\x1b[m\x1b[K(buf, len);\n'}
+[6.437139] (yolo_detect) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.456546] (yolo_detect) StderrLine: {'line': b"\x1b[01m\x1b[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/./include/ai_detect.h:216:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K'\x1b[01m\x1b[KaircraftInfoBaseInfo\x1b[m\x1b[K' was not declared in this scope; did you mean '\x1b[01m\x1b[KT_DjiAircraftInfoBaseInfo\x1b[m\x1b[K'?\n"}
+[6.456894] (yolo_detect) StderrLine: {'line': b'  216 |     if (\x1b[01;31m\x1b[KaircraftInfoBaseInfo\x1b[m\x1b[K.aircraftSeries != DJI_AIRCRAFT_SERIES_M4D)\n'}
+[6.457056] (yolo_detect) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.457196] (yolo_detect) StderrLine: {'line': b'      |         \x1b[32m\x1b[KT_DjiAircraftInfoBaseInfo\x1b[m\x1b[K\n'}
+[6.494965] (yolo_detect) StderrLine: {'line': b"\x1b[01m\x1b[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/./include/ai_detect.h:219:22:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K'\x1b[01m\x1b[KDjiPayloadCamera_SendVideoStream\x1b[m\x1b[K' was not declared in this scope\n"}
+[6.495319] (yolo_detect) StderrLine: {'line': b'  219 |         returnCode = \x1b[01;31m\x1b[KDjiPayloadCamera_SendVideoStream\x1b[m\x1b[K(buf, len);\n'}
+[6.495485] (yolo_detect) StderrLine: {'line': b'      |                      \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.495935] (yolo_detect) StderrLine: {'line': b'\x1b[01m\x1b[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/./include/ai_detect.h:\x1b[m\x1b[K At global scope:\n'}
+[6.496134] (yolo_detect) StderrLine: {'line': b"\x1b[01m\x1b[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/./include/ai_detect.h:228:13:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kvariable or field '\x1b[01m\x1b[KDjiLiveview_RcvImageCallback\x1b[m\x1b[K' declared void\n"}
+[6.496289] (yolo_detect) StderrLine: {'line': b'  228 | static void \x1b[01;31m\x1b[Kai_detect\x1b[m\x1b[K::DjiLiveview_RcvImageCallback(E_DjiLiveViewCameraPosition position, const uint8_t *buf, uint32_t len, T_DjiLiveviewImageInfo imageInfo)\n'}
+[6.496431] (yolo_detect) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[6.515926] (yolo_detect) StderrLine: {'line': b"\x1b[01m\x1b[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/./include/ai_detect.h:228:53:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K'\x1b[01m\x1b[KE_DjiLiveViewCameraPosition\x1b[m\x1b[K' was not declared in this scope\n"}
+[6.516291] (yolo_detect) StderrLine: {'line': b'  228 | static void ai_detect::DjiLiveview_RcvImageCallback(\x1b[01;31m\x1b[KE_DjiLiveViewCameraPosition\x1b[m\x1b[K position, const uint8_t *buf, uint32_t len, T_DjiLiveviewImageInfo imageInfo)\n'}
+[6.516443] (yolo_detect) StderrLine: {'line': b'      |                                                     \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.516583] (yolo_detect) StderrLine: {'line': b"\x1b[01m\x1b[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/./include/ai_detect.h:228:91:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected primary-expression before '\x1b[01m\x1b[Kconst\x1b[m\x1b[K'\n"}
+[6.516722] (yolo_detect) StderrLine: {'line': b'  228 | static void ai_detect::DjiLiveview_RcvImageCallback(E_DjiLiveViewCameraPosition position, \x1b[01;31m\x1b[Kconst\x1b[m\x1b[K uint8_t *buf, uint32_t len, T_DjiLiveviewImageInfo imageInfo)\n'}
+[6.516882] (yolo_detect) StderrLine: {'line': b'      |                                                                                           \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[6.517014] (yolo_detect) StderrLine: {'line': b"\x1b[01m\x1b[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/./include/ai_detect.h:228:120:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected primary-expression before '\x1b[01m\x1b[Klen\x1b[m\x1b[K'\n"}
+[6.517147] (yolo_detect) StderrLine: {'line': b'  228 | static void ai_detect::DjiLiveview_RcvImageCallback(E_DjiLiveViewCameraPosition position, const uint8_t *buf, uint32_t \x1b[01;31m\x1b[Klen\x1b[m\x1b[K, T_DjiLiveviewImageInfo imageInfo)\n'}
+[6.517279] (yolo_detect) StderrLine: {'line': b'      |                                                                                                                        \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[6.522283] (-) TimerEvent: {}
+[6.531316] (yolo_detect) StderrLine: {'line': b"\x1b[01m\x1b[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/./include/ai_detect.h:228:125:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K'\x1b[01m\x1b[KT_DjiLiveviewImageInfo\x1b[m\x1b[K' was not declared in this scope\n"}
+[6.531623] (yolo_detect) StderrLine: {'line': b'  228 | static void ai_detect::DjiLiveview_RcvImageCallback(E_DjiLiveViewCameraPosition position, const uint8_t *buf, uint32_t len, \x1b[01;31m\x1b[KT_DjiLiveviewImageInfo\x1b[m\x1b[K imageInfo)\n'}
+[6.531793] (yolo_detect) StderrLine: {'line': b'      |                                                                                                                             \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.538675] (yolo_detect) StderrLine: {'line': b"\x1b[01m\x1b[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/src/main.cpp:\x1b[m\x1b[K In function '\x1b[01m\x1b[Kint\x1b[01;32m\x1b[K main\x1b[m\x1b[K(int, char**)\x1b[m\x1b[K':\n"}
+[6.538952] (yolo_detect) StderrLine: {'line': b"\x1b[01m\x1b[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/src/main.cpp:28:56:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected primary-expression before '\x1b[01m\x1b[K,\x1b[m\x1b[K' token\n"}
+[6.539116] (yolo_detect) StderrLine: {'line': b'   28 |     auto ai_detect_node = std::make_shared<ai_detect>( \x1b[01;31m\x1b[K,\x1b[m\x1b[Kargv);\n'}
+[6.539265] (yolo_detect) StderrLine: {'line': b'      |                                                        \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[6.622505] (-) TimerEvent: {}
+[6.722953] (-) TimerEvent: {}
+[6.823392] (-) TimerEvent: {}
+[6.923837] (-) TimerEvent: {}
+[7.024300] (-) TimerEvent: {}
+[7.124755] (-) TimerEvent: {}
+[7.225219] (-) TimerEvent: {}
+[7.325653] (-) TimerEvent: {}
+[7.426194] (-) TimerEvent: {}
+[7.488377] (yolo_detect) StderrLine: {'line': b'make[2]: *** [CMakeFiles/yolo_detect.dir/build.make:76: CMakeFiles/yolo_detect.dir/src/main.cpp.o] Error 1\n'}
+[7.489021] (yolo_detect) StderrLine: {'line': b'make[1]: *** [CMakeFiles/Makefile2:85: CMakeFiles/yolo_detect.dir/all] Error 2\n'}
+[7.489444] (yolo_detect) StderrLine: {'line': b'make: *** [Makefile:146: all] Error 2\n'}
+[7.492832] (yolo_detect) CommandEnded: {'returncode': 2}
+[7.520723] (yolo_detect) JobEnded: {'identifier': 'yolo_detect', 'rc': 2}
+[7.526236] (-) TimerEvent: {}
+[7.532210] (-) EventReactorShutdown: {}

@@ -1,0 +1,53 @@
+[0.023s] Invoking command in '/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/build/yolo_detect': CONDA_PROMPT_MODIFIER=(ros2_humble) /open_app/miniconda3/envs/ros2_humble/bin/cmake --build /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/build/yolo_detect -- -j4 -l4
+[0.079s] [0m
+[0.079s] -- Found OpenCV installed in the system, will use it to display image in AdvancedSensing APIs
+[0.079s] --  - Includes: /open_app/miniconda3/envs/ros2_humble/include/opencv4
+[0.079s] yolo_detect...[0m
+[0.079s] --  - Libraries: opencv_calib3d;opencv_core;opencv_dnn;opencv_features2d;opencv_flann;opencv_gapi;opencv_highgui;opencv_imgcodecs;opencv_imgproc;opencv_ml;opencv_objdetect;opencv_photo;opencv_stitching;opencv_video;opencv_videoio;opencv_alphamat;opencv_aruco;opencv_barcode;opencv_bgsegm;opencv_bioinspired;opencv_ccalib;opencv_cvv;opencv_datasets;opencv_dnn_objdetect;opencv_dnn_superres;opencv_dpm;opencv_face;opencv_freetype;opencv_fuzzy;opencv_hdf;opencv_hfs;opencv_img_hash;opencv_intensity_transform;opencv_line_descriptor;opencv_mcc;opencv_optflow;opencv_phase_unwrapping;opencv_plot;opencv_quality;opencv_rapid;opencv_reg;opencv_rgbd;opencv_saliency;opencv_shape;opencv_stereo;opencv_structured_light;opencv_superres;opencv_surface_matching;opencv_text;opencv_tracking;opencv_videostab;opencv_wechat_qrcode;opencv_xfeatures2d;opencv_ximgproc;opencv_xobjdetect;opencv_xphoto
+[0.105s] -- Cannot Find FFMPEG
+[0.105s] -- Found ament_cmake: 1.3.3 (/open_app/miniconda3/envs/ros2_humble/share/ament_cmake/cmake)
+[0.295s] -- Found rclcpp: 16.0.3 (/open_app/miniconda3/envs/ros2_humble/share/rclcpp/cmake)
+[0.344s] -- Found rosidl_generator_c: 3.1.4 (/open_app/miniconda3/envs/ros2_humble/share/rosidl_generator_c/cmake)
+[0.348s] -- Found rosidl_adapter: 3.1.4 (/open_app/miniconda3/envs/ros2_humble/share/rosidl_adapter/cmake)
+[0.358s] -- Found rosidl_generator_cpp: 3.1.4 (/open_app/miniconda3/envs/ros2_humble/share/rosidl_generator_cpp/cmake)
+[0.376s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.402s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.533s] -- Found rmw_implementation_cmake: 6.1.1 (/open_app/miniconda3/envs/ros2_humble/share/rmw_implementation_cmake/cmake)
+[0.535s] -- Found rmw_fastrtps_cpp: 6.2.2 (/open_app/miniconda3/envs/ros2_humble/share/rmw_fastrtps_cpp/cmake)
+[0.751s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.935s] -- Found std_msgs: 4.2.3 (/open_app/miniconda3/envs/ros2_humble/share/std_msgs/cmake)
+[0.986s] -- Found ament_lint_auto: 0.12.5 (/open_app/miniconda3/envs/ros2_humble/share/ament_lint_auto/cmake)
+[1.154s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.155s] -- Configured cppcheck include dirs: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/../../../Payload-SDK/samples/sample_c++/platform/linux/manifold3/../my_code;/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/../../../Payload-SDK/samples/sample_c++/platform/linux/manifold3/../../../module_sample;/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/../../../Payload-SDK/samples/sample_c++/platform/linux/manifold3/../../../../sample_c/module_sample;/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/../../../Payload-SDK/samples/sample_c++/platform/linux/manifold3/../common;/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/../../../Payload-SDK/samples/sample_c++/platform/linux/manifold3/../manifold3/application;/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/include_directories;/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/(;/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/../../../Payload-SDK/samples/sample_c++/platform/linux/manifold3/../../../../../psdk_lib/include;/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/);/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/./include
+[1.155s] -- Configured cppcheck exclude dirs and/or files: 
+[1.156s] -- Added test 'lint_cmake' to check CMake code style
+[1.158s] -- Added test 'uncrustify' to check C / C++ code style
+[1.158s] -- Configured uncrustify additional arguments: 
+[1.158s] -- Added test 'xmllint' to check XML markup files
+[1.160s] -- Configuring done (1.1s)
+[1.213s] -- Generating done (0.0s)
+[1.223s] -- Build files have been written to: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/build/yolo_detect
+[1.353s] [  1%] [32mBuilding CXX object CMakeFiles/yolo_detect.dir/src/main.cpp.o[0m
+[1.390s] [  3%] [32m[1mLinking CXX executable bin/yolo_detect[0m
+[2.464s] [100%] Built target yolo_detect
+[2.481s] Invoked command in '/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/build/yolo_detect' returned '0': CONDA_PROMPT_MODIFIER=(ros2_humble) /open_app/miniconda3/envs/ros2_humble/bin/cmake --build /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/build/yolo_detect -- -j4 -l4
+[2.496s] Invoking command in '/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/build/yolo_detect': CONDA_PROMPT_MODIFIER=(ros2_humble) /open_app/miniconda3/envs/ros2_humble/bin/cmake --install /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/build/yolo_detect
+[2.503s] -- Install configuration: ""
+[2.504s] -- Installing: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/yolo_detect/lib/yolo_detect/yolo_detect
+[2.508s] -- Set runtime path of "/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/yolo_detect/lib/yolo_detect/yolo_detect" to ""
+[2.508s] -- Installing: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/yolo_detect/share/ament_index/resource_index/package_run_dependencies/yolo_detect
+[2.509s] -- Up-to-date: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/yolo_detect/share/ament_index/resource_index/parent_prefix_path/yolo_detect
+[2.509s] -- Up-to-date: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/yolo_detect/share/yolo_detect/environment/ament_prefix_path.sh
+[2.509s] -- Installing: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/yolo_detect/share/yolo_detect/environment/ament_prefix_path.dsv
+[2.509s] -- Up-to-date: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/yolo_detect/share/yolo_detect/environment/path.sh
+[2.510s] -- Installing: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/yolo_detect/share/yolo_detect/environment/path.dsv
+[2.510s] -- Up-to-date: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/yolo_detect/share/yolo_detect/local_setup.bash
+[2.510s] -- Up-to-date: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/yolo_detect/share/yolo_detect/local_setup.sh
+[2.510s] -- Up-to-date: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/yolo_detect/share/yolo_detect/local_setup.zsh
+[2.510s] -- Installing: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/yolo_detect/share/yolo_detect/local_setup.dsv
+[2.511s] -- Installing: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/yolo_detect/share/yolo_detect/package.dsv
+[2.511s] -- Up-to-date: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/yolo_detect/share/ament_index/resource_index/packages/yolo_detect
+[2.511s] -- Up-to-date: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/yolo_detect/share/yolo_detect/cmake/yolo_detectConfig.cmake
+[2.511s] -- Up-to-date: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/yolo_detect/share/yolo_detect/cmake/yolo_detectConfig-version.cmake
+[2.512s] -- Installing: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/yolo_detect/share/yolo_detect/package.xml
+[2.515s] Invoked command in '/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/build/yolo_detect' returned '0': CONDA_PROMPT_MODIFIER=(ros2_humble) /open_app/miniconda3/envs/ros2_humble/bin/cmake --install /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/build/yolo_detect

@@ -1,0 +1,58 @@
+make[2]: Warning: File '/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/dji_precision_capture/include/camera_controller.h' has modification time 21522 s in the future
+[  1%] [32mBuilding CXX object CMakeFiles/dji_precision_capture.dir/src/main.cpp.o[0m
+In file included from [01m[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/dji_precision_capture/src/main.cpp:15[m[K:
+[01m[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/dji_precision_capture/./include/camera_controller.h:65:63:[m[K [01;35m[Kwarning: [m[KISO C++11 requires at least one argument for the "..." in a variadic macro
+   65 |         USER_LOG_INFO("--> Step 1: Init camera manager module"[01;35m[K)[m[K;
+      |                                                               [01;35m[K^[m[K
+[01m[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/dji_precision_capture/./include/camera_controller.h:71:64:[m[K [01;35m[Kwarning: [m[KISO C++11 requires at least one argument for the "..." in a variadic macro
+   71 |         USER_LOG_INFO("--> Step 2: Get camera type and version"[01;35m[K)[m[K;
+      |                                                                [01;35m[K^[m[K
+[01m[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/dji_precision_capture/./include/camera_controller.h:93:63:[m[K [01;35m[Kwarning: [m[KISO C++11 requires at least one argument for the "..." in a variadic macro
+   93 |         USER_LOG_INFO("--> Step 1: Init gimbal manager module"[01;35m[K)[m[K;
+      |                                                               [01;35m[K^[m[K
+[01m[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/dji_precision_capture/./include/camera_controller.h:99:60:[m[K [01;35m[Kwarning: [m[KISO C++11 requires at least one argument for the "..." in a variadic macro
+   99 |         USER_LOG_INFO("--> Step 2: Set gimbal to free mode"[01;35m[K)[m[K;
+      |                                                            [01;35m[K^[m[K
+[01m[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/dji_precision_capture/./include/camera_controller.h:102:61:[m[K [01;35m[Kwarning: [m[KISO C++11 requires at least one argument for the "..." in a variadic macro
+  102 |         USER_LOG_INFO("--> Step 3: Reset gimbal angles.\r\n"[01;35m[K)[m[K;
+      |                                                             [01;35m[K^[m[K
+[01m[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/dji_precision_capture/./include/camera_controller.h:110:67:[m[K [01;35m[Kwarning: [m[KISO C++11 requires at least one argument for the "..." in a variadic macro
+  110 |         USER_LOG_INFO("--> Step 1: Init gimbal data subscribation"[01;35m[K)[m[K;
+      |                                                                   [01;35m[K^[m[K
+In file included from [01m[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/dji_precision_capture/../../../Payload-SDK/samples/sample_c++/platform/linux/manifold3/../my_code/gimbal_manager.h:12[m[K,
+                 from [01m[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/dji_precision_capture/src/main.cpp:13[m[K:
+[01m[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/dji_precision_capture/../../../Payload-SDK/samples/sample_c++/platform/linux/manifold3/../../../../../psdk_lib/include/dji_fc_subscription.h:1210:16:[m[K [01;35m[Kwarning: [m[KISO C++ prohibits anonymous structs [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-14.3.0/gcc/Warning-Options.html#index-Wno-pedantic-Wpedantic]8;;[m[K]
+ 1210 |         struct [01;35m[K{[m[K
+      |                [01;35m[K^[m[K
+[01m[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/dji_precision_capture/../../../Payload-SDK/samples/sample_c++/platform/linux/manifold3/../../../../../psdk_lib/include/dji_fc_subscription.h:1219:16:[m[K [01;35m[Kwarning: [m[KISO C++ prohibits anonymous structs [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-14.3.0/gcc/Warning-Options.html#index-Wno-pedantic-Wpedantic]8;;[m[K]
+ 1219 |         struct [01;35m[K{[m[K
+      |                [01;35m[K^[m[K
+[01m[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/dji_precision_capture/./include/camera_controller.h:[m[K In constructor '[01m[Kcamera_controller::[01;32m[Kcamera_controller[m[K(int, char**)[m[K':
+[01m[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/dji_precision_capture/./include/camera_controller.h:52:33:[m[K [01;31m[Kerror: [m[Kinvalid conversion from '[01m[Kchar**[m[K' to '[01m[Kint[m[K' [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-14.3.0/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+   52 |         Application application([01;31m[Kargc[m[K, argv);
+      |                                 [01;31m[K^~~~[m[K
+      |                                 [01;31m[K|[m[K
+      |                                 [01;31m[Kchar**[m[K
+In file included from [01m[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/dji_precision_capture/src/main.cpp:3[m[K:
+[01m[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/dji_precision_capture/../../../Payload-SDK/samples/sample_c++/platform/linux/manifold3/../manifold3/application/application.hpp:47:21:[m[K [01;36m[Knote: [m[K  initializing argument 1 of '[01m[KApplication::[01;32m[KApplication[m[K(int, char**)[m[K'
+   47 |     Application([01;36m[Kint argc[m[K, char **argv);
+      |                 [01;36m[K~~~~^~~~[m[K
+[01m[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/dji_precision_capture/./include/camera_controller.h:52:39:[m[K [01;31m[Kerror: [m[Kinvalid conversion from '[01m[Kint[m[K' to '[01m[Kchar**[m[K' [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-14.3.0/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+   52 |         Application application(argc, [01;31m[Kargv[m[K);
+      |                                       [01;31m[K^~~~[m[K
+      |                                       [01;31m[K|[m[K
+      |                                       [01;31m[Kint[m[K
+[01m[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/dji_precision_capture/../../../Payload-SDK/samples/sample_c++/platform/linux/manifold3/../manifold3/application/application.hpp:47:34:[m[K [01;36m[Knote: [m[K  initializing argument 2 of '[01m[KApplication::[01;32m[KApplication[m[K(int, char**)[m[K'
+   47 |     Application(int argc, [01;36m[Kchar **argv[m[K);
+      |                           [01;36m[K~~~~~~~^~~~[m[K
+[01m[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/dji_precision_capture/./include/camera_controller.h:[m[K In member function '[01m[Kint camera_controller::[01;32m[Kcamera_control[m[K()[m[K':
+[01m[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/dji_precision_capture/./include/camera_controller.h:253:1:[m[K [01;35m[Kwarning: [m[Kno return statement in function returning non-void [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-14.3.0/gcc/Warning-Options.html#index-Wno-return-type-Wreturn-type]8;;[m[K]
+  253 | [01;35m[K}[m[K
+      | [01;35m[K^[m[K
+[01m[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/dji_precision_capture/./include/camera_controller.h:[m[K In member function '[01m[Kint camera_controller::[01;32m[Kcamera_control_loop[m[K()[m[K':
+[01m[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/dji_precision_capture/./include/camera_controller.h:314:1:[m[K [01;35m[Kwarning: [m[Kno return statement in function returning non-void [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-14.3.0/gcc/Warning-Options.html#index-Wno-return-type-Wreturn-type]8;;[m[K]
+  314 | [01;35m[K}[m[K
+      | [01;35m[K^[m[K
+make[2]: *** [CMakeFiles/dji_precision_capture.dir/build.make:76: CMakeFiles/dji_precision_capture.dir/src/main.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:85: CMakeFiles/dji_precision_capture.dir/all] Error 2
+make: *** [Makefile:146: all] Error 2

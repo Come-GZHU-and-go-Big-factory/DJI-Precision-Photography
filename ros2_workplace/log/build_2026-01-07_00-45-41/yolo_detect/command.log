@@ -1,0 +1,1 @@
+Invoking command in '/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/build/yolo_detect': CONDA_PROMPT_MODIFIER=(ros2_humble) /open_app/miniconda3/envs/ros2_humble/bin/cmake --build /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/build/yolo_detect -- -j4 -l4

@@ -1,0 +1,97 @@
+[01m[K/home/dji/DJI_workshop/LZP_PSDK/Payload-SDK/samples/sample_c++/module_sample/liveview/dji_liveview_object_detection.cpp:119:38:[m[K [01;35m[Kwarning: [m[KISO C++11 requires at least one argument for the "..." in a variadic macro
+  119 |     USER_LOG_INFO("do ar reflesh all"[01;35m[K)[m[K;
+      |                                      [01;35m[K^[m[K
+[01m[K/home/dji/DJI_workshop/LZP_PSDK/Payload-SDK/samples/sample_c++/module_sample/liveview/dji_liveview_object_detection.cpp:145:88:[m[K [01;35m[Kwarning: [m[KISO C++11 requires at least one argument for the "..." in a variadic macro
+  145 |     USER_LOG_INFO("Input cammera sourece(1:1080p, 3:M4 serials 4K, 7:H30 serials 4K): "[01;35m[K)[m[K;
+      |                                                                                        [01;35m[K^[m[K
+[01m[K/home/dji/DJI_workshop/LZP_PSDK/Payload-SDK/samples/sample_c++/module_sample/liveview/dji_liveview_object_detection.cpp:149:39:[m[K [01;35m[Kwarning: [m[KISO C++11 requires at least one argument for the "..." in a variadic macro
+  149 |         USER_LOG_ERROR("invalid param"[01;35m[K)[m[K;
+      |                                       [01;35m[K^[m[K
+[01m[K/home/dji/DJI_workshop/LZP_PSDK/Payload-SDK/samples/sample_c++/module_sample/liveview/dji_liveview_object_detection.cpp:185:42:[m[K [01;35m[Kwarning: [m[KISO C++11 requires at least one argument for the "..." in a variadic macro
+  185 |     USER_LOG_INFO("step 1: init liveview"[01;35m[K)[m[K;
+      |                                          [01;35m[K^[m[K
+[01m[K/home/dji/DJI_workshop/LZP_PSDK/Payload-SDK/samples/sample_c++/module_sample/liveview/dji_liveview_object_detection.cpp:196:54:[m[K [01;35m[Kwarning: [m[KISO C++11 requires at least one argument for the "..." in a variadic macro
+  196 |         USER_LOG_ERROR("get aircraft base info error"[01;35m[K)[m[K;
+      |                                                      [01;35m[K^[m[K
+[01m[K/home/dji/DJI_workshop/LZP_PSDK/Payload-SDK/samples/sample_c++/module_sample/liveview/dji_liveview_object_detection.cpp:211:49:[m[K [01;35m[Kwarning: [m[KISO C++11 requires at least one argument for the "..." in a variadic macro
+  211 |     USER_LOG_INFO("step 2: reg encoder callback"[01;35m[K)[m[K;
+      |                                                 [01;35m[K^[m[K
+[01m[K/home/dji/DJI_workshop/LZP_PSDK/Payload-SDK/samples/sample_c++/module_sample/liveview/dji_liveview_object_detection.cpp:219:44:[m[K [01;35m[Kwarning: [m[KISO C++11 requires at least one argument for the "..." in a variadic macro
+  219 |     USER_LOG_INFO("step 3:start yuv stream"[01;35m[K)[m[K;
+      |                                            [01;35m[K^[m[K
+[01m[K/home/dji/DJI_workshop/LZP_PSDK/Payload-SDK/samples/sample_c++/module_sample/liveview/dji_liveview_object_detection.cpp:228:43:[m[K [01;35m[Kwarning: [m[KISO C++11 requires at least one argument for the "..." in a variadic macro
+  228 |     USER_LOG_INFO("codec sample start ..."[01;35m[K)[m[K;
+      |                                           [01;35m[K^[m[K
+[01m[K/home/dji/DJI_workshop/LZP_PSDK/Payload-SDK/samples/sample_c++/module_sample/liveview/dji_liveview_object_detection.cpp:236:37:[m[K [01;35m[Kwarning: [m[KISO C++11 requires at least one argument for the "..." in a variadic macro
+  236 |     USER_LOG_INFO("codec sample end"[01;35m[K)[m[K;
+      |                                     [01;35m[K^[m[K
+[01m[K/home/dji/DJI_workshop/LZP_PSDK/Payload-SDK/samples/sample_c++/module_sample/liveview/dji_liveview_object_detection.cpp:293:50:[m[K [01;35m[Kwarning: [m[KISO C++11 requires at least one argument for the "..." in a variadic macro
+  293 |         USER_LOG_ERROR( "output.h264 is not open"[01;35m[K)[m[K;
+      |                                                  [01;35m[K^[m[K
+[01m[K/home/dji/DJI_workshop/LZP_PSDK/Payload-SDK/samples/sample_c++/module_sample/liveview/dji_liveview_object_detection.cpp:301:50:[m[K [01;35m[Kwarning: [m[KISO C++11 requires at least one argument for the "..." in a variadic macro
+  301 |         USER_LOG_ERROR( "outyuv.h264 is not open"[01;35m[K)[m[K;
+      |                                                  [01;35m[K^[m[K
+[01m[K/home/dji/DJI_workshop/LZP_PSDK/Payload-SDK/samples/sample_c++/module_sample/liveview/dji_liveview_object_detection.cpp:323:67:[m[K [01;35m[Kwarning: [m[KISO C++11 requires at least one argument for the "..." in a variadic macro
+  323 |         USER_LOG_WARN("The image queue is full. Drop this strike."[01;35m[K)[m[K;
+      |                                                                   [01;35m[K^[m[K
+[01m[K/home/dji/DJI_workshop/LZP_PSDK/Payload-SDK/samples/sample_c++/module_sample/liveview/image_processor_yolovfastest.cpp:48:41:[m[K [01;35m[Kwarning: [m[KISO C++11 requires at least one argument for the "..." in a variadic macro
+   48 |         USER_LOG_ERROR("get path failed"[01;35m[K)[m[K;
+      |                                         [01;35m[K^[m[K
+[01m[K/home/dji/DJI_workshop/LZP_PSDK/Payload-SDK/samples/sample_c++/module_sample/liveview/image_processor_yolovfastest.cpp:63:48:[m[K [01;35m[Kwarning: [m[KISO C++11 requires at least one argument for the "..." in a variadic macro
+   63 |         USER_LOG_ERROR("Failed to load network"[01;35m[K)[m[K;
+      |                                                [01;35m[K^[m[K
+In file included from [01m[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/src/main.cpp:18[m[K:
+[01m[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/./include/ai_detect.h:65:10:[m[K [01;31m[Kfatal error: [m[Kimage_processor_yolovfastest.hpp: No such file or directory
+   65 | #include [01;31m[K"image_processor_yolovfastest.hpp"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+make[2]: *** [CMakeFiles/yolo_detect.dir/build.make:76: CMakeFiles/yolo_detect.dir/src/main.cpp.o] Error 1
+make[2]: *** Waiting for unfinished jobs....
+In file included from [01m[K/home/dji/DJI_workshop/LZP_PSDK/Payload-SDK/samples/sample_c++/module_sample/liveview/dji_liveview_object_detection.cpp:41[m[K:
+[01m[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/../../../Payload-SDK/samples/sample_c++/platform/linux/manifold3/../../../../../psdk_lib/include/dji_open_ar.h:126:33:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array '[01m[Kpoints[m[K' [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-14.3.0/gcc/Warning-Options.html#index-Wno-pedantic-Wpedantic]8;;[m[K]
+  126 |         T_DjiOpenArPoint points[[01;35m[K0[m[K]; /*!< 0 length implies dynamic allocation */
+      |                                 [01;35m[K^[m[K
+[01m[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/../../../Payload-SDK/samples/sample_c++/platform/linux/manifold3/../../../../../psdk_lib/include/dji_open_ar.h:135:31:[m[K [01;35m[Kwarning: [m[Kinvalid use of '[01m[Kstruct T_DjiOpenArPointArray[m[K' with a zero-size array in '[01m[Kstruct<unnamed>[m[K' [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-14.3.0/gcc/Warning-Options.html#index-Wno-pedantic-Wpedantic]8;;[m[K]
+  135 |         T_DjiOpenArPointArray [01;35m[Kpoint_array[m[K; /*!< Array of points defining the line */
+      |                               [01;35m[K^~~~~~~~~~~[m[K
+[01m[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/../../../Payload-SDK/samples/sample_c++/platform/linux/manifold3/../../../../../psdk_lib/include/dji_open_ar.h:126:26:[m[K [01;36m[Knote: [m[Karray member '[01m[KT_DjiOpenArPoint T_DjiOpenArPointArray::points [0][m[K' declared here
+  126 |         T_DjiOpenArPoint [01;36m[Kpoints[m[K[0]; /*!< 0 length implies dynamic allocation */
+      |                          [01;36m[K^~~~~~[m[K
+[01m[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/../../../Payload-SDK/samples/sample_c++/platform/linux/manifold3/../../../../../psdk_lib/include/dji_open_ar.h:147:31:[m[K [01;35m[Kwarning: [m[Kinvalid use of '[01m[Kstruct T_DjiOpenArPointArray[m[K' with a zero-size array in '[01m[Kstruct<unnamed>[m[K' [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-14.3.0/gcc/Warning-Options.html#index-Wno-pedantic-Wpedantic]8;;[m[K]
+  147 |         T_DjiOpenArPointArray [01;35m[Kpoint_array[m[K; /*!< Array of points defining the polygon */
+      |                               [01;35m[K^~~~~~~~~~~[m[K
+[01m[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/../../../Payload-SDK/samples/sample_c++/platform/linux/manifold3/../../../../../psdk_lib/include/dji_open_ar.h:126:26:[m[K [01;36m[Knote: [m[Karray member '[01m[KT_DjiOpenArPoint T_DjiOpenArPointArray::points [0][m[K' declared here
+  126 |         T_DjiOpenArPoint [01;36m[Kpoints[m[K[0]; /*!< 0 length implies dynamic allocation */
+      |                          [01;36m[K^~~~~~[m[K
+[01m[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/../../../Payload-SDK/samples/sample_c++/platform/linux/manifold3/../../../../../psdk_lib/include/dji_open_ar.h:181:25:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array '[01m[Kuuid_array[m[K' [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-14.3.0/gcc/Warning-Options.html#index-Wno-pedantic-Wpedantic]8;;[m[K]
+  181 |     uint32_t uuid_array[[01;35m[K0[m[K]; /*!< Array of UUIDs to identify the elements to be deleted */
+      |                         [01;35m[K^[m[K
+[01m[K/home/dji/DJI_workshop/LZP_PSDK/Payload-SDK/samples/sample_c++/module_sample/liveview/dji_liveview_object_detection.cpp:[m[K In function '[01m[Kvoid[01;32m[K DjiLiveview_RcvImageCallback[m[K(E_DjiLiveViewCameraPosition, const uint8_t*, uint32_t, T_DjiLiveviewImageInfo)[m[K':
+[01m[K/home/dji/DJI_workshop/LZP_PSDK/Payload-SDK/samples/sample_c++/module_sample/liveview/dji_liveview_object_detection.cpp:309:21:[m[K [01;35m[Kwarning: [m[Kunused variable '[01m[KDjiStat[m[K' [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-14.3.0/gcc/Warning-Options.html#index-Wno-unused-variable-Wunused-variable]8;;[m[K]
+  309 |     T_DjiReturnCode [01;35m[KDjiStat[m[K;
+      |                     [01;35m[K^~~~~~~[m[K
+[01m[K/home/dji/DJI_workshop/LZP_PSDK/Payload-SDK/samples/sample_c++/module_sample/liveview/dji_liveview_object_detection.cpp:310:14:[m[K [01;35m[Kwarning: [m[Kunused variable '[01m[KOutPutLen[m[K' [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-14.3.0/gcc/Warning-Options.html#index-Wno-unused-variable-Wunused-variable]8;;[m[K]
+  310 |     uint32_t [01;35m[KOutPutLen[m[K;
+      |              [01;35m[K^~~~~~~~~[m[K
+[01m[K/home/dji/DJI_workshop/LZP_PSDK/Payload-SDK/samples/sample_c++/module_sample/liveview/dji_liveview_object_detection.cpp:307:70:[m[K [01;35m[Kwarning: [m[Kunused parameter '[01m[Kposition[m[K' [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-14.3.0/gcc/Warning-Options.html#index-Wno-unused-parameter-Wunused-parameter]8;;[m[K]
+  307 | static void DjiLiveview_RcvImageCallback([01;35m[KE_DjiLiveViewCameraPosition position[m[K, const uint8_t *buf, uint32_t len, T_DjiLiveviewImageInfo imageInfo)
+      |                                          [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~[m[K
+[01m[K/home/dji/DJI_workshop/LZP_PSDK/Payload-SDK/samples/sample_c++/module_sample/liveview/dji_liveview_object_detection.cpp:[m[K In function '[01m[Kvoid*[01;32m[K DjiLiveview_ObjectDetectionThread[m[K(void*)[m[K':
+[01m[K/home/dji/DJI_workshop/LZP_PSDK/Payload-SDK/samples/sample_c++/module_sample/liveview/dji_liveview_object_detection.cpp:412:27:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: '[01m[Kint[m[K' and '[01m[Kstd::vector<T_DjiLiveViewBoundingBox>::size_type[m[K' {aka '[01m[Klong unsigned int[m[K'} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-14.3.0/gcc/Warning-Options.html#index-Wno-sign-compare-Wsign-compare]8;;[m[K]
+  412 |         for (int i = 0; [01;35m[Ki < bounding_boxes.size()[m[K; i++) {
+      |                         [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/dji/DJI_workshop/LZP_PSDK/Payload-SDK/samples/sample_c++/module_sample/liveview/dji_liveview_object_detection.cpp:387:21:[m[K [01;35m[Kwarning: [m[Kunused variable '[01m[KDjiStat[m[K' [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-14.3.0/gcc/Warning-Options.html#index-Wno-unused-variable-Wunused-variable]8;;[m[K]
+  387 |     T_DjiReturnCode [01;35m[KDjiStat[m[K;
+      |                     [01;35m[K^~~~~~~[m[K
+[01m[K/home/dji/DJI_workshop/LZP_PSDK/Payload-SDK/samples/sample_c++/module_sample/liveview/dji_liveview_object_detection.cpp:386:54:[m[K [01;35m[Kwarning: [m[Kunused parameter '[01m[Karg[m[K' [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-14.3.0/gcc/Warning-Options.html#index-Wno-unused-parameter-Wunused-parameter]8;;[m[K]
+  386 | static void* DjiLiveview_ObjectDetectionThread([01;35m[Kvoid *arg[m[K) {
+      |                                                [01;35m[K~~~~~~^~~[m[K
+[01m[K/home/dji/DJI_workshop/LZP_PSDK/Payload-SDK/samples/sample_c++/module_sample/liveview/dji_liveview_object_detection.cpp:[m[K At global scope:
+[01m[K/home/dji/DJI_workshop/LZP_PSDK/Payload-SDK/samples/sample_c++/module_sample/liveview/dji_liveview_object_detection.cpp:299:13:[m[K [01;35m[Kwarning: [m[K'[01m[Kvoid[01;32m[K outYUVTofile[m[K(const uint8_t*, int32_t)[m[K' defined but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-14.3.0/gcc/Warning-Options.html#index-Wno-unused-function-Wunused-function]8;;[m[K]
+  299 | static void [01;35m[KoutYUVTofile[m[K(const uint8_t *buf, int32_t len) {
+      |             [01;35m[K^~~~~~~~~~~~[m[K
+[01m[K/home/dji/DJI_workshop/LZP_PSDK/Payload-SDK/samples/sample_c++/module_sample/liveview/dji_liveview_object_detection.cpp:78:20:[m[K [01;35m[Kwarning: [m[K'[01m[Ks_invalidLables[m[K' defined but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-14.3.0/gcc/Warning-Options.html#index-Wno-unused-variable-Wunused-variable]8;;[m[K]
+   78 | static const char* [01;35m[Ks_invalidLables[m[K[] = {
+      |                    [01;35m[K^~~~~~~~~~~~~~~[m[K
+make[1]: *** [CMakeFiles/Makefile2:85: CMakeFiles/yolo_detect.dir/all] Error 2
+make: *** [Makefile:146: all] Error 2

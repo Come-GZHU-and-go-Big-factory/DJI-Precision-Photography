@@ -1,0 +1,22 @@
+[  3%] Built target uav_detect_result__cpp
+[ 12%] Built target uav_detect_result__rosidl_generator_c
+[ 22%] Built target uav_detect_result__rosidl_typesupport_fastrtps_cpp
+[ 22%] Built target ament_cmake_python_copy_uav_detect_result
+[ 32%] Built target uav_detect_result__rosidl_typesupport_fastrtps_c
+[ 41%] Built target uav_detect_result__rosidl_typesupport_introspection_c
+[ 51%] Built target uav_detect_result__rosidl_typesupport_c
+running egg_info
+writing uav_detect_result.egg-info/PKG-INFO
+writing dependency_links to uav_detect_result.egg-info/dependency_links.txt
+writing top-level names to uav_detect_result.egg-info/top_level.txt
+reading manifest file 'uav_detect_result.egg-info/SOURCES.txt'
+writing manifest file 'uav_detect_result.egg-info/SOURCES.txt'
+[ 51%] Built target ament_cmake_python_build_uav_detect_result_egg
+[ 70%] Built target uav_detect_result__rosidl_typesupport_introspection_cpp
+[ 70%] Built target uav_detect_result__rosidl_typesupport_cpp
+[ 70%] Built target uav_detect_result
+[ 74%] Built target uav_detect_result__py
+[ 80%] Built target uav_detect_result__rosidl_generator_py
+[ 93%] Built target uav_detect_result__rosidl_typesupport_introspection_c__pyext
+[ 93%] Built target uav_detect_result__rosidl_typesupport_fastrtps_c__pyext
+[100%] Built target uav_detect_result__rosidl_typesupport_c__pyext

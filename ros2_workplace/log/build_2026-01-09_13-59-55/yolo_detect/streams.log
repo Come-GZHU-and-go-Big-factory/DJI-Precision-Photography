@@ -1,0 +1,91 @@
+[0.028s] Invoking command in '/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/build/yolo_detect': CONDA_PROMPT_MODIFIER=(ros2_humble) /open_app/miniconda3/envs/ros2_humble/bin/cmake --build /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/build/yolo_detect -- -j4 -l4
+[0.137s] [  1%] [32mBuilding CXX object CMakeFiles/yolo_detect.dir/src/main.cpp.o[0m
+[1.195s] In file included from [01m[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/src/main.cpp:18[m[K:
+[1.196s] [01m[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/./include/ai_detect.h:90:48:[m[K [01;35m[Kwarning: [m[KISO C++11 requires at least one argument for the "..." in a variadic macro
+[1.196s]    90 |         USER_LOG_INFO("Input cammera sourece: "[01;35m[K)[m[K;
+[1.196s]       |                                                [01;35m[K^[m[K
+[1.196s] [01m[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/./include/ai_detect.h:93:48:[m[K [01;35m[Kwarning: [m[KISO C++11 requires at least one argument for the "..." in a variadic macro
+[1.196s]    93 |             case 0:USER_LOG_INFO("app liveview"[01;35m[K)[m[K;break;
+[1.196s]       |                                                [01;35m[K^[m[K
+[1.197s] [01m[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/./include/ai_detect.h:94:50:[m[K [01;35m[Kwarning: [m[KISO C++11 requires at least one argument for the "..." in a variadic macro
+[1.197s]    94 |             case 1:USER_LOG_INFO("1080P for H30T"[01;35m[K)[m[K;break;
+[1.197s]       |                                                  [01;35m[K^[m[K
+[1.197s] [01m[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/./include/ai_detect.h:95:47:[m[K [01;35m[Kwarning: [m[KISO C++11 requires at least one argument for the "..." in a variadic macro
+[1.197s]    95 |             case 7:USER_LOG_INFO("4k for H30T"[01;35m[K)[m[K;break;
+[1.197s]       |                                               [01;35m[K^[m[K
+[1.200s] [01m[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/./include/ai_detect.h:136:46:[m[K [01;35m[Kwarning: [m[KISO C++11 requires at least one argument for the "..." in a variadic macro
+[1.200s]   136 |         USER_LOG_INFO("step 1: init liveview"[01;35m[K)[m[K;
+[1.200s]       |                                              [01;35m[K^[m[K
+[1.201s] [01m[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/./include/ai_detect.h:155:53:[m[K [01;35m[Kwarning: [m[KISO C++11 requires at least one argument for the "..." in a variadic macro
+[1.201s]   155 |         USER_LOG_INFO("step 2: reg encoder callback"[01;35m[K)[m[K;
+[1.201s]       |                                                     [01;35m[K^[m[K
+[1.201s] [01m[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/./include/ai_detect.h:162:48:[m[K [01;35m[Kwarning: [m[KISO C++11 requires at least one argument for the "..." in a variadic macro
+[1.201s]   162 |         USER_LOG_INFO("step 3:start yuv stream"[01;35m[K)[m[K;
+[1.201s]       |                                                [01;35m[K^[m[K
+[1.201s] [01m[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/./include/ai_detect.h:343:67:[m[K [01;35m[Kwarning: [m[KISO C++11 requires at least one argument for the "..." in a variadic macro
+[1.202s]   343 |         USER_LOG_WARN("The image queue is full. Drop this strike."[01;35m[K)[m[K;
+[1.202s]       |                                                                   [01;35m[K^[m[K
+[1.202s] [01m[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/./include/ai_detect.h:389:50:[m[K [01;35m[Kwarning: [m[KISO C++11 requires at least one argument for the "..." in a variadic macro
+[1.202s]   389 |         USER_LOG_ERROR( "output.h264 is not open"[01;35m[K)[m[K;
+[1.202s]       |                                                  [01;35m[K^[m[K
+[1.202s] [01m[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/./include/ai_detect.h:398:50:[m[K [01;35m[Kwarning: [m[KISO C++11 requires at least one argument for the "..." in a variadic macro
+[1.203s]   398 |         USER_LOG_ERROR( "outyuv.h264 is not open"[01;35m[K)[m[K;
+[1.203s]       |                                                  [01;35m[K^[m[K
+[1.778s] In file included from [01m[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/../../../Payload-SDK/samples/sample_c++/platform/linux/manifold3/../my_code/gimbal_manager.h:12[m[K,
+[1.778s]                  from [01m[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/src/main.cpp:13[m[K:
+[1.778s] [01m[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/../../../Payload-SDK/samples/sample_c++/platform/linux/manifold3/../../../../../psdk_lib/include/dji_fc_subscription.h:1210:16:[m[K [01;35m[Kwarning: [m[KISO C++ prohibits anonymous structs [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-14.3.0/gcc/Warning-Options.html#index-Wno-pedantic-Wpedantic]8;;[m[K]
+[1.778s]  1210 |         struct [01;35m[K{[m[K
+[1.779s]       |                [01;35m[K^[m[K
+[1.779s] [01m[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/../../../Payload-SDK/samples/sample_c++/platform/linux/manifold3/../../../../../psdk_lib/include/dji_fc_subscription.h:1219:16:[m[K [01;35m[Kwarning: [m[KISO C++ prohibits anonymous structs [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-14.3.0/gcc/Warning-Options.html#index-Wno-pedantic-Wpedantic]8;;[m[K]
+[1.779s]  1219 |         struct [01;35m[K{[m[K
+[1.779s]       |                [01;35m[K^[m[K
+[6.960s] [01m[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/./include/ai_detect.h:171:23:[m[K [01;31m[Kerror: [m[K'[01m[Kconstexpr[m[K' needed for in-class initialization of static data member '[01m[Kai_detect* ai_detect::s_instance[m[K' of non-integral type [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-14.3.0/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+[6.960s]   171 |     static ai_detect* [01;31m[Ks_instance[m[K = nullptr;
+[6.961s]       |                       [01;31m[K^~~~~~~~~~[m[K
+[6.961s] [01m[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/./include/ai_detect.h:210:26:[m[K [01;31m[Kerror: [m[Kin-class initialization of static data member '[01m[Kstd::ofstream ai_detect::outFileH264[m[K' of non-literal type
+[6.961s]   210 |     static std::ofstream [01;31m[KoutFileH264[m[K = nullptr;
+[6.961s]       |                          [01;31m[K^~~~~~~~~~~[m[K
+[6.962s] [01m[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/./include/ai_detect.h:210:40:[m[K [01;31m[Kerror: [m[Kconversion from '[01m[Kstd::nullptr_t[m[K' to non-scalar type '[01m[Kstd::ofstream[m[K' {aka '[01m[Kstd::basic_ofstream<char>[m[K'} requested
+[6.962s]   210 |     static std::ofstream outFileH264 = [01;31m[Knullptr[m[K;
+[6.962s]       |                                        [01;31m[K^~~~~~~[m[K
+[6.963s] [01m[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/./include/ai_detect.h:210:40:[m[K [01;31m[Kerror: [m[Knon-constant in-class initialization invalid for non-inline static member '[01m[Kai_detect::outFileH264[m[K'
+[6.963s] [01m[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/./include/ai_detect.h:210:40:[m[K [01;36m[Knote: [m[K(an out of class initialization is required)
+[6.963s] [01m[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/./include/ai_detect.h:212:26:[m[K [01;31m[Kerror: [m[Kin-class initialization of static data member '[01m[Kstd::ofstream ai_detect::outFileYUV[m[K' of non-literal type
+[6.963s]   212 |     static std::ofstream [01;31m[KoutFileYUV[m[K = nullptr;
+[6.963s]       |                          [01;31m[K^~~~~~~~~~[m[K
+[6.963s] [01m[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/./include/ai_detect.h:212:39:[m[K [01;31m[Kerror: [m[Kconversion from '[01m[Kstd::nullptr_t[m[K' to non-scalar type '[01m[Kstd::ofstream[m[K' {aka '[01m[Kstd::basic_ofstream<char>[m[K'} requested
+[6.963s]   212 |     static std::ofstream outFileYUV = [01;31m[Knullptr[m[K;
+[6.964s]       |                                       [01;31m[K^~~~~~~[m[K
+[6.964s] [01m[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/./include/ai_detect.h:212:39:[m[K [01;31m[Kerror: [m[Knon-constant in-class initialization invalid for non-inline static member '[01m[Kai_detect::outFileYUV[m[K'
+[6.968s] [01m[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/./include/ai_detect.h:[m[K In constructor '[01m[Kai_detect::[01;32m[Kai_detect[m[K(int, char**)[m[K':
+[6.968s] [01m[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/./include/ai_detect.h:80:19:[m[K [01;35m[Kwarning: [m[Kunused parameter '[01m[Kargc[m[K' [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-14.3.0/gcc/Warning-Options.html#index-Wno-unused-parameter-Wunused-parameter]8;;[m[K]
+[6.969s]    80 |     ai_detect([01;35m[Kint argc[m[K,char ** argv):rclcpp::Node("ai_detect")
+[6.969s]       |               [01;35m[K~~~~^~~~[m[K
+[6.969s] [01m[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/./include/ai_detect.h:80:32:[m[K [01;35m[Kwarning: [m[Kunused parameter '[01m[Kargv[m[K' [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-14.3.0/gcc/Warning-Options.html#index-Wno-unused-parameter-Wunused-parameter]8;;[m[K]
+[6.969s]    80 |     ai_detect(int argc,[01;35m[Kchar ** argv[m[K):rclcpp::Node("ai_detect")
+[6.969s]       |                        [01;35m[K~~~~~~~~^~~~[m[K
+[6.994s] [01m[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/./include/ai_detect.h:[m[K In member function '[01m[Kvoid* ai_detect::[01;32m[KDjiLiveview_ObjectDetectionThread[m[K()[m[K':
+[6.994s] [01m[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/./include/ai_detect.h:284:27:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: '[01m[Kint[m[K' and '[01m[Kstd::vector<T_DjiLiveViewBoundingBox>::size_type[m[K' {aka '[01m[Klong unsigned int[m[K'} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-14.3.0/gcc/Warning-Options.html#index-Wno-sign-compare-Wsign-compare]8;;[m[K]
+[6.995s]   284 |         for (int i = 0; [01;35m[Ki < bounding_boxes.size()[m[K; i++) {
+[6.995s]       |                         [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[7.002s] [01m[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/./include/ai_detect.h:249:21:[m[K [01;35m[Kwarning: [m[Kunused variable '[01m[KDjiStat[m[K' [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-14.3.0/gcc/Warning-Options.html#index-Wno-unused-variable-Wunused-variable]8;;[m[K]
+[7.002s]   249 |     T_DjiReturnCode [01;35m[KDjiStat[m[K;
+[7.002s]       |                     [01;35m[K^~~~~~~[m[K
+[7.004s] [01m[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/./include/ai_detect.h:[m[K In member function '[01m[Kvoid ai_detect::[01;32m[KDjiLiveview_RcvImageCallback[m[K(E_DjiLiveViewCameraPosition, const uint8_t*, uint32_t, T_DjiLiveviewImageInfo)[m[K':
+[7.004s] [01m[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/./include/ai_detect.h:321:21:[m[K [01;35m[Kwarning: [m[Kunused variable '[01m[KDjiStat[m[K' [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-14.3.0/gcc/Warning-Options.html#index-Wno-unused-variable-Wunused-variable]8;;[m[K]
+[7.004s]   321 |     T_DjiReturnCode [01;35m[KDjiStat[m[K;
+[7.005s]       |                     [01;35m[K^~~~~~~[m[K
+[7.005s] [01m[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/./include/ai_detect.h:323:14:[m[K [01;35m[Kwarning: [m[Kunused variable '[01m[KOutPutLen[m[K' [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-14.3.0/gcc/Warning-Options.html#index-Wno-unused-variable-Wunused-variable]8;;[m[K]
+[7.005s]   323 |     uint32_t [01;35m[KOutPutLen[m[K;
+[7.005s]       |              [01;35m[K^~~~~~~~~[m[K
+[7.006s] [01m[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/./include/ai_detect.h:319:74:[m[K [01;35m[Kwarning: [m[Kunused parameter '[01m[Kposition[m[K' [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-14.3.0/gcc/Warning-Options.html#index-Wno-unused-parameter-Wunused-parameter]8;;[m[K]
+[7.006s]   319 | void ai_detect::DjiLiveview_RcvImageCallback([01;35m[KE_DjiLiveViewCameraPosition position[m[K, const uint8_t *buf, uint32_t len, T_DjiLiveviewImageInfo imageInfo){
+[7.006s]       |                                              [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~[m[K
+[9.559s] [01m[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/./include/ai_detect.h:[m[K At global scope:
+[9.559s] [01m[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/./include/ai_detect.h:55:20:[m[K [01;35m[Kwarning: [m[K'[01m[Ks_invalidLables[m[K' defined but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-14.3.0/gcc/Warning-Options.html#index-Wno-unused-variable-Wunused-variable]8;;[m[K]
+[9.559s]    55 | static const char* [01;35m[Ks_invalidLables[m[K[] = {
+[9.559s]       |                    [01;35m[K^~~~~~~~~~~~~~~[m[K
+[9.628s] make[2]: *** [CMakeFiles/yolo_detect.dir/build.make:76: CMakeFiles/yolo_detect.dir/src/main.cpp.o] Error 1
+[9.628s] make[1]: *** [CMakeFiles/Makefile2:85: CMakeFiles/yolo_detect.dir/all] Error 2
+[9.629s] make: *** [Makefile:146: all] Error 2
+[9.633s] Invoked command in '/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/build/yolo_detect' returned '2': CONDA_PROMPT_MODIFIER=(ros2_humble) /open_app/miniconda3/envs/ros2_humble/bin/cmake --build /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/build/yolo_detect -- -j4 -l4

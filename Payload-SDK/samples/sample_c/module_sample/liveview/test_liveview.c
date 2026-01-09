@@ -55,17 +55,7 @@ static void DjiTest_PayloadCameraStreamCallback(E_DjiLiveViewCameraPosition posi
 
 void DjiTest_LiveviewSample(void)
 {
-    int pos;
-
-    do {
-        printf("Please enter the camera mount position (valid values: 1 or 2): ");
-        scanf("%d", &pos);
-
-        if (pos != 1 && pos != 2) {
-            printf("Invalid input, please enter 1 or 2.\n");
-        }
-    } while (pos != 1 && pos != 2);
-
+    int pos=1;
     DjiTest_LiveviewRunSample((E_DjiMountPosition)pos);
 }
 

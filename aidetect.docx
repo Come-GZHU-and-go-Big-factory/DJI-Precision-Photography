@@ -1,0 +1,142 @@
+void DjiUser_RunCameraAiDetectionSample()
+{
+    int pos = 1;
+    int mediaSource = 0; //support 0(app liveview)/1(1080p)/7(4k) for H30 camera
+    char isQuit;
+    E_DjiLiveViewCameraPosition CameraPostion;
+    E_DjiLiveViewCameraSource MediaResource;
+
+    T_DjiOsalHandler *osalHandler = DjiPlatform_GetOsalHandler();
+
+    USER_LOG_INFO("Input cammera sourece(1:1080p, 3:M4 serials 4K, 7:H30 serials 4K): ");
+    std::cin >> mediaSource;
+    if (pos < 1 || pos > 3 || mediaSource > 7)
+    {
+        USER_LOG_ERROR("invalid param");
+        return;
+    }
+
+    std::string timestamp = getCurrentTimestamp();
+
+    // avoid miss dir error
+    mkdir ("data", 0755);
+    std::string h264FileName = "data/output_" + timestamp + ".h264";
+    outFileH264.open(h264FileName, std::ios::out | std::ios::binary | std::ios::app);
+    if (!outFileH264) {
+        std::cerr << "cant open " << h264FileName << std::endl;
+    }
+
+#ifdef OPEN_CV_INSTALLED
+    osalHandler->MutexCreate(&s_metaQueueMutexHandle);
+    osalHandler->MutexCreate(&s_imageQueueMutexHandle);
+    osalHandler->TaskCreate("objectDetectionTask",DjiLiveview_ObjectDetectionThread,1024*1024,NULL, &s_procThreadHandle);
+    if (processor.Init() != 0) {
+        std::cerr << "Failed to initialize the processor." << std::endl;
+        return ;
+    }
+#endif
+
+    CameraPostion = static_cast<E_DjiLiveViewCameraPosition>(pos);
+    MediaResource = static_cast<E_DjiLiveViewCameraSource>(mediaSource);
+    T_DjiReturnCode returnCode;
+    const T_DjiDataChannelBandwidthProportionOfHighspeedChannel bandwidthProportionOfHighspeedChannel =
+        {10, 60, 30};
+
+    returnCode = DjiHighSpeedDataChannel_SetBandwidthProportion(bandwidthProportionOfHighspeedChannel);
+    if (returnCode != DJI_ERROR_SYSTEM_MODULE_CODE_SUCCESS)
+    {
+        USER_LOG_ERROR("Liveview init failed, HighSpeed channel init error: 0x%08llX", returnCode);
+        return;
+    }
+    USER_LOG_INFO("step 1: init liveview");
+
+    returnCode = DjiLiveview_Init();
+    if (returnCode != DJI_ERROR_SYSTEM_MODULE_CODE_SUCCESS)
+    {
+        USER_LOG_ERROR("Liveview init faild, ret: 0x%08llX", returnCode);
+        goto init_failed;
+    }
+
+    returnCode = DjiAircraftInfo_GetBaseInfo(&aircraftInfoBaseInfo);
+    if (returnCode != DJI_ERROR_SYSTEM_MODULE_CODE_SUCCESS) {
+        USER_LOG_ERROR("get aircraft base info error");
+        return;
+    }
+
+#ifdef OPEN_CV_INSTALLED
+    returnCode = DjiLiveview_RegUserAiTargetLableList(YOLO_LABLES_NUM, s_classLables);
+#else
+    returnCode = DjiLiveview_RegUserAiTargetLableList(INVALID_CLASS_NUM, s_invalidLables);
+#endif
+
+    if (returnCode != DJI_ERROR_SYSTEM_MODULE_CODE_SUCCESS)
+    {
+        USER_LOG_ERROR("Reg ai target lable faild, ret: 0x%08llX", returnCode);
+        goto init_failed;
+    }
+    USER_LOG_INFO("step 2: reg encoder callback");
+
+    returnCode = DjiLiveview_RegEncoderCallback(DjiLiveview_EncoderUseCallback);
+    if (returnCode != DJI_ERROR_SYSTEM_MODULE_CODE_SUCCESS)
+    {
+        USER_LOG_ERROR( "reg Yuv Encoder callback faild, ret: 0x%08llX", returnCode);
+        goto reg_encoder_callback_failed;
+    }
+    USER_LOG_INFO("step 3:start yuv stream");
+
+    returnCode = DjiLiveview_StartImageStream(CameraPostion, MediaResource,
+                                              PIXFMT_RGB_PACKED ,DjiLiveview_RcvImageCallback);
+    if (returnCode != DJI_ERROR_SYSTEM_MODULE_CODE_SUCCESS)
+    {
+        USER_LOG_ERROR( "start to subscribe YUV stream failed, ret: 0x%08llX", returnCode);
+        goto start_yuv_stream_failed;
+    }
+    USER_LOG_INFO("codec sample start ...");
+
+    while (true) {
+        std::cin >> isQuit;
+        if (isQuit == 'q' || isQuit == 'Q') {
+            break;
+        }
+    }
+    USER_LOG_INFO("codec sample end");
+
+DjiLiveview_UnregUserAiTargetLableList();
+start_yuv_stream_failed:
+    returnCode = DjiLiveview_StopImageStream(CameraPostion, MediaResource);
+    if (returnCode != DJI_ERROR_SYSTEM_MODULE_CODE_SUCCESS)
+    {
+        USER_LOG_ERROR( "stop subscrib YUV stream failed, ret: 0x%08llX", returnCode);
+    }
+
+reg_encoder_callback_failed:
+    returnCode = DjiLiveview_UnregEncoderCallback();
+    if (returnCode != DJI_ERROR_SYSTEM_MODULE_CODE_SUCCESS)
+    {
+        USER_LOG_ERROR( "unreg encoder callback failed, ret: 0x%08llX", returnCode);
+    }
+
+init_failed:
+    returnCode = DjiLiveview_Deinit();
+    if (returnCode != DJI_ERROR_SYSTEM_MODULE_CODE_SUCCESS)
+    {
+        USER_LOG_ERROR( "deinit liveview failed, ret: 0x%08llX", returnCode);
+    }
+    outFileH264.close();
+    outFileYUV.close();
+
+#ifdef OPEN_CV_INSTALLED
+    osalHandler->TaskDestroy(s_procThreadHandle);
+    osalHandler->MutexDestroy(s_imageQueueMutexHandle);
+    osalHandler->MutexDestroy(s_metaQueueMutexHandle);
+
+    while(!s_imageQueue.empty()){
+        s_imageQueue.pop();
+    }
+    while(!s_metaQueue.empty()) {
+        s_metaQueue.pop();
+    }
+
+#endif
+
+}

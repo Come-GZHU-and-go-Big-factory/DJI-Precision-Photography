@@ -1,0 +1,490 @@
+[0.000000] (-) TimerEvent: {}
+[0.000700] (-) JobUnselected: {'identifier': 'dji_precision_capture'}
+[0.001726] (-) JobUnselected: {'identifier': 'uav_detect_result'}
+[0.002289] (yolo_detect) JobQueued: {'identifier': 'yolo_detect', 'dependencies': OrderedDict()}
+[0.002677] (yolo_detect) JobStarted: {'identifier': 'yolo_detect'}
+[0.025893] (yolo_detect) JobProgress: {'identifier': 'yolo_detect', 'progress': 'cmake'}
+[0.027823] (yolo_detect) JobProgress: {'identifier': 'yolo_detect', 'progress': 'build'}
+[0.029177] (yolo_detect) Command: {'cmd': ['/open_app/miniconda3/envs/ros2_humble/bin/cmake', '--build', '/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/build/yolo_detect', '--', '-j4', '-l4'], 'cwd': '/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/build/yolo_detect', 'env': OrderedDict([('PYTHON_BASIC_REPL', '1'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('CONDA_PROMPT_MODIFIER', '(ros2_humble)'), ('USER', 'dji'), ('SSH_CLIENT', '192.168.42.1 6265 22'), ('CXXFLAGS', '-fvisibility-inlines-hidden -fmessage-length=0 -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O3 -pipe -isystem /open_app/miniconda3/envs/ros2_humble/include'), ('GCC_RANLIB', '/open_app/miniconda3/envs/ros2_humble/bin/aarch64-conda-linux-gnu-gcc-ranlib'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/dji/.vscode-server/cli/servers/Stable-994fd12f8d3a5aa16f17d42c041e5809167e845a/server/extensions/git/dist/askpass.sh'), ('OBJCOPY', '/open_app/miniconda3/envs/ros2_humble/bin/aarch64-conda-linux-gnu-objcopy'), ('DEBUG_CXXFLAGS', '-fvisibility-inlines-hidden -fmessage-length=0 -ftree-vectorize -fPIC -fstack-protector-all -fno-plt -Og -g -Wall -Wextra -fvar-tracking-assignments -pipe -isystem /open_app/miniconda3/envs/ros2_humble/include'), ('ROS_ETC_DIR', '/open_app/miniconda3/envs/ros2_humble/etc/ros'), ('SIZE', '/open_app/miniconda3/envs/ros2_humble/bin/aarch64-conda-linux-gnu-size'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/open_app/miniconda3/envs/ros2_humble/opt/rviz_ogre_vendor/lib:/open_app/install/usr/lib:/open_app/install/usr/lib/aarch64-linux-gnu:/usr/local/cuda-11.4/lib64:/open_app/install/usr/lib:/open_app/install/usr/lib/aarch64-linux-gnu:/open_app/install/usr/lib:/open_app/install/usr/lib/aarch64-linux-gnu:/usr/local/cuda-11.4/lib64:'), ('BROWSER', '/home/dji/.vscode-server/cli/servers/Stable-994fd12f8d3a5aa16f17d42c041e5809167e845a/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/dji'), ('CC_FOR_BUILD', '/open_app/miniconda3/envs/ros2_humble/bin/aarch64-conda-linux-gnu-cc'), ('CONDA_SHLVL', '2'), ('OLDPWD', '/home/dji/DJI_workshop/LZP_PSDK'), ('TERM_PROGRAM_VERSION', '1.107.1'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-ecbbc6b0-e048-49b4-b718-5d5c1fd11bdd.sock'), ('CONDA_TOOLCHAIN_BUILD', 'aarch64-conda-linux-gnu'), ('JETSON_L4T', '35.5.0'), ('F90', '/open_app/miniconda3/envs/ros2_humble/bin/aarch64-conda-linux-gnu-gfortran'), ('ROS_PYTHON_VERSION', '3'), ('LDFLAGS', '-Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,--allow-shlib-undefined -Wl,-rpath,/open_app/miniconda3/envs/ros2_humble/lib -Wl,-rpath-link,/open_app/miniconda3/envs/ros2_humble/lib -L/open_app/miniconda3/envs/ros2_humble/lib'), ('JETSON_MODEL', 'NVIDIA Orin NX Developer Kit'), ('CONDA_BACKUP_CMAKE_PREFIX_PATH', '/open_app/install:/open_app/install/usr:/open_app/install:/open_app/install/usr:/open_app/install:/open_app/install/usr:'), ('FC', '/open_app/miniconda3/envs/ros2_humble/bin/aarch64-conda-linux-gnu-gfortran'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/dji/.vscode-server/cli/servers/Stable-994fd12f8d3a5aa16f17d42c041e5809167e845a/server/extensions/git/dist/askpass-main.js'), ('STRINGS', '/open_app/miniconda3/envs/ros2_humble/bin/aarch64-conda-linux-gnu-strings'), ('VSCODE_GIT_ASKPASS_NODE', '/home/dji/.vscode-server/cli/servers/Stable-994fd12f8d3a5aa16f17d42c041e5809167e845a/server/node'), ('SSL_CERT_FILE', '/usr/lib/ssl/certs/ca-certificates.crt'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('BUNDLED_DEBUGPY_PATH', '/home/dji/.vscode-server/extensions/ms-python.debugpy-2025.18.0/bundled/libs/debugpy'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('CPP', '/open_app/miniconda3/envs/ros2_humble/bin/aarch64-conda-linux-gnu-cpp'), ('_CONDA_ROOT', '/open_app/miniconda3'), ('F77', '/open_app/miniconda3/envs/ros2_humble/bin/aarch64-conda-linux-gnu-gfortran'), ('F95', '/open_app/miniconda3/envs/ros2_humble/bin/aarch64-conda-linux-gnu-f95'), ('ELFEDIT', '/open_app/miniconda3/envs/ros2_humble/bin/aarch64-conda-linux-gnu-elfedit'), ('https_proxy', 'http://127.0.0.1:7890'), ('STRIP', '/open_app/miniconda3/envs/ros2_humble/bin/aarch64-conda-linux-gnu-strip'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'dji'), ('GCC', '/open_app/miniconda3/envs/ros2_humble/bin/aarch64-conda-linux-gnu-gcc'), ('JETSON_MODULE', ''), ('JETSON_SERIAL_NUMBER', '1422525003257'), ('http_proxy', 'http://127.0.0.1:7890'), ('_', '/open_app/miniconda3/envs/ros2_humble/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/open_app/install/usr/lib/aarch64-linux-gnu/pkgconfig:/open_app/install/usr/lib/aarch64-linux-gnu/pkgconfig:/open_app/install/usr/lib/aarch64-linux-gnu/pkgconfig:'), ('JETSON_CODENAME', 'P3768'), ('READELF', '/open_app/miniconda3/envs/ros2_humble/bin/aarch64-conda-linux-gnu-readelf'), ('XDG_SESSION_CLASS', 'user'), ('AR', '/open_app/miniconda3/envs/ros2_humble/bin/aarch64-conda-linux-gnu-ar'), ('GXX', '/open_app/miniconda3/envs/ros2_humble/bin/aarch64-conda-linux-gnu-g++'), ('FC_FOR_BUILD', '/open_app/miniconda3/envs/ros2_humble/bin/aarch64-conda-linux-gnu-gfortran'), ('TERM', 'xterm-256color'), ('AS', '/open_app/miniconda3/envs/ros2_humble/bin/aarch64-conda-linux-gnu-as'), ('XDG_SESSION_ID', '23'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('CXXFILT', '/open_app/miniconda3/envs/ros2_humble/bin/aarch64-conda-linux-gnu-c++filt'), ('ROS_OS_OVERRIDE', 'conda:linux'), ('BUILD', 'aarch64-conda-linux-gnu'), ('PATH', '/usr/local/cuda-11.4/bin:/home/dji/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/home/dji/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:/home/dji/.vscode-server/cli/servers/Stable-994fd12f8d3a5aa16f17d42c041e5809167e845a/server/bin/remote-cli:/home/dji/.local/bin:/open_app/miniconda3/envs/ros2_humble/bin:/open_app/miniconda3/condabin:/usr/local/cuda-11.4/bin:/system/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/system/bin:/usr/src/tensorrt/bin:/usr/src/tensorrt/bin/trtexec:/home/dji/.vscode-server/extensions/ms-python.debugpy-2025.18.0/bundled/scripts/noConfigScripts'), ('PROJ_NETWORK', 'ON'), ('build_alias', 'aarch64-conda-linux-gnu'), ('PROJ_DATA', '/open_app/miniconda3/envs/ros2_humble/share/proj'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('CFLAGS', '-ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O3 -pipe -isystem /open_app/miniconda3/envs/ros2_humble/include'), ('MAMBA_ROOT_PREFIX', '/open_app/miniconda3'), ('SSL_CERT_DIR', '/usr/lib/ssl/certs'), ('GCC_AR', '/open_app/miniconda3/envs/ros2_humble/bin/aarch64-conda-linux-gnu-gcc-ar'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/home/dji/.vscode-server/extensions/ms-python.debugpy-2025.18.0/.noConfigDebugAdapterEndpoints/endpoint-bfd3610c699b12ed.txt'), ('LANG', 'en_US.UTF-8'), ('DEBUG_CFLAGS', '-ftree-vectorize -fPIC -fstack-protector-all -fno-plt -Og -g -Wall -Wextra -fvar-tracking-assignments -pipe -isystem /open_app/miniconda3/envs/ros2_humble/include'), ('PYTHONSTARTUP', '/home/dji/.vscode-server/data/User/workspaceStorage/da77dad4a7af79234d1c491d005093cc-1/ms-python.python/pythonrc.py'), ('CONDA_PREFIX_1', '/open_app/miniconda3'), ('MESON_ARGS', '-Dbuildtype=release'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('JETSON_SOC', 'tegra23x'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-cc1b4e4175.sock'), ('TERM_PROGRAM', 'vscode'), ('XML_CATALOG_FILES', 'file:///open_app/miniconda3/envs/ros2_humble/etc/xml/catalog file:///etc/xml/catalog'), ('GSETTINGS_SCHEMA_DIR', '/open_app/miniconda3/envs/ros2_humble/share/glib-2.0/schemas'), ('AMENT_PREFIX_PATH', '/open_app/miniconda3/envs/ros2_humble'), ('CPPFLAGS', '-DNDEBUG -D_FORTIFY_SOURCE=2 -O2 -isystem /open_app/miniconda3/envs/ros2_humble/include'), ('CONDA_PYTHON_EXE', '/open_app/miniconda3/bin/python'), ('SHELL', '/bin/bash'), ('DEBUG_FFLAGS', '-ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O3 -pipe -isystem /open_app/miniconda3/envs/ros2_humble/include -I/open_app/miniconda3/envs/ros2_humble/include -ftree-vectorize -fPIC -fstack-protector-strong -pipe -Og -g -Wall -Wextra -fcheck=all -fbacktrace -fvar-tracking-assignments -pipe'), ('CMAKE_ARGS', '-DCMAKE_AR=/open_app/miniconda3/envs/ros2_humble/bin/aarch64-conda-linux-gnu-ar -DCMAKE_CXX_COMPILER_AR=/open_app/miniconda3/envs/ros2_humble/bin/aarch64-conda-linux-gnu-gcc-ar -DCMAKE_C_COMPILER_AR=/open_app/miniconda3/envs/ros2_humble/bin/aarch64-conda-linux-gnu-gcc-ar -DCMAKE_RANLIB=/open_app/miniconda3/envs/ros2_humble/bin/aarch64-conda-linux-gnu-ranlib -DCMAKE_CXX_COMPILER_RANLIB=/open_app/miniconda3/envs/ros2_humble/bin/aarch64-conda-linux-gnu-gcc-ranlib -DCMAKE_C_COMPILER_RANLIB=/open_app/miniconda3/envs/ros2_humble/bin/aarch64-conda-linux-gnu-gcc-ranlib -DCMAKE_LINKER=/open_app/miniconda3/envs/ros2_humble/bin/aarch64-conda-linux-gnu-ld -DCMAKE_STRIP=/open_app/miniconda3/envs/ros2_humble/bin/aarch64-conda-linux-gnu-strip -DCMAKE_BUILD_TYPE=Release'), ('HOST', 'aarch64-conda-linux-gnu'), ('CXX', '/open_app/miniconda3/envs/ros2_humble/bin/aarch64-conda-linux-gnu-c++'), ('DEBUG_CPPFLAGS', '-D_DEBUG -D_FORTIFY_SOURCE=2 -Og -isystem /open_app/miniconda3/envs/ros2_humble/include'), ('OPEN_APP_PREFIX', '/open_app/install'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('DEBUG_FORTRANFLAGS', '-ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O3 -pipe -isystem /open_app/miniconda3/envs/ros2_humble/include -I/open_app/miniconda3/envs/ros2_humble/include -ftree-vectorize -fPIC -fstack-protector-strong -pipe -Og -g -Wall -Wextra -fcheck=all -fbacktrace -fvar-tracking-assignments -pipe'), ('CONDA_DEFAULT_ENV', 'ros2_humble'), ('_CONDA_EXE', '/open_app/miniconda3/bin/conda'), ('ADDR2LINE', '/open_app/miniconda3/envs/ros2_humble/bin/aarch64-conda-linux-gnu-addr2line'), ('MAMBA_EXE', '/open_app/miniconda3/bin/mamba'), ('GCC_NM', '/open_app/miniconda3/envs/ros2_humble/bin/aarch64-conda-linux-gnu-gcc-nm'), ('GFORTRAN', '/open_app/miniconda3/envs/ros2_humble/bin/aarch64-conda-linux-gnu-gfortran'), ('CONDA_BUILD_SYSROOT', '/open_app/miniconda3/envs/ros2_humble/aarch64-conda-linux-gnu/sysroot'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('JETSON_CUDA_ARCH_BIN', '8.7'), ('PWD', '/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/build/yolo_detect'), ('CONDA_EXE', '/open_app/miniconda3/bin/conda'), ('FFLAGS', '-ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O3 -pipe -isystem /open_app/miniconda3/envs/ros2_humble/include -I/open_app/miniconda3/envs/ros2_humble/include'), ('LD', '/open_app/miniconda3/envs/ros2_humble/bin/aarch64-conda-linux-gnu-ld'), ('SSH_CONNECTION', '192.168.42.1 6265 192.168.140.2 22'), ('XDG_DATA_DIRS', '/open_app/install/usr/share:/open_app/install/usr/share:/open_app/install/usr/share:/usr/local/share:/usr/share'), ('PYTHONPATH', '/open_app/miniconda3/envs/ros2_humble/lib/python310/site-packages:/open_app/miniconda3/envs/ros2_humble/lib/python3.10/site-packages'), ('GPROF', '/open_app/miniconda3/envs/ros2_humble/bin/aarch64-conda-linux-gnu-gprof'), ('CONDA_PREFIX', '/open_app/miniconda3/envs/ros2_humble'), ('GSETTINGS_SCHEMA_DIR_CONDA_BACKUP', ''), ('CONDA_TOOLCHAIN_HOST', 'aarch64-conda-linux-gnu'), ('host_alias', 'aarch64-conda-linux-gnu'), ('FORTRANFLAGS', '-ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O3 -pipe -isystem /open_app/miniconda3/envs/ros2_humble/include -I/open_app/miniconda3/envs/ros2_humble/include'), ('CC', '/open_app/miniconda3/envs/ros2_humble/bin/aarch64-conda-linux-gnu-cc'), ('RANLIB', '/open_app/miniconda3/envs/ros2_humble/bin/aarch64-conda-linux-gnu-ranlib'), ('COLCON', '1'), ('CXX_FOR_BUILD', '/open_app/miniconda3/envs/ros2_humble/bin/aarch64-conda-linux-gnu-c++'), ('JETSON_JETPACK', '5.1.3'), ('CMAKE_PREFIX_PATH', '/open_app/miniconda3/envs/ros2_humble:/open_app/miniconda3/envs/ros2_humble/aarch64-conda-linux-gnu/sysroot/usr'), ('NM', '/open_app/miniconda3/envs/ros2_humble/bin/aarch64-conda-linux-gnu-nm'), ('OBJDUMP', '/open_app/miniconda3/envs/ros2_humble/bin/aarch64-conda-linux-gnu-objdump')]), 'shell': False}
+[0.099487] (-) TimerEvent: {}
+[0.199951] (-) TimerEvent: {}
+[0.299205] (yolo_detect) StdoutLine: {'line': b'[  1%] \x1b[32mBuilding CXX object CMakeFiles/yolo_detect.dir/src/main.cpp.o\x1b[0m\n'}
+[0.300015] (-) TimerEvent: {}
+[0.300274] (yolo_detect) StdoutLine: {'line': b'[  3%] \x1b[32mBuilding CXX object CMakeFiles/yolo_detect.dir/home/dji/DJI_workshop/LZP_PSDK/Payload-SDK/samples/sample_c++/module_sample/liveview/dji_camera_image_handler.cpp.o\x1b[0m\n'}
+[0.303597] (yolo_detect) StdoutLine: {'line': b'[  4%] \x1b[32mBuilding CXX object CMakeFiles/yolo_detect.dir/home/dji/DJI_workshop/LZP_PSDK/Payload-SDK/samples/sample_c++/module_sample/liveview/dji_camera_stream_decoder.cpp.o\x1b[0m\n'}
+[0.400260] (-) TimerEvent: {}
+[0.500744] (-) TimerEvent: {}
+[0.505412] (yolo_detect) StderrLine: {'line': b'\x1b[01m\x1b[K/home/dji/DJI_workshop/LZP_PSDK/Payload-SDK/samples/sample_c++/module_sample/liveview/dji_camera_stream_decoder.cpp:76:55:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++11 requires at least one argument for the "..." in a variadic macro\n'}
+[0.506071] (yolo_detect) StderrLine: {'line': b'   76 |         USER_LOG_INFO("Decoder already initialized.\\n"\x1b[01;35m\x1b[K)\x1b[m\x1b[K;\n'}
+[0.506284] (yolo_detect) StderrLine: {'line': b'      |                                                       \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[0.600953] (-) TimerEvent: {}
+[0.701442] (-) TimerEvent: {}
+[0.790047] (yolo_detect) StderrLine: {'line': b"\x1b[01m\x1b[K/home/dji/DJI_workshop/LZP_PSDK/Payload-SDK/samples/sample_c++/module_sample/liveview/dji_camera_stream_decoder.cpp:\x1b[m\x1b[K In member function '\x1b[01m\x1b[Kvoid DJICameraStreamDecoder::\x1b[01;32m\x1b[KdecodeBuffer\x1b[m\x1b[K(const uint8_t*, int)\x1b[m\x1b[K':\n"}
+[0.790571] (yolo_detect) StderrLine: {'line': b"\x1b[01m\x1b[K/home/dji/DJI_workshop/LZP_PSDK/Payload-SDK/samples/sample_c++/module_sample/liveview/dji_camera_stream_decoder.cpp:188:20:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable '\x1b[01m\x1b[KpData\x1b[m\x1b[K' [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc-14.3.0/gcc/Warning-Options.html#index-Wno-unused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n"}
+[0.790765] (yolo_detect) StderrLine: {'line': b'  188 |     const uint8_t *\x1b[01;35m\x1b[KpData\x1b[m\x1b[K = buf;\n'}
+[0.791033] (yolo_detect) StderrLine: {'line': b'      |                    \x1b[01;35m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[0.791221] (yolo_detect) StderrLine: {'line': b"\x1b[01m\x1b[K/home/dji/DJI_workshop/LZP_PSDK/Payload-SDK/samples/sample_c++/module_sample/liveview/dji_camera_stream_decoder.cpp:189:9:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable '\x1b[01m\x1b[KremainingLen\x1b[m\x1b[K' [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc-14.3.0/gcc/Warning-Options.html#index-Wno-unused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n"}
+[0.791377] (yolo_detect) StderrLine: {'line': b'  189 |     int \x1b[01;35m\x1b[KremainingLen\x1b[m\x1b[K = bufLen;\n'}
+[0.791525] (yolo_detect) StderrLine: {'line': b'      |         \x1b[01;35m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[0.791673] (yolo_detect) StderrLine: {'line': b"\x1b[01m\x1b[K/home/dji/DJI_workshop/LZP_PSDK/Payload-SDK/samples/sample_c++/module_sample/liveview/dji_camera_stream_decoder.cpp:190:9:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable '\x1b[01m\x1b[KprocessedLen\x1b[m\x1b[K' [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc-14.3.0/gcc/Warning-Options.html#index-Wno-unused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n"}
+[0.791824] (yolo_detect) StderrLine: {'line': b'  190 |     int \x1b[01;35m\x1b[KprocessedLen\x1b[m\x1b[K = 0;\n'}
+[0.791971] (yolo_detect) StderrLine: {'line': b'      |         \x1b[01;35m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[0.801644] (-) TimerEvent: {}
+[0.902128] (-) TimerEvent: {}
+[1.002620] (-) TimerEvent: {}
+[1.103095] (-) TimerEvent: {}
+[1.204106] (-) TimerEvent: {}
+[1.304556] (-) TimerEvent: {}
+[1.405017] (-) TimerEvent: {}
+[1.505487] (-) TimerEvent: {}
+[1.581238] (yolo_detect) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/src/main.cpp:18\x1b[m\x1b[K:\n'}
+[1.581766] (yolo_detect) StderrLine: {'line': b'\x1b[01m\x1b[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/./include/ai_detect.h:89:48:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++11 requires at least one argument for the "..." in a variadic macro\n'}
+[1.582010] (yolo_detect) StderrLine: {'line': b'   89 |         USER_LOG_INFO("Input cammera sourece: "\x1b[01;35m\x1b[K)\x1b[m\x1b[K;\n'}
+[1.582180] (yolo_detect) StderrLine: {'line': b'      |                                                \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[1.586886] (yolo_detect) StderrLine: {'line': b'\x1b[01m\x1b[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/./include/ai_detect.h:92:48:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++11 requires at least one argument for the "..." in a variadic macro\n'}
+[1.587478] (yolo_detect) StderrLine: {'line': b'   92 |             case 0:USER_LOG_INFO("app liveview"\x1b[01;35m\x1b[K)\x1b[m\x1b[K;break;\n'}
+[1.587679] (yolo_detect) StderrLine: {'line': b'      |                                                \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[1.587843] (yolo_detect) StderrLine: {'line': b'\x1b[01m\x1b[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/./include/ai_detect.h:93:50:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++11 requires at least one argument for the "..." in a variadic macro\n'}
+[1.588003] (yolo_detect) StderrLine: {'line': b'   93 |             case 1:USER_LOG_INFO("1080P for H30T"\x1b[01;35m\x1b[K)\x1b[m\x1b[K;break;\n'}
+[1.588159] (yolo_detect) StderrLine: {'line': b'      |                                                  \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[1.588353] (yolo_detect) StderrLine: {'line': b'\x1b[01m\x1b[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/./include/ai_detect.h:94:47:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++11 requires at least one argument for the "..." in a variadic macro\n'}
+[1.588506] (yolo_detect) StderrLine: {'line': b'   94 |             case 7:USER_LOG_INFO("4k for H30T"\x1b[01;35m\x1b[K)\x1b[m\x1b[K;break;\n'}
+[1.588657] (yolo_detect) StderrLine: {'line': b'      |                                               \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[1.588816] (yolo_detect) StderrLine: {'line': b'\x1b[01m\x1b[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/./include/ai_detect.h:135:46:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++11 requires at least one argument for the "..." in a variadic macro\n'}
+[1.588978] (yolo_detect) StderrLine: {'line': b'  135 |         USER_LOG_INFO("step 1: init liveview"\x1b[01;35m\x1b[K)\x1b[m\x1b[K;\n'}
+[1.589123] (yolo_detect) StderrLine: {'line': b'      |                                              \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[1.589270] (yolo_detect) StderrLine: {'line': b'\x1b[01m\x1b[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/./include/ai_detect.h:154:53:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++11 requires at least one argument for the "..." in a variadic macro\n'}
+[1.589430] (yolo_detect) StderrLine: {'line': b'  154 |         USER_LOG_INFO("step 2: reg encoder callback"\x1b[01;35m\x1b[K)\x1b[m\x1b[K;\n'}
+[1.589577] (yolo_detect) StderrLine: {'line': b'      |                                                     \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[1.589720] (yolo_detect) StderrLine: {'line': b'\x1b[01m\x1b[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/./include/ai_detect.h:161:48:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++11 requires at least one argument for the "..." in a variadic macro\n'}
+[1.589864] (yolo_detect) StderrLine: {'line': b'  161 |         USER_LOG_INFO("step 3:start yuv stream"\x1b[01;35m\x1b[K)\x1b[m\x1b[K;\n'}
+[1.590006] (yolo_detect) StderrLine: {'line': b'      |                                                \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[1.590145] (yolo_detect) StderrLine: {'line': b'\x1b[01m\x1b[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/./include/ai_detect.h:317:67:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++11 requires at least one argument for the "..." in a variadic macro\n'}
+[1.590287] (yolo_detect) StderrLine: {'line': b'  317 |         USER_LOG_WARN("The image queue is full. Drop this strike."\x1b[01;35m\x1b[K)\x1b[m\x1b[K;\n'}
+[1.590431] (yolo_detect) StderrLine: {'line': b'      |                                                                   \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[1.590574] (yolo_detect) StderrLine: {'line': b'\x1b[01m\x1b[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/./include/ai_detect.h:363:50:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++11 requires at least one argument for the "..." in a variadic macro\n'}
+[1.590718] (yolo_detect) StderrLine: {'line': b'  363 |         USER_LOG_ERROR( "output.h264 is not open"\x1b[01;35m\x1b[K)\x1b[m\x1b[K;\n'}
+[1.605571] (-) TimerEvent: {}
+[1.605698] (yolo_detect) StderrLine: {'line': b'      |                                                  \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[1.608372] (yolo_detect) StderrLine: {'line': b'\x1b[01m\x1b[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/./include/ai_detect.h:372:50:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++11 requires at least one argument for the "..." in a variadic macro\n'}
+[1.608833] (yolo_detect) StderrLine: {'line': b'  372 |         USER_LOG_ERROR( "outyuv.h264 is not open"\x1b[01;35m\x1b[K)\x1b[m\x1b[K;\n'}
+[1.609016] (yolo_detect) StderrLine: {'line': b'      |                                                  \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[1.705817] (-) TimerEvent: {}
+[1.806412] (-) TimerEvent: {}
+[1.907004] (-) TimerEvent: {}
+[2.010482] (-) TimerEvent: {}
+[2.111071] (-) TimerEvent: {}
+[2.211626] (-) TimerEvent: {}
+[2.312091] (-) TimerEvent: {}
+[2.412529] (-) TimerEvent: {}
+[2.512993] (-) TimerEvent: {}
+[2.533249] (yolo_detect) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/../../../Payload-SDK/samples/sample_c++/platform/linux/manifold3/../my_code/gimbal_manager.h:12\x1b[m\x1b[K,\n'}
+[2.533766] (yolo_detect) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/src/main.cpp:13\x1b[m\x1b[K:\n'}
+[2.533979] (yolo_detect) StderrLine: {'line': b'\x1b[01m\x1b[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/../../../Payload-SDK/samples/sample_c++/platform/linux/manifold3/../../../../../psdk_lib/include/dji_fc_subscription.h:1210:16:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ prohibits anonymous structs [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc-14.3.0/gcc/Warning-Options.html#index-Wno-pedantic\x07-Wpedantic\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.534458] (yolo_detect) StderrLine: {'line': b' 1210 |         struct \x1b[01;35m\x1b[K{\x1b[m\x1b[K\n'}
+[2.534625] (yolo_detect) StderrLine: {'line': b'      |                \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[2.535284] (yolo_detect) StderrLine: {'line': b'\x1b[01m\x1b[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/../../../Payload-SDK/samples/sample_c++/platform/linux/manifold3/../../../../../psdk_lib/include/dji_fc_subscription.h:1219:16:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ prohibits anonymous structs [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc-14.3.0/gcc/Warning-Options.html#index-Wno-pedantic\x07-Wpedantic\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.535517] (yolo_detect) StderrLine: {'line': b' 1219 |         struct \x1b[01;35m\x1b[K{\x1b[m\x1b[K\n'}
+[2.535678] (yolo_detect) StderrLine: {'line': b'      |                \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[2.613202] (-) TimerEvent: {}
+[2.713674] (-) TimerEvent: {}
+[2.814171] (-) TimerEvent: {}
+[2.914683] (-) TimerEvent: {}
+[3.015177] (-) TimerEvent: {}
+[3.115643] (-) TimerEvent: {}
+[3.216140] (-) TimerEvent: {}
+[3.316612] (-) TimerEvent: {}
+[3.417120] (-) TimerEvent: {}
+[3.517616] (-) TimerEvent: {}
+[3.618102] (-) TimerEvent: {}
+[3.718580] (-) TimerEvent: {}
+[3.819706] (-) TimerEvent: {}
+[3.920164] (-) TimerEvent: {}
+[4.020640] (-) TimerEvent: {}
+[4.121085] (-) TimerEvent: {}
+[4.221544] (-) TimerEvent: {}
+[4.321996] (-) TimerEvent: {}
+[4.422476] (-) TimerEvent: {}
+[4.522972] (-) TimerEvent: {}
+[4.623456] (-) TimerEvent: {}
+[4.723926] (-) TimerEvent: {}
+[4.824391] (-) TimerEvent: {}
+[4.924866] (-) TimerEvent: {}
+[4.998300] (yolo_detect) StdoutLine: {'line': b'[  6%] \x1b[32mBuilding CXX object CMakeFiles/yolo_detect.dir/home/dji/DJI_workshop/LZP_PSDK/Payload-SDK/samples/sample_c++/module_sample/liveview/test_liveview.cpp.o\x1b[0m\n'}
+[5.025093] (-) TimerEvent: {}
+[5.125573] (-) TimerEvent: {}
+[5.226051] (-) TimerEvent: {}
+[5.326528] (-) TimerEvent: {}
+[5.426988] (-) TimerEvent: {}
+[5.527487] (-) TimerEvent: {}
+[5.627988] (-) TimerEvent: {}
+[5.728468] (-) TimerEvent: {}
+[5.828959] (-) TimerEvent: {}
+[5.929462] (-) TimerEvent: {}
+[6.029942] (-) TimerEvent: {}
+[6.130407] (-) TimerEvent: {}
+[6.230911] (-) TimerEvent: {}
+[6.331378] (-) TimerEvent: {}
+[6.431850] (-) TimerEvent: {}
+[6.532321] (-) TimerEvent: {}
+[6.632802] (-) TimerEvent: {}
+[6.733275] (-) TimerEvent: {}
+[6.833740] (-) TimerEvent: {}
+[6.934223] (-) TimerEvent: {}
+[6.992018] (yolo_detect) StdoutLine: {'line': b'[  7%] \x1b[32mBuilding CXX object CMakeFiles/yolo_detect.dir/home/dji/DJI_workshop/LZP_PSDK/Payload-SDK/samples/sample_c++/module_sample/liveview/image_processor_yolovfastest.cpp.o\x1b[0m\n'}
+[6.993913] (yolo_detect) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding CXX object CMakeFiles/yolo_detect.dir/home/dji/DJI_workshop/LZP_PSDK/Payload-SDK/samples/sample_c++/module_sample/liveview/test_liveview_entry.cpp.o\x1b[0m\n'}
+[7.034410] (-) TimerEvent: {}
+[7.134868] (-) TimerEvent: {}
+[7.235321] (-) TimerEvent: {}
+[7.335806] (-) TimerEvent: {}
+[7.436284] (-) TimerEvent: {}
+[7.536749] (-) TimerEvent: {}
+[7.637230] (-) TimerEvent: {}
+[7.737716] (-) TimerEvent: {}
+[7.838207] (-) TimerEvent: {}
+[7.877125] (yolo_detect) StderrLine: {'line': b'\x1b[01m\x1b[K/home/dji/DJI_workshop/LZP_PSDK/Payload-SDK/samples/sample_c++/module_sample/liveview/image_processor_yolovfastest.cpp:48:41:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++11 requires at least one argument for the "..." in a variadic macro\n'}
+[7.879300] (yolo_detect) StderrLine: {'line': b'   48 |         USER_LOG_ERROR("get path failed"\x1b[01;35m\x1b[K)\x1b[m\x1b[K;\n'}
+[7.880960] (yolo_detect) StderrLine: {'line': b'      |                                         \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[7.883404] (yolo_detect) StderrLine: {'line': b'\x1b[01m\x1b[K/home/dji/DJI_workshop/LZP_PSDK/Payload-SDK/samples/sample_c++/module_sample/liveview/image_processor_yolovfastest.cpp:63:48:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++11 requires at least one argument for the "..." in a variadic macro\n'}
+[7.885597] (yolo_detect) StderrLine: {'line': b'   63 |         USER_LOG_ERROR("Failed to load network"\x1b[01;35m\x1b[K)\x1b[m\x1b[K;\n'}
+[7.887256] (yolo_detect) StderrLine: {'line': b'      |                                                \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[7.938568] (-) TimerEvent: {}
+[8.039050] (-) TimerEvent: {}
+[8.139540] (-) TimerEvent: {}
+[8.240005] (-) TimerEvent: {}
+[8.340506] (-) TimerEvent: {}
+[8.441009] (-) TimerEvent: {}
+[8.542371] (-) TimerEvent: {}
+[8.642879] (-) TimerEvent: {}
+[8.743377] (-) TimerEvent: {}
+[8.843871] (-) TimerEvent: {}
+[8.944673] (-) TimerEvent: {}
+[9.045146] (-) TimerEvent: {}
+[9.145621] (-) TimerEvent: {}
+[9.246106] (-) TimerEvent: {}
+[9.346591] (-) TimerEvent: {}
+[9.447068] (-) TimerEvent: {}
+[9.547526] (-) TimerEvent: {}
+[9.647982] (-) TimerEvent: {}
+[9.748463] (-) TimerEvent: {}
+[9.848910] (-) TimerEvent: {}
+[9.949371] (-) TimerEvent: {}
+[10.049840] (-) TimerEvent: {}
+[10.150313] (-) TimerEvent: {}
+[10.250845] (-) TimerEvent: {}
+[10.352685] (-) TimerEvent: {}
+[10.455461] (-) TimerEvent: {}
+[10.555919] (-) TimerEvent: {}
+[10.656385] (-) TimerEvent: {}
+[10.756905] (-) TimerEvent: {}
+[10.857415] (-) TimerEvent: {}
+[10.948100] (yolo_detect) StderrLine: {'line': b'\x1b[01m\x1b[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/./include/ai_detect.h:203:60:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected identifier before string constant\n'}
+[10.948607] (yolo_detect) StderrLine: {'line': b'  203 |         inline static ImageProcessorYolovFastest processor(\x1b[01;31m\x1b[K"YOLOvFastest"\x1b[m\x1b[K);\n'}
+[10.948781] (yolo_detect) StderrLine: {'line': b'      |                                                            \x1b[01;31m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[10.948940] (yolo_detect) StderrLine: {'line': b"\x1b[01m\x1b[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/./include/ai_detect.h:203:60:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected '\x1b[01m\x1b[K,\x1b[m\x1b[K' or '\x1b[01m\x1b[K...\x1b[m\x1b[K' before string constant\n"}
+[10.953129] (yolo_detect) StderrLine: {'line': b"\x1b[01m\x1b[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/./include/ai_detect.h:\x1b[m\x1b[K In constructor '\x1b[01m\x1b[Kai_detect::\x1b[01;32m\x1b[Kai_detect\x1b[m\x1b[K(int, char**)\x1b[m\x1b[K':\n"}
+[10.953582] (yolo_detect) StderrLine: {'line': b"\x1b[01m\x1b[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/./include/ai_detect.h:117:36:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kcannot convert '\x1b[01m\x1b[Kai_detect::DjiLiveview_ObjectDetectionThread\x1b[m\x1b[K' from type '\x1b[01m\x1b[Kvoid* (ai_detect::)(void*)\x1b[m\x1b[K' to type '\x1b[01m\x1b[Kvoid* (*)(void*)\x1b[m\x1b[K'\n"}
+[10.953763] (yolo_detect) StderrLine: {'line': b'  117 |             \x1b[01;31m\x1b[KosalHandler->TaskCreate("objectDetectionTask",DjiLiveview_ObjectDetectionThread,1024*1024,NULL, &s_procThreadHandle)\x1b[m\x1b[K;\n'}
+[10.953921] (yolo_detect) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[10.954072] (yolo_detect) StderrLine: {'line': b"\x1b[01m\x1b[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/./include/ai_detect.h:118:27:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Krequest for member '\x1b[01m\x1b[KInit\x1b[m\x1b[K' in '\x1b[01m\x1b[Kai_detect::processor\x1b[m\x1b[K', which is of non-class type '\x1b[01m\x1b[KImageProcessorYolovFastest(int)\x1b[m\x1b[K'\n"}
+[10.954254] (yolo_detect) StderrLine: {'line': b'  118 |             if (processor.\x1b[01;31m\x1b[KInit\x1b[m\x1b[K() != 0) {\n'}
+[10.954400] (yolo_detect) StderrLine: {'line': b'      |                           \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[10.968057] (yolo_detect) StderrLine: {'line': b"\x1b[01m\x1b[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/./include/ai_detect.h:80:19:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter '\x1b[01m\x1b[Kargc\x1b[m\x1b[K' [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc-14.3.0/gcc/Warning-Options.html#index-Wno-unused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n"}
+[10.968605] (-) TimerEvent: {}
+[10.968669] (yolo_detect) StderrLine: {'line': b'   80 |     ai_detect(\x1b[01;35m\x1b[Kint argc\x1b[m\x1b[K,char ** argv):rclcpp::Node("ai_detect")\n'}
+[10.968848] (yolo_detect) StderrLine: {'line': b'      |               \x1b[01;35m\x1b[K~~~~^~~~\x1b[m\x1b[K\n'}
+[10.969013] (yolo_detect) StderrLine: {'line': b"\x1b[01m\x1b[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/./include/ai_detect.h:80:32:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter '\x1b[01m\x1b[Kargv\x1b[m\x1b[K' [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc-14.3.0/gcc/Warning-Options.html#index-Wno-unused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n"}
+[10.969169] (yolo_detect) StderrLine: {'line': b'   80 |     ai_detect(int argc,\x1b[01;35m\x1b[Kchar ** argv\x1b[m\x1b[K):rclcpp::Node("ai_detect")\n'}
+[10.969349] (yolo_detect) StderrLine: {'line': b'      |                        \x1b[01;35m\x1b[K~~~~~~~~^~~~\x1b[m\x1b[K\n'}
+[11.028143] (yolo_detect) StderrLine: {'line': b"\x1b[01m\x1b[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/./include/ai_detect.h:\x1b[m\x1b[K In member function '\x1b[01m\x1b[Kvoid* ai_detect::\x1b[01;32m\x1b[KDjiLiveview_ObjectDetectionThread\x1b[m\x1b[K(void*)\x1b[m\x1b[K':\n"}
+[11.028685] (yolo_detect) StderrLine: {'line': b"\x1b[01m\x1b[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/./include/ai_detect.h:249:19:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Krequest for member '\x1b[01m\x1b[KProcess\x1b[m\x1b[K' in '\x1b[01m\x1b[Kai_detect::processor\x1b[m\x1b[K', which is of non-class type '\x1b[01m\x1b[KImageProcessorYolovFastest(int)\x1b[m\x1b[K'\n"}
+[11.028877] (yolo_detect) StderrLine: {'line': b'  249 |         processor.\x1b[01;31m\x1b[KProcess\x1b[m\x1b[K(image_ptr, bounding_boxes);\n'}
+[11.029040] (yolo_detect) StderrLine: {'line': b'      |                   \x1b[01;31m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[11.032907] (yolo_detect) StderrLine: {'line': b"\x1b[01m\x1b[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/./include/ai_detect.h:254:22:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected unqualified-id before '\x1b[01m\x1b[K=\x1b[m\x1b[K' token\n"}
+[11.033368] (yolo_detect) StderrLine: {'line': b'  254 |         metaData->   \x1b[01;31m\x1b[K=\x1b[m\x1b[K bounding_boxes.size();\n'}
+[11.033585] (yolo_detect) StderrLine: {'line': b'      |                      \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[11.033742] (yolo_detect) StderrLine: {'line': b"\x1b[01m\x1b[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/./include/ai_detect.h:255:27:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kcomparison of integer expressions of different signedness: '\x1b[01m\x1b[Kint\x1b[m\x1b[K' and '\x1b[01m\x1b[Kstd::vector<T_DjiLiveViewBoundingBox>::size_type\x1b[m\x1b[K' {aka '\x1b[01m\x1b[Klong unsigned int\x1b[m\x1b[K'} [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc-14.3.0/gcc/Warning-Options.html#index-Wno-sign-compare\x07-Wsign-compare\x1b]8;;\x07\x1b[m\x1b[K]\n"}
+[11.033900] (yolo_detect) StderrLine: {'line': b'  255 |         for (int i = 0; \x1b[01;35m\x1b[Ki < bounding_boxes.size()\x1b[m\x1b[K; i++) {\n'}
+[11.034050] (yolo_detect) StderrLine: {'line': b'      |                         \x1b[01;35m\x1b[K~~^~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[11.044212] (yolo_detect) StderrLine: {'line': b"\x1b[01m\x1b[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/./include/ai_detect.h:220:21:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable '\x1b[01m\x1b[KDjiStat\x1b[m\x1b[K' [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc-14.3.0/gcc/Warning-Options.html#index-Wno-unused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n"}
+[11.044814] (yolo_detect) StderrLine: {'line': b'  220 |     T_DjiReturnCode \x1b[01;35m\x1b[KDjiStat\x1b[m\x1b[K;\n'}
+[11.044991] (yolo_detect) StderrLine: {'line': b'      |                     \x1b[01;35m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[11.045150] (yolo_detect) StderrLine: {'line': b"\x1b[01m\x1b[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/./include/ai_detect.h:218:58:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter '\x1b[01m\x1b[Karg\x1b[m\x1b[K' [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc-14.3.0/gcc/Warning-Options.html#index-Wno-unused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n"}
+[11.045308] (yolo_detect) StderrLine: {'line': b'  218 | void* ai_detect::DjiLiveview_ObjectDetectionThread(\x1b[01;35m\x1b[Kvoid *arg\x1b[m\x1b[K) {\n'}
+[11.045458] (yolo_detect) StderrLine: {'line': b'      |                                                    \x1b[01;35m\x1b[K~~~~~~^~~\x1b[m\x1b[K\n'}
+[11.069051] (-) TimerEvent: {}
+[11.169531] (-) TimerEvent: {}
+[11.213539] (yolo_detect) StderrLine: {'line': b"\x1b[01m\x1b[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/./include/ai_detect.h:\x1b[m\x1b[K In static member function '\x1b[01m\x1b[Kstatic void ai_detect::\x1b[01;32m\x1b[KDjiLiveview_EncoderUseCallback\x1b[m\x1b[K(const uint8_t*, uint32_t)\x1b[m\x1b[K':\n"}
+[11.214040] (yolo_detect) StderrLine: {'line': b"\x1b[01m\x1b[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/./include/ai_detect.h:281:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K'\x1b[01m\x1b[KaircraftInfoBaseInfo\x1b[m\x1b[K' was not declared in this scope; did you mean '\x1b[01m\x1b[KT_DjiAircraftInfoBaseInfo\x1b[m\x1b[K'?\n"}
+[11.214231] (yolo_detect) StderrLine: {'line': b'  281 |     if (\x1b[01;31m\x1b[KaircraftInfoBaseInfo\x1b[m\x1b[K.aircraftSeries != DJI_AIRCRAFT_SERIES_M4D)\n'}
+[11.214396] (yolo_detect) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[11.214546] (yolo_detect) StderrLine: {'line': b'      |         \x1b[32m\x1b[KT_DjiAircraftInfoBaseInfo\x1b[m\x1b[K\n'}
+[11.220065] (yolo_detect) StderrLine: {'line': b"\x1b[01m\x1b[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/./include/ai_detect.h:\x1b[m\x1b[K In static member function '\x1b[01m\x1b[Kstatic void ai_detect::\x1b[01;32m\x1b[KDjiLiveview_RcvImageCallback\x1b[m\x1b[K(E_DjiLiveViewCameraPosition, const uint8_t*, uint32_t, T_DjiLiveviewImageInfo)\x1b[m\x1b[K':\n"}
+[11.220545] (yolo_detect) StderrLine: {'line': b"\x1b[01m\x1b[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/./include/ai_detect.h:314:28:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of member '\x1b[01m\x1b[Kai_detect::s_imageQueueMutexHandle\x1b[m\x1b[K' in static member function\n"}
+[11.220727] (yolo_detect) StderrLine: {'line': b'  314 |     osalHandler->MutexLock(\x1b[01;31m\x1b[Ks_imageQueueMutexHandle\x1b[m\x1b[K);\n'}
+[11.223688] (yolo_detect) StderrLine: {'line': b'      |                            \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[11.224042] (yolo_detect) StderrLine: {'line': b'\x1b[01m\x1b[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/./include/ai_detect.h:213:26:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[11.224214] (yolo_detect) StderrLine: {'line': b'  213 |         T_DjiMutexHandle \x1b[01;36m\x1b[Ks_imageQueueMutexHandle\x1b[m\x1b[K;\n'}
+[11.224366] (yolo_detect) StderrLine: {'line': b'      |                          \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[11.224543] (yolo_detect) StderrLine: {'line': b"\x1b[01m\x1b[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/./include/ai_detect.h:323:30:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of member '\x1b[01m\x1b[Kai_detect::s_imageQueueMutexHandle\x1b[m\x1b[K' in static member function\n"}
+[11.224696] (yolo_detect) StderrLine: {'line': b'  323 |     osalHandler->MutexUnlock(\x1b[01;31m\x1b[Ks_imageQueueMutexHandle\x1b[m\x1b[K);\n'}
+[11.224846] (yolo_detect) StderrLine: {'line': b'      |                              \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[11.224992] (yolo_detect) StderrLine: {'line': b'\x1b[01m\x1b[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/./include/ai_detect.h:213:26:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[11.225137] (yolo_detect) StderrLine: {'line': b'  213 |         T_DjiMutexHandle \x1b[01;36m\x1b[Ks_imageQueueMutexHandle\x1b[m\x1b[K;\n'}
+[11.225279] (yolo_detect) StderrLine: {'line': b'      |                          \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[11.225423] (yolo_detect) StderrLine: {'line': b"\x1b[01m\x1b[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/./include/ai_detect.h:326:28:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of member '\x1b[01m\x1b[Kai_detect::s_metaQueueMutexHandle\x1b[m\x1b[K' in static member function\n"}
+[11.225590] (yolo_detect) StderrLine: {'line': b'  326 |     osalHandler->MutexLock(\x1b[01;31m\x1b[Ks_metaQueueMutexHandle\x1b[m\x1b[K);\n'}
+[11.225733] (yolo_detect) StderrLine: {'line': b'      |                            \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[11.225874] (yolo_detect) StderrLine: {'line': b'\x1b[01m\x1b[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/./include/ai_detect.h:211:26:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[11.226014] (yolo_detect) StderrLine: {'line': b'  211 |         T_DjiMutexHandle \x1b[01;36m\x1b[Ks_metaQueueMutexHandle\x1b[m\x1b[K;\n'}
+[11.226152] (yolo_detect) StderrLine: {'line': b'      |                          \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[11.226293] (yolo_detect) StderrLine: {'line': b"\x1b[01m\x1b[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/./include/ai_detect.h:333:30:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of member '\x1b[01m\x1b[Kai_detect::s_metaQueueMutexHandle\x1b[m\x1b[K' in static member function\n"}
+[11.226432] (yolo_detect) StderrLine: {'line': b'  333 |     osalHandler->MutexUnlock(\x1b[01;31m\x1b[Ks_metaQueueMutexHandle\x1b[m\x1b[K);\n'}
+[11.226576] (yolo_detect) StderrLine: {'line': b'      |                              \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[11.226715] (yolo_detect) StderrLine: {'line': b'\x1b[01m\x1b[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/./include/ai_detect.h:211:26:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[11.241771] (yolo_detect) StderrLine: {'line': b'  211 |         T_DjiMutexHandle \x1b[01;36m\x1b[Ks_metaQueueMutexHandle\x1b[m\x1b[K;\n'}
+[11.242034] (yolo_detect) StderrLine: {'line': b'      |                          \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[11.242189] (yolo_detect) StderrLine: {'line': b"\x1b[01m\x1b[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/./include/ai_detect.h:295:21:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable '\x1b[01m\x1b[KDjiStat\x1b[m\x1b[K' [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc-14.3.0/gcc/Warning-Options.html#index-Wno-unused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n"}
+[11.242350] (yolo_detect) StderrLine: {'line': b'  295 |     T_DjiReturnCode \x1b[01;35m\x1b[KDjiStat\x1b[m\x1b[K;\n'}
+[11.242499] (yolo_detect) StderrLine: {'line': b'      |                     \x1b[01;35m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[11.242643] (yolo_detect) StderrLine: {'line': b"\x1b[01m\x1b[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/./include/ai_detect.h:297:14:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable '\x1b[01m\x1b[KOutPutLen\x1b[m\x1b[K' [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc-14.3.0/gcc/Warning-Options.html#index-Wno-unused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n"}
+[11.242860] (yolo_detect) StderrLine: {'line': b'  297 |     uint32_t \x1b[01;35m\x1b[KOutPutLen\x1b[m\x1b[K;\n'}
+[11.243016] (yolo_detect) StderrLine: {'line': b'      |              \x1b[01;35m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[11.243162] (yolo_detect) StderrLine: {'line': b"\x1b[01m\x1b[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/./include/ai_detect.h:293:74:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter '\x1b[01m\x1b[Kposition\x1b[m\x1b[K' [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc-14.3.0/gcc/Warning-Options.html#index-Wno-unused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n"}
+[11.243307] (yolo_detect) StderrLine: {'line': b'  293 | void ai_detect::DjiLiveview_RcvImageCallback(\x1b[01;35m\x1b[KE_DjiLiveViewCameraPosition position\x1b[m\x1b[K, const uint8_t *buf, uint32_t len, T_DjiLiveviewImageInfo imageInfo){\n'}
+[11.243454] (yolo_detect) StderrLine: {'line': b'      |                                              \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~\x1b[m\x1b[K\n'}
+[11.269785] (-) TimerEvent: {}
+[11.370262] (-) TimerEvent: {}
+[11.470725] (-) TimerEvent: {}
+[11.571197] (-) TimerEvent: {}
+[11.671667] (-) TimerEvent: {}
+[11.772140] (-) TimerEvent: {}
+[11.872647] (-) TimerEvent: {}
+[11.973153] (-) TimerEvent: {}
+[12.073619] (-) TimerEvent: {}
+[12.174134] (-) TimerEvent: {}
+[12.274638] (-) TimerEvent: {}
+[12.375148] (-) TimerEvent: {}
+[12.475646] (-) TimerEvent: {}
+[12.576132] (-) TimerEvent: {}
+[12.676673] (-) TimerEvent: {}
+[12.777190] (-) TimerEvent: {}
+[12.877674] (-) TimerEvent: {}
+[12.978187] (-) TimerEvent: {}
+[13.078693] (-) TimerEvent: {}
+[13.148037] (yolo_detect) StderrLine: {'line': b"\x1b[01m\x1b[K/home/dji/DJI_workshop/LZP_PSDK/Payload-SDK/samples/sample_c++/module_sample/liveview/test_liveview_entry.cpp:\x1b[m\x1b[K In function '\x1b[01m\x1b[Kvoid\x1b[01;32m\x1b[K DjiUser_ShowRgbImageCallback\x1b[m\x1b[K(CameraRGBImage, void*)\x1b[m\x1b[K':\n"}
+[13.148579] (yolo_detect) StderrLine: {'line': b"\x1b[01m\x1b[K/home/dji/DJI_workshop/LZP_PSDK/Payload-SDK/samples/sample_c++/module_sample/liveview/test_liveview_entry.cpp:208:27:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kcomparison of integer expressions of different signedness: '\x1b[01m\x1b[Kint\x1b[m\x1b[K' and '\x1b[01m\x1b[Kstd::vector<cv::Rect_<int> >::size_type\x1b[m\x1b[K' {aka '\x1b[01m\x1b[Klong unsigned int\x1b[m\x1b[K'} [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc-14.3.0/gcc/Warning-Options.html#index-Wno-sign-compare\x07-Wsign-compare\x1b]8;;\x07\x1b[m\x1b[K]\n"}
+[13.148766] (yolo_detect) StderrLine: {'line': b'  208 |         for (int i = 0; \x1b[01;35m\x1b[Ki < faces.size()\x1b[m\x1b[K; ++i) {\n'}
+[13.148929] (yolo_detect) StderrLine: {'line': b'      |                         \x1b[01;35m\x1b[K~~^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[13.179845] (-) TimerEvent: {}
+[13.283009] (-) TimerEvent: {}
+[13.383479] (-) TimerEvent: {}
+[13.483980] (-) TimerEvent: {}
+[13.584456] (-) TimerEvent: {}
+[13.684920] (-) TimerEvent: {}
+[13.785397] (-) TimerEvent: {}
+[13.885874] (-) TimerEvent: {}
+[13.986324] (-) TimerEvent: {}
+[14.023570] (yolo_detect) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding CXX object CMakeFiles/yolo_detect.dir/home/dji/DJI_workshop/LZP_PSDK/Payload-SDK/samples/sample_c++/module_sample/liveview/dji_liveview_object_detection.cpp.o\x1b[0m\n'}
+[14.086514] (-) TimerEvent: {}
+[14.186979] (-) TimerEvent: {}
+[14.287450] (-) TimerEvent: {}
+[14.387939] (-) TimerEvent: {}
+[14.446299] (yolo_detect) StderrLine: {'line': b"\x1b[01m\x1b[K/home/dji/DJI_workshop/LZP_PSDK/Payload-SDK/samples/sample_c++/module_sample/liveview/test_liveview_entry.cpp:220:21:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K'\x1b[01m\x1b[K/data/tensorflow/ssd_incepti...\x1b[m\x1b[K' directive output may be truncated writing 55 bytes into a region of size between 1 and 512 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc-14.3.0/gcc/Warning-Options.html#index-Wformat-truncation\x07-Wformat-truncation=\x1b]8;;\x07\x1b[m\x1b[K]\n"}
+[14.446916] (yolo_detect) StderrLine: {'line': b'  220 |                  "%s\x1b[01;35m\x1b[K/data/tensorflow/ssd_inception_v2_coco_2017_11_17.pbtxt\x1b[m\x1b[K",\n'}
+[14.447119] (yolo_detect) StderrLine: {'line': b'      |                     \x1b[01;35m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[14.447293] (yolo_detect) StderrLine: {'line': b"\x1b[01m\x1b[K/home/dji/DJI_workshop/LZP_PSDK/Payload-SDK/samples/sample_c++/module_sample/liveview/test_liveview_entry.cpp:219:17:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K'\x1b[01m\x1b[Ksnprintf\x1b[m\x1b[K' output between 56 and 567 bytes into a destination of size 512\n"}
+[14.447454] (yolo_detect) StderrLine: {'line': b'  219 |         \x1b[01;36m\x1b[Ksnprintf(prototxtFileDirPath, DJI_FILE_PATH_SIZE_MAX,\x1b[m\x1b[K\n'}
+[14.447603] (yolo_detect) StderrLine: {'line': b'      |         \x1b[01;36m\x1b[K~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[14.447743] (yolo_detect) StderrLine: {'line': b'  220 | \x1b[01;36m\x1b[K                 "%s/data/tensorflow/ssd_inception_v2_coco_2017_11_17.pbtxt",\x1b[m\x1b[K\n'}
+[14.447880] (yolo_detect) StderrLine: {'line': b'      |                  \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[14.448018] (yolo_detect) StderrLine: {'line': b'  221 | \x1b[01;36m\x1b[K                 curFileDirPath)\x1b[m\x1b[K;\n'}
+[14.448161] (yolo_detect) StderrLine: {'line': b'      |                  \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[14.448299] (yolo_detect) StderrLine: {'line': b"\x1b[01m\x1b[K/home/dji/DJI_workshop/LZP_PSDK/Payload-SDK/samples/sample_c++/module_sample/liveview/test_liveview_entry.cpp:224:65:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K'\x1b[01m\x1b[K/data/tensorflow/frozen_infe...\x1b[m\x1b[K' directive output may be truncated writing 42 bytes into a region of size between 1 and 512 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc-14.3.0/gcc/Warning-Options.html#index-Wformat-truncation\x07-Wformat-truncation=\x1b]8;;\x07\x1b[m\x1b[K]\n"}
+[14.448472] (yolo_detect) StderrLine: {'line': b'  224 |         snprintf(weightsFileDirPath, DJI_FILE_PATH_SIZE_MAX, "%s\x1b[01;35m\x1b[K/data/tensorflow/frozen_inference_graph.pb\x1b[m\x1b[K",\n'}
+[14.448617] (yolo_detect) StderrLine: {'line': b'      |                                                                 \x1b[01;35m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[14.448758] (yolo_detect) StderrLine: {'line': b"\x1b[01m\x1b[K/home/dji/DJI_workshop/LZP_PSDK/Payload-SDK/samples/sample_c++/module_sample/liveview/test_liveview_entry.cpp:224:17:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K'\x1b[01m\x1b[Ksnprintf\x1b[m\x1b[K' output between 43 and 554 bytes into a destination of size 512\n"}
+[14.448899] (yolo_detect) StderrLine: {'line': b'  224 |         \x1b[01;36m\x1b[Ksnprintf(weightsFileDirPath, DJI_FILE_PATH_SIZE_MAX, "%s/data/tensorflow/frozen_inference_graph.pb",\x1b[m\x1b[K\n'}
+[14.449041] (yolo_detect) StderrLine: {'line': b'      |         \x1b[01;36m\x1b[K~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[14.449181] (yolo_detect) StderrLine: {'line': b'  225 | \x1b[01;36m\x1b[K                 curFileDirPath)\x1b[m\x1b[K;\n'}
+[14.449320] (yolo_detect) StderrLine: {'line': b'      |                  \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[14.458703] (yolo_detect) StderrLine: {'line': b"\x1b[01m\x1b[K/home/dji/DJI_workshop/LZP_PSDK/Payload-SDK/samples/sample_c++/module_sample/liveview/test_liveview_entry.cpp:203:62:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K'\x1b[01m\x1b[K/data/haarcascade_frontalfac...\x1b[m\x1b[K' directive output may be truncated writing 37 bytes into a region of size between 1 and 512 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc-14.3.0/gcc/Warning-Options.html#index-Wformat-truncation\x07-Wformat-truncation=\x1b]8;;\x07\x1b[m\x1b[K]\n"}
+[14.459272] (yolo_detect) StderrLine: {'line': b'  203 |         snprintf(tempFileDirPath, DJI_FILE_PATH_SIZE_MAX, "%s\x1b[01;35m\x1b[K/data/haarcascade_frontalface_alt.xml\x1b[m\x1b[K", curFileDirPath);\n'}
+[14.459460] (yolo_detect) StderrLine: {'line': b'      |                                                              \x1b[01;35m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[14.459613] (yolo_detect) StderrLine: {'line': b"\x1b[01m\x1b[K/home/dji/DJI_workshop/LZP_PSDK/Payload-SDK/samples/sample_c++/module_sample/liveview/test_liveview_entry.cpp:203:17:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K'\x1b[01m\x1b[Ksnprintf\x1b[m\x1b[K' output between 38 and 549 bytes into a destination of size 512\n"}
+[14.459766] (yolo_detect) StderrLine: {'line': b'  203 |         \x1b[01;36m\x1b[Ksnprintf(tempFileDirPath, DJI_FILE_PATH_SIZE_MAX, "%s/data/haarcascade_frontalface_alt.xml", curFileDirPath)\x1b[m\x1b[K;\n'}
+[14.459909] (yolo_detect) StderrLine: {'line': b'      |         \x1b[01;36m\x1b[K~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[14.488142] (-) TimerEvent: {}
+[14.588634] (-) TimerEvent: {}
+[14.689116] (-) TimerEvent: {}
+[14.789596] (-) TimerEvent: {}
+[14.795390] (yolo_detect) StderrLine: {'line': b'\x1b[01m\x1b[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/./include/ai_detect.h:\x1b[m\x1b[K At global scope:\n'}
+[14.795899] (yolo_detect) StderrLine: {'line': b"\x1b[01m\x1b[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/./include/ai_detect.h:55:20:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K'\x1b[01m\x1b[Ks_invalidLables\x1b[m\x1b[K' defined but not used [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc-14.3.0/gcc/Warning-Options.html#index-Wno-unused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n"}
+[14.796086] (yolo_detect) StderrLine: {'line': b'   55 | static const char* \x1b[01;35m\x1b[Ks_invalidLables\x1b[m\x1b[K[] = {\n'}
+[14.796239] (yolo_detect) StderrLine: {'line': b'      |                    \x1b[01;35m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[14.873893] (yolo_detect) StderrLine: {'line': b'\x1b[01m\x1b[K/home/dji/DJI_workshop/LZP_PSDK/Payload-SDK/samples/sample_c++/module_sample/liveview/dji_liveview_object_detection.cpp:119:38:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++11 requires at least one argument for the "..." in a variadic macro\n'}
+[14.874474] (yolo_detect) StderrLine: {'line': b'  119 |     USER_LOG_INFO("do ar reflesh all"\x1b[01;35m\x1b[K)\x1b[m\x1b[K;\n'}
+[14.874663] (yolo_detect) StderrLine: {'line': b'      |                                      \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[14.875435] (yolo_detect) StderrLine: {'line': b'\x1b[01m\x1b[K/home/dji/DJI_workshop/LZP_PSDK/Payload-SDK/samples/sample_c++/module_sample/liveview/dji_liveview_object_detection.cpp:384:88:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++11 requires at least one argument for the "..." in a variadic macro\n'}
+[14.875780] (yolo_detect) StderrLine: {'line': b'  384 |     USER_LOG_INFO("Input cammera sourece(1:1080p, 3:M4 serials 4K, 7:H30 serials 4K): "\x1b[01;35m\x1b[K)\x1b[m\x1b[K;\n'}
+[14.876091] (yolo_detect) StderrLine: {'line': b'      |                                                                                        \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[14.876543] (yolo_detect) StderrLine: {'line': b'\x1b[01m\x1b[K/home/dji/DJI_workshop/LZP_PSDK/Payload-SDK/samples/sample_c++/module_sample/liveview/dji_liveview_object_detection.cpp:388:39:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++11 requires at least one argument for the "..." in a variadic macro\n'}
+[14.876820] (yolo_detect) StderrLine: {'line': b'  388 |         USER_LOG_ERROR("invalid param"\x1b[01;35m\x1b[K)\x1b[m\x1b[K;\n'}
+[14.877094] (yolo_detect) StderrLine: {'line': b'      |                                       \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[14.877661] (yolo_detect) StderrLine: {'line': b'\x1b[01m\x1b[K/home/dji/DJI_workshop/LZP_PSDK/Payload-SDK/samples/sample_c++/module_sample/liveview/dji_liveview_object_detection.cpp:424:42:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++11 requires at least one argument for the "..." in a variadic macro\n'}
+[14.877937] (yolo_detect) StderrLine: {'line': b'  424 |     USER_LOG_INFO("step 1: init liveview"\x1b[01;35m\x1b[K)\x1b[m\x1b[K;\n'}
+[14.878200] (yolo_detect) StderrLine: {'line': b'      |                                          \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[14.878664] (yolo_detect) StderrLine: {'line': b'\x1b[01m\x1b[K/home/dji/DJI_workshop/LZP_PSDK/Payload-SDK/samples/sample_c++/module_sample/liveview/dji_liveview_object_detection.cpp:435:54:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++11 requires at least one argument for the "..." in a variadic macro\n'}
+[14.878956] (yolo_detect) StderrLine: {'line': b'  435 |         USER_LOG_ERROR("get aircraft base info error"\x1b[01;35m\x1b[K)\x1b[m\x1b[K;\n'}
+[14.879211] (yolo_detect) StderrLine: {'line': b'      |                                                      \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[14.879752] (yolo_detect) StderrLine: {'line': b'\x1b[01m\x1b[K/home/dji/DJI_workshop/LZP_PSDK/Payload-SDK/samples/sample_c++/module_sample/liveview/dji_liveview_object_detection.cpp:450:49:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++11 requires at least one argument for the "..." in a variadic macro\n'}
+[14.880036] (yolo_detect) StderrLine: {'line': b'  450 |     USER_LOG_INFO("step 2: reg encoder callback"\x1b[01;35m\x1b[K)\x1b[m\x1b[K;\n'}
+[14.880288] (yolo_detect) StderrLine: {'line': b'      |                                                 \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[14.880733] (yolo_detect) StderrLine: {'line': b'\x1b[01m\x1b[K/home/dji/DJI_workshop/LZP_PSDK/Payload-SDK/samples/sample_c++/module_sample/liveview/dji_liveview_object_detection.cpp:458:44:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++11 requires at least one argument for the "..." in a variadic macro\n'}
+[14.881005] (yolo_detect) StderrLine: {'line': b'  458 |     USER_LOG_INFO("step 3:start yuv stream"\x1b[01;35m\x1b[K)\x1b[m\x1b[K;\n'}
+[14.881272] (yolo_detect) StderrLine: {'line': b'      |                                            \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[14.881749] (yolo_detect) StderrLine: {'line': b'\x1b[01m\x1b[K/home/dji/DJI_workshop/LZP_PSDK/Payload-SDK/samples/sample_c++/module_sample/liveview/dji_liveview_object_detection.cpp:467:43:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++11 requires at least one argument for the "..." in a variadic macro\n'}
+[14.882013] (yolo_detect) StderrLine: {'line': b'  467 |     USER_LOG_INFO("codec sample start ..."\x1b[01;35m\x1b[K)\x1b[m\x1b[K;\n'}
+[14.882249] (yolo_detect) StderrLine: {'line': b'      |                                           \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[14.882688] (yolo_detect) StderrLine: {'line': b'\x1b[01m\x1b[K/home/dji/DJI_workshop/LZP_PSDK/Payload-SDK/samples/sample_c++/module_sample/liveview/dji_liveview_object_detection.cpp:475:37:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++11 requires at least one argument for the "..." in a variadic macro\n'}
+[14.883003] (yolo_detect) StderrLine: {'line': b'  475 |     USER_LOG_INFO("codec sample end"\x1b[01;35m\x1b[K)\x1b[m\x1b[K;\n'}
+[14.883244] (yolo_detect) StderrLine: {'line': b'      |                                     \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[14.883827] (yolo_detect) StderrLine: {'line': b'\x1b[01m\x1b[K/home/dji/DJI_workshop/LZP_PSDK/Payload-SDK/samples/sample_c++/module_sample/liveview/dji_liveview_object_detection.cpp:532:50:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++11 requires at least one argument for the "..." in a variadic macro\n'}
+[14.884024] (yolo_detect) StderrLine: {'line': b'  532 |         USER_LOG_ERROR( "output.h264 is not open"\x1b[01;35m\x1b[K)\x1b[m\x1b[K;\n'}
+[14.884461] (yolo_detect) StderrLine: {'line': b'      |                                                  \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[14.884887] (yolo_detect) StderrLine: {'line': b'\x1b[01m\x1b[K/home/dji/DJI_workshop/LZP_PSDK/Payload-SDK/samples/sample_c++/module_sample/liveview/dji_liveview_object_detection.cpp:540:50:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++11 requires at least one argument for the "..." in a variadic macro\n'}
+[14.885088] (yolo_detect) StderrLine: {'line': b'  540 |         USER_LOG_ERROR( "outyuv.h264 is not open"\x1b[01;35m\x1b[K)\x1b[m\x1b[K;\n'}
+[14.885239] (yolo_detect) StderrLine: {'line': b'      |                                                  \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[14.885826] (yolo_detect) StderrLine: {'line': b'\x1b[01m\x1b[K/home/dji/DJI_workshop/LZP_PSDK/Payload-SDK/samples/sample_c++/module_sample/liveview/dji_liveview_object_detection.cpp:562:67:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++11 requires at least one argument for the "..." in a variadic macro\n'}
+[14.886095] (yolo_detect) StderrLine: {'line': b'  562 |         USER_LOG_WARN("The image queue is full. Drop this strike."\x1b[01;35m\x1b[K)\x1b[m\x1b[K;\n'}
+[14.886258] (yolo_detect) StderrLine: {'line': b'      |                                                                   \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[14.889772] (-) TimerEvent: {}
+[14.893253] (yolo_detect) StderrLine: {'line': b'make[2]: *** [CMakeFiles/yolo_detect.dir/build.make:76: CMakeFiles/yolo_detect.dir/src/main.cpp.o] Error 1\n'}
+[14.893668] (yolo_detect) StderrLine: {'line': b'make[2]: *** Waiting for unfinished jobs....\n'}
+[14.989985] (-) TimerEvent: {}
+[15.090463] (-) TimerEvent: {}
+[15.191000] (-) TimerEvent: {}
+[15.291518] (-) TimerEvent: {}
+[15.392001] (-) TimerEvent: {}
+[15.492463] (-) TimerEvent: {}
+[15.592947] (-) TimerEvent: {}
+[15.608459] (yolo_detect) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/dji/DJI_workshop/LZP_PSDK/Payload-SDK/samples/sample_c++/module_sample/liveview/dji_liveview_object_detection.cpp:41\x1b[m\x1b[K:\n'}
+[15.609002] (yolo_detect) StderrLine: {'line': b"\x1b[01m\x1b[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/../../../Payload-SDK/samples/sample_c++/platform/linux/manifold3/../../../../../psdk_lib/include/dji_open_ar.h:126:33:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ forbids zero-size array '\x1b[01m\x1b[Kpoints\x1b[m\x1b[K' [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc-14.3.0/gcc/Warning-Options.html#index-Wno-pedantic\x07-Wpedantic\x1b]8;;\x07\x1b[m\x1b[K]\n"}
+[15.609227] (yolo_detect) StderrLine: {'line': b'  126 |         T_DjiOpenArPoint points[\x1b[01;35m\x1b[K0\x1b[m\x1b[K]; /*!< 0 length implies dynamic allocation */\n'}
+[15.609388] (yolo_detect) StderrLine: {'line': b'      |                                 \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[15.609540] (yolo_detect) StderrLine: {'line': b"\x1b[01m\x1b[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/../../../Payload-SDK/samples/sample_c++/platform/linux/manifold3/../../../../../psdk_lib/include/dji_open_ar.h:135:31:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kinvalid use of '\x1b[01m\x1b[Kstruct T_DjiOpenArPointArray\x1b[m\x1b[K' with a zero-size array in '\x1b[01m\x1b[Kstruct<unnamed>\x1b[m\x1b[K' [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc-14.3.0/gcc/Warning-Options.html#index-Wno-pedantic\x07-Wpedantic\x1b]8;;\x07\x1b[m\x1b[K]\n"}
+[15.609717] (yolo_detect) StderrLine: {'line': b'  135 |         T_DjiOpenArPointArray \x1b[01;35m\x1b[Kpoint_array\x1b[m\x1b[K; /*!< Array of points defining the line */\n'}
+[15.609866] (yolo_detect) StderrLine: {'line': b'      |                               \x1b[01;35m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[15.610008] (yolo_detect) StderrLine: {'line': b"\x1b[01m\x1b[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/../../../Payload-SDK/samples/sample_c++/platform/linux/manifold3/../../../../../psdk_lib/include/dji_open_ar.h:126:26:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Karray member '\x1b[01m\x1b[KT_DjiOpenArPoint T_DjiOpenArPointArray::points [0]\x1b[m\x1b[K' declared here\n"}
+[15.610171] (yolo_detect) StderrLine: {'line': b'  126 |         T_DjiOpenArPoint \x1b[01;36m\x1b[Kpoints\x1b[m\x1b[K[0]; /*!< 0 length implies dynamic allocation */\n'}
+[15.610314] (yolo_detect) StderrLine: {'line': b'      |                          \x1b[01;36m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[15.613764] (yolo_detect) StderrLine: {'line': b"\x1b[01m\x1b[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/../../../Payload-SDK/samples/sample_c++/platform/linux/manifold3/../../../../../psdk_lib/include/dji_open_ar.h:147:31:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kinvalid use of '\x1b[01m\x1b[Kstruct T_DjiOpenArPointArray\x1b[m\x1b[K' with a zero-size array in '\x1b[01m\x1b[Kstruct<unnamed>\x1b[m\x1b[K' [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc-14.3.0/gcc/Warning-Options.html#index-Wno-pedantic\x07-Wpedantic\x1b]8;;\x07\x1b[m\x1b[K]\n"}
+[15.614213] (yolo_detect) StderrLine: {'line': b'  147 |         T_DjiOpenArPointArray \x1b[01;35m\x1b[Kpoint_array\x1b[m\x1b[K; /*!< Array of points defining the polygon */\n'}
+[15.614384] (yolo_detect) StderrLine: {'line': b'      |                               \x1b[01;35m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[15.614531] (yolo_detect) StderrLine: {'line': b"\x1b[01m\x1b[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/../../../Payload-SDK/samples/sample_c++/platform/linux/manifold3/../../../../../psdk_lib/include/dji_open_ar.h:126:26:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Karray member '\x1b[01m\x1b[KT_DjiOpenArPoint T_DjiOpenArPointArray::points [0]\x1b[m\x1b[K' declared here\n"}
+[15.614685] (yolo_detect) StderrLine: {'line': b'  126 |         T_DjiOpenArPoint \x1b[01;36m\x1b[Kpoints\x1b[m\x1b[K[0]; /*!< 0 length implies dynamic allocation */\n'}
+[15.614859] (yolo_detect) StderrLine: {'line': b'      |                          \x1b[01;36m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[15.615006] (yolo_detect) StderrLine: {'line': b"\x1b[01m\x1b[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/../../../Payload-SDK/samples/sample_c++/platform/linux/manifold3/../../../../../psdk_lib/include/dji_open_ar.h:181:25:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ forbids zero-size array '\x1b[01m\x1b[Kuuid_array\x1b[m\x1b[K' [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc-14.3.0/gcc/Warning-Options.html#index-Wno-pedantic\x07-Wpedantic\x1b]8;;\x07\x1b[m\x1b[K]\n"}
+[15.615177] (yolo_detect) StderrLine: {'line': b'  181 |     uint32_t uuid_array[\x1b[01;35m\x1b[K0\x1b[m\x1b[K]; /*!< Array of UUIDs to identify the elements to be deleted */\n'}
+[15.615318] (yolo_detect) StderrLine: {'line': b'      |                         \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[15.693137] (-) TimerEvent: {}
+[15.793609] (-) TimerEvent: {}
+[15.894096] (-) TimerEvent: {}
+[15.994583] (-) TimerEvent: {}
+[16.095070] (-) TimerEvent: {}
+[16.195718] (-) TimerEvent: {}
+[16.296417] (-) TimerEvent: {}
+[16.397071] (-) TimerEvent: {}
+[16.497764] (-) TimerEvent: {}
+[16.598244] (-) TimerEvent: {}
+[16.698703] (-) TimerEvent: {}
+[16.799190] (-) TimerEvent: {}
+[16.899657] (-) TimerEvent: {}
+[17.000128] (-) TimerEvent: {}
+[17.100602] (-) TimerEvent: {}
+[17.201117] (-) TimerEvent: {}
+[17.301594] (-) TimerEvent: {}
+[17.402049] (-) TimerEvent: {}
+[17.502518] (-) TimerEvent: {}
+[17.602979] (-) TimerEvent: {}
+[17.703420] (-) TimerEvent: {}
+[17.803891] (-) TimerEvent: {}
+[17.904380] (-) TimerEvent: {}
+[18.004845] (-) TimerEvent: {}
+[18.013501] (yolo_detect) StderrLine: {'line': b"\x1b[01m\x1b[K/home/dji/DJI_workshop/LZP_PSDK/Payload-SDK/samples/sample_c++/module_sample/liveview/dji_liveview_object_detection.cpp:\x1b[m\x1b[K In function '\x1b[01m\x1b[Kvoid\x1b[01;32m\x1b[K DjiUser_RunOpenArSample\x1b[m\x1b[K()\x1b[m\x1b[K':\n"}
+[18.013995] (yolo_detect) StderrLine: {'line': b"\x1b[01m\x1b[K/home/dji/DJI_workshop/LZP_PSDK/Payload-SDK/samples/sample_c++/module_sample/liveview/dji_liveview_object_detection.cpp:173:31:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable '\x1b[01m\x1b[Kpivot\x1b[m\x1b[K' [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc-14.3.0/gcc/Warning-Options.html#index-Wno-unused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n"}
+[18.014214] (yolo_detect) StderrLine: {'line': b'  173 |         T_DjiOpenArPivotAxis* \x1b[01;35m\x1b[Kpivot\x1b[m\x1b[K = (T_DjiOpenArPivotAxis*)buf;\n'}
+[18.014375] (yolo_detect) StderrLine: {'line': b'      |                               \x1b[01;35m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[18.014528] (yolo_detect) StderrLine: {'line': b"\x1b[01m\x1b[K/home/dji/DJI_workshop/LZP_PSDK/Payload-SDK/samples/sample_c++/module_sample/liveview/dji_liveview_object_detection.cpp:179:42:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable '\x1b[01m\x1b[Kdelete_povix_entry\x1b[m\x1b[K' [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc-14.3.0/gcc/Warning-Options.html#index-Wno-unused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n"}
+[18.014701] (yolo_detect) StderrLine: {'line': b'  179 |         T_DjiOpenArDeletePovixAxisEntry* \x1b[01;35m\x1b[Kdelete_povix_entry\x1b[m\x1b[K = (T_DjiOpenArDeletePovixAxisEntry*)buf;\n'}
+[18.014879] (yolo_detect) StderrLine: {'line': b'      |                                          \x1b[01;35m\x1b[K^~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[18.027675] (yolo_detect) StderrLine: {'line': b"\x1b[01m\x1b[K/home/dji/DJI_workshop/LZP_PSDK/Payload-SDK/samples/sample_c++/module_sample/liveview/dji_liveview_object_detection.cpp:\x1b[m\x1b[K In function '\x1b[01m\x1b[Kvoid\x1b[01;32m\x1b[K DjiLiveview_RcvImageCallback\x1b[m\x1b[K(E_DjiLiveViewCameraPosition, const uint8_t*, uint32_t, T_DjiLiveviewImageInfo)\x1b[m\x1b[K':\n"}
+[18.028167] (yolo_detect) StderrLine: {'line': b"\x1b[01m\x1b[K/home/dji/DJI_workshop/LZP_PSDK/Payload-SDK/samples/sample_c++/module_sample/liveview/dji_liveview_object_detection.cpp:548:21:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable '\x1b[01m\x1b[KDjiStat\x1b[m\x1b[K' [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc-14.3.0/gcc/Warning-Options.html#index-Wno-unused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n"}
+[18.028347] (yolo_detect) StderrLine: {'line': b'  548 |     T_DjiReturnCode \x1b[01;35m\x1b[KDjiStat\x1b[m\x1b[K;\n'}
+[18.028497] (yolo_detect) StderrLine: {'line': b'      |                     \x1b[01;35m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[18.028637] (yolo_detect) StderrLine: {'line': b"\x1b[01m\x1b[K/home/dji/DJI_workshop/LZP_PSDK/Payload-SDK/samples/sample_c++/module_sample/liveview/dji_liveview_object_detection.cpp:549:14:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable '\x1b[01m\x1b[KOutPutLen\x1b[m\x1b[K' [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc-14.3.0/gcc/Warning-Options.html#index-Wno-unused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n"}
+[18.028787] (yolo_detect) StderrLine: {'line': b'  549 |     uint32_t \x1b[01;35m\x1b[KOutPutLen\x1b[m\x1b[K;\n'}
+[18.028930] (yolo_detect) StderrLine: {'line': b'      |              \x1b[01;35m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[18.029075] (yolo_detect) StderrLine: {'line': b"\x1b[01m\x1b[K/home/dji/DJI_workshop/LZP_PSDK/Payload-SDK/samples/sample_c++/module_sample/liveview/dji_liveview_object_detection.cpp:546:70:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter '\x1b[01m\x1b[Kposition\x1b[m\x1b[K' [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc-14.3.0/gcc/Warning-Options.html#index-Wno-unused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n"}
+[18.029224] (yolo_detect) StderrLine: {'line': b'  546 | static void DjiLiveview_RcvImageCallback(\x1b[01;35m\x1b[KE_DjiLiveViewCameraPosition position\x1b[m\x1b[K, const uint8_t *buf, uint32_t len, T_DjiLiveviewImageInfo imageInfo)\n'}
+[18.029369] (yolo_detect) StderrLine: {'line': b'      |                                          \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~\x1b[m\x1b[K\n'}
+[18.033337] (yolo_detect) StderrLine: {'line': b"\x1b[01m\x1b[K/home/dji/DJI_workshop/LZP_PSDK/Payload-SDK/samples/sample_c++/module_sample/liveview/dji_liveview_object_detection.cpp:\x1b[m\x1b[K In function '\x1b[01m\x1b[Kvoid*\x1b[01;32m\x1b[K DjiLiveview_ObjectDetectionThread\x1b[m\x1b[K(void*)\x1b[m\x1b[K':\n"}
+[18.033764] (yolo_detect) StderrLine: {'line': b"\x1b[01m\x1b[K/home/dji/DJI_workshop/LZP_PSDK/Payload-SDK/samples/sample_c++/module_sample/liveview/dji_liveview_object_detection.cpp:650:27:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kcomparison of integer expressions of different signedness: '\x1b[01m\x1b[Kint\x1b[m\x1b[K' and '\x1b[01m\x1b[Kstd::vector<T_DjiLiveViewBoundingBox>::size_type\x1b[m\x1b[K' {aka '\x1b[01m\x1b[Klong unsigned int\x1b[m\x1b[K'} [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc-14.3.0/gcc/Warning-Options.html#index-Wno-sign-compare\x07-Wsign-compare\x1b]8;;\x07\x1b[m\x1b[K]\n"}
+[18.033943] (yolo_detect) StderrLine: {'line': b'  650 |         for (int i = 0; \x1b[01;35m\x1b[Ki < bounding_boxes.size()\x1b[m\x1b[K; i++) {\n'}
+[18.034109] (yolo_detect) StderrLine: {'line': b'      |                         \x1b[01;35m\x1b[K~~^~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[18.034255] (yolo_detect) StderrLine: {'line': b"\x1b[01m\x1b[K/home/dji/DJI_workshop/LZP_PSDK/Payload-SDK/samples/sample_c++/module_sample/liveview/dji_liveview_object_detection.cpp:625:21:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable '\x1b[01m\x1b[KDjiStat\x1b[m\x1b[K' [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc-14.3.0/gcc/Warning-Options.html#index-Wno-unused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n"}
+[18.034411] (yolo_detect) StderrLine: {'line': b'  625 |     T_DjiReturnCode \x1b[01;35m\x1b[KDjiStat\x1b[m\x1b[K;\n'}
+[18.034555] (yolo_detect) StderrLine: {'line': b'      |                     \x1b[01;35m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[18.034696] (yolo_detect) StderrLine: {'line': b"\x1b[01m\x1b[K/home/dji/DJI_workshop/LZP_PSDK/Payload-SDK/samples/sample_c++/module_sample/liveview/dji_liveview_object_detection.cpp:624:54:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter '\x1b[01m\x1b[Karg\x1b[m\x1b[K' [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc-14.3.0/gcc/Warning-Options.html#index-Wno-unused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n"}
+[18.034871] (yolo_detect) StderrLine: {'line': b'  624 | static void* DjiLiveview_ObjectDetectionThread(\x1b[01;35m\x1b[Kvoid *arg\x1b[m\x1b[K) {\n'}
+[18.035013] (yolo_detect) StderrLine: {'line': b'      |                                                \x1b[01;35m\x1b[K~~~~~~^~~\x1b[m\x1b[K\n'}
+[18.105021] (-) TimerEvent: {}
+[18.205497] (-) TimerEvent: {}
+[18.305951] (-) TimerEvent: {}
+[18.406422] (-) TimerEvent: {}
+[18.506906] (-) TimerEvent: {}
+[18.607353] (-) TimerEvent: {}
+[18.707824] (-) TimerEvent: {}
+[18.808312] (-) TimerEvent: {}
+[18.908766] (-) TimerEvent: {}
+[19.009233] (-) TimerEvent: {}
+[19.109690] (-) TimerEvent: {}
+[19.210148] (-) TimerEvent: {}
+[19.308767] (yolo_detect) StderrLine: {'line': b'\x1b[01m\x1b[K/home/dji/DJI_workshop/LZP_PSDK/Payload-SDK/samples/sample_c++/module_sample/liveview/dji_liveview_object_detection.cpp:\x1b[m\x1b[K At global scope:\n'}
+[19.309345] (yolo_detect) StderrLine: {'line': b"\x1b[01m\x1b[K/home/dji/DJI_workshop/LZP_PSDK/Payload-SDK/samples/sample_c++/module_sample/liveview/dji_liveview_object_detection.cpp:538:13:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K'\x1b[01m\x1b[Kvoid\x1b[01;32m\x1b[K outYUVTofile\x1b[m\x1b[K(const uint8_t*, int32_t)\x1b[m\x1b[K' defined but not used [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc-14.3.0/gcc/Warning-Options.html#index-Wno-unused-function\x07-Wunused-function\x1b]8;;\x07\x1b[m\x1b[K]\n"}
+[19.309545] (yolo_detect) StderrLine: {'line': b'  538 | static void \x1b[01;35m\x1b[KoutYUVTofile\x1b[m\x1b[K(const uint8_t *buf, int32_t len) {\n'}
+[19.309703] (yolo_detect) StderrLine: {'line': b'      |             \x1b[01;35m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[19.309849] (yolo_detect) StderrLine: {'line': b"\x1b[01m\x1b[K/home/dji/DJI_workshop/LZP_PSDK/Payload-SDK/samples/sample_c++/module_sample/liveview/dji_liveview_object_detection.cpp:78:20:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K'\x1b[01m\x1b[Ks_invalidLables\x1b[m\x1b[K' defined but not used [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc-14.3.0/gcc/Warning-Options.html#index-Wno-unused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n"}
+[19.310019] (yolo_detect) StderrLine: {'line': b'   78 | static const char* \x1b[01;35m\x1b[Ks_invalidLables\x1b[m\x1b[K[] = {\n'}
+[19.310160] (-) TimerEvent: {}
+[19.310202] (yolo_detect) StderrLine: {'line': b'      |                    \x1b[01;35m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[19.410394] (-) TimerEvent: {}
+[19.511115] (-) TimerEvent: {}
+[19.611599] (-) TimerEvent: {}
+[19.712040] (-) TimerEvent: {}
+[19.812507] (-) TimerEvent: {}
+[19.912962] (-) TimerEvent: {}
+[19.995645] (yolo_detect) StderrLine: {'line': b"\x1b[01m\x1b[K/home/dji/DJI_workshop/LZP_PSDK/Payload-SDK/samples/sample_c++/module_sample/liveview/dji_liveview_object_detection.cpp:\x1b[m\x1b[K In function '\x1b[01m\x1b[Kvoid\x1b[01;32m\x1b[K DjiUser_RunOpenArSample\x1b[m\x1b[K()\x1b[m\x1b[K':\n"}
+[19.996354] (yolo_detect) StderrLine: {'line': b"\x1b[01m\x1b[K/home/dji/DJI_workshop/LZP_PSDK/Payload-SDK/samples/sample_c++/module_sample/liveview/dji_liveview_object_detection.cpp:212:46:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Karray subscript 0 is outside array bounds of '\x1b[01m\x1b[Kuint32_t [0]\x1b[m\x1b[K' {aka '\x1b[01m\x1b[Kunsigned int [0]\x1b[m\x1b[K'} [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc-14.3.0/gcc/Warning-Options.html#index-Warray-bounds\x07-Warray-bounds=\x1b]8;;\x07\x1b[m\x1b[K]\n"}
+[19.996540] (yolo_detect) StderrLine: {'line': b'  212 |              \x1b[01;35m\x1b[Kdelete_point_entry->uuid_array[0]\x1b[m\x1b[K = 1;\n'}
+[19.996697] (yolo_detect) StderrLine: {'line': b'      |              \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^\x1b[m\x1b[K\n'}
+[19.996848] (yolo_detect) StderrLine: {'line': b"\x1b[01m\x1b[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/../../../Payload-SDK/samples/sample_c++/platform/linux/manifold3/../../../../../psdk_lib/include/dji_open_ar.h:181:14:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kwhile referencing '\x1b[01m\x1b[KT_DjiOpenArDeletePointEntry::uuid_array\x1b[m\x1b[K'\n"}
+[19.997000] (yolo_detect) StderrLine: {'line': b'  181 |     uint32_t \x1b[01;36m\x1b[Kuuid_array\x1b[m\x1b[K[0]; /*!< Array of UUIDs to identify the elements to be deleted */\n'}
+[19.997148] (yolo_detect) StderrLine: {'line': b'      |              \x1b[01;36m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[19.997293] (yolo_detect) StderrLine: {'line': b"\x1b[01m\x1b[K/home/dji/DJI_workshop/LZP_PSDK/Payload-SDK/samples/sample_c++/module_sample/liveview/dji_liveview_object_detection.cpp:213:46:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Karray subscript 1 is outside array bounds of '\x1b[01m\x1b[Kuint32_t [0]\x1b[m\x1b[K' {aka '\x1b[01m\x1b[Kunsigned int [0]\x1b[m\x1b[K'} [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc-14.3.0/gcc/Warning-Options.html#index-Warray-bounds\x07-Warray-bounds=\x1b]8;;\x07\x1b[m\x1b[K]\n"}
+[19.997441] (yolo_detect) StderrLine: {'line': b'  213 |              \x1b[01;35m\x1b[Kdelete_point_entry->uuid_array[1]\x1b[m\x1b[K = 2;\n'}
+[19.997581] (yolo_detect) StderrLine: {'line': b'      |              \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^\x1b[m\x1b[K\n'}
+[19.997719] (yolo_detect) StderrLine: {'line': b"\x1b[01m\x1b[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/../../../Payload-SDK/samples/sample_c++/platform/linux/manifold3/../../../../../psdk_lib/include/dji_open_ar.h:181:14:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kwhile referencing '\x1b[01m\x1b[KT_DjiOpenArDeletePointEntry::uuid_array\x1b[m\x1b[K'\n"}
+[19.997895] (yolo_detect) StderrLine: {'line': b'  181 |     uint32_t \x1b[01;36m\x1b[Kuuid_array\x1b[m\x1b[K[0]; /*!< Array of UUIDs to identify the elements to be deleted */\n'}
+[19.998035] (yolo_detect) StderrLine: {'line': b'      |              \x1b[01;36m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[20.013120] (-) TimerEvent: {}
+[20.113548] (-) TimerEvent: {}
+[20.214036] (-) TimerEvent: {}
+[20.314504] (-) TimerEvent: {}
+[20.414977] (-) TimerEvent: {}
+[20.501743] (yolo_detect) StderrLine: {'line': b'make[1]: *** [CMakeFiles/Makefile2:85: CMakeFiles/yolo_detect.dir/all] Error 2\n'}
+[20.502671] (yolo_detect) StderrLine: {'line': b'make: *** [Makefile:146: all] Error 2\n'}
+[20.505675] (yolo_detect) CommandEnded: {'returncode': 2}
+[20.515066] (-) TimerEvent: {}
+[20.539644] (yolo_detect) JobEnded: {'identifier': 'yolo_detect', 'rc': 2}
+[20.552573] (-) EventReactorShutdown: {}

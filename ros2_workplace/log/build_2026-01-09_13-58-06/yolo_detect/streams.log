@@ -1,0 +1,36 @@
+[0.022s] Invoking command in '/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/build/yolo_detect': CONDA_PROMPT_MODIFIER=(ros2_humble) /open_app/miniconda3/envs/ros2_humble/bin/cmake --build /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/build/yolo_detect -- -j4 -l4
+[0.418s] [  1%] [32m[1mLinking CXX executable bin/yolo_detect[0m
+[1.940s] /open_app/miniconda3/envs/ros2_humble/bin/../libexec/gcc/aarch64-conda-linux-gnu/14.3.0/ld: CMakeFiles/yolo_detect.dir/src/main.cpp.o: in function `ai_detect::outH264Tofile(unsigned char const*, int)':
+[1.940s] main.cpp:(.text+0x0): undefined reference to `ai_detect::outFileH264'
+[1.940s] /open_app/miniconda3/envs/ros2_humble/bin/../libexec/gcc/aarch64-conda-linux-gnu/14.3.0/ld: main.cpp:(.text+0x4): undefined reference to `ai_detect::outFileH264'
+[1.941s] /open_app/miniconda3/envs/ros2_humble/bin/../libexec/gcc/aarch64-conda-linux-gnu/14.3.0/ld: CMakeFiles/yolo_detect.dir/src/main.cpp.o: in function `ai_detect::EncoderCallback_Entry(unsigned char const*, unsigned int)':
+[1.941s] main.cpp:(.text+0xc0): undefined reference to `ai_detect::s_instance'
+[1.941s] /open_app/miniconda3/envs/ros2_humble/bin/../libexec/gcc/aarch64-conda-linux-gnu/14.3.0/ld: main.cpp:(.text+0xc4): undefined reference to `ai_detect::s_instance'
+[1.941s] /open_app/miniconda3/envs/ros2_humble/bin/../libexec/gcc/aarch64-conda-linux-gnu/14.3.0/ld: CMakeFiles/yolo_detect.dir/src/main.cpp.o: in function `ai_detect::outYUVTofile(unsigned char const*, int)':
+[1.941s] main.cpp:(.text+0xec): undefined reference to `ai_detect::outFileYUV'
+[1.941s] /open_app/miniconda3/envs/ros2_humble/bin/../libexec/gcc/aarch64-conda-linux-gnu/14.3.0/ld: main.cpp:(.text+0xf0): undefined reference to `ai_detect::outFileYUV'
+[1.941s] /open_app/miniconda3/envs/ros2_humble/bin/../libexec/gcc/aarch64-conda-linux-gnu/14.3.0/ld: CMakeFiles/yolo_detect.dir/src/main.cpp.o: in function `ai_detect::DjiLiveview_ObjectDetectionThread()':
+[1.942s] main.cpp:(.text+0x184): undefined reference to `ai_detect::s_imageQueue'
+[1.942s] /open_app/miniconda3/envs/ros2_humble/bin/../libexec/gcc/aarch64-conda-linux-gnu/14.3.0/ld: main.cpp:(.text+0x188): undefined reference to `ai_detect::s_imageQueue'
+[1.942s] /open_app/miniconda3/envs/ros2_humble/bin/../libexec/gcc/aarch64-conda-linux-gnu/14.3.0/ld: main.cpp:(.text+0x37c): undefined reference to `ai_detect::s_metaQueue'
+[1.942s] /open_app/miniconda3/envs/ros2_humble/bin/../libexec/gcc/aarch64-conda-linux-gnu/14.3.0/ld: main.cpp:(.text+0x380): undefined reference to `ai_detect::s_metaQueue'
+[1.942s] /open_app/miniconda3/envs/ros2_humble/bin/../libexec/gcc/aarch64-conda-linux-gnu/14.3.0/ld: CMakeFiles/yolo_detect.dir/src/main.cpp.o: in function `ai_detect::DjiLiveview_RcvImageCallback(E_DjiLiveViewCameraPosition, unsigned char const*, unsigned int, T_DjiLiveviewImageInfo)':
+[1.942s] main.cpp:(.text+0xcfc): undefined reference to `ai_detect::s_imageQueue'
+[1.942s] /open_app/miniconda3/envs/ros2_humble/bin/../libexec/gcc/aarch64-conda-linux-gnu/14.3.0/ld: main.cpp:(.text+0xd00): undefined reference to `ai_detect::s_imageQueue'
+[1.943s] /open_app/miniconda3/envs/ros2_humble/bin/../libexec/gcc/aarch64-conda-linux-gnu/14.3.0/ld: main.cpp:(.text+0xe68): undefined reference to `ai_detect::s_metaQueue'
+[1.943s] /open_app/miniconda3/envs/ros2_humble/bin/../libexec/gcc/aarch64-conda-linux-gnu/14.3.0/ld: main.cpp:(.text+0xe6c): undefined reference to `ai_detect::s_metaQueue'
+[1.943s] /open_app/miniconda3/envs/ros2_humble/bin/../libexec/gcc/aarch64-conda-linux-gnu/14.3.0/ld: main.cpp:(.text+0xf2c): undefined reference to `ai_detect::s_imageQueue'
+[1.943s] /open_app/miniconda3/envs/ros2_humble/bin/../libexec/gcc/aarch64-conda-linux-gnu/14.3.0/ld: main.cpp:(.text+0xf30): undefined reference to `ai_detect::s_imageQueue'
+[1.943s] /open_app/miniconda3/envs/ros2_humble/bin/../libexec/gcc/aarch64-conda-linux-gnu/14.3.0/ld: CMakeFiles/yolo_detect.dir/src/main.cpp.o: in function `ai_detect::ImageCallback_Entry(E_DjiLiveViewCameraPosition, unsigned char const*, unsigned int, T_DjiLiveviewImageInfo)':
+[1.943s] main.cpp:(.text+0xfe0): undefined reference to `ai_detect::s_instance'
+[1.943s] /open_app/miniconda3/envs/ros2_humble/bin/../libexec/gcc/aarch64-conda-linux-gnu/14.3.0/ld: main.cpp:(.text+0xfe4): undefined reference to `ai_detect::s_instance'
+[1.945s] /open_app/miniconda3/envs/ros2_humble/bin/../libexec/gcc/aarch64-conda-linux-gnu/14.3.0/ld: CMakeFiles/yolo_detect.dir/src/main.cpp.o: in function `ai_detect::ai_detect(int, char**)':
+[1.945s] main.cpp:(.text._ZN9ai_detectC2EiPPc[_ZN9ai_detectC5EiPPc]+0x3dc): undefined reference to `ai_detect::s_instance'
+[1.945s] /open_app/miniconda3/envs/ros2_humble/bin/../libexec/gcc/aarch64-conda-linux-gnu/14.3.0/ld: main.cpp:(.text._ZN9ai_detectC2EiPPc[_ZN9ai_detectC5EiPPc]+0x3e0): undefined reference to `ai_detect::s_instance'
+[1.945s] /open_app/miniconda3/envs/ros2_humble/bin/../libexec/gcc/aarch64-conda-linux-gnu/14.3.0/ld: main.cpp:(.text._ZN9ai_detectC2EiPPc[_ZN9ai_detectC5EiPPc]+0x688): undefined reference to `ai_detect::outFileH264'
+[1.945s] /open_app/miniconda3/envs/ros2_humble/bin/../libexec/gcc/aarch64-conda-linux-gnu/14.3.0/ld: main.cpp:(.text._ZN9ai_detectC2EiPPc[_ZN9ai_detectC5EiPPc]+0x68c): undefined reference to `ai_detect::outFileH264'
+[1.989s] collect2: error: ld returned 1 exit status
+[1.992s] make[2]: *** [CMakeFiles/yolo_detect.dir/build.make:1239: bin/yolo_detect] Error 1
+[1.992s] make[1]: *** [CMakeFiles/Makefile2:85: CMakeFiles/yolo_detect.dir/all] Error 2
+[1.992s] make: *** [Makefile:146: all] Error 2
+[1.996s] Invoked command in '/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/build/yolo_detect' returned '2': CONDA_PROMPT_MODIFIER=(ros2_humble) /open_app/miniconda3/envs/ros2_humble/bin/cmake --build /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/build/yolo_detect -- -j4 -l4

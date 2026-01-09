@@ -74,6 +74,52 @@ static const char* s_invalidLables[] = {
 //决定注册Pilot的类别数
 #define INVALID_CLASS_NUM     4
 
+//全局变量，不考虑可拓展性
+//接受回调函数
+void DjiLiveview_RcvImageCallback(E_DjiLiveViewCameraPosition position, const uint8_t *buf, uint32_t len, T_DjiLiveviewImageInfo imageInfo);
+//编码器回调函数 存储H264视频
+void DjiLiveview_EncoderUseCallback(const uint8_t *buf, uint32_t len);
+//识别线程
+void* DjiLiveview_ObjectDetectionThread(void * arg);
+//获取时间戳 用于H264文件
+std::string getCurrentTimestamp();
+
+//H264码流输出为文件
+void outH264Tofile(const uint8_t *buf, int32_t len);
+//YUV码流输出为文件
+void outYUVTofile(const uint8_t *buf, int32_t len);
+//定义系统级变量
+T_DjiOsalHandler *osalHandler;
+//定义错误代码
+T_DjiReturnCode returnCode;
+//无人机位置变量
+E_DjiMountPosition mountPosition = DJI_MOUNT_POSITION_PAYLOAD_PORT_NO1;
+//定义视频流来源
+int mediaSource = 7; //support 0(app liveview)/1(1080p)/7(4k) for H30 camera
+//视频源设定
+E_DjiLiveViewCameraSource MediaResource;
+//相机位置
+E_DjiLiveViewCameraPosition CameraPostion;
+
+//H264码流的文件输出流
+static std::ofstream outFileH264;
+//YUV原始图像数据的文件输出流
+static std::ofstream outFileYUV;
+
+#ifdef OPEN_CV_INSTALLED
+    inline static ImageProcessorYolovFastest processor{"YOLOvFastest"};
+    //照片队列
+    static std::queue<cv::Mat> s_imageQueue;
+    //元数据队列
+    static std::queue<T_DjiLiveViewStandardMetaData *> s_metaQueue;
+    //检测线程的句柄，用来掌控检测线程
+    T_DjiTaskHandle my_procThreadHandle;
+    //元数据队列互斥锁
+    T_DjiMutexHandle my_metaQueueMutexHandle;
+    //图像队列互斥锁
+    T_DjiMutexHandle my_imageQueueMutexHandle;
+#endif
+
 class ai_detect:public rclcpp::Node{
     public:
     //构造函数
@@ -109,12 +155,11 @@ class ai_detect:public rclcpp::Node{
             std::cerr << "cant open " << h264FileName << std::endl;
         }
 
-
         #ifdef OPEN_CV_INSTALLED
-            // 创建s_metaQueueMutexHandle和s_imageQueueMutexHandle互斥锁
-            osalHandler->MutexCreate(&s_metaQueueMutexHandle);
-            osalHandler->MutexCreate(&s_imageQueueMutexHandle);
-            osalHandler->TaskCreate("objectDetectionTask",DjiLiveview_ObjectDetectionThread,1024*1024,NULL, &s_procThreadHandle);
+            // 创建my_metaQueueMutexHandle和my_imageQueueMutexHandle互斥锁
+            osalHandler->MutexCreate(&my_metaQueueMutexHandle);
+            osalHandler->MutexCreate(&my_imageQueueMutexHandle);
+            osalHandler->TaskCreate("objectDetectionTask",DjiLiveview_ObjectDetectionThread,1024*1024,NULL, &my_procThreadHandle);
             if (processor.Init() != 0) {
                 std::cerr << "Failed to initialize the processor." << std::endl;
                 return ;
@@ -166,56 +211,13 @@ class ai_detect:public rclcpp::Node{
             USER_LOG_ERROR( "start to subscribe YUV stream failed, ret: 0x%08llX", returnCode);
         }
     }
-    //接受回调函数
-    static void DjiLiveview_RcvImageCallback(E_DjiLiveViewCameraPosition position, const uint8_t *buf, uint32_t len, T_DjiLiveviewImageInfo imageInfo);
-    //编码器回调函数 存储H264视频
-    static void DjiLiveview_EncoderUseCallback(const uint8_t *buf, uint32_t len);
-    //识别线程
-    void* DjiLiveview_ObjectDetectionThread(void *arg);
-    //获取时间戳 用于H264文件
-    static std::string getCurrentTimestamp();
-    
-    //H264码流输出为文件
-    static void outH264Tofile(const uint8_t *buf, int32_t len);
-    //YUV码流输出为文件
-    static void outYUVTofile(const uint8_t *buf, int32_t len);
 
     private:
-    //定义系统级变量
-    T_DjiOsalHandler *osalHandler;
-    //定义错误代码
-    T_DjiReturnCode returnCode;
-    //无人机位置变量
-    E_DjiMountPosition mountPosition = DJI_MOUNT_POSITION_PAYLOAD_PORT_NO1;
-    //定义视频流来源
-    int mediaSource = 7; //support 0(app liveview)/1(1080p)/7(4k) for H30 camera
-    //视频源设定
-    E_DjiLiveViewCameraSource MediaResource;
-    //相机位置
-    E_DjiLiveViewCameraPosition CameraPostion;
 
-    //H264码流的文件输出流
-    static std::ofstream outFileH264;
-    //YUV原始图像数据的文件输出流
-    static std::ofstream outFileYUV;
-    
-    #ifdef OPEN_CV_INSTALLED
-        inline static ImageProcessorYolovFastest processor("YOLOvFastest");
-        //照片队列
-        static std::queue<cv::Mat> s_imageQueue;
-        //元数据队列
-        static std::queue<T_DjiLiveViewStandardMetaData *> s_metaQueue;
-        //检测线程的句柄，用来掌控检测线程
-        T_DjiTaskHandle s_procThreadHandle;
-        //元数据队列互斥锁
-        T_DjiMutexHandle s_metaQueueMutexHandle;
-        //图像队列互斥锁
-        T_DjiMutexHandle s_imageQueueMutexHandle;
-    #endif
 };
 
 //处理回调函数
-static void* ai_detect::DjiLiveview_ObjectDetectionThread(void *arg) {
+void* DjiLiveview_ObjectDetectionThread(void * arg) {
     //创建错误代码
     T_DjiReturnCode DjiStat;
     //创建系统句柄
@@ -224,10 +226,10 @@ static void* ai_detect::DjiLiveview_ObjectDetectionThread(void *arg) {
     while(1) {
         #ifdef OPEN_CV_INSTALLED
         //启动imag线程锁
-        osalHandler->MutexLock(s_imageQueueMutexHandle);
+        osalHandler->MutexLock(my_imageQueueMutexHandle);
         if (s_imageQueue.empty()) {
             //如果没有图片则取消image线程锁
-            osalHandler->MutexUnlock(s_imageQueueMutexHandle);
+            osalHandler->MutexUnlock(my_imageQueueMutexHandle);
             continue;
         }
         //获取队列最前面的一帧图像
@@ -235,7 +237,7 @@ static void* ai_detect::DjiLiveview_ObjectDetectionThread(void *arg) {
         //移除该帧
         s_imageQueue.pop();
         //完成东西获取的任务，取消image线程锁
-        osalHandler->MutexUnlock(s_imageQueueMutexHandle);
+        osalHandler->MutexUnlock(my_imageQueueMutexHandle);
         //定义存储BGR的图像
         cv::Mat bgr_image;
         //将图像从BGR转变为RGB
@@ -251,18 +253,18 @@ static void* ai_detect::DjiLiveview_ObjectDetectionThread(void *arg) {
         //记录存在多少个检测框
         T_DjiLiveViewStandardMetaData *metaData = (T_DjiLiveViewStandardMetaData *)malloc(
             sizeof(T_DjiLiveViewStandardMetaData) + bounding_boxes.size() * sizeof(T_DjiLiveViewBoundingBox));
-        metaData->   = bounding_boxes.size();
+        metaData->boxCount   = bounding_boxes.size();
         for (int i = 0; i < bounding_boxes.size(); i++) {
             metaData->boxData[i] = bounding_boxes[i];
         }
 
         DjiLiveview_SendAiMetaToPilot(metaData);
         //开启元数据队列锁
-        osalHandler->MutexLock(s_metaQueueMutexHandle);
+        osalHandler->MutexLock(my_metaQueueMutexHandle);
         //传入元数据
         s_metaQueue.push(metaData);
         //取消元数据队列锁
-        osalHandler->MutexUnlock(s_metaQueueMutexHandle);
+        osalHandler->MutexUnlock(my_metaQueueMutexHandle);
 
         #else
             break;
@@ -272,25 +274,22 @@ static void* ai_detect::DjiLiveview_ObjectDetectionThread(void *arg) {
 }
 
 //编码回调保存函数
-static void ai_detect::DjiLiveview_EncoderUseCallback(const uint8_t *buf, uint32_t len){
+void DjiLiveview_EncoderUseCallback(const uint8_t *buf, uint32_t len){
     //定义错误代码
     T_DjiReturnCode returnCode;
     //将H264文件存储到本地
     outH264Tofile(buf, len);
-    //如果不是M4D无人机
-    if (aircraftInfoBaseInfo.aircraftSeries != DJI_AIRCRAFT_SERIES_M4D)
+
+    //发送编码后的视频流
+    returnCode = DjiPayloadCamera_SendVideoStream(buf, len);
+    if (returnCode != DJI_ERROR_SYSTEM_MODULE_CODE_SUCCESS)
     {
-        //发送视频流
-        returnCode = DjiPayloadCamera_SendVideoStream(buf, len);
-        if (returnCode != DJI_ERROR_SYSTEM_MODULE_CODE_SUCCESS)
-        {
-            USER_LOG_ERROR("failed to send video to pilot, ret: 0x%08llX", returnCode);
-        }
+        USER_LOG_ERROR("failed to send video to pilot, ret: 0x%08llX", returnCode);
     }
 }
 
 //图像帧处理回调函数
-static void ai_detect::DjiLiveview_RcvImageCallback(E_DjiLiveViewCameraPosition position, const uint8_t *buf, uint32_t len, T_DjiLiveviewImageInfo imageInfo){
+void DjiLiveview_RcvImageCallback(E_DjiLiveViewCameraPosition position, const uint8_t *buf, uint32_t len, T_DjiLiveviewImageInfo imageInfo){
     //定义错误代码
     T_DjiReturnCode DjiStat;
     //输出长度变量
@@ -311,7 +310,7 @@ static void ai_detect::DjiLiveview_RcvImageCallback(E_DjiLiveViewCameraPosition 
     //克隆一份备用
     cv::Mat rgb_image_copy = rgb_image.clone();
     //启用image队列锁
-    osalHandler->MutexLock(s_imageQueueMutexHandle);
+    osalHandler->MutexLock(my_imageQueueMutexHandle);
     //消费者无法消化，丢弃一部分帧
     while (s_imageQueue.size() > 30) {
         USER_LOG_WARN("The image queue is full. Drop this strike.");
@@ -320,17 +319,17 @@ static void ai_detect::DjiLiveview_RcvImageCallback(E_DjiLiveViewCameraPosition 
     //推入新的帧
     s_imageQueue.push(rgb_image_copy);
     //取消image队列锁
-    osalHandler->MutexUnlock(s_imageQueueMutexHandle);
+    osalHandler->MutexUnlock(my_imageQueueMutexHandle);
 
     //启用元数据队列锁
-    osalHandler->MutexLock(s_metaQueueMutexHandle);
+    osalHandler->MutexLock(my_metaQueueMutexHandle);
     //如果元数据不为空，则取出一个元数据
     if (!s_metaQueue.empty()) {
         metaData = s_metaQueue.front();
         s_metaQueue.pop();
     }
     //取消元数据队列锁
-    osalHandler->MutexUnlock(s_metaQueueMutexHandle);
+    osalHandler->MutexUnlock(my_metaQueueMutexHandle);
 
     //将RGB帧编码为H264并附带元数据
     DjiLiveview_EncodeAFrameToH264(buf, len, imageInfo, metaData);
@@ -343,7 +342,7 @@ static void ai_detect::DjiLiveview_RcvImageCallback(E_DjiLiveViewCameraPosition 
 }
 
 //获取时间戳
-static ai_detect::std::string getCurrentTimestamp() {
+std::string getCurrentTimestamp() {
     std::time_t now = std::time(nullptr);
     std::tm* now_tm = std::localtime(&now);
 
@@ -358,7 +357,7 @@ static ai_detect::std::string getCurrentTimestamp() {
 }
 
 //H264码流输出为文件
-static void ai_detect::outH264Tofile(const uint8_t *buf, int32_t len) {
+void outH264Tofile(const uint8_t *buf, int32_t len) {
     if (!outFileH264) {
         USER_LOG_ERROR( "output.h264 is not open");
         return;
@@ -367,7 +366,7 @@ static void ai_detect::outH264Tofile(const uint8_t *buf, int32_t len) {
 }
 
 //YUV码流输出为文件
-static void ai_detect::outYUVTofile(const uint8_t *buf, int32_t len) {
+void outYUVTofile(const uint8_t *buf, int32_t len) {
     if (!outFileYUV) {
         USER_LOG_ERROR( "outyuv.h264 is not open");
         return;

@@ -12,11 +12,6 @@
 //云台管理头文件
 #include "gimbal_manager.h"
 
-#include "camera_controller.h"
-
-#include "rclcpp/rclcpp.hpp"
-
-#include "std_msgs/msg/string.hpp"
 
 int main(int argc, char **argv)
 {

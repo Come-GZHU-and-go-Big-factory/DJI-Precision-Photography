@@ -25,6 +25,11 @@ int main(int argc, char **argv)
     // 初始化ros2
     rclcpp::init(argc,argv);
 
+    //创建signal，以便安全退出
+    signal(SIGINT, [](int signalNum) -> void { exit(0); });
+    //进行系统初始化
+    Application application(argc, argv);
+
     auto ai_detect_node = std::make_shared<ai_detect>(argc,argv);
     // 创建实例并开始运行
     rclcpp::spin(ai_detect_node);

@@ -125,6 +125,7 @@ class ai_detect:public rclcpp::Node{
     //构造函数
     ai_detect(int argc,char ** argv):rclcpp::Node("ai_detect")
     {
+        CameraPostion = DJI_LIVEVIEW_CAMERA_POSITION_NO_1;
         //H30T相机位于位置1
         mountPosition = DJI_MOUNT_POSITION_PAYLOAD_PORT_NO1;
         //设置H30T变焦视频流
@@ -259,6 +260,20 @@ void* DjiLiveview_ObjectDetectionThread(void * arg) {
         }
 
         DjiLiveview_SendAiMetaToPilot(metaData);
+
+        USER_LOG_INFO("meta boxCount=%u", metaData->boxCount);
+        for (size_t i = 0; i < bounding_boxes.size(); ++i) {
+            metaData->boxData[i] = bounding_boxes[i];
+            USER_LOG_INFO("meta[%zu] id=%u type=%u state=%u cx=%u cy=%u w=%u h=%u",
+                        i,
+                        metaData->boxData[i].id,
+                        metaData->boxData[i].type,
+                        metaData->boxData[i].state,
+                        metaData->boxData[i].box.cx,
+                        metaData->boxData[i].box.cy,
+                        metaData->boxData[i].box.w,
+                        metaData->boxData[i].box.h);
+        }
         //开启元数据队列锁
         osalHandler->MutexLock(my_metaQueueMutexHandle);
         //传入元数据

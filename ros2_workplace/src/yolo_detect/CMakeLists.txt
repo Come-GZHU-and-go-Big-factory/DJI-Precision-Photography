@@ -5,15 +5,25 @@ project(yolo_detect)
 if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
   add_compile_options(-Wall -Wextra -Wpedantic)
 endif()
+
 # PSDK相关内容
 set(PSDK_DIR ../../../Payload-SDK/samples/sample_c++/platform/linux/manifold3)
 # 设定交叉编译器
-set(CMAKE_C_COMPILER "aarch64-linux-gnu-gcc" CACHE STRING "C compiler")
-set(CMAKE_CXX_COMPILER "aarch64-linux-gnu-g++" CACHE STRING "C++ compiler")
+#set(CMAKE_C_COMPILER "aarch64-linux-gnu-gcc" CACHE STRING "C compiler")
+#et(CMAKE_CXX_COMPILER "aarch64-linux-gnu-g++" CACHE STRING "C++ compiler")
 
 set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -pthread -std=gnu99")
-set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++17 -pthread")
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++14 -pthread")
 set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} -pthread")
+# 设置CUDA编译使用的C++版本
+set(CMAKE_CXX_STANDARD 14)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+
+set(CMAKE_CUDA_STANDARD 14)
+set(CMAKE_CUDA_STANDARD_REQUIRED ON)
+
+list(APPEND CUDA_NVCC_FLAGS "-std=c++14")
+
 
 # 开启自动生成 compile_commands.json
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
@@ -65,13 +75,51 @@ set(TOOLCHAIN_NAME aarch64-linux-gnu-gcc)
 
 link_directories(${PSDK_DIR}/../../../../../psdk_lib/lib/${TOOLCHAIN_NAME})
 
-add_executable(${PROJECT_NAME}
+# /*           yolo 模型相关内容开始           */
+# 去除静态库选项
+set(CUDA_USE_STATIC_CUDA_RUNTIME OFF)
+# CUDA 库相关
+find_package(CUDA REQUIRED)
+
+# 添加头文件
+add_definitions(-DAPI_EXPORTS)
+
+# 添加CUDA头文件目录
+include_directories(${CUDA_INCLUDE_DIRS})
+# 导入src文件夹
+include_directories(./yolo)
+# 导入头文件文件夹
+include_directories(./yolo/include)
+
+
+# 添加cuda源文件
+set(CUDA_SOURCES ./yolo/preprocess.cu)
+# 添加源文件
+set(YOLO_SRC
+    ./yolo/YOLOv11.cpp
+)
+
+# 设置TensorRT文件夹
+set(TENSORRT_DIR /opt/TensorRT)
+# 导入TensorRT
+# 导入CUDA库
+include_directories(${TENSORRT_DIR}/include)
+link_directories(${TENSORRT_DIR}/lib)
+
+# 指定需要链接的 TensorRT 库（TensorRT 10 起移除了 nvparsers）
+set(TENSORRT_LIBS nvinfer nvinfer_plugin nvonnxparser)
+
+# /*           yolo 模型相关内容结束           */
+
+cuda_add_executable(${PROJECT_NAME}
     src/main.cpp
     ${MY_CODE}
     ${MODULE_APP_SRC}
     ${MODULE_SAMPLE_SRC}
     ${MODULE_COMMON_SRC}
     ${MODULE_HAL_SRC}
+    ${YOLO_SRC}
+    ${CUDA_SOURCES}
 )
 # 找到libpayloadsdk.a文件路径
 find_library(PSDK_LIBRARY payloadsdk
@@ -82,6 +130,8 @@ target_link_libraries(${PROJECT_NAME}
         ${PSDK_LIBRARY}
         #/home/dji/DJI_workshop/LZP_PSDK/Payload-SDK/psdk_lib/lib/aarch64-linux-gnu-gcc/libpayloadsdk.a
         #${PSDK_DIR}/../../../../../psdk_lib/lib/${TOOLCHAIN_NAME}/libpayloadsdk.a
+        ${CUDA_LIBRARIES}
+        ${TENSORRT_LIBS}
         stdc++
         m
         dl
@@ -89,6 +139,8 @@ target_link_libraries(${PROJECT_NAME}
 
 set(CMAKE_PREFIX_PATH "/usr/local/aarch64;${CMAKE_PREFIX_PATH}")
 set(OpenCV_DIR "/usr/local/aarch64/lib/cmake/opencv4")
+
+
 
 # OpenCV
 find_package(OpenCV QUIET)

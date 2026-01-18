@@ -1,0 +1,4 @@
+[  4%] [32mBuilding C object CMakeFiles/yolo_detect.dir/home/dji/DJI_workshop/LZP_PSDK/Payload-SDK/samples/sample_c/module_sample/camera_manager/test_camera_manager.c.o[0m
+[  4%] [32mBuilding CXX object CMakeFiles/yolo_detect.dir/src/main.cpp.o[0m
+[  4%] [32mBuilding C object CMakeFiles/yolo_detect.dir/home/dji/DJI_workshop/LZP_PSDK/Payload-SDK/samples/sample_c/module_sample/cloud_api/test_cloud_api_by_web_socket.c.o[0m
+[  5%] [32mBuilding C object CMakeFiles/yolo_detect.dir/home/dji/DJI_workshop/LZP_PSDK/Payload-SDK/samples/sample_c/module_sample/data_transmission/test_data_transmission.c.o[0m

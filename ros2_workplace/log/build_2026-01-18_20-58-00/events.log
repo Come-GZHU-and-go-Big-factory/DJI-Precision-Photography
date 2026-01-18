@@ -1,0 +1,166 @@
+[0.000000] (-) TimerEvent: {}
+[0.000395] (-) JobUnselected: {'identifier': 'dji_precision_capture'}
+[0.000589] (-) JobUnselected: {'identifier': 'uav_detect_result'}
+[0.000766] (yolo_detect) JobQueued: {'identifier': 'yolo_detect', 'dependencies': OrderedDict()}
+[0.000937] (yolo_detect) JobStarted: {'identifier': 'yolo_detect'}
+[0.018352] (yolo_detect) JobProgress: {'identifier': 'yolo_detect', 'progress': 'cmake'}
+[0.018503] (yolo_detect) JobProgress: {'identifier': 'yolo_detect', 'progress': 'build'}
+[0.018558] (yolo_detect) Command: {'cmd': ['/open_app/miniconda3/envs/ros2_humble/bin/cmake', '--build', '/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/build/yolo_detect', '--', '-j4', '-l4'], 'cwd': '/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/build/yolo_detect', 'env': OrderedDict([('PYTHON_BASIC_REPL', '1'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('CONDA_PROMPT_MODIFIER', '(ros2_humble)'), ('USER', 'dji'), ('SSH_CLIENT', '192.168.42.1 13945 22'), ('GCC_RANLIB', '/open_app/miniconda3/envs/ros2_humble/bin/aarch64-conda-linux-gnu-gcc-ranlib'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/dji/.vscode-server/cli/servers/Stable-585eba7c0c34fd6b30faac7c62a42050bfbc0086/server/extensions/git/dist/askpass.sh'), ('OBJCOPY', '/open_app/miniconda3/envs/ros2_humble/bin/aarch64-conda-linux-gnu-objcopy'), ('DEBUG_CXXFLAGS', '-fvisibility-inlines-hidden -std=c++17 -fmessage-length=0 -ftree-vectorize -fPIC -fstack-protector-all -fno-plt -Og -g -Wall -Wextra -fvar-tracking-assignments -pipe -isystem /open_app/miniconda3/envs/ros2_humble/include'), ('ROS_ETC_DIR', '/open_app/miniconda3/envs/ros2_humble/etc/ros'), ('SIZE', '/open_app/miniconda3/envs/ros2_humble/bin/aarch64-conda-linux-gnu-size'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/local/lib:/usr/local/cuda-11.4/lib64:/usr/local/lib:/usr/local/cuda-11.4/lib64:/usr/local/lib:/usr/local/cuda-11.4/lib64:/open_app/miniconda3/envs/ros2_humble/opt/rviz_ogre_vendor/lib:/open_app/install/usr/lib:/open_app/install/usr/lib/aarch64-linux-gnu:/usr/local/cuda-11.4/lib64:/open_app/install/usr/lib:/open_app/install/usr/lib/aarch64-linux-gnu:/open_app/install/usr/lib:/open_app/install/usr/lib/aarch64-linux-gnu:/usr/local/cuda-11.4/lib64:'), ('BROWSER', '/home/dji/.vscode-server/cli/servers/Stable-585eba7c0c34fd6b30faac7c62a42050bfbc0086/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/dji'), ('CC_FOR_BUILD', '/open_app/miniconda3/envs/ros2_humble/bin/aarch64-conda-linux-gnu-cc'), ('CONDA_SHLVL', '4'), ('OLDPWD', '/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/build'), ('TERM_PROGRAM_VERSION', '1.108.1'), ('CONDA_BACKUP_CC', '/usr/bin/gcc'), ('CUDAHOSTCXX', '/usr/bin/g++'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-b39e0d85-c02f-4a00-8303-aa61e70f4f3d.sock'), ('CONDA_TOOLCHAIN_BUILD', 'aarch64-conda-linux-gnu'), ('JETSON_L4T', '35.5.0'), ('F90', '/open_app/miniconda3/envs/ros2_humble/bin/aarch64-conda-linux-gnu-gfortran'), ('ROS_PYTHON_VERSION', '3'), ('LDFLAGS', '-Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,--allow-shlib-undefined -Wl,-rpath,/open_app/miniconda3/envs/ros2_humble/lib -Wl,-rpath-link,/open_app/miniconda3/envs/ros2_humble/lib -L/open_app/miniconda3/envs/ros2_humble/lib'), ('JETSON_MODEL', 'NVIDIA Orin NX Developer Kit'), ('CONDA_BACKUP_CMAKE_PREFIX_PATH', '/usr/local:/usr/lib/aarch64-linux-gnu:/open_app/install:/open_app/install/usr:/open_app/install:/open_app/install/usr:/open_app/install:/open_app/install/usr:'), ('FC', '/open_app/miniconda3/envs/ros2_humble/bin/aarch64-conda-linux-gnu-gfortran'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/dji/.vscode-server/cli/servers/Stable-585eba7c0c34fd6b30faac7c62a42050bfbc0086/server/extensions/git/dist/askpass-main.js'), ('STRINGS', '/open_app/miniconda3/envs/ros2_humble/bin/aarch64-conda-linux-gnu-strings'), ('VSCODE_GIT_ASKPASS_NODE', '/home/dji/.vscode-server/cli/servers/Stable-585eba7c0c34fd6b30faac7c62a42050bfbc0086/server/node'), ('SSL_CERT_FILE', '/usr/lib/ssl/certs/ca-certificates.crt'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('BUNDLED_DEBUGPY_PATH', '/home/dji/.vscode-server/extensions/ms-python.debugpy-2025.18.0/bundled/libs/debugpy'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('CPP', '/open_app/miniconda3/envs/ros2_humble/bin/aarch64-conda-linux-gnu-cpp'), ('_CONDA_ROOT', '/open_app/miniconda3'), ('F77', '/open_app/miniconda3/envs/ros2_humble/bin/aarch64-conda-linux-gnu-gfortran'), ('F95', '/open_app/miniconda3/envs/ros2_humble/bin/aarch64-conda-linux-gnu-f95'), ('ELFEDIT', '/open_app/miniconda3/envs/ros2_humble/bin/aarch64-conda-linux-gnu-elfedit'), ('https_proxy', 'http://127.0.0.1:7890'), ('STRIP', '/open_app/miniconda3/envs/ros2_humble/bin/aarch64-conda-linux-gnu-strip'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'dji'), ('GCC', '/open_app/miniconda3/envs/ros2_humble/bin/aarch64-conda-linux-gnu-gcc'), ('JETSON_MODULE', ''), ('JETSON_SERIAL_NUMBER', '1422525003257'), ('http_proxy', 'http://127.0.0.1:7890'), ('_', '/open_app/miniconda3/envs/ros2_humble/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/open_app/install/usr/lib/aarch64-linux-gnu/pkgconfig:/open_app/install/usr/lib/aarch64-linux-gnu/pkgconfig:/open_app/install/usr/lib/aarch64-linux-gnu/pkgconfig:'), ('JETSON_CODENAME', 'P3768'), ('READELF', '/open_app/miniconda3/envs/ros2_humble/bin/aarch64-conda-linux-gnu-readelf'), ('XDG_SESSION_CLASS', 'user'), ('AR', '/open_app/miniconda3/envs/ros2_humble/bin/aarch64-conda-linux-gnu-ar'), ('GXX', '/open_app/miniconda3/envs/ros2_humble/bin/aarch64-conda-linux-gnu-g++'), ('FC_FOR_BUILD', '/open_app/miniconda3/envs/ros2_humble/bin/aarch64-conda-linux-gnu-gfortran'), ('TERM', 'xterm-256color'), ('AS', '/open_app/miniconda3/envs/ros2_humble/bin/aarch64-conda-linux-gnu-as'), ('XDG_SESSION_ID', '32'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('CXXFILT', '/open_app/miniconda3/envs/ros2_humble/bin/aarch64-conda-linux-gnu-c++filt'), ('ROS_OS_OVERRIDE', 'conda:linux'), ('BUILD', 'aarch64-conda-linux-gnu'), ('PATH', '/usr/local/cuda-11.4/bin:/home/dji/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/home/dji/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:/home/dji/.vscode-server/cli/servers/Stable-585eba7c0c34fd6b30faac7c62a42050bfbc0086/server/bin/remote-cli:/home/dji/.local/bin:/open_app/miniconda3/envs/ros2_humble/bin:/open_app/miniconda3/condabin:/usr/local/cuda-11.4/bin:/system/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/system/bin:/usr/src/tensorrt/bin:/usr/src/tensorrt/bin/trtexec:/home/dji/.vscode-server/extensions/ms-python.debugpy-2025.18.0/bundled/scripts/noConfigScripts'), ('PROJ_NETWORK', 'ON'), ('build_alias', 'aarch64-conda-linux-gnu'), ('PROJ_DATA', '/open_app/miniconda3/envs/ros2_humble/share/proj'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('CFLAGS', '-ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O3 -pipe -isystem /open_app/miniconda3/envs/ros2_humble/include'), ('MAMBA_ROOT_PREFIX', '/open_app/miniconda3'), ('SSL_CERT_DIR', '/usr/lib/ssl/certs'), ('GCC_AR', '/open_app/miniconda3/envs/ros2_humble/bin/aarch64-conda-linux-gnu-gcc-ar'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/home/dji/.vscode-server/extensions/ms-python.debugpy-2025.18.0/.noConfigDebugAdapterEndpoints/endpoint-bfd3610c699b12ed.txt'), ('LANG', 'en_US.UTF-8'), ('DEBUG_CFLAGS', '-ftree-vectorize -fPIC -fstack-protector-all -fno-plt -Og -g -Wall -Wextra -fvar-tracking-assignments -pipe -isystem /open_app/miniconda3/envs/ros2_humble/include'), ('PYTHONSTARTUP', '/home/dji/.vscode-server/data/User/workspaceStorage/da77dad4a7af79234d1c491d005093cc/ms-python.python/pythonrc.py'), ('CONDA_PREFIX_1', '/open_app/miniconda3'), ('_CONDA_PYTHON_SYSCONFIGDATA_NAME', '_sysconfigdata_aarch64_conda_cos7_linux_gnu'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('JETSON_SOC', 'tegra23x'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-cc1b4e4175.sock'), ('CONDA_PREFIX_2', '/open_app/miniconda3/envs/ros2_humble'), ('TERM_PROGRAM', 'vscode'), ('XML_CATALOG_FILES', 'file:///open_app/miniconda3/envs/ros2_humble/etc/xml/catalog file:///etc/xml/catalog'), ('GSETTINGS_SCHEMA_DIR', '/open_app/miniconda3/envs/ros2_humble/share/glib-2.0/schemas'), ('AMENT_PREFIX_PATH', '/open_app/miniconda3/envs/ros2_humble'), ('CONDA_PYTHON_EXE', '/open_app/miniconda3/bin/python'), ('CONDA_PREFIX_3', '/open_app/miniconda3'), ('SHELL', '/bin/bash'), ('DEBUG_FFLAGS', '-fopenmp -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O3 -pipe -isystem /open_app/miniconda3/envs/ros2_humble/include -fopenmp -ftree-vectorize -fPIC -fstack-protector-strong -pipe -Og -g -Wall -Wextra -fcheck=all -fbacktrace -fvar-tracking-assignments -pipe'), ('CMAKE_ARGS', '-DCMAKE_AR=/open_app/miniconda3/envs/ros2_humble/bin/aarch64-conda-linux-gnu-ar -DCMAKE_CXX_COMPILER_AR=/open_app/miniconda3/envs/ros2_humble/bin/aarch64-conda-linux-gnu-gcc-ar -DCMAKE_C_COMPILER_AR=/open_app/miniconda3/envs/ros2_humble/bin/aarch64-conda-linux-gnu-gcc-ar -DCMAKE_RANLIB=/open_app/miniconda3/envs/ros2_humble/bin/aarch64-conda-linux-gnu-ranlib -DCMAKE_CXX_COMPILER_RANLIB=/open_app/miniconda3/envs/ros2_humble/bin/aarch64-conda-linux-gnu-gcc-ranlib -DCMAKE_C_COMPILER_RANLIB=/open_app/miniconda3/envs/ros2_humble/bin/aarch64-conda-linux-gnu-gcc-ranlib -DCMAKE_LINKER=/open_app/miniconda3/envs/ros2_humble/bin/aarch64-conda-linux-gnu-ld -DCMAKE_STRIP=/open_app/miniconda3/envs/ros2_humble/bin/aarch64-conda-linux-gnu-strip'), ('HOST', 'aarch64-conda-linux-gnu'), ('CXX', '/usr/bin/g++'), ('DEBUG_CPPFLAGS', '-D_DEBUG -D_FORTIFY_SOURCE=2 -Og -isystem /open_app/miniconda3/envs/ros2_humble/include'), ('OPEN_APP_PREFIX', '/open_app/install'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('DEBUG_FORTRANFLAGS', '-fopenmp -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O3 -pipe -isystem /open_app/miniconda3/envs/ros2_humble/include -fopenmp -ftree-vectorize -fPIC -fstack-protector-strong -pipe -Og -g -Wall -Wextra -fcheck=all -fbacktrace -fvar-tracking-assignments -pipe'), ('CONDA_DEFAULT_ENV', 'ros2_humble'), ('_CONDA_EXE', '/open_app/miniconda3/bin/conda'), ('ADDR2LINE', '/open_app/miniconda3/envs/ros2_humble/bin/aarch64-conda-linux-gnu-addr2line'), ('MAMBA_EXE', '/open_app/miniconda3/bin/mamba'), ('GCC_NM', '/open_app/miniconda3/envs/ros2_humble/bin/aarch64-conda-linux-gnu-gcc-nm'), ('GFORTRAN', '/open_app/miniconda3/envs/ros2_humble/bin/aarch64-conda-linux-gnu-gfortran'), ('CONDA_BUILD_SYSROOT', '/open_app/miniconda3/envs/ros2_humble/aarch64-conda-linux-gnu/sysroot'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('JETSON_CUDA_ARCH_BIN', '8.7'), ('PWD', '/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/build/yolo_detect'), ('LD_GOLD', '/open_app/miniconda3/envs/ros2_humble/bin/aarch64-conda-linux-gnu-ld.gold'), ('CONDA_EXE', '/open_app/miniconda3/bin/conda'), ('FFLAGS', '-fopenmp -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O3 -pipe -isystem /open_app/miniconda3/envs/ros2_humble/include'), ('LD', '/open_app/miniconda3/envs/ros2_humble/bin/aarch64-conda-linux-gnu-ld'), ('SSH_CONNECTION', '192.168.42.1 13945 192.168.140.2 22'), ('XDG_DATA_DIRS', '/open_app/install/usr/share:/open_app/install/usr/share:/open_app/install/usr/share:/usr/local/share:/usr/share'), ('PYTHONPATH', '/open_app/miniconda3/envs/ros2_humble/lib/python310/site-packages:/open_app/miniconda3/envs/ros2_humble/lib/python3.10/site-packages'), ('GPROF', '/open_app/miniconda3/envs/ros2_humble/bin/aarch64-conda-linux-gnu-gprof'), ('CONDA_PREFIX', '/open_app/miniconda3/envs/ros2_humble'), ('GSETTINGS_SCHEMA_DIR_CONDA_BACKUP', ''), ('CONDA_TOOLCHAIN_HOST', 'aarch64-conda-linux-gnu'), ('host_alias', 'aarch64-conda-linux-gnu'), ('FORTRANFLAGS', '-fopenmp -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O3 -pipe -isystem /open_app/miniconda3/envs/ros2_humble/include'), ('CC', '/usr/bin/gcc'), ('RANLIB', '/open_app/miniconda3/envs/ros2_humble/bin/aarch64-conda-linux-gnu-ranlib'), ('COLCON', '1'), ('CXX_FOR_BUILD', '/open_app/miniconda3/envs/ros2_humble/bin/aarch64-conda-linux-gnu-c++'), ('JETSON_JETPACK', '5.1.3'), ('CMAKE_PREFIX_PATH', '/usr/local:/usr/lib/aarch64-linux-gnu:/usr/local:/usr/lib/aarch64-linux-gnu:/usr/local:/usr/lib/aarch64-linux-gnu:/usr/local:/usr/lib/aarch64-linux-gnu:/open_app/miniconda3/envs/ros2_humble:/open_app/miniconda3/envs/ros2_humble/aarch64-conda-linux-gnu/sysroot/usr'), ('NM', '/open_app/miniconda3/envs/ros2_humble/bin/aarch64-conda-linux-gnu-nm'), ('OBJDUMP', '/open_app/miniconda3/envs/ros2_humble/bin/aarch64-conda-linux-gnu-objdump'), ('CONDA_BACKUP_CXX', '/usr/bin/g++')]), 'shell': False}
+[0.086094] (-) TimerEvent: {}
+[0.186571] (-) TimerEvent: {}
+[0.287076] (-) TimerEvent: {}
+[0.387537] (-) TimerEvent: {}
+[0.411796] (yolo_detect) StdoutLine: {'line': b'[  1%] \x1b[32mBuilding CXX object CMakeFiles/yolo_detect.dir/src/main.cpp.o\x1b[0m\n'}
+[0.487733] (-) TimerEvent: {}
+[0.588196] (-) TimerEvent: {}
+[0.688918] (-) TimerEvent: {}
+[0.789336] (-) TimerEvent: {}
+[0.889791] (-) TimerEvent: {}
+[0.990256] (-) TimerEvent: {}
+[1.090728] (-) TimerEvent: {}
+[1.191194] (-) TimerEvent: {}
+[1.291690] (-) TimerEvent: {}
+[1.392139] (-) TimerEvent: {}
+[1.492597] (-) TimerEvent: {}
+[1.593059] (-) TimerEvent: {}
+[1.604704] (yolo_detect) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/../../../Payload-SDK/samples/sample_c++/platform/linux/manifold3/../my_code/gimbal_manager.h:12\x1b[m\x1b[K,\n'}
+[1.605274] (yolo_detect) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/src/main.cpp:13\x1b[m\x1b[K:\n'}
+[1.605453] (yolo_detect) StderrLine: {'line': b'\x1b[01m\x1b[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/../../../Payload-SDK/samples/sample_c++/platform/linux/manifold3/../../../../../psdk_lib/include/dji_fc_subscription.h:1216:9:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ prohibits anonymous structs [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[1.605613] (yolo_detect) StderrLine: {'line': b' 1216 |         \x1b[01;35m\x1b[K}\x1b[m\x1b[K;\n'}
+[1.605759] (yolo_detect) StderrLine: {'line': b'      |         \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[1.605915] (yolo_detect) StderrLine: {'line': b'\x1b[01m\x1b[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/../../../Payload-SDK/samples/sample_c++/platform/linux/manifold3/../../../../../psdk_lib/include/dji_fc_subscription.h:1222:9:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ prohibits anonymous structs [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[1.606058] (yolo_detect) StderrLine: {'line': b' 1222 |         \x1b[01;35m\x1b[K}\x1b[m\x1b[K;\n'}
+[1.606193] (yolo_detect) StderrLine: {'line': b'      |         \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[1.693250] (-) TimerEvent: {}
+[1.793721] (-) TimerEvent: {}
+[1.894195] (-) TimerEvent: {}
+[1.994689] (-) TimerEvent: {}
+[2.095165] (-) TimerEvent: {}
+[2.195641] (-) TimerEvent: {}
+[2.296101] (-) TimerEvent: {}
+[2.396588] (-) TimerEvent: {}
+[2.497063] (-) TimerEvent: {}
+[2.597549] (-) TimerEvent: {}
+[2.698002] (-) TimerEvent: {}
+[2.798481] (-) TimerEvent: {}
+[2.898937] (-) TimerEvent: {}
+[2.999384] (-) TimerEvent: {}
+[3.099827] (-) TimerEvent: {}
+[3.200254] (-) TimerEvent: {}
+[3.300703] (-) TimerEvent: {}
+[3.401138] (-) TimerEvent: {}
+[3.501586] (-) TimerEvent: {}
+[3.602031] (-) TimerEvent: {}
+[3.702478] (-) TimerEvent: {}
+[3.802938] (-) TimerEvent: {}
+[3.903383] (-) TimerEvent: {}
+[4.003804] (-) TimerEvent: {}
+[4.104243] (-) TimerEvent: {}
+[4.204701] (-) TimerEvent: {}
+[4.305151] (-) TimerEvent: {}
+[4.405603] (-) TimerEvent: {}
+[4.506029] (-) TimerEvent: {}
+[4.606484] (-) TimerEvent: {}
+[4.706951] (-) TimerEvent: {}
+[4.807404] (-) TimerEvent: {}
+[4.907853] (-) TimerEvent: {}
+[5.008458] (-) TimerEvent: {}
+[5.108914] (-) TimerEvent: {}
+[5.209356] (-) TimerEvent: {}
+[5.309801] (-) TimerEvent: {}
+[5.410244] (-) TimerEvent: {}
+[5.510709] (-) TimerEvent: {}
+[5.611163] (-) TimerEvent: {}
+[5.711620] (-) TimerEvent: {}
+[5.812070] (-) TimerEvent: {}
+[5.912511] (-) TimerEvent: {}
+[6.012964] (-) TimerEvent: {}
+[6.113407] (-) TimerEvent: {}
+[6.213855] (-) TimerEvent: {}
+[6.314334] (-) TimerEvent: {}
+[6.414976] (-) TimerEvent: {}
+[6.515431] (-) TimerEvent: {}
+[6.615936] (-) TimerEvent: {}
+[6.716474] (-) TimerEvent: {}
+[6.816926] (-) TimerEvent: {}
+[6.917373] (-) TimerEvent: {}
+[7.017830] (-) TimerEvent: {}
+[7.118277] (-) TimerEvent: {}
+[7.218750] (-) TimerEvent: {}
+[7.319199] (-) TimerEvent: {}
+[7.419619] (-) TimerEvent: {}
+[7.520068] (-) TimerEvent: {}
+[7.620522] (-) TimerEvent: {}
+[7.720974] (-) TimerEvent: {}
+[7.821419] (-) TimerEvent: {}
+[7.921880] (-) TimerEvent: {}
+[8.022338] (-) TimerEvent: {}
+[8.122795] (-) TimerEvent: {}
+[8.223223] (-) TimerEvent: {}
+[8.247749] (yolo_detect) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/src/main.cpp:18\x1b[m\x1b[K:\n'}
+[8.248374] (yolo_detect) StderrLine: {'line': b'\x1b[01m\x1b[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/./include/ai_detect.h:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[Kai_detect::ai_detect(int, char**)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[8.248574] (yolo_detect) StderrLine: {'line': b'\x1b[01m\x1b[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/./include/ai_detect.h:237:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K,\x1b[m\x1b[K\xe2\x80\x99 or \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 before \xe2\x80\x98\x1b[01m\x1b[K}\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[8.248736] (yolo_detect) StderrLine: {'line': b'  237 |     \x1b[01;31m\x1b[K}\x1b[m\x1b[K\n'}
+[8.248883] (yolo_detect) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[8.249022] (yolo_detect) StderrLine: {'line': b'\x1b[01m\x1b[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/./include/ai_detect.h:147:19:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kargc\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[8.249164] (yolo_detect) StderrLine: {'line': b'  147 |     ai_detect(\x1b[01;35m\x1b[Kint argc\x1b[m\x1b[K,char ** argv):rclcpp::Node("ai_detect")\n'}
+[8.249302] (yolo_detect) StderrLine: {'line': b'      |               \x1b[01;35m\x1b[K~~~~^~~~\x1b[m\x1b[K\n'}
+[8.249439] (yolo_detect) StderrLine: {'line': b'\x1b[01m\x1b[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/./include/ai_detect.h:147:32:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kargv\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[8.249577] (yolo_detect) StderrLine: {'line': b'  147 |     ai_detect(int argc,\x1b[01;35m\x1b[Kchar ** argv\x1b[m\x1b[K):rclcpp::Node("ai_detect")\n'}
+[8.249710] (yolo_detect) StderrLine: {'line': b'      |                        \x1b[01;35m\x1b[K~~~~~~~~^~~~\x1b[m\x1b[K\n'}
+[8.261009] (yolo_detect) StderrLine: {'line': b'\x1b[01m\x1b[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/./include/ai_detect.h:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kvoid* DjiLiveview_ObjectDetectionThread(void*)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[8.261714] (yolo_detect) StderrLine: {'line': b'\x1b[01m\x1b[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/./include/ai_detect.h:281:27:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kcomparison of integer expressions of different signedness: \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<T_DjiLiveViewBoundingBox>::size_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Klong unsigned int\x1b[m\x1b[K\xe2\x80\x99} [\x1b[01;35m\x1b[K-Wsign-compare\x1b[m\x1b[K]\n'}
+[8.262017] (yolo_detect) StderrLine: {'line': b'  281 |         for (int i = 0; \x1b[01;35m\x1b[Ki < bounding_boxes.size()\x1b[m\x1b[K; i++) {\n'}
+[8.262242] (yolo_detect) StderrLine: {'line': b'      |                         \x1b[01;35m\x1b[K~~^~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[8.262390] (yolo_detect) StderrLine: {'line': b'\x1b[01m\x1b[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/./include/ai_detect.h:246:21:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[KDjiStat\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-variable\x1b[m\x1b[K]\n'}
+[8.262534] (yolo_detect) StderrLine: {'line': b'  246 |     T_DjiReturnCode \x1b[01;35m\x1b[KDjiStat\x1b[m\x1b[K;\n'}
+[8.262695] (yolo_detect) StderrLine: {'line': b'      |                     \x1b[01;35m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[8.262834] (yolo_detect) StderrLine: {'line': b'\x1b[01m\x1b[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/./include/ai_detect.h:244:48:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Karg\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[8.263004] (yolo_detect) StderrLine: {'line': b'  244 | void* DjiLiveview_ObjectDetectionThread(\x1b[01;35m\x1b[Kvoid * arg\x1b[m\x1b[K) {\n'}
+[8.263140] (yolo_detect) StderrLine: {'line': b'      |                                         \x1b[01;35m\x1b[K~~~~~~~^~~\x1b[m\x1b[K\n'}
+[8.264177] (yolo_detect) StderrLine: {'line': b'\x1b[01m\x1b[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/./include/ai_detect.h:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kvoid DjiLiveview_RcvImageCallback(E_DjiLiveViewCameraPosition, const uint8_t*, uint32_t, T_DjiLiveviewImageInfo)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[8.264435] (yolo_detect) StderrLine: {'line': b'\x1b[01m\x1b[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/./include/ai_detect.h:332:21:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[KDjiStat\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-variable\x1b[m\x1b[K]\n'}
+[8.264634] (yolo_detect) StderrLine: {'line': b'  332 |     T_DjiReturnCode \x1b[01;35m\x1b[KDjiStat\x1b[m\x1b[K;\n'}
+[8.264786] (yolo_detect) StderrLine: {'line': b'      |                     \x1b[01;35m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[8.264931] (yolo_detect) StderrLine: {'line': b'\x1b[01m\x1b[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/./include/ai_detect.h:334:14:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[KOutPutLen\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-variable\x1b[m\x1b[K]\n'}
+[8.265075] (yolo_detect) StderrLine: {'line': b'  334 |     uint32_t \x1b[01;35m\x1b[KOutPutLen\x1b[m\x1b[K;\n'}
+[8.265215] (yolo_detect) StderrLine: {'line': b'      |              \x1b[01;35m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[8.265351] (yolo_detect) StderrLine: {'line': b'\x1b[01m\x1b[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/./include/ai_detect.h:330:63:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kposition\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[8.265505] (yolo_detect) StderrLine: {'line': b'  330 | void DjiLiveview_RcvImageCallback(\x1b[01;35m\x1b[KE_DjiLiveViewCameraPosition position\x1b[m\x1b[K, const uint8_t *buf, uint32_t len, T_DjiLiveviewImageInfo imageInfo){\n'}
+[8.265644] (yolo_detect) StderrLine: {'line': b'      |                                   \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~\x1b[m\x1b[K\n'}
+[8.273883] (yolo_detect) StderrLine: {'line': b'\x1b[01m\x1b[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/src/main.cpp:\x1b[m\x1b[K In lambda function:\n'}
+[8.274247] (yolo_detect) StderrLine: {'line': b'\x1b[01m\x1b[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/src/main.cpp:30:27:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[KsignalNum\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[8.274419] (yolo_detect) StderrLine: {'line': b'   30 |     signal(SIGINT, [](\x1b[01;35m\x1b[Kint signalNum\x1b[m\x1b[K) -> void { exit(0); });\n'}
+[8.274564] (yolo_detect) StderrLine: {'line': b'      |                       \x1b[01;35m\x1b[K~~~~^~~~~~~~~\x1b[m\x1b[K\n'}
+[8.323397] (-) TimerEvent: {}
+[8.423822] (-) TimerEvent: {}
+[8.524286] (-) TimerEvent: {}
+[8.624737] (-) TimerEvent: {}
+[8.725176] (-) TimerEvent: {}
+[8.825618] (-) TimerEvent: {}
+[8.926075] (-) TimerEvent: {}
+[9.026525] (-) TimerEvent: {}
+[9.126990] (-) TimerEvent: {}
+[9.227423] (-) TimerEvent: {}
+[9.327924] (-) TimerEvent: {}
+[9.428359] (-) TimerEvent: {}
+[9.528815] (-) TimerEvent: {}
+[9.629271] (-) TimerEvent: {}
+[9.729704] (-) TimerEvent: {}
+[9.830182] (-) TimerEvent: {}
+[9.930670] (-) TimerEvent: {}
+[10.031157] (-) TimerEvent: {}
+[10.131657] (-) TimerEvent: {}
+[10.232089] (-) TimerEvent: {}
+[10.240316] (yolo_detect) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/src/main.cpp:18\x1b[m\x1b[K:\n'}
+[10.240806] (yolo_detect) StderrLine: {'line': b'\x1b[01m\x1b[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/./include/ai_detect.h:\x1b[m\x1b[K At global scope:\n'}
+[10.240977] (yolo_detect) StderrLine: {'line': b'\x1b[01m\x1b[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/./include/ai_detect.h:64:20:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ks_invalidLables\x1b[m\x1b[K\xe2\x80\x99 defined but not used [\x1b[01;35m\x1b[K-Wunused-variable\x1b[m\x1b[K]\n'}
+[10.241129] (yolo_detect) StderrLine: {'line': b'   64 | static const char* \x1b[01;35m\x1b[Ks_invalidLables\x1b[m\x1b[K[] = {\n'}
+[10.241287] (yolo_detect) StderrLine: {'line': b'      |                    \x1b[01;35m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[10.308417] (yolo_detect) StderrLine: {'line': b'make[2]: *** [CMakeFiles/yolo_detect.dir/build.make:510: CMakeFiles/yolo_detect.dir/src/main.cpp.o] Error 1\n'}
+[10.309260] (yolo_detect) StderrLine: {'line': b'make[1]: *** [CMakeFiles/Makefile2:85: CMakeFiles/yolo_detect.dir/all] Error 2\n'}
+[10.309684] (yolo_detect) StderrLine: {'line': b'make: *** [Makefile:146: all] Error 2\n'}
+[10.313869] (yolo_detect) CommandEnded: {'returncode': 2}
+[10.336176] (-) TimerEvent: {}
+[10.342204] (yolo_detect) JobEnded: {'identifier': 'yolo_detect', 'rc': 2}
+[10.353679] (-) EventReactorShutdown: {}

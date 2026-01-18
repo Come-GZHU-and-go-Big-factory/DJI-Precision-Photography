@@ -1,0 +1,4 @@
+[  1%] [32mBuilding CXX object CMakeFiles/yolo_detect.dir/src/main.cpp.o[0m
+[  5%] [32mBuilding C object CMakeFiles/yolo_detect.dir/home/dji/DJI_workshop/LZP_PSDK/Payload-SDK/samples/sample_c/module_sample/gimbal_emu/test_payload_gimbal_emu.c.o[0m
+[  5%] [32mBuilding C object CMakeFiles/yolo_detect.dir/home/dji/DJI_workshop/LZP_PSDK/Payload-SDK/samples/sample_c/module_sample/fc_subscription/test_fc_subscription.c.o[0m
+[  5%] [32mBuilding C object CMakeFiles/yolo_detect.dir/home/dji/DJI_workshop/LZP_PSDK/Payload-SDK/samples/sample_c/module_sample/flight_control/test_flight_control.c.o[0m

@@ -1,4 +1,0 @@
-interrupted
-make[2]: *** [CMakeFiles/ament_cmake_python_build_uav_detect_result_egg.dir/build.make:70: CMakeFiles/ament_cmake_python_build_uav_detect_result_egg] Interrupt
-make[1]: *** [CMakeFiles/Makefile2:447: CMakeFiles/ament_cmake_python_build_uav_detect_result_egg.dir/all] Interrupt
-make: *** [Makefile:146: all] Interrupt

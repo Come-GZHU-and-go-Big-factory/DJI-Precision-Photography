@@ -1,0 +1,21 @@
+[0m
+yolo_detect...[0m
+[31mCMake Error at /open_app/miniconda3/envs/ros2_humble/share/rosidl_typesupport_c/cmake/get_used_typesupports.cmake:35 (message):
+  No 'rosidl_typesupport_c' found
+Call Stack (most recent call first):
+  /open_app/miniconda3/envs/ros2_humble/share/rosidl_typesupport_c/cmake/rosidl_typesupport_c-extras.cmake:8 (get_used_typesupports)
+  /open_app/miniconda3/envs/ros2_humble/share/rosidl_typesupport_c/cmake/rosidl_typesupport_cConfig.cmake:41 (include)
+  /open_app/miniconda3/envs/ros2_humble/share/builtin_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)
+  /open_app/miniconda3/envs/ros2_humble/share/builtin_interfaces/cmake/builtin_interfacesConfig.cmake:41 (include)
+  /open_app/miniconda3/envs/ros2_humble/share/rcl_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)
+  /open_app/miniconda3/envs/ros2_humble/share/rcl_interfaces/cmake/rcl_interfacesConfig.cmake:41 (include)
+  /open_app/miniconda3/envs/ros2_humble/share/rcl/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)
+  /open_app/miniconda3/envs/ros2_humble/share/rcl/cmake/rclConfig.cmake:41 (include)
+  /open_app/miniconda3/envs/ros2_humble/share/libstatistics_collector/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)
+  /open_app/miniconda3/envs/ros2_humble/share/libstatistics_collector/cmake/libstatistics_collectorConfig.cmake:41 (include)
+  /open_app/miniconda3/envs/ros2_humble/share/rclcpp/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)
+  /open_app/miniconda3/envs/ros2_humble/share/rclcpp/cmake/rclcppConfig.cmake:41 (include)
+  CMakeLists.txt:184 (find_package)
+
+[0m
+make: *** [Makefile:2022: cmake_check_build_system] Error 1

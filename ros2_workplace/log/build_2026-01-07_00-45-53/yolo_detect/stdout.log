@@ -1,3 +1,0 @@
-[  3%] [32mBuilding C object CMakeFiles/yolo_detect.dir/home/dji/DJI_workshop/LZP_PSDK/Payload-SDK/samples/sample_c/module_sample/liveview/test_liveview.c.o[0m
-[  3%] [32mBuilding CXX object CMakeFiles/yolo_detect.dir/src/main.cpp.o[0m
-[  4%] [32mBuilding CXX object CMakeFiles/yolo_detect.dir/home/dji/DJI_workshop/LZP_PSDK/Payload-SDK/samples/sample_c++/module_sample/liveview/dji_liveview_object_detection.cpp.o[0m

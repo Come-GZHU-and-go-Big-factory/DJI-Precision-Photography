@@ -1,0 +1,10 @@
+[  1%] [32mBuilding CXX object CMakeFiles/yolo_detect.dir/src/main.cpp.o[0m
+[  2%] [32mBuilding CXX object CMakeFiles/yolo_detect.dir/home/dji/DJI_workshop/LZP_PSDK/Payload-SDK/samples/sample_c++/module_sample/perception/test_lidar_entry.cpp.o[0m
+[  4%] [32mBuilding CXX object CMakeFiles/yolo_detect.dir/home/dji/DJI_workshop/LZP_PSDK/Payload-SDK/samples/sample_c++/module_sample/liveview/test_liveview_entry.cpp.o[0m
+[  5%] [32mBuilding CXX object CMakeFiles/yolo_detect.dir/home/dji/DJI_workshop/LZP_PSDK/Payload-SDK/samples/sample_c++/module_sample/perception/test_perception.cpp.o[0m
+[  8%] [32mBuilding CXX object CMakeFiles/yolo_detect.dir/home/dji/DJI_workshop/LZP_PSDK/Payload-SDK/samples/sample_c++/module_sample/perception/test_radar_entry.cpp.o[0m
+[  8%] [32mBuilding CXX object CMakeFiles/yolo_detect.dir/home/dji/DJI_workshop/LZP_PSDK/Payload-SDK/samples/sample_c++/module_sample/perception/test_perception_entry.cpp.o[0m
+[ 10%] [32mBuilding CXX object CMakeFiles/yolo_detect.dir/home/dji/DJI_workshop/LZP_PSDK/Payload-SDK/samples/sample_c++/module_sample/widget_manager/test_widget_manager.cpp.o[0m
+[ 11%] [32mBuilding C object CMakeFiles/yolo_detect.dir/home/dji/DJI_workshop/LZP_PSDK/Payload-SDK/samples/sample_c++/platform/linux/common/osal/osal.c.o[0m
+[ 13%] [32mBuilding C object CMakeFiles/yolo_detect.dir/home/dji/DJI_workshop/LZP_PSDK/Payload-SDK/samples/sample_c++/platform/linux/common/osal/osal_fs.c.o[0m
+[ 14%] [32mBuilding C object CMakeFiles/yolo_detect.dir/home/dji/DJI_workshop/LZP_PSDK/Payload-SDK/samples/sample_c++/platform/linux/common/osal/osal_socket.c.o[0m

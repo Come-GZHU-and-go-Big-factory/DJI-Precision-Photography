@@ -1,0 +1,5 @@
+[  1%] [34m[1mBuilding NVCC (Device) object CMakeFiles/yolo_detect.dir/yolo/yolo_detect_generated_preprocess.cu.o[0m
+[  2%] [32mBuilding CXX object CMakeFiles/yolo_detect.dir/src/main.cpp.o[0m
+[  5%] [32mBuilding C object CMakeFiles/yolo_detect.dir/home/dji/DJI_workshop/LZP_PSDK/Payload-SDK/samples/sample_c/module_sample/cloud_api/test_cloud_api_by_web_socket.c.o[0m
+[  5%] [32mBuilding C object CMakeFiles/yolo_detect.dir/home/dji/DJI_workshop/LZP_PSDK/Payload-SDK/samples/sample_c/module_sample/camera_manager/test_camera_manager.c.o[0m
+[  7%] [32mBuilding C object CMakeFiles/yolo_detect.dir/home/dji/DJI_workshop/LZP_PSDK/Payload-SDK/samples/sample_c/module_sample/camera_emu/test_payload_cam_emu_media.c.o[0m

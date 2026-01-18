@@ -1,0 +1,273 @@
+[0.023s] Invoking command in '/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/build/yolo_detect': CONDA_PROMPT_MODIFIER=(ros2_humble) /open_app/miniconda3/envs/ros2_humble/bin/cmake /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect -DCMAKE_INSTALL_PREFIX=/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/yolo_detect
+[0.155s] -- The C compiler identification is GNU 9.4.0
+[0.314s] -- The CXX compiler identification is GNU 9.4.0
+[0.331s] -- Detecting C compiler ABI info
+[0.433s] -- Detecting C compiler ABI info - done
+[0.461s] -- Check for working C compiler: /open_app/miniconda3/envs/ros2_humble/bin/aarch64-conda-linux-gnu-cc - skipped
+[0.461s] -- Detecting C compile features
+[0.462s] -- Detecting C compile features - done
+[0.468s] -- Detecting CXX compiler ABI info
+[0.583s] -- Detecting CXX compiler ABI info - done
+[0.609s] -- Check for working CXX compiler: /open_app/miniconda3/envs/ros2_humble/bin/aarch64-conda-linux-gnu-c++ - skipped
+[0.609s] -- Detecting CXX compile features
+[0.610s] -- Detecting CXX compile features - done
+[0.657s] -- Found CUDA: /usr/local/cuda-11.4 (found version "11.4") 
+[0.681s] [0m
+[0.681s] -- Found OpenCV installed in the system, will use it to display image in AdvancedSensing APIs
+[0.681s] --  - Includes: /open_app/miniconda3/envs/ros2_humble/include/opencv4
+[0.682s] yolo_detect...[0m
+[0.682s] --  - Libraries: opencv_calib3d;opencv_core;opencv_dnn;opencv_features2d;opencv_flann;opencv_gapi;opencv_highgui;opencv_imgcodecs;opencv_imgproc;opencv_ml;opencv_objdetect;opencv_photo;opencv_stitching;opencv_video;opencv_videoio;opencv_alphamat;opencv_aruco;opencv_barcode;opencv_bgsegm;opencv_bioinspired;opencv_ccalib;opencv_cvv;opencv_datasets;opencv_dnn_objdetect;opencv_dnn_superres;opencv_dpm;opencv_face;opencv_freetype;opencv_fuzzy;opencv_hdf;opencv_hfs;opencv_img_hash;opencv_intensity_transform;opencv_line_descriptor;opencv_mcc;opencv_optflow;opencv_phase_unwrapping;opencv_plot;opencv_quality;opencv_rapid;opencv_reg;opencv_rgbd;opencv_saliency;opencv_shape;opencv_stereo;opencv_structured_light;opencv_superres;opencv_surface_matching;opencv_text;opencv_tracking;opencv_videostab;opencv_wechat_qrcode;opencv_xfeatures2d;opencv_ximgproc;opencv_xobjdetect;opencv_xphoto
+[0.706s] -- Found PkgConfig: /open_app/miniconda3/envs/ros2_humble/bin/pkg-config (found version "0.29.2") 
+[0.706s] -- Cannot Find FFMPEG
+[0.713s] -- Found ament_cmake: 1.3.3 (/open_app/miniconda3/envs/ros2_humble/share/ament_cmake/cmake)
+[2.832s] -- Found Python3: /open_app/miniconda3/envs/ros2_humble/bin/python3.10 (found version "3.10.13") found components: Interpreter 
+[3.054s] -- Found rclcpp: 16.0.3 (/open_app/miniconda3/envs/ros2_humble/share/rclcpp/cmake)
+[3.157s] -- Found rosidl_generator_c: 3.1.4 (/open_app/miniconda3/envs/ros2_humble/share/rosidl_generator_c/cmake)
+[3.170s] -- Found rosidl_adapter: 3.1.4 (/open_app/miniconda3/envs/ros2_humble/share/rosidl_adapter/cmake)
+[3.190s] -- Found rosidl_generator_cpp: 3.1.4 (/open_app/miniconda3/envs/ros2_humble/share/rosidl_generator_cpp/cmake)
+[3.219s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[3.261s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[3.412s] -- Checking for module 'yaml-0.1'
+[3.530s] --   Found yaml-0.1, version 0.2.5
+[3.868s] -- Found rmw_implementation_cmake: 6.1.1 (/open_app/miniconda3/envs/ros2_humble/share/rmw_implementation_cmake/cmake)
+[3.879s] -- Found rmw_fastrtps_cpp: 6.2.2 (/open_app/miniconda3/envs/ros2_humble/share/rmw_fastrtps_cpp/cmake)
+[4.429s] -- Found OpenSSL: /open_app/miniconda3/envs/ros2_humble/lib/libcrypto.so (found version "3.1.8")  
+[4.486s] -- Found FastRTPS: /open_app/miniconda3/envs/ros2_humble/include  
+[4.579s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[4.599s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[4.711s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[4.713s] -- Found Threads: TRUE  
+[4.914s] -- Found std_msgs: 4.2.3 (/open_app/miniconda3/envs/ros2_humble/share/std_msgs/cmake)
+[4.974s] -- Found ament_lint_auto: 0.12.5 (/open_app/miniconda3/envs/ros2_humble/share/ament_lint_auto/cmake)
+[5.181s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[5.183s] -- Configured cppcheck include dirs: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/../../../Payload-SDK/samples/sample_c++/platform/linux/manifold3/../my_code;/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/../../../Payload-SDK/samples/sample_c++/platform/linux/manifold3/../../../module_sample;/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/../../../Payload-SDK/samples/sample_c++/platform/linux/manifold3/../../../../sample_c/module_sample;/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/../../../Payload-SDK/samples/sample_c++/platform/linux/manifold3/../../../../sample_c/module_sample/liveview;/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/../../../Payload-SDK/samples/sample_c++/platform/linux/manifold3/../common;/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/../../../Payload-SDK/samples/sample_c++/platform/linux/manifold3/../manifold3/application;/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/include_directories;/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/(;/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/../../../Payload-SDK/samples/sample_c++/platform/linux/manifold3/../../../../../psdk_lib/include;/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/);/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/./include;/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/./yolo;/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/./yolo/include
+[5.183s] -- Configured cppcheck exclude dirs and/or files: 
+[5.185s] -- Added test 'lint_cmake' to check CMake code style
+[5.188s] -- Added test 'uncrustify' to check C / C++ code style
+[5.188s] -- Configured uncrustify additional arguments: 
+[5.189s] -- Added test 'xmllint' to check XML markup files
+[5.192s] -- Configuring done (5.2s)
+[5.257s] -- Generating done (0.0s)
+[5.266s] -- Build files have been written to: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/build/yolo_detect
+[5.288s] Invoked command in '/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/build/yolo_detect' returned '0': CONDA_PROMPT_MODIFIER=(ros2_humble) /open_app/miniconda3/envs/ros2_humble/bin/cmake /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect -DCMAKE_INSTALL_PREFIX=/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/yolo_detect
+[5.294s] Invoking command in '/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/build/yolo_detect': CONDA_PROMPT_MODIFIER=(ros2_humble) /open_app/miniconda3/envs/ros2_humble/bin/cmake --build /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/build/yolo_detect -- -j4 -l4
+[5.335s] make[2]: Warning: File '/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/yolo/preprocess.cu' has modification time 303178 s in the future
+[5.343s] [  1%] [34m[1mBuilding NVCC (Device) object CMakeFiles/yolo_detect.dir/yolo/yolo_detect_generated_preprocess.cu.o[0m
+[6.694s] /open_app/miniconda3/envs/ros2_humble/aarch64-conda-linux-gnu/include/c++/9.4.0/bits/stl_pair.h(442): error: argument list for class template "std::pair" is missing
+[6.694s] 
+[6.694s] /open_app/miniconda3/envs/ros2_humble/aarch64-conda-linux-gnu/include/c++/9.4.0/bits/stl_pair.h(442): error: expected a ")"
+[6.695s] 
+[6.695s] /open_app/miniconda3/envs/ros2_humble/aarch64-conda-linux-gnu/include/c++/9.4.0/bits/stl_pair.h(442): error: template parameter "_T1" may not be redeclared in this scope
+[6.695s] 
+[6.695s] /open_app/miniconda3/envs/ros2_humble/aarch64-conda-linux-gnu/include/c++/9.4.0/bits/stl_pair.h(442): error: expected a ";"
+[6.695s] 
+[6.859s] /open_app/miniconda3/envs/ros2_humble/aarch64-conda-linux-gnu/include/c++/9.4.0/bits/basic_string.h(5992): error: argument list for class template "std::__cxx11::basic_string" is missing
+[6.860s] 
+[6.860s] /open_app/miniconda3/envs/ros2_humble/aarch64-conda-linux-gnu/include/c++/9.4.0/bits/basic_string.h(5992): error: expected a ")"
+[6.860s] 
+[6.860s] /open_app/miniconda3/envs/ros2_humble/aarch64-conda-linux-gnu/include/c++/9.4.0/bits/basic_string.h(5992): error: template parameter "_InputIterator" may not be redeclared in this scope
+[6.860s] 
+[6.860s] /open_app/miniconda3/envs/ros2_humble/aarch64-conda-linux-gnu/include/c++/9.4.0/bits/basic_string.h(5993): error: expected a ";"
+[6.861s] 
+[6.861s] /open_app/miniconda3/envs/ros2_humble/aarch64-conda-linux-gnu/include/c++/9.4.0/bits/basic_string.h(6000): error: argument list for class template "std::__cxx11::basic_string" is missing
+[6.861s] 
+[6.861s] /open_app/miniconda3/envs/ros2_humble/aarch64-conda-linux-gnu/include/c++/9.4.0/bits/basic_string.h(6000): error: expected a ")"
+[6.861s] 
+[6.861s] /open_app/miniconda3/envs/ros2_humble/aarch64-conda-linux-gnu/include/c++/9.4.0/bits/basic_string.h(6000): error: "basic_string_view" is not a function or static data member
+[6.861s] 
+[6.862s] /open_app/miniconda3/envs/ros2_humble/aarch64-conda-linux-gnu/include/c++/9.4.0/bits/basic_string.h(6006): error: argument list for class template "std::__cxx11::basic_string" is missing
+[6.862s] 
+[6.862s] /open_app/miniconda3/envs/ros2_humble/aarch64-conda-linux-gnu/include/c++/9.4.0/bits/basic_string.h(6006): error: expected a ")"
+[6.862s] 
+[6.862s] /open_app/miniconda3/envs/ros2_humble/aarch64-conda-linux-gnu/include/c++/9.4.0/bits/basic_string.h(6006): error: "basic_string_view" is not a function or static data member
+[6.862s] 
+[6.907s] /open_app/miniconda3/envs/ros2_humble/aarch64-conda-linux-gnu/include/c++/9.4.0/array(244): error: argument list for class template "std::array" is missing
+[6.908s] 
+[6.908s] /open_app/miniconda3/envs/ros2_humble/aarch64-conda-linux-gnu/include/c++/9.4.0/array(244): error: expected a ")"
+[6.908s] 
+[6.908s] /open_app/miniconda3/envs/ros2_humble/aarch64-conda-linux-gnu/include/c++/9.4.0/array(244): error: template parameter "_Tp" may not be redeclared in this scope
+[6.908s] 
+[6.908s] /open_app/miniconda3/envs/ros2_humble/aarch64-conda-linux-gnu/include/c++/9.4.0/array(245): error: expected a ";"
+[6.909s] 
+[6.936s] /open_app/miniconda3/envs/ros2_humble/aarch64-conda-linux-gnu/include/c++/9.4.0/tuple(863): error: argument list for class template "std::tuple" is missing
+[6.936s] 
+[6.937s] /open_app/miniconda3/envs/ros2_humble/aarch64-conda-linux-gnu/include/c++/9.4.0/tuple(863): error: expected a ")"
+[6.937s] 
+[6.937s] /open_app/miniconda3/envs/ros2_humble/aarch64-conda-linux-gnu/include/c++/9.4.0/tuple(863): error: template parameter "_UTypes" may not be redeclared in this scope
+[6.937s] 
+[6.937s] /open_app/miniconda3/envs/ros2_humble/aarch64-conda-linux-gnu/include/c++/9.4.0/tuple(863): error: expected a ";"
+[6.937s] 
+[6.938s] /open_app/miniconda3/envs/ros2_humble/aarch64-conda-linux-gnu/include/c++/9.4.0/tuple(865): error: argument list for class template "std::tuple" is missing
+[6.938s] 
+[6.938s] /open_app/miniconda3/envs/ros2_humble/aarch64-conda-linux-gnu/include/c++/9.4.0/tuple(865): error: "pair" is not a function or static data member
+[6.938s] 
+[6.938s] /open_app/miniconda3/envs/ros2_humble/aarch64-conda-linux-gnu/include/c++/9.4.0/tuple(867): error: argument list for class template "std::tuple" is missing
+[6.938s] 
+[6.938s] /open_app/miniconda3/envs/ros2_humble/aarch64-conda-linux-gnu/include/c++/9.4.0/tuple(867): error: expected a ")"
+[6.939s] 
+[6.939s] /open_app/miniconda3/envs/ros2_humble/aarch64-conda-linux-gnu/include/c++/9.4.0/tuple(867): error: expected a ";"
+[6.939s] 
+[6.939s] /open_app/miniconda3/envs/ros2_humble/aarch64-conda-linux-gnu/include/c++/9.4.0/tuple(869): error: argument list for class template "std::tuple" is missing
+[6.939s] 
+[6.939s] /open_app/miniconda3/envs/ros2_humble/aarch64-conda-linux-gnu/include/c++/9.4.0/tuple(869): error: expected a ")"
+[6.939s] 
+[6.940s] /open_app/miniconda3/envs/ros2_humble/aarch64-conda-linux-gnu/include/c++/9.4.0/tuple(868): error: declaration is incompatible with template parameter "_UTypes"
+[6.940s] (866): here
+[6.940s] 
+[6.940s] /open_app/miniconda3/envs/ros2_humble/aarch64-conda-linux-gnu/include/c++/9.4.0/tuple(868): error: too many template parameters -- does not match previous declaration (declared 
+[6.940s] (866): here)
+[6.940s] 
+[6.940s] /open_app/miniconda3/envs/ros2_humble/aarch64-conda-linux-gnu/include/c++/9.4.0/tuple(869): error: expected a ";"
+[6.941s] 
+[6.941s] /open_app/miniconda3/envs/ros2_humble/aarch64-conda-linux-gnu/include/c++/9.4.0/tuple(871): error: argument list for class template "std::tuple" is missing
+[6.941s] 
+[6.941s] /open_app/miniconda3/envs/ros2_humble/aarch64-conda-linux-gnu/include/c++/9.4.0/tuple(871): error: expected a ")"
+[6.941s] 
+[6.941s] /open_app/miniconda3/envs/ros2_humble/aarch64-conda-linux-gnu/include/c++/9.4.0/tuple(870): error: declaration is incompatible with template parameter "_T1"
+[6.942s] (868): here
+[6.942s] 
+[6.942s] /open_app/miniconda3/envs/ros2_humble/aarch64-conda-linux-gnu/include/c++/9.4.0/tuple(870): error: too few template parameters -- does not match previous declaration (declared 
+[6.942s] (868): here)
+[6.942s] 
+[6.942s] /open_app/miniconda3/envs/ros2_humble/aarch64-conda-linux-gnu/include/c++/9.4.0/tuple(871): error: expected a ";"
+[6.943s] 
+[6.943s] /open_app/miniconda3/envs/ros2_humble/aarch64-conda-linux-gnu/include/c++/9.4.0/tuple(885): error: argument list for variable template "std::allocator_arg_t" is missing
+[6.943s] 
+[6.943s] /open_app/miniconda3/envs/ros2_humble/aarch64-conda-linux-gnu/include/c++/9.4.0/tuple(887): error: argument list for variable template "std::allocator_arg_t" is missing
+[6.943s] 
+[6.943s] /open_app/miniconda3/envs/ros2_humble/aarch64-conda-linux-gnu/include/c++/9.4.0/tuple(966): error: argument list for variable template "std::allocator_arg_t" is missing
+[6.943s] 
+[6.944s] /open_app/miniconda3/envs/ros2_humble/aarch64-conda-linux-gnu/include/c++/9.4.0/tuple(976): error: argument list for variable template "std::allocator_arg_t" is missing
+[6.944s] 
+[6.944s] /open_app/miniconda3/envs/ros2_humble/aarch64-conda-linux-gnu/include/c++/9.4.0/tuple(1062): error: argument list for variable template "std::allocator_arg_t" is missing
+[6.944s] 
+[6.944s] /open_app/miniconda3/envs/ros2_humble/aarch64-conda-linux-gnu/include/c++/9.4.0/tuple(1073): error: argument list for variable template "std::allocator_arg_t" is missing
+[6.944s] 
+[6.945s] /open_app/miniconda3/envs/ros2_humble/aarch64-conda-linux-gnu/include/c++/9.4.0/tuple(1085): error: argument list for variable template "std::allocator_arg_t" is missing
+[6.945s] 
+[6.945s] /open_app/miniconda3/envs/ros2_humble/aarch64-conda-linux-gnu/include/c++/9.4.0/tuple(1095): error: argument list for variable template "std::allocator_arg_t" is missing
+[6.945s] 
+[6.945s] /open_app/miniconda3/envs/ros2_humble/aarch64-conda-linux-gnu/include/c++/9.4.0/tuple(1105): error: argument list for variable template "std::allocator_arg_t" is missing
+[6.945s] 
+[6.946s] /open_app/miniconda3/envs/ros2_humble/aarch64-conda-linux-gnu/include/c++/9.4.0/tuple(1111): error: argument list for variable template "std::allocator_arg_t" is missing
+[6.946s] 
+[6.946s] /open_app/miniconda3/envs/ros2_humble/aarch64-conda-linux-gnu/include/c++/9.4.0/tuple(1115): error: argument list for variable template "std::allocator_arg_t" is missing
+[6.946s] 
+[6.946s] /open_app/miniconda3/envs/ros2_humble/aarch64-conda-linux-gnu/include/c++/9.4.0/tuple(1124): error: argument list for variable template "std::allocator_arg_t" is missing
+[6.946s] 
+[6.946s] /open_app/miniconda3/envs/ros2_humble/aarch64-conda-linux-gnu/include/c++/9.4.0/tuple(1136): error: argument list for variable template "std::allocator_arg_t" is missing
+[6.946s] 
+[6.947s] /open_app/miniconda3/envs/ros2_humble/aarch64-conda-linux-gnu/include/c++/9.4.0/tuple(1148): error: argument list for variable template "std::allocator_arg_t" is missing
+[6.947s] 
+[6.947s] /open_app/miniconda3/envs/ros2_humble/aarch64-conda-linux-gnu/include/c++/9.4.0/tuple(1158): error: argument list for variable template "std::allocator_arg_t" is missing
+[6.947s] 
+[6.947s] /open_app/miniconda3/envs/ros2_humble/aarch64-conda-linux-gnu/include/c++/9.4.0/tuple(1169): error: argument list for variable template "std::allocator_arg_t" is missing
+[6.947s] 
+[6.947s] /open_app/miniconda3/envs/ros2_humble/aarch64-conda-linux-gnu/include/c++/9.4.0/tuple(1179): error: argument list for variable template "std::allocator_arg_t" is missing
+[6.948s] 
+[6.948s] /open_app/miniconda3/envs/ros2_humble/aarch64-conda-linux-gnu/include/c++/9.4.0/tuple(1189): error: argument list for variable template "std::allocator_arg_t" is missing
+[6.948s] 
+[6.948s] /open_app/miniconda3/envs/ros2_humble/aarch64-conda-linux-gnu/include/c++/9.4.0/tuple(1199): error: argument list for variable template "std::allocator_arg_t" is missing
+[6.948s] 
+[6.953s] /open_app/miniconda3/envs/ros2_humble/aarch64-conda-linux-gnu/include/c++/9.4.0/bits/refwrap.h(102): error: class template "std::_Mem_fn_traits" has already been defined
+[6.953s] 
+[6.953s] /open_app/miniconda3/envs/ros2_humble/aarch64-conda-linux-gnu/include/c++/9.4.0/bits/refwrap.h(102): error: class template "std::_Mem_fn_traits" has already been defined
+[6.954s] 
+[6.954s] /open_app/miniconda3/envs/ros2_humble/aarch64-conda-linux-gnu/include/c++/9.4.0/bits/refwrap.h(102): error: class template "std::_Mem_fn_traits" has already been defined
+[6.954s] 
+[6.954s] /open_app/miniconda3/envs/ros2_humble/aarch64-conda-linux-gnu/include/c++/9.4.0/bits/refwrap.h(102): error: class template "std::_Mem_fn_traits" has already been defined
+[6.954s] 
+[6.955s] /open_app/miniconda3/envs/ros2_humble/aarch64-conda-linux-gnu/include/c++/9.4.0/bits/refwrap.h(102): error: class template "std::_Mem_fn_traits" has already been defined
+[6.955s] 
+[6.955s] /open_app/miniconda3/envs/ros2_humble/aarch64-conda-linux-gnu/include/c++/9.4.0/bits/refwrap.h(102): error: class template "std::_Mem_fn_traits" has already been defined
+[6.955s] 
+[6.955s] /open_app/miniconda3/envs/ros2_humble/aarch64-conda-linux-gnu/include/c++/9.4.0/bits/refwrap.h(102): error: class template "std::_Mem_fn_traits" has already been defined
+[6.955s] 
+[6.955s] /open_app/miniconda3/envs/ros2_humble/aarch64-conda-linux-gnu/include/c++/9.4.0/bits/refwrap.h(102): error: class template "std::_Mem_fn_traits" has already been defined
+[6.956s] 
+[6.956s] /open_app/miniconda3/envs/ros2_humble/aarch64-conda-linux-gnu/include/c++/9.4.0/bits/refwrap.h(103): error: class template "std::_Mem_fn_traits" has already been defined
+[6.956s] 
+[6.956s] /open_app/miniconda3/envs/ros2_humble/aarch64-conda-linux-gnu/include/c++/9.4.0/bits/refwrap.h(103): error: class template "std::_Mem_fn_traits" has already been defined
+[6.956s] 
+[6.956s] /open_app/miniconda3/envs/ros2_humble/aarch64-conda-linux-gnu/include/c++/9.4.0/bits/refwrap.h(103): error: class template "std::_Mem_fn_traits" has already been defined
+[6.956s] 
+[6.956s] /open_app/miniconda3/envs/ros2_humble/aarch64-conda-linux-gnu/include/c++/9.4.0/bits/refwrap.h(103): error: class template "std::_Mem_fn_traits" has already been defined
+[6.957s] 
+[6.957s] /open_app/miniconda3/envs/ros2_humble/aarch64-conda-linux-gnu/include/c++/9.4.0/bits/refwrap.h(103): error: class template "std::_Mem_fn_traits" has already been defined
+[6.957s] 
+[6.957s] /open_app/miniconda3/envs/ros2_humble/aarch64-conda-linux-gnu/include/c++/9.4.0/bits/refwrap.h(103): error: class template "std::_Mem_fn_traits" has already been defined
+[6.957s] 
+[6.957s] /open_app/miniconda3/envs/ros2_humble/aarch64-conda-linux-gnu/include/c++/9.4.0/bits/refwrap.h(103): error: class template "std::_Mem_fn_traits" has already been defined
+[6.957s] 
+[6.958s] /open_app/miniconda3/envs/ros2_humble/aarch64-conda-linux-gnu/include/c++/9.4.0/bits/refwrap.h(103): error: class template "std::_Mem_fn_traits" has already been defined
+[6.958s] 
+[6.958s] /open_app/miniconda3/envs/ros2_humble/aarch64-conda-linux-gnu/include/c++/9.4.0/bits/refwrap.h(104): error: class template "std::_Mem_fn_traits" has already been defined
+[6.958s] 
+[6.958s] /open_app/miniconda3/envs/ros2_humble/aarch64-conda-linux-gnu/include/c++/9.4.0/bits/refwrap.h(104): error: class template "std::_Mem_fn_traits" has already been defined
+[6.958s] 
+[6.958s] /open_app/miniconda3/envs/ros2_humble/aarch64-conda-linux-gnu/include/c++/9.4.0/bits/refwrap.h(104): error: class template "std::_Mem_fn_traits" has already been defined
+[6.959s] 
+[6.959s] /open_app/miniconda3/envs/ros2_humble/aarch64-conda-linux-gnu/include/c++/9.4.0/bits/refwrap.h(104): error: class template "std::_Mem_fn_traits" has already been defined
+[6.959s] 
+[6.959s] /open_app/miniconda3/envs/ros2_humble/aarch64-conda-linux-gnu/include/c++/9.4.0/bits/refwrap.h(104): error: class template "std::_Mem_fn_traits" has already been defined
+[6.959s] 
+[6.959s] /open_app/miniconda3/envs/ros2_humble/aarch64-conda-linux-gnu/include/c++/9.4.0/bits/refwrap.h(104): error: class template "std::_Mem_fn_traits" has already been defined
+[6.959s] 
+[6.959s] /open_app/miniconda3/envs/ros2_humble/aarch64-conda-linux-gnu/include/c++/9.4.0/bits/refwrap.h(104): error: class template "std::_Mem_fn_traits" has already been defined
+[6.960s] 
+[6.960s] /open_app/miniconda3/envs/ros2_humble/aarch64-conda-linux-gnu/include/c++/9.4.0/bits/refwrap.h(104): error: class template "std::_Mem_fn_traits" has already been defined
+[6.960s] 
+[6.960s] /open_app/miniconda3/envs/ros2_humble/aarch64-conda-linux-gnu/include/c++/9.4.0/bits/refwrap.h(346): error: argument list for class template "std::reference_wrapper" is missing
+[6.960s] 
+[6.960s] /open_app/miniconda3/envs/ros2_humble/aarch64-conda-linux-gnu/include/c++/9.4.0/bits/refwrap.h(346): error: expected a ")"
+[6.961s] 
+[6.961s] /open_app/miniconda3/envs/ros2_humble/aarch64-conda-linux-gnu/include/c++/9.4.0/bits/refwrap.h(345): error: too few template parameters -- does not match previous declaration (declared 
+[6.961s] /open_app/miniconda3/envs/ros2_humble/aarch64-conda-linux-gnu/include/c++/9.4.0/array(243): here)
+[6.961s] 
+[6.961s] /open_app/miniconda3/envs/ros2_humble/aarch64-conda-linux-gnu/include/c++/9.4.0/bits/refwrap.h(346): error: expected a ";"
+[6.961s] 
+[6.961s] /open_app/miniconda3/envs/ros2_humble/aarch64-conda-linux-gnu/include/c++/9.4.0/bits/std_function.h(644): error: argument list for class template "std::function" is missing
+[6.962s] 
+[6.962s] /open_app/miniconda3/envs/ros2_humble/aarch64-conda-linux-gnu/include/c++/9.4.0/bits/std_function.h(644): error: expected a type specifier
+[6.962s] 
+[6.962s] /open_app/miniconda3/envs/ros2_humble/aarch64-conda-linux-gnu/include/c++/9.4.0/bits/std_function.h(644): error: function returning function is not allowed
+[6.962s] 
+[6.962s] /open_app/miniconda3/envs/ros2_humble/aarch64-conda-linux-gnu/include/c++/9.4.0/bits/std_function.h(644): error: template parameter "_Res" may not be redeclared in this scope
+[6.962s] 
+[6.962s] /open_app/miniconda3/envs/ros2_humble/aarch64-conda-linux-gnu/include/c++/9.4.0/bits/std_function.h(644): error: expected a ";"
+[6.963s] 
+[6.963s] /open_app/miniconda3/envs/ros2_humble/aarch64-conda-linux-gnu/include/c++/9.4.0/bits/std_function.h(648): error: argument list for class template "std::function" is missing
+[6.963s] 
+[6.963s] /open_app/miniconda3/envs/ros2_humble/aarch64-conda-linux-gnu/include/c++/9.4.0/bits/std_function.h(648): error: template parameter "_Functor" may not be redeclared in this scope
+[6.963s] 
+[6.963s] /open_app/miniconda3/envs/ros2_humble/aarch64-conda-linux-gnu/include/c++/9.4.0/bits/std_function.h(648): error: expected a ";"
+[6.963s] 
+[7.014s] /open_app/miniconda3/envs/ros2_humble/aarch64-conda-linux-gnu/include/c++/9.4.0/optional(1230): error: argument list for class template "std::optional" is missing
+[7.014s] 
+[7.014s] /open_app/miniconda3/envs/ros2_humble/aarch64-conda-linux-gnu/include/c++/9.4.0/optional(1230): error: too few template parameters -- does not match previous declaration (declared 
+[7.014s] /open_app/miniconda3/envs/ros2_humble/aarch64-conda-linux-gnu/include/c++/9.4.0/array(243): here)
+[7.014s] 
+[7.015s] /open_app/miniconda3/envs/ros2_humble/aarch64-conda-linux-gnu/include/c++/9.4.0/optional(1230): error: expected a ";"
+[7.015s] 
+[7.027s] /open_app/miniconda3/envs/ros2_humble/aarch64-conda-linux-gnu/include/c++/9.4.0/bits/unordered_map.h(1152): error: argument list for class template "std::unordered_map" is missing
+[7.027s] 
+[7.027s] /open_app/miniconda3/envs/ros2_humble/aarch64-conda-linux-gnu/include/c++/9.4.0/bits/unordered_map.h(1152): error: expected a ")"
+[7.028s] 
+[7.028s] /open_app/miniconda3/envs/ros2_humble/aarch64-conda-linux-gnu/include/c++/9.4.0/bits/unordered_map.h(1152): error: template parameter "_InputIterator" may not be redeclared in this scope
+[7.028s] 
+[7.028s] /open_app/miniconda3/envs/ros2_humble/aarch64-conda-linux-gnu/include/c++/9.4.0/bits/unordered_map.h(1153): error: expected a ";"
+[7.028s] 
+[7.028s] /open_app/miniconda3/envs/ros2_humble/aarch64-conda-linux-gnu/include/c++/9.4.0/bits/unordered_map.h(1165): error: argument list for class template "std::unordered_map" is missing
+[7.028s] 
+[7.029s] Error limit reached.
+[7.029s] 100 errors detected in the compilation of "/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/./yolo/preprocess.cu".
+[7.029s] Compilation terminated.
+[7.051s] [31mCMake Error at yolo_detect_generated_preprocess.cu.o.cmake:280 (message):
+[7.052s]   Error generating file
+[7.052s]   /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/build/yolo_detect/CMakeFiles/yolo_detect.dir/./yolo/./yolo_detect_generated_preprocess.cu.o
+[7.052s] 
+[7.053s] [0m
+[7.053s] make[2]: *** [CMakeFiles/yolo_detect.dir/build.make:77: CMakeFiles/yolo_detect.dir/yolo/yolo_detect_generated_preprocess.cu.o] Error 1
+[7.054s] make[1]: *** [CMakeFiles/Makefile2:84: CMakeFiles/yolo_detect.dir/all] Error 2
+[7.055s] make: *** [Makefile:146: all] Error 2
+[7.058s] Invoked command in '/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/build/yolo_detect' returned '2': CONDA_PROMPT_MODIFIER=(ros2_humble) /open_app/miniconda3/envs/ros2_humble/bin/cmake --build /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/build/yolo_detect -- -j4 -l4

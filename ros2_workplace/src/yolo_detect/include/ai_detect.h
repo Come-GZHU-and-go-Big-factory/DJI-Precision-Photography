@@ -27,6 +27,15 @@
 //文件读写功能
 #include <fstream>
 
+/*  yolo 相关内容   */
+//标准输入输出
+#include <iostream>
+//标准字符串
+#include <string>
+//yolo相关内容
+#include "YOLOv11.h"
+
+
 //定义类别标签
 static const char* s_classLables[] = {
     "person",        "bicycle",       "car",           "motorbike",
@@ -119,6 +128,18 @@ static std::ofstream outFileYUV;
     //图像队列互斥锁
     T_DjiMutexHandle my_imageQueueMutexHandle;
 #endif
+/**
+ * @brief Setting up Tensorrt logger
+ */
+// TensorRT 日志回调
+class Logger : public nvinfer1::ILogger {
+    void log(Severity severity, const char* msg) noexcept override {
+        // Only output logs with severity greater than warning
+        if (severity <= Severity::kWARNING)
+            std::cout << msg << std::endl;
+    }
+}logger;
+
 
 class ai_detect:public rclcpp::Node{
     public:
@@ -211,6 +232,8 @@ class ai_detect:public rclcpp::Node{
         {
             USER_LOG_ERROR( "start to subscribe YUV stream failed, ret: 0x%08llX", returnCode);
         }
+
+        YOLOv11 model("/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/yolo/engine/yolo11s.engine",logger);
     }
 
     private:

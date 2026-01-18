@@ -1,0 +1,70 @@
+[0.066s] Invoking command in '/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/build/yolo_detect': CONDA_PROMPT_MODIFIER=(ros2_humble) /open_app/miniconda3/envs/ros2_humble/bin/cmake --build /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/build/yolo_detect -- -j4 -l4
+[0.265s] [  1%] [32mBuilding CXX object CMakeFiles/yolo_detect.dir/src/main.cpp.o[0m
+[1.435s] In file included from [01m[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/../../../Payload-SDK/samples/sample_c++/platform/linux/manifold3/../my_code/gimbal_manager.h:12[m[K,
+[1.436s]                  from [01m[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/src/main.cpp:13[m[K:
+[1.436s] [01m[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/../../../Payload-SDK/samples/sample_c++/platform/linux/manifold3/../../../../../psdk_lib/include/dji_fc_subscription.h:1216:9:[m[K [01;35m[Kwarning: [m[KISO C++ prohibits anonymous structs [[01;35m[K-Wpedantic[m[K]
+[1.436s]  1216 |         [01;35m[K}[m[K;
+[1.436s]       |         [01;35m[K^[m[K
+[1.437s] [01m[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/../../../Payload-SDK/samples/sample_c++/platform/linux/manifold3/../../../../../psdk_lib/include/dji_fc_subscription.h:1222:9:[m[K [01;35m[Kwarning: [m[KISO C++ prohibits anonymous structs [[01;35m[K-Wpedantic[m[K]
+[1.437s]  1222 |         [01;35m[K}[m[K;
+[1.437s]       |         [01;35m[K^[m[K
+[7.983s] In file included from [01m[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/src/main.cpp:18[m[K:
+[7.983s] [01m[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/./include/ai_detect.h:[m[K In constructor ‘[01m[Kai_detect::ai_detect(int, char**)[m[K’:
+[7.983s] [01m[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/./include/ai_detect.h:147:19:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kargc[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[7.983s]   147 |     ai_detect([01;35m[Kint argc[m[K,char ** argv):rclcpp::Node("ai_detect")
+[7.983s]       |               [01;35m[K~~~~^~~~[m[K
+[7.984s] [01m[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/./include/ai_detect.h:147:32:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kargv[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[7.984s]   147 |     ai_detect(int argc,[01;35m[Kchar ** argv[m[K):rclcpp::Node("ai_detect")
+[7.984s]       |                        [01;35m[K~~~~~~~~^~~~[m[K
+[7.996s] [01m[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/./include/ai_detect.h:[m[K In function ‘[01m[Kvoid* DjiLiveview_ObjectDetectionThread(void*)[m[K’:
+[7.997s] [01m[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/./include/ai_detect.h:281:27:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<T_DjiLiveViewBoundingBox>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+[7.997s]   281 |         for (int i = 0; [01;35m[Ki < bounding_boxes.size()[m[K; i++) {
+[7.997s]       |                         [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[7.997s] [01m[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/./include/ai_detect.h:246:21:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KDjiStat[m[K’ [[01;35m[K-Wunused-variable[m[K]
+[7.997s]   246 |     T_DjiReturnCode [01;35m[KDjiStat[m[K;
+[7.997s]       |                     [01;35m[K^~~~~~~[m[K
+[7.998s] [01m[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/./include/ai_detect.h:244:48:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Karg[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[7.998s]   244 | void* DjiLiveview_ObjectDetectionThread([01;35m[Kvoid * arg[m[K) {
+[7.998s]       |                                         [01;35m[K~~~~~~~^~~[m[K
+[7.999s] [01m[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/./include/ai_detect.h:[m[K In function ‘[01m[Kvoid DjiLiveview_RcvImageCallback(E_DjiLiveViewCameraPosition, const uint8_t*, uint32_t, T_DjiLiveviewImageInfo)[m[K’:
+[7.999s] [01m[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/./include/ai_detect.h:332:21:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KDjiStat[m[K’ [[01;35m[K-Wunused-variable[m[K]
+[7.999s]   332 |     T_DjiReturnCode [01;35m[KDjiStat[m[K;
+[8.000s]       |                     [01;35m[K^~~~~~~[m[K
+[8.000s] [01m[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/./include/ai_detect.h:334:14:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KOutPutLen[m[K’ [[01;35m[K-Wunused-variable[m[K]
+[8.000s]   334 |     uint32_t [01;35m[KOutPutLen[m[K;
+[8.000s]       |              [01;35m[K^~~~~~~~~[m[K
+[8.000s] [01m[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/./include/ai_detect.h:330:63:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kposition[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[8.000s]   330 | void DjiLiveview_RcvImageCallback([01;35m[KE_DjiLiveViewCameraPosition position[m[K, const uint8_t *buf, uint32_t len, T_DjiLiveviewImageInfo imageInfo){
+[8.000s]       |                                   [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~[m[K
+[8.010s] [01m[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/src/main.cpp:[m[K In lambda function:
+[8.010s] [01m[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/src/main.cpp:30:27:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KsignalNum[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[8.010s]    30 |     signal(SIGINT, []([01;35m[Kint signalNum[m[K) -> void { exit(0); });
+[8.010s]       |                       [01;35m[K~~~~^~~~~~~~~[m[K
+[10.065s] In file included from [01m[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/src/main.cpp:18[m[K:
+[10.066s] [01m[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/./include/ai_detect.h:[m[K At global scope:
+[10.066s] [01m[K/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/./include/ai_detect.h:64:20:[m[K [01;35m[Kwarning: [m[K‘[01m[Ks_invalidLables[m[K’ defined but not used [[01;35m[K-Wunused-variable[m[K]
+[10.066s]    64 | static const char* [01;35m[Ks_invalidLables[m[K[] = {
+[10.066s]       |                    [01;35m[K^~~~~~~~~~~~~~~[m[K
+[10.521s] [  2%] [32m[1mLinking CXX executable bin/yolo_detect[0m
+[11.990s] [100%] Built target yolo_detect
+[12.008s] Invoked command in '/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/build/yolo_detect' returned '0': CONDA_PROMPT_MODIFIER=(ros2_humble) /open_app/miniconda3/envs/ros2_humble/bin/cmake --build /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/build/yolo_detect -- -j4 -l4
+[12.024s] Invoking command in '/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/build/yolo_detect': CONDA_PROMPT_MODIFIER=(ros2_humble) /open_app/miniconda3/envs/ros2_humble/bin/cmake --install /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/build/yolo_detect
+[12.032s] -- Install configuration: ""
+[12.032s] -- Installing: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/yolo_detect/lib/yolo_detect/yolo_detect
+[12.038s] -- Set runtime path of "/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/yolo_detect/lib/yolo_detect/yolo_detect" to ""
+[12.038s] -- Installing: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/yolo_detect/share/ament_index/resource_index/package_run_dependencies/yolo_detect
+[12.039s] -- Installing: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/yolo_detect/share/ament_index/resource_index/parent_prefix_path/yolo_detect
+[12.039s] -- Installing: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/yolo_detect/share/yolo_detect/environment/ament_prefix_path.sh
+[12.039s] -- Installing: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/yolo_detect/share/yolo_detect/environment/ament_prefix_path.dsv
+[12.040s] -- Installing: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/yolo_detect/share/yolo_detect/environment/path.sh
+[12.040s] -- Installing: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/yolo_detect/share/yolo_detect/environment/path.dsv
+[12.040s] -- Installing: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/yolo_detect/share/yolo_detect/local_setup.bash
+[12.041s] -- Installing: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/yolo_detect/share/yolo_detect/local_setup.sh
+[12.041s] -- Installing: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/yolo_detect/share/yolo_detect/local_setup.zsh
+[12.041s] -- Installing: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/yolo_detect/share/yolo_detect/local_setup.dsv
+[12.042s] -- Installing: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/yolo_detect/share/yolo_detect/package.dsv
+[12.042s] -- Installing: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/yolo_detect/share/ament_index/resource_index/packages/yolo_detect
+[12.043s] -- Installing: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/yolo_detect/share/yolo_detect/cmake/yolo_detectConfig.cmake
+[12.043s] -- Installing: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/yolo_detect/share/yolo_detect/cmake/yolo_detectConfig-version.cmake
+[12.043s] -- Installing: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/yolo_detect/share/yolo_detect/package.xml
+[12.047s] Invoked command in '/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/build/yolo_detect' returned '0': CONDA_PROMPT_MODIFIER=(ros2_humble) /open_app/miniconda3/envs/ros2_humble/bin/cmake --install /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/build/yolo_detect

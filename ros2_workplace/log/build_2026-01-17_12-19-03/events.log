@@ -1,0 +1,352 @@
+[0.000000] (-) TimerEvent: {}
+[0.000140] (-) JobUnselected: {'identifier': 'dji_precision_capture'}
+[0.000310] (-) JobUnselected: {'identifier': 'uav_detect_result'}
+[0.000577] (yolo_detect) JobQueued: {'identifier': 'yolo_detect', 'dependencies': OrderedDict()}
+[0.001007] (yolo_detect) JobStarted: {'identifier': 'yolo_detect'}
+[0.018606] (yolo_detect) JobProgress: {'identifier': 'yolo_detect', 'progress': 'cmake'}
+[0.019584] (yolo_detect) Command: {'cmd': ['/open_app/miniconda3/envs/ros2_humble/bin/cmake', '/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect', '-DCMAKE_INSTALL_PREFIX=/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/install/yolo_detect'], 'cwd': '/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/build/yolo_detect', 'env': OrderedDict([('PYTHON_BASIC_REPL', '1'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('CONDA_PROMPT_MODIFIER', '(ros2_humble)'), ('USER', 'dji'), ('SSH_CLIENT', '192.168.42.1 4723 22'), ('CXXFLAGS', '-fvisibility-inlines-hidden -std=c++17 -fmessage-length=0 -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O3 -pipe -isystem /open_app/miniconda3/envs/ros2_humble/include'), ('GCC_RANLIB', '/open_app/miniconda3/envs/ros2_humble/bin/aarch64-conda-linux-gnu-gcc-ranlib'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/dji/.vscode-server/cli/servers/Stable-585eba7c0c34fd6b30faac7c62a42050bfbc0086/server/extensions/git/dist/askpass.sh'), ('OBJCOPY', '/open_app/miniconda3/envs/ros2_humble/bin/aarch64-conda-linux-gnu-objcopy'), ('DEBUG_CXXFLAGS', '-fvisibility-inlines-hidden -std=c++17 -fmessage-length=0 -ftree-vectorize -fPIC -fstack-protector-all -fno-plt -Og -g -Wall -Wextra -fvar-tracking-assignments -pipe -isystem /open_app/miniconda3/envs/ros2_humble/include'), ('ROS_ETC_DIR', '/open_app/miniconda3/envs/ros2_humble/etc/ros'), ('SIZE', '/open_app/miniconda3/envs/ros2_humble/bin/aarch64-conda-linux-gnu-size'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/open_app/miniconda3/envs/ros2_humble/opt/rviz_ogre_vendor/lib:/open_app/install/usr/lib:/open_app/install/usr/lib/aarch64-linux-gnu:/usr/local/cuda-11.4/lib64:/open_app/install/usr/lib:/open_app/install/usr/lib/aarch64-linux-gnu:/open_app/install/usr/lib:/open_app/install/usr/lib/aarch64-linux-gnu:/usr/local/cuda-11.4/lib64:'), ('BROWSER', '/home/dji/.vscode-server/cli/servers/Stable-585eba7c0c34fd6b30faac7c62a42050bfbc0086/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/dji'), ('CC_FOR_BUILD', '/open_app/miniconda3/envs/ros2_humble/bin/aarch64-conda-linux-gnu-cc'), ('CONDA_SHLVL', '2'), ('OLDPWD', '/home/dji/DJI_workshop/LZP_PSDK'), ('TERM_PROGRAM_VERSION', '1.108.1'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-b6e5e569-74fb-440c-979f-41e8fe363b09.sock'), ('CONDA_TOOLCHAIN_BUILD', 'aarch64-conda-linux-gnu'), ('JETSON_L4T', '35.5.0'), ('F90', '/open_app/miniconda3/envs/ros2_humble/bin/aarch64-conda-linux-gnu-gfortran'), ('ROS_PYTHON_VERSION', '3'), ('LDFLAGS', '-Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,--allow-shlib-undefined -Wl,-rpath,/open_app/miniconda3/envs/ros2_humble/lib -Wl,-rpath-link,/open_app/miniconda3/envs/ros2_humble/lib -L/open_app/miniconda3/envs/ros2_humble/lib'), ('JETSON_MODEL', 'NVIDIA Orin NX Developer Kit'), ('CONDA_BACKUP_CMAKE_PREFIX_PATH', '/open_app/install:/open_app/install/usr:/open_app/install:/open_app/install/usr:/open_app/install:/open_app/install/usr:'), ('FC', '/open_app/miniconda3/envs/ros2_humble/bin/aarch64-conda-linux-gnu-gfortran'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/dji/.vscode-server/cli/servers/Stable-585eba7c0c34fd6b30faac7c62a42050bfbc0086/server/extensions/git/dist/askpass-main.js'), ('STRINGS', '/open_app/miniconda3/envs/ros2_humble/bin/aarch64-conda-linux-gnu-strings'), ('VSCODE_GIT_ASKPASS_NODE', '/home/dji/.vscode-server/cli/servers/Stable-585eba7c0c34fd6b30faac7c62a42050bfbc0086/server/node'), ('SSL_CERT_FILE', '/usr/lib/ssl/certs/ca-certificates.crt'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('BUNDLED_DEBUGPY_PATH', '/home/dji/.vscode-server/extensions/ms-python.debugpy-2025.18.0/bundled/libs/debugpy'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('CPP', '/open_app/miniconda3/envs/ros2_humble/bin/aarch64-conda-linux-gnu-cpp'), ('_CONDA_ROOT', '/open_app/miniconda3'), ('F77', '/open_app/miniconda3/envs/ros2_humble/bin/aarch64-conda-linux-gnu-gfortran'), ('F95', '/open_app/miniconda3/envs/ros2_humble/bin/aarch64-conda-linux-gnu-f95'), ('ELFEDIT', '/open_app/miniconda3/envs/ros2_humble/bin/aarch64-conda-linux-gnu-elfedit'), ('https_proxy', 'http://127.0.0.1:7890'), ('STRIP', '/open_app/miniconda3/envs/ros2_humble/bin/aarch64-conda-linux-gnu-strip'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'dji'), ('GCC', '/open_app/miniconda3/envs/ros2_humble/bin/aarch64-conda-linux-gnu-gcc'), ('JETSON_MODULE', ''), ('JETSON_SERIAL_NUMBER', '1422525003257'), ('http_proxy', 'http://127.0.0.1:7890'), ('_', '/open_app/miniconda3/envs/ros2_humble/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/open_app/install/usr/lib/aarch64-linux-gnu/pkgconfig:/open_app/install/usr/lib/aarch64-linux-gnu/pkgconfig:/open_app/install/usr/lib/aarch64-linux-gnu/pkgconfig:'), ('JETSON_CODENAME', 'P3768'), ('READELF', '/open_app/miniconda3/envs/ros2_humble/bin/aarch64-conda-linux-gnu-readelf'), ('XDG_SESSION_CLASS', 'user'), ('AR', '/open_app/miniconda3/envs/ros2_humble/bin/aarch64-conda-linux-gnu-ar'), ('GXX', '/open_app/miniconda3/envs/ros2_humble/bin/aarch64-conda-linux-gnu-g++'), ('FC_FOR_BUILD', '/open_app/miniconda3/envs/ros2_humble/bin/aarch64-conda-linux-gnu-gfortran'), ('TERM', 'xterm-256color'), ('AS', '/open_app/miniconda3/envs/ros2_humble/bin/aarch64-conda-linux-gnu-as'), ('XDG_SESSION_ID', '6'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('CXXFILT', '/open_app/miniconda3/envs/ros2_humble/bin/aarch64-conda-linux-gnu-c++filt'), ('ROS_OS_OVERRIDE', 'conda:linux'), ('BUILD', 'aarch64-conda-linux-gnu'), ('PATH', '/open_app/miniconda3/envs/ros2_humble/bin:/usr/local/cuda-11.4/bin:/home/dji/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/home/dji/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:/home/dji/.vscode-server/cli/servers/Stable-585eba7c0c34fd6b30faac7c62a42050bfbc0086/server/bin/remote-cli:/home/dji/.local/bin:/open_app/miniconda3/condabin:/usr/local/cuda-11.4/bin:/system/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/system/bin:/usr/src/tensorrt/bin:/usr/src/tensorrt/bin/trtexec:/home/dji/.vscode-server/extensions/ms-python.debugpy-2025.18.0/bundled/scripts/noConfigScripts'), ('PROJ_NETWORK', 'ON'), ('build_alias', 'aarch64-conda-linux-gnu'), ('PROJ_DATA', '/open_app/miniconda3/envs/ros2_humble/share/proj'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('CFLAGS', '-ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O3 -pipe -isystem /open_app/miniconda3/envs/ros2_humble/include'), ('MAMBA_ROOT_PREFIX', '/open_app/miniconda3'), ('SSL_CERT_DIR', '/usr/lib/ssl/certs'), ('GCC_AR', '/open_app/miniconda3/envs/ros2_humble/bin/aarch64-conda-linux-gnu-gcc-ar'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/home/dji/.vscode-server/extensions/ms-python.debugpy-2025.18.0/.noConfigDebugAdapterEndpoints/endpoint-bfd3610c699b12ed.txt'), ('LANG', 'en_US.UTF-8'), ('DEBUG_CFLAGS', '-ftree-vectorize -fPIC -fstack-protector-all -fno-plt -Og -g -Wall -Wextra -fvar-tracking-assignments -pipe -isystem /open_app/miniconda3/envs/ros2_humble/include'), ('PYTHONSTARTUP', '/home/dji/.vscode-server/data/User/workspaceStorage/da77dad4a7af79234d1c491d005093cc/ms-python.python/pythonrc.py'), ('CONDA_PREFIX_1', '/open_app/miniconda3'), ('_CONDA_PYTHON_SYSCONFIGDATA_NAME', '_sysconfigdata_aarch64_conda_cos7_linux_gnu'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('JETSON_SOC', 'tegra23x'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-cc1b4e4175.sock'), ('TERM_PROGRAM', 'vscode'), ('XML_CATALOG_FILES', 'file:///open_app/miniconda3/envs/ros2_humble/etc/xml/catalog file:///etc/xml/catalog'), ('GSETTINGS_SCHEMA_DIR', '/open_app/miniconda3/envs/ros2_humble/share/glib-2.0/schemas'), ('AMENT_PREFIX_PATH', '/open_app/miniconda3/envs/ros2_humble'), ('CPPFLAGS', '-DNDEBUG -D_FORTIFY_SOURCE=2 -O2 -isystem /open_app/miniconda3/envs/ros2_humble/include'), ('CONDA_PYTHON_EXE', '/open_app/miniconda3/bin/python'), ('SHELL', '/bin/bash'), ('DEBUG_FFLAGS', '-fopenmp -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O3 -pipe -isystem /open_app/miniconda3/envs/ros2_humble/include -fopenmp -ftree-vectorize -fPIC -fstack-protector-strong -pipe -Og -g -Wall -Wextra -fcheck=all -fbacktrace -fvar-tracking-assignments -pipe'), ('CMAKE_ARGS', '-DCMAKE_AR=/open_app/miniconda3/envs/ros2_humble/bin/aarch64-conda-linux-gnu-ar -DCMAKE_CXX_COMPILER_AR=/open_app/miniconda3/envs/ros2_humble/bin/aarch64-conda-linux-gnu-gcc-ar -DCMAKE_C_COMPILER_AR=/open_app/miniconda3/envs/ros2_humble/bin/aarch64-conda-linux-gnu-gcc-ar -DCMAKE_RANLIB=/open_app/miniconda3/envs/ros2_humble/bin/aarch64-conda-linux-gnu-ranlib -DCMAKE_CXX_COMPILER_RANLIB=/open_app/miniconda3/envs/ros2_humble/bin/aarch64-conda-linux-gnu-gcc-ranlib -DCMAKE_C_COMPILER_RANLIB=/open_app/miniconda3/envs/ros2_humble/bin/aarch64-conda-linux-gnu-gcc-ranlib -DCMAKE_LINKER=/open_app/miniconda3/envs/ros2_humble/bin/aarch64-conda-linux-gnu-ld -DCMAKE_STRIP=/open_app/miniconda3/envs/ros2_humble/bin/aarch64-conda-linux-gnu-strip'), ('HOST', 'aarch64-conda-linux-gnu'), ('CXX', '/open_app/miniconda3/envs/ros2_humble/bin/aarch64-conda-linux-gnu-c++'), ('DEBUG_CPPFLAGS', '-D_DEBUG -D_FORTIFY_SOURCE=2 -Og -isystem /open_app/miniconda3/envs/ros2_humble/include'), ('OPEN_APP_PREFIX', '/open_app/install'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('DEBUG_FORTRANFLAGS', '-fopenmp -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O3 -pipe -isystem /open_app/miniconda3/envs/ros2_humble/include -fopenmp -ftree-vectorize -fPIC -fstack-protector-strong -pipe -Og -g -Wall -Wextra -fcheck=all -fbacktrace -fvar-tracking-assignments -pipe'), ('CONDA_DEFAULT_ENV', 'ros2_humble'), ('_CONDA_EXE', '/open_app/miniconda3/bin/conda'), ('ADDR2LINE', '/open_app/miniconda3/envs/ros2_humble/bin/aarch64-conda-linux-gnu-addr2line'), ('MAMBA_EXE', '/open_app/miniconda3/bin/mamba'), ('GCC_NM', '/open_app/miniconda3/envs/ros2_humble/bin/aarch64-conda-linux-gnu-gcc-nm'), ('GFORTRAN', '/open_app/miniconda3/envs/ros2_humble/bin/aarch64-conda-linux-gnu-gfortran'), ('CONDA_BUILD_SYSROOT', '/open_app/miniconda3/envs/ros2_humble/aarch64-conda-linux-gnu/sysroot'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('JETSON_CUDA_ARCH_BIN', '8.7'), ('PWD', '/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/build/yolo_detect'), ('LD_GOLD', '/open_app/miniconda3/envs/ros2_humble/bin/aarch64-conda-linux-gnu-ld.gold'), ('CONDA_EXE', '/open_app/miniconda3/bin/conda'), ('FFLAGS', '-fopenmp -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O3 -pipe -isystem /open_app/miniconda3/envs/ros2_humble/include'), ('LD', '/open_app/miniconda3/envs/ros2_humble/bin/aarch64-conda-linux-gnu-ld'), ('SSH_CONNECTION', '192.168.42.1 4723 192.168.140.2 22'), ('XDG_DATA_DIRS', '/open_app/install/usr/share:/open_app/install/usr/share:/open_app/install/usr/share:/usr/local/share:/usr/share'), ('PYTHONPATH', '/open_app/miniconda3/envs/ros2_humble/lib/python310/site-packages:/open_app/miniconda3/envs/ros2_humble/lib/python3.10/site-packages'), ('GPROF', '/open_app/miniconda3/envs/ros2_humble/bin/aarch64-conda-linux-gnu-gprof'), ('CONDA_PREFIX', '/open_app/miniconda3/envs/ros2_humble'), ('GSETTINGS_SCHEMA_DIR_CONDA_BACKUP', ''), ('CONDA_TOOLCHAIN_HOST', 'aarch64-conda-linux-gnu'), ('host_alias', 'aarch64-conda-linux-gnu'), ('FORTRANFLAGS', '-fopenmp -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O3 -pipe -isystem /open_app/miniconda3/envs/ros2_humble/include'), ('CC', '/open_app/miniconda3/envs/ros2_humble/bin/aarch64-conda-linux-gnu-cc'), ('RANLIB', '/open_app/miniconda3/envs/ros2_humble/bin/aarch64-conda-linux-gnu-ranlib'), ('COLCON', '1'), ('CXX_FOR_BUILD', '/open_app/miniconda3/envs/ros2_humble/bin/aarch64-conda-linux-gnu-c++'), ('JETSON_JETPACK', '5.1.3'), ('CMAKE_PREFIX_PATH', '/open_app/miniconda3/envs/ros2_humble:/open_app/miniconda3/envs/ros2_humble/aarch64-conda-linux-gnu/sysroot/usr'), ('NM', '/open_app/miniconda3/envs/ros2_humble/bin/aarch64-conda-linux-gnu-nm'), ('OBJDUMP', '/open_app/miniconda3/envs/ros2_humble/bin/aarch64-conda-linux-gnu-objdump')]), 'shell': False}
+[0.095630] (yolo_detect) StdoutLine: {'line': b'-- The C compiler identification is GNU 9.4.0\n'}
+[0.099491] (-) TimerEvent: {}
+[0.199845] (-) TimerEvent: {}
+[0.223365] (yolo_detect) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 9.4.0\n'}
+[0.241552] (yolo_detect) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.300051] (-) TimerEvent: {}
+[0.349736] (yolo_detect) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.366988] (yolo_detect) StdoutLine: {'line': b'-- Check for working C compiler: /open_app/miniconda3/envs/ros2_humble/bin/aarch64-conda-linux-gnu-cc - skipped\n'}
+[0.367361] (yolo_detect) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.367997] (yolo_detect) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.373210] (yolo_detect) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.400228] (-) TimerEvent: {}
+[0.491803] (yolo_detect) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.500326] (-) TimerEvent: {}
+[0.516011] (yolo_detect) StdoutLine: {'line': b'-- Check for working CXX compiler: /open_app/miniconda3/envs/ros2_humble/bin/aarch64-conda-linux-gnu-c++ - skipped\n'}
+[0.516456] (yolo_detect) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.517277] (yolo_detect) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.563785] (yolo_detect) StdoutLine: {'line': b'-- Found CUDA: /usr/local/cuda-11.4 (found version "11.4") \n'}
+[0.586336] (yolo_detect) StderrLine: {'line': b'\x1b[0m\n'}
+[0.586822] (yolo_detect) StdoutLine: {'line': b'-- Found OpenCV installed in the system, will use it to display image in AdvancedSensing APIs\n'}
+[0.586983] (yolo_detect) StdoutLine: {'line': b'--  - Includes: /open_app/miniconda3/envs/ros2_humble/include/opencv4\n'}
+[0.587120] (yolo_detect) StderrLine: {'line': b'yolo_detect...\x1b[0m\n'}
+[0.587252] (yolo_detect) StdoutLine: {'line': b'--  - Libraries: opencv_calib3d;opencv_core;opencv_dnn;opencv_features2d;opencv_flann;opencv_gapi;opencv_highgui;opencv_imgcodecs;opencv_imgproc;opencv_ml;opencv_objdetect;opencv_photo;opencv_stitching;opencv_video;opencv_videoio;opencv_alphamat;opencv_aruco;opencv_barcode;opencv_bgsegm;opencv_bioinspired;opencv_ccalib;opencv_cvv;opencv_datasets;opencv_dnn_objdetect;opencv_dnn_superres;opencv_dpm;opencv_face;opencv_freetype;opencv_fuzzy;opencv_hdf;opencv_hfs;opencv_img_hash;opencv_intensity_transform;opencv_line_descriptor;opencv_mcc;opencv_optflow;opencv_phase_unwrapping;opencv_plot;opencv_quality;opencv_rapid;opencv_reg;opencv_rgbd;opencv_saliency;opencv_shape;opencv_stereo;opencv_structured_light;opencv_superres;opencv_surface_matching;opencv_text;opencv_tracking;opencv_videostab;opencv_wechat_qrcode;opencv_xfeatures2d;opencv_ximgproc;opencv_xobjdetect;opencv_xphoto\n'}
+[0.600517] (-) TimerEvent: {}
+[0.612193] (yolo_detect) StdoutLine: {'line': b'-- Found PkgConfig: /open_app/miniconda3/envs/ros2_humble/bin/pkg-config (found version "0.29.2") \n'}
+[0.612638] (yolo_detect) StdoutLine: {'line': b'-- Cannot Find FFMPEG\n'}
+[0.618588] (yolo_detect) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.3 (/open_app/miniconda3/envs/ros2_humble/share/ament_cmake/cmake)\n'}
+[0.700655] (-) TimerEvent: {}
+[0.801010] (-) TimerEvent: {}
+[0.901354] (-) TimerEvent: {}
+[1.001755] (-) TimerEvent: {}
+[1.102160] (-) TimerEvent: {}
+[1.202513] (-) TimerEvent: {}
+[1.302847] (-) TimerEvent: {}
+[1.403180] (-) TimerEvent: {}
+[1.503558] (-) TimerEvent: {}
+[1.603970] (-) TimerEvent: {}
+[1.704396] (-) TimerEvent: {}
+[1.804800] (-) TimerEvent: {}
+[1.905157] (-) TimerEvent: {}
+[2.005504] (-) TimerEvent: {}
+[2.105847] (-) TimerEvent: {}
+[2.206190] (-) TimerEvent: {}
+[2.306574] (-) TimerEvent: {}
+[2.406941] (-) TimerEvent: {}
+[2.507282] (-) TimerEvent: {}
+[2.607623] (-) TimerEvent: {}
+[2.708018] (-) TimerEvent: {}
+[2.792406] (yolo_detect) StdoutLine: {'line': b'-- Found Python3: /open_app/miniconda3/envs/ros2_humble/bin/python3.10 (found version "3.10.13") found components: Interpreter \n'}
+[2.808162] (-) TimerEvent: {}
+[2.908524] (-) TimerEvent: {}
+[3.008940] (-) TimerEvent: {}
+[3.016136] (yolo_detect) StdoutLine: {'line': b'-- Found rclcpp: 16.0.3 (/open_app/miniconda3/envs/ros2_humble/share/rclcpp/cmake)\n'}
+[3.109149] (-) TimerEvent: {}
+[3.117420] (yolo_detect) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.4 (/open_app/miniconda3/envs/ros2_humble/share/rosidl_generator_c/cmake)\n'}
+[3.129988] (yolo_detect) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.4 (/open_app/miniconda3/envs/ros2_humble/share/rosidl_adapter/cmake)\n'}
+[3.149568] (yolo_detect) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.4 (/open_app/miniconda3/envs/ros2_humble/share/rosidl_generator_cpp/cmake)\n'}
+[3.177378] (yolo_detect) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[3.209261] (-) TimerEvent: {}
+[3.218009] (yolo_detect) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[3.309468] (-) TimerEvent: {}
+[3.370915] (yolo_detect) StdoutLine: {'line': b"-- Checking for module 'yaml-0.1'\n"}
+[3.409671] (-) TimerEvent: {}
+[3.495950] (yolo_detect) StdoutLine: {'line': b'--   Found yaml-0.1, version 0.2.5\n'}
+[3.509851] (-) TimerEvent: {}
+[3.610268] (-) TimerEvent: {}
+[3.710695] (-) TimerEvent: {}
+[3.811127] (-) TimerEvent: {}
+[3.827664] (yolo_detect) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.1 (/open_app/miniconda3/envs/ros2_humble/share/rmw_implementation_cmake/cmake)\n'}
+[3.835202] (yolo_detect) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.2 (/open_app/miniconda3/envs/ros2_humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[3.911312] (-) TimerEvent: {}
+[4.011784] (-) TimerEvent: {}
+[4.112205] (-) TimerEvent: {}
+[4.212643] (-) TimerEvent: {}
+[4.313175] (-) TimerEvent: {}
+[4.413604] (-) TimerEvent: {}
+[4.420355] (yolo_detect) StdoutLine: {'line': b'-- Found OpenSSL: /open_app/miniconda3/envs/ros2_humble/lib/libcrypto.so (found version "3.1.8")  \n'}
+[4.473475] (yolo_detect) StdoutLine: {'line': b'-- Found FastRTPS: /open_app/miniconda3/envs/ros2_humble/include  \n'}
+[4.513801] (-) TimerEvent: {}
+[4.563732] (yolo_detect) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[4.584429] (yolo_detect) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[4.613996] (-) TimerEvent: {}
+[4.698703] (yolo_detect) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[4.701154] (yolo_detect) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[4.714219] (-) TimerEvent: {}
+[4.814565] (-) TimerEvent: {}
+[4.895659] (yolo_detect) StdoutLine: {'line': b'-- Found std_msgs: 4.2.3 (/open_app/miniconda3/envs/ros2_humble/share/std_msgs/cmake)\n'}
+[4.914660] (-) TimerEvent: {}
+[4.952644] (yolo_detect) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.5 (/open_app/miniconda3/envs/ros2_humble/share/ament_lint_auto/cmake)\n'}
+[5.014807] (-) TimerEvent: {}
+[5.115279] (-) TimerEvent: {}
+[5.158502] (yolo_detect) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[5.160201] (yolo_detect) StdoutLine: {'line': b'-- Configured cppcheck include dirs: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/../../../Payload-SDK/samples/sample_c++/platform/linux/manifold3/../my_code;/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/../../../Payload-SDK/samples/sample_c++/platform/linux/manifold3/../../../module_sample;/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/../../../Payload-SDK/samples/sample_c++/platform/linux/manifold3/../../../../sample_c/module_sample;/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/../../../Payload-SDK/samples/sample_c++/platform/linux/manifold3/../../../../sample_c/module_sample/liveview;/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/../../../Payload-SDK/samples/sample_c++/platform/linux/manifold3/../common;/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/../../../Payload-SDK/samples/sample_c++/platform/linux/manifold3/../manifold3/application;/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/include_directories;/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/(;/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/../../../Payload-SDK/samples/sample_c++/platform/linux/manifold3/../../../../../psdk_lib/include;/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/);/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/./include;/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/./yolo;/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/./yolo/include\n'}
+[5.160436] (yolo_detect) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[5.162209] (yolo_detect) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[5.165527] (yolo_detect) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[5.165719] (yolo_detect) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[5.166558] (yolo_detect) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[5.169190] (yolo_detect) StdoutLine: {'line': b'-- Configuring done (5.1s)\n'}
+[5.215460] (-) TimerEvent: {}
+[5.233447] (yolo_detect) StdoutLine: {'line': b'-- Generating done (0.0s)\n'}
+[5.242975] (yolo_detect) StdoutLine: {'line': b'-- Build files have been written to: /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/build/yolo_detect\n'}
+[5.266014] (yolo_detect) CommandEnded: {'returncode': 0}
+[5.268179] (yolo_detect) JobProgress: {'identifier': 'yolo_detect', 'progress': 'build'}
+[5.269778] (yolo_detect) Command: {'cmd': ['/open_app/miniconda3/envs/ros2_humble/bin/cmake', '--build', '/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/build/yolo_detect', '--', '-j4', '-l4'], 'cwd': '/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/build/yolo_detect', 'env': OrderedDict([('PYTHON_BASIC_REPL', '1'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('CONDA_PROMPT_MODIFIER', '(ros2_humble)'), ('USER', 'dji'), ('SSH_CLIENT', '192.168.42.1 4723 22'), ('CXXFLAGS', '-fvisibility-inlines-hidden -std=c++17 -fmessage-length=0 -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O3 -pipe -isystem /open_app/miniconda3/envs/ros2_humble/include'), ('GCC_RANLIB', '/open_app/miniconda3/envs/ros2_humble/bin/aarch64-conda-linux-gnu-gcc-ranlib'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/dji/.vscode-server/cli/servers/Stable-585eba7c0c34fd6b30faac7c62a42050bfbc0086/server/extensions/git/dist/askpass.sh'), ('OBJCOPY', '/open_app/miniconda3/envs/ros2_humble/bin/aarch64-conda-linux-gnu-objcopy'), ('DEBUG_CXXFLAGS', '-fvisibility-inlines-hidden -std=c++17 -fmessage-length=0 -ftree-vectorize -fPIC -fstack-protector-all -fno-plt -Og -g -Wall -Wextra -fvar-tracking-assignments -pipe -isystem /open_app/miniconda3/envs/ros2_humble/include'), ('ROS_ETC_DIR', '/open_app/miniconda3/envs/ros2_humble/etc/ros'), ('SIZE', '/open_app/miniconda3/envs/ros2_humble/bin/aarch64-conda-linux-gnu-size'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/open_app/miniconda3/envs/ros2_humble/opt/rviz_ogre_vendor/lib:/open_app/install/usr/lib:/open_app/install/usr/lib/aarch64-linux-gnu:/usr/local/cuda-11.4/lib64:/open_app/install/usr/lib:/open_app/install/usr/lib/aarch64-linux-gnu:/open_app/install/usr/lib:/open_app/install/usr/lib/aarch64-linux-gnu:/usr/local/cuda-11.4/lib64:'), ('BROWSER', '/home/dji/.vscode-server/cli/servers/Stable-585eba7c0c34fd6b30faac7c62a42050bfbc0086/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/dji'), ('CC_FOR_BUILD', '/open_app/miniconda3/envs/ros2_humble/bin/aarch64-conda-linux-gnu-cc'), ('CONDA_SHLVL', '2'), ('OLDPWD', '/home/dji/DJI_workshop/LZP_PSDK'), ('TERM_PROGRAM_VERSION', '1.108.1'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-b6e5e569-74fb-440c-979f-41e8fe363b09.sock'), ('CONDA_TOOLCHAIN_BUILD', 'aarch64-conda-linux-gnu'), ('JETSON_L4T', '35.5.0'), ('F90', '/open_app/miniconda3/envs/ros2_humble/bin/aarch64-conda-linux-gnu-gfortran'), ('ROS_PYTHON_VERSION', '3'), ('LDFLAGS', '-Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,--allow-shlib-undefined -Wl,-rpath,/open_app/miniconda3/envs/ros2_humble/lib -Wl,-rpath-link,/open_app/miniconda3/envs/ros2_humble/lib -L/open_app/miniconda3/envs/ros2_humble/lib'), ('JETSON_MODEL', 'NVIDIA Orin NX Developer Kit'), ('CONDA_BACKUP_CMAKE_PREFIX_PATH', '/open_app/install:/open_app/install/usr:/open_app/install:/open_app/install/usr:/open_app/install:/open_app/install/usr:'), ('FC', '/open_app/miniconda3/envs/ros2_humble/bin/aarch64-conda-linux-gnu-gfortran'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/dji/.vscode-server/cli/servers/Stable-585eba7c0c34fd6b30faac7c62a42050bfbc0086/server/extensions/git/dist/askpass-main.js'), ('STRINGS', '/open_app/miniconda3/envs/ros2_humble/bin/aarch64-conda-linux-gnu-strings'), ('VSCODE_GIT_ASKPASS_NODE', '/home/dji/.vscode-server/cli/servers/Stable-585eba7c0c34fd6b30faac7c62a42050bfbc0086/server/node'), ('SSL_CERT_FILE', '/usr/lib/ssl/certs/ca-certificates.crt'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('BUNDLED_DEBUGPY_PATH', '/home/dji/.vscode-server/extensions/ms-python.debugpy-2025.18.0/bundled/libs/debugpy'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('CPP', '/open_app/miniconda3/envs/ros2_humble/bin/aarch64-conda-linux-gnu-cpp'), ('_CONDA_ROOT', '/open_app/miniconda3'), ('F77', '/open_app/miniconda3/envs/ros2_humble/bin/aarch64-conda-linux-gnu-gfortran'), ('F95', '/open_app/miniconda3/envs/ros2_humble/bin/aarch64-conda-linux-gnu-f95'), ('ELFEDIT', '/open_app/miniconda3/envs/ros2_humble/bin/aarch64-conda-linux-gnu-elfedit'), ('https_proxy', 'http://127.0.0.1:7890'), ('STRIP', '/open_app/miniconda3/envs/ros2_humble/bin/aarch64-conda-linux-gnu-strip'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'dji'), ('GCC', '/open_app/miniconda3/envs/ros2_humble/bin/aarch64-conda-linux-gnu-gcc'), ('JETSON_MODULE', ''), ('JETSON_SERIAL_NUMBER', '1422525003257'), ('http_proxy', 'http://127.0.0.1:7890'), ('_', '/open_app/miniconda3/envs/ros2_humble/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/open_app/install/usr/lib/aarch64-linux-gnu/pkgconfig:/open_app/install/usr/lib/aarch64-linux-gnu/pkgconfig:/open_app/install/usr/lib/aarch64-linux-gnu/pkgconfig:'), ('JETSON_CODENAME', 'P3768'), ('READELF', '/open_app/miniconda3/envs/ros2_humble/bin/aarch64-conda-linux-gnu-readelf'), ('XDG_SESSION_CLASS', 'user'), ('AR', '/open_app/miniconda3/envs/ros2_humble/bin/aarch64-conda-linux-gnu-ar'), ('GXX', '/open_app/miniconda3/envs/ros2_humble/bin/aarch64-conda-linux-gnu-g++'), ('FC_FOR_BUILD', '/open_app/miniconda3/envs/ros2_humble/bin/aarch64-conda-linux-gnu-gfortran'), ('TERM', 'xterm-256color'), ('AS', '/open_app/miniconda3/envs/ros2_humble/bin/aarch64-conda-linux-gnu-as'), ('XDG_SESSION_ID', '6'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('CXXFILT', '/open_app/miniconda3/envs/ros2_humble/bin/aarch64-conda-linux-gnu-c++filt'), ('ROS_OS_OVERRIDE', 'conda:linux'), ('BUILD', 'aarch64-conda-linux-gnu'), ('PATH', '/open_app/miniconda3/envs/ros2_humble/bin:/usr/local/cuda-11.4/bin:/home/dji/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/home/dji/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:/home/dji/.vscode-server/cli/servers/Stable-585eba7c0c34fd6b30faac7c62a42050bfbc0086/server/bin/remote-cli:/home/dji/.local/bin:/open_app/miniconda3/condabin:/usr/local/cuda-11.4/bin:/system/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/system/bin:/usr/src/tensorrt/bin:/usr/src/tensorrt/bin/trtexec:/home/dji/.vscode-server/extensions/ms-python.debugpy-2025.18.0/bundled/scripts/noConfigScripts'), ('PROJ_NETWORK', 'ON'), ('build_alias', 'aarch64-conda-linux-gnu'), ('PROJ_DATA', '/open_app/miniconda3/envs/ros2_humble/share/proj'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('CFLAGS', '-ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O3 -pipe -isystem /open_app/miniconda3/envs/ros2_humble/include'), ('MAMBA_ROOT_PREFIX', '/open_app/miniconda3'), ('SSL_CERT_DIR', '/usr/lib/ssl/certs'), ('GCC_AR', '/open_app/miniconda3/envs/ros2_humble/bin/aarch64-conda-linux-gnu-gcc-ar'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/home/dji/.vscode-server/extensions/ms-python.debugpy-2025.18.0/.noConfigDebugAdapterEndpoints/endpoint-bfd3610c699b12ed.txt'), ('LANG', 'en_US.UTF-8'), ('DEBUG_CFLAGS', '-ftree-vectorize -fPIC -fstack-protector-all -fno-plt -Og -g -Wall -Wextra -fvar-tracking-assignments -pipe -isystem /open_app/miniconda3/envs/ros2_humble/include'), ('PYTHONSTARTUP', '/home/dji/.vscode-server/data/User/workspaceStorage/da77dad4a7af79234d1c491d005093cc/ms-python.python/pythonrc.py'), ('CONDA_PREFIX_1', '/open_app/miniconda3'), ('_CONDA_PYTHON_SYSCONFIGDATA_NAME', '_sysconfigdata_aarch64_conda_cos7_linux_gnu'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('JETSON_SOC', 'tegra23x'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-cc1b4e4175.sock'), ('TERM_PROGRAM', 'vscode'), ('XML_CATALOG_FILES', 'file:///open_app/miniconda3/envs/ros2_humble/etc/xml/catalog file:///etc/xml/catalog'), ('GSETTINGS_SCHEMA_DIR', '/open_app/miniconda3/envs/ros2_humble/share/glib-2.0/schemas'), ('AMENT_PREFIX_PATH', '/open_app/miniconda3/envs/ros2_humble'), ('CPPFLAGS', '-DNDEBUG -D_FORTIFY_SOURCE=2 -O2 -isystem /open_app/miniconda3/envs/ros2_humble/include'), ('CONDA_PYTHON_EXE', '/open_app/miniconda3/bin/python'), ('SHELL', '/bin/bash'), ('DEBUG_FFLAGS', '-fopenmp -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O3 -pipe -isystem /open_app/miniconda3/envs/ros2_humble/include -fopenmp -ftree-vectorize -fPIC -fstack-protector-strong -pipe -Og -g -Wall -Wextra -fcheck=all -fbacktrace -fvar-tracking-assignments -pipe'), ('CMAKE_ARGS', '-DCMAKE_AR=/open_app/miniconda3/envs/ros2_humble/bin/aarch64-conda-linux-gnu-ar -DCMAKE_CXX_COMPILER_AR=/open_app/miniconda3/envs/ros2_humble/bin/aarch64-conda-linux-gnu-gcc-ar -DCMAKE_C_COMPILER_AR=/open_app/miniconda3/envs/ros2_humble/bin/aarch64-conda-linux-gnu-gcc-ar -DCMAKE_RANLIB=/open_app/miniconda3/envs/ros2_humble/bin/aarch64-conda-linux-gnu-ranlib -DCMAKE_CXX_COMPILER_RANLIB=/open_app/miniconda3/envs/ros2_humble/bin/aarch64-conda-linux-gnu-gcc-ranlib -DCMAKE_C_COMPILER_RANLIB=/open_app/miniconda3/envs/ros2_humble/bin/aarch64-conda-linux-gnu-gcc-ranlib -DCMAKE_LINKER=/open_app/miniconda3/envs/ros2_humble/bin/aarch64-conda-linux-gnu-ld -DCMAKE_STRIP=/open_app/miniconda3/envs/ros2_humble/bin/aarch64-conda-linux-gnu-strip'), ('HOST', 'aarch64-conda-linux-gnu'), ('CXX', '/open_app/miniconda3/envs/ros2_humble/bin/aarch64-conda-linux-gnu-c++'), ('DEBUG_CPPFLAGS', '-D_DEBUG -D_FORTIFY_SOURCE=2 -Og -isystem /open_app/miniconda3/envs/ros2_humble/include'), ('OPEN_APP_PREFIX', '/open_app/install'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('DEBUG_FORTRANFLAGS', '-fopenmp -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O3 -pipe -isystem /open_app/miniconda3/envs/ros2_humble/include -fopenmp -ftree-vectorize -fPIC -fstack-protector-strong -pipe -Og -g -Wall -Wextra -fcheck=all -fbacktrace -fvar-tracking-assignments -pipe'), ('CONDA_DEFAULT_ENV', 'ros2_humble'), ('_CONDA_EXE', '/open_app/miniconda3/bin/conda'), ('ADDR2LINE', '/open_app/miniconda3/envs/ros2_humble/bin/aarch64-conda-linux-gnu-addr2line'), ('MAMBA_EXE', '/open_app/miniconda3/bin/mamba'), ('GCC_NM', '/open_app/miniconda3/envs/ros2_humble/bin/aarch64-conda-linux-gnu-gcc-nm'), ('GFORTRAN', '/open_app/miniconda3/envs/ros2_humble/bin/aarch64-conda-linux-gnu-gfortran'), ('CONDA_BUILD_SYSROOT', '/open_app/miniconda3/envs/ros2_humble/aarch64-conda-linux-gnu/sysroot'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('JETSON_CUDA_ARCH_BIN', '8.7'), ('PWD', '/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/build/yolo_detect'), ('LD_GOLD', '/open_app/miniconda3/envs/ros2_humble/bin/aarch64-conda-linux-gnu-ld.gold'), ('CONDA_EXE', '/open_app/miniconda3/bin/conda'), ('FFLAGS', '-fopenmp -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O3 -pipe -isystem /open_app/miniconda3/envs/ros2_humble/include'), ('LD', '/open_app/miniconda3/envs/ros2_humble/bin/aarch64-conda-linux-gnu-ld'), ('SSH_CONNECTION', '192.168.42.1 4723 192.168.140.2 22'), ('XDG_DATA_DIRS', '/open_app/install/usr/share:/open_app/install/usr/share:/open_app/install/usr/share:/usr/local/share:/usr/share'), ('PYTHONPATH', '/open_app/miniconda3/envs/ros2_humble/lib/python310/site-packages:/open_app/miniconda3/envs/ros2_humble/lib/python3.10/site-packages'), ('GPROF', '/open_app/miniconda3/envs/ros2_humble/bin/aarch64-conda-linux-gnu-gprof'), ('CONDA_PREFIX', '/open_app/miniconda3/envs/ros2_humble'), ('GSETTINGS_SCHEMA_DIR_CONDA_BACKUP', ''), ('CONDA_TOOLCHAIN_HOST', 'aarch64-conda-linux-gnu'), ('host_alias', 'aarch64-conda-linux-gnu'), ('FORTRANFLAGS', '-fopenmp -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O3 -pipe -isystem /open_app/miniconda3/envs/ros2_humble/include'), ('CC', '/open_app/miniconda3/envs/ros2_humble/bin/aarch64-conda-linux-gnu-cc'), ('RANLIB', '/open_app/miniconda3/envs/ros2_humble/bin/aarch64-conda-linux-gnu-ranlib'), ('COLCON', '1'), ('CXX_FOR_BUILD', '/open_app/miniconda3/envs/ros2_humble/bin/aarch64-conda-linux-gnu-c++'), ('JETSON_JETPACK', '5.1.3'), ('CMAKE_PREFIX_PATH', '/open_app/miniconda3/envs/ros2_humble:/open_app/miniconda3/envs/ros2_humble/aarch64-conda-linux-gnu/sysroot/usr'), ('NM', '/open_app/miniconda3/envs/ros2_humble/bin/aarch64-conda-linux-gnu-nm'), ('OBJDUMP', '/open_app/miniconda3/envs/ros2_humble/bin/aarch64-conda-linux-gnu-objdump')]), 'shell': False}
+[5.315648] (-) TimerEvent: {}
+[5.321578] (yolo_detect) StdoutLine: {'line': b'[  1%] \x1b[34m\x1b[1mBuilding NVCC (Device) object CMakeFiles/yolo_detect.dir/yolo/yolo_detect_generated_preprocess.cu.o\x1b[0m\n'}
+[5.415837] (-) TimerEvent: {}
+[5.516318] (-) TimerEvent: {}
+[5.616727] (-) TimerEvent: {}
+[5.717172] (-) TimerEvent: {}
+[5.817610] (-) TimerEvent: {}
+[5.918026] (-) TimerEvent: {}
+[6.018501] (-) TimerEvent: {}
+[6.119041] (-) TimerEvent: {}
+[6.219467] (-) TimerEvent: {}
+[6.319883] (-) TimerEvent: {}
+[6.420291] (-) TimerEvent: {}
+[6.520708] (-) TimerEvent: {}
+[6.621144] (-) TimerEvent: {}
+[6.714662] (yolo_detect) StderrLine: {'line': b'/open_app/miniconda3/envs/ros2_humble/aarch64-conda-linux-gnu/include/c++/9.4.0/bits/stl_pair.h(442): error: argument list for class template "std::pair" is missing\n'}
+[6.715143] (yolo_detect) StderrLine: {'line': b'\n'}
+[6.715296] (yolo_detect) StderrLine: {'line': b'/open_app/miniconda3/envs/ros2_humble/aarch64-conda-linux-gnu/include/c++/9.4.0/bits/stl_pair.h(442): error: expected a ")"\n'}
+[6.715436] (yolo_detect) StderrLine: {'line': b'\n'}
+[6.715568] (yolo_detect) StderrLine: {'line': b'/open_app/miniconda3/envs/ros2_humble/aarch64-conda-linux-gnu/include/c++/9.4.0/bits/stl_pair.h(442): error: template parameter "_T1" may not be redeclared in this scope\n'}
+[6.715700] (yolo_detect) StderrLine: {'line': b'\n'}
+[6.715842] (yolo_detect) StderrLine: {'line': b'/open_app/miniconda3/envs/ros2_humble/aarch64-conda-linux-gnu/include/c++/9.4.0/bits/stl_pair.h(442): error: expected a ";"\n'}
+[6.715970] (yolo_detect) StderrLine: {'line': b'\n'}
+[6.721299] (-) TimerEvent: {}
+[6.821704] (-) TimerEvent: {}
+[6.880476] (yolo_detect) StderrLine: {'line': b'/open_app/miniconda3/envs/ros2_humble/aarch64-conda-linux-gnu/include/c++/9.4.0/bits/basic_string.h(5992): error: argument list for class template "std::__cxx11::basic_string" is missing\n'}
+[6.881212] (yolo_detect) StderrLine: {'line': b'\n'}
+[6.881452] (yolo_detect) StderrLine: {'line': b'/open_app/miniconda3/envs/ros2_humble/aarch64-conda-linux-gnu/include/c++/9.4.0/bits/basic_string.h(5992): error: expected a ")"\n'}
+[6.881678] (yolo_detect) StderrLine: {'line': b'\n'}
+[6.881852] (yolo_detect) StderrLine: {'line': b'/open_app/miniconda3/envs/ros2_humble/aarch64-conda-linux-gnu/include/c++/9.4.0/bits/basic_string.h(5992): error: template parameter "_InputIterator" may not be redeclared in this scope\n'}
+[6.882036] (yolo_detect) StderrLine: {'line': b'\n'}
+[6.882171] (yolo_detect) StderrLine: {'line': b'/open_app/miniconda3/envs/ros2_humble/aarch64-conda-linux-gnu/include/c++/9.4.0/bits/basic_string.h(5993): error: expected a ";"\n'}
+[6.882301] (yolo_detect) StderrLine: {'line': b'\n'}
+[6.882424] (yolo_detect) StderrLine: {'line': b'/open_app/miniconda3/envs/ros2_humble/aarch64-conda-linux-gnu/include/c++/9.4.0/bits/basic_string.h(6000): error: argument list for class template "std::__cxx11::basic_string" is missing\n'}
+[6.882611] (yolo_detect) StderrLine: {'line': b'\n'}
+[6.882768] (yolo_detect) StderrLine: {'line': b'/open_app/miniconda3/envs/ros2_humble/aarch64-conda-linux-gnu/include/c++/9.4.0/bits/basic_string.h(6000): error: expected a ")"\n'}
+[6.882900] (yolo_detect) StderrLine: {'line': b'\n'}
+[6.883027] (yolo_detect) StderrLine: {'line': b'/open_app/miniconda3/envs/ros2_humble/aarch64-conda-linux-gnu/include/c++/9.4.0/bits/basic_string.h(6000): error: "basic_string_view" is not a function or static data member\n'}
+[6.883152] (yolo_detect) StderrLine: {'line': b'\n'}
+[6.883273] (yolo_detect) StderrLine: {'line': b'/open_app/miniconda3/envs/ros2_humble/aarch64-conda-linux-gnu/include/c++/9.4.0/bits/basic_string.h(6006): error: argument list for class template "std::__cxx11::basic_string" is missing\n'}
+[6.883416] (yolo_detect) StderrLine: {'line': b'\n'}
+[6.883537] (yolo_detect) StderrLine: {'line': b'/open_app/miniconda3/envs/ros2_humble/aarch64-conda-linux-gnu/include/c++/9.4.0/bits/basic_string.h(6006): error: expected a ")"\n'}
+[6.883658] (yolo_detect) StderrLine: {'line': b'\n'}
+[6.883777] (yolo_detect) StderrLine: {'line': b'/open_app/miniconda3/envs/ros2_humble/aarch64-conda-linux-gnu/include/c++/9.4.0/bits/basic_string.h(6006): error: "basic_string_view" is not a function or static data member\n'}
+[6.883898] (yolo_detect) StderrLine: {'line': b'\n'}
+[6.921893] (-) TimerEvent: {}
+[6.928401] (yolo_detect) StderrLine: {'line': b'/open_app/miniconda3/envs/ros2_humble/aarch64-conda-linux-gnu/include/c++/9.4.0/array(244): error: argument list for class template "std::array" is missing\n'}
+[6.928844] (yolo_detect) StderrLine: {'line': b'\n'}
+[6.928994] (yolo_detect) StderrLine: {'line': b'/open_app/miniconda3/envs/ros2_humble/aarch64-conda-linux-gnu/include/c++/9.4.0/array(244): error: expected a ")"\n'}
+[6.929165] (yolo_detect) StderrLine: {'line': b'\n'}
+[6.929302] (yolo_detect) StderrLine: {'line': b'/open_app/miniconda3/envs/ros2_humble/aarch64-conda-linux-gnu/include/c++/9.4.0/array(244): error: template parameter "_Tp" may not be redeclared in this scope\n'}
+[6.929476] (yolo_detect) StderrLine: {'line': b'\n'}
+[6.929607] (yolo_detect) StderrLine: {'line': b'/open_app/miniconda3/envs/ros2_humble/aarch64-conda-linux-gnu/include/c++/9.4.0/array(245): error: expected a ";"\n'}
+[6.929732] (yolo_detect) StderrLine: {'line': b'\n'}
+[6.956517] (yolo_detect) StderrLine: {'line': b'/open_app/miniconda3/envs/ros2_humble/aarch64-conda-linux-gnu/include/c++/9.4.0/tuple(863): error: argument list for class template "std::tuple" is missing\n'}
+[6.957234] (yolo_detect) StderrLine: {'line': b'\n'}
+[6.957494] (yolo_detect) StderrLine: {'line': b'/open_app/miniconda3/envs/ros2_humble/aarch64-conda-linux-gnu/include/c++/9.4.0/tuple(863): error: expected a ")"\n'}
+[6.957641] (yolo_detect) StderrLine: {'line': b'\n'}
+[6.957773] (yolo_detect) StderrLine: {'line': b'/open_app/miniconda3/envs/ros2_humble/aarch64-conda-linux-gnu/include/c++/9.4.0/tuple(863): error: template parameter "_UTypes" may not be redeclared in this scope\n'}
+[6.957904] (yolo_detect) StderrLine: {'line': b'\n'}
+[6.958031] (yolo_detect) StderrLine: {'line': b'/open_app/miniconda3/envs/ros2_humble/aarch64-conda-linux-gnu/include/c++/9.4.0/tuple(863): error: expected a ";"\n'}
+[6.958158] (yolo_detect) StderrLine: {'line': b'\n'}
+[6.958283] (yolo_detect) StderrLine: {'line': b'/open_app/miniconda3/envs/ros2_humble/aarch64-conda-linux-gnu/include/c++/9.4.0/tuple(865): error: argument list for class template "std::tuple" is missing\n'}
+[6.958411] (yolo_detect) StderrLine: {'line': b'\n'}
+[6.958535] (yolo_detect) StderrLine: {'line': b'/open_app/miniconda3/envs/ros2_humble/aarch64-conda-linux-gnu/include/c++/9.4.0/tuple(865): error: "pair" is not a function or static data member\n'}
+[6.958658] (yolo_detect) StderrLine: {'line': b'\n'}
+[6.958776] (yolo_detect) StderrLine: {'line': b'/open_app/miniconda3/envs/ros2_humble/aarch64-conda-linux-gnu/include/c++/9.4.0/tuple(867): error: argument list for class template "std::tuple" is missing\n'}
+[6.958897] (yolo_detect) StderrLine: {'line': b'\n'}
+[6.959088] (yolo_detect) StderrLine: {'line': b'/open_app/miniconda3/envs/ros2_humble/aarch64-conda-linux-gnu/include/c++/9.4.0/tuple(867): error: expected a ")"\n'}
+[6.959230] (yolo_detect) StderrLine: {'line': b'\n'}
+[6.959404] (yolo_detect) StderrLine: {'line': b'/open_app/miniconda3/envs/ros2_humble/aarch64-conda-linux-gnu/include/c++/9.4.0/tuple(867): error: expected a ";"\n'}
+[6.959528] (yolo_detect) StderrLine: {'line': b'\n'}
+[6.959649] (yolo_detect) StderrLine: {'line': b'/open_app/miniconda3/envs/ros2_humble/aarch64-conda-linux-gnu/include/c++/9.4.0/tuple(869): error: argument list for class template "std::tuple" is missing\n'}
+[6.959825] (yolo_detect) StderrLine: {'line': b'\n'}
+[6.959948] (yolo_detect) StderrLine: {'line': b'/open_app/miniconda3/envs/ros2_humble/aarch64-conda-linux-gnu/include/c++/9.4.0/tuple(869): error: expected a ")"\n'}
+[6.960071] (yolo_detect) StderrLine: {'line': b'\n'}
+[6.960192] (yolo_detect) StderrLine: {'line': b'/open_app/miniconda3/envs/ros2_humble/aarch64-conda-linux-gnu/include/c++/9.4.0/tuple(868): error: declaration is incompatible with template parameter "_UTypes"\n'}
+[6.960313] (yolo_detect) StderrLine: {'line': b'(866): here\n'}
+[6.960432] (yolo_detect) StderrLine: {'line': b'\n'}
+[6.960615] (yolo_detect) StderrLine: {'line': b'/open_app/miniconda3/envs/ros2_humble/aarch64-conda-linux-gnu/include/c++/9.4.0/tuple(868): error: too many template parameters -- does not match previous declaration (declared \n'}
+[6.960742] (yolo_detect) StderrLine: {'line': b'(866): here)\n'}
+[6.960912] (yolo_detect) StderrLine: {'line': b'\n'}
+[6.961044] (yolo_detect) StderrLine: {'line': b'/open_app/miniconda3/envs/ros2_humble/aarch64-conda-linux-gnu/include/c++/9.4.0/tuple(869): error: expected a ";"\n'}
+[6.961202] (yolo_detect) StderrLine: {'line': b'\n'}
+[6.961330] (yolo_detect) StderrLine: {'line': b'/open_app/miniconda3/envs/ros2_humble/aarch64-conda-linux-gnu/include/c++/9.4.0/tuple(871): error: argument list for class template "std::tuple" is missing\n'}
+[6.961456] (yolo_detect) StderrLine: {'line': b'\n'}
+[6.961638] (yolo_detect) StderrLine: {'line': b'/open_app/miniconda3/envs/ros2_humble/aarch64-conda-linux-gnu/include/c++/9.4.0/tuple(871): error: expected a ")"\n'}
+[6.961876] (yolo_detect) StderrLine: {'line': b'\n'}
+[6.962002] (yolo_detect) StderrLine: {'line': b'/open_app/miniconda3/envs/ros2_humble/aarch64-conda-linux-gnu/include/c++/9.4.0/tuple(870): error: declaration is incompatible with template parameter "_T1"\n'}
+[6.962184] (yolo_detect) StderrLine: {'line': b'(868): here\n'}
+[6.962310] (yolo_detect) StderrLine: {'line': b'\n'}
+[6.962490] (yolo_detect) StderrLine: {'line': b'/open_app/miniconda3/envs/ros2_humble/aarch64-conda-linux-gnu/include/c++/9.4.0/tuple(870): error: too few template parameters -- does not match previous declaration (declared \n'}
+[6.962616] (yolo_detect) StderrLine: {'line': b'(868): here)\n'}
+[6.962808] (yolo_detect) StderrLine: {'line': b'\n'}
+[6.962934] (yolo_detect) StderrLine: {'line': b'/open_app/miniconda3/envs/ros2_humble/aarch64-conda-linux-gnu/include/c++/9.4.0/tuple(871): error: expected a ";"\n'}
+[6.963112] (yolo_detect) StderrLine: {'line': b'\n'}
+[6.963239] (yolo_detect) StderrLine: {'line': b'/open_app/miniconda3/envs/ros2_humble/aarch64-conda-linux-gnu/include/c++/9.4.0/tuple(885): error: argument list for variable template "std::allocator_arg_t" is missing\n'}
+[6.963363] (yolo_detect) StderrLine: {'line': b'\n'}
+[6.963529] (yolo_detect) StderrLine: {'line': b'/open_app/miniconda3/envs/ros2_humble/aarch64-conda-linux-gnu/include/c++/9.4.0/tuple(887): error: argument list for variable template "std::allocator_arg_t" is missing\n'}
+[6.963652] (yolo_detect) StderrLine: {'line': b'\n'}
+[6.963817] (yolo_detect) StderrLine: {'line': b'/open_app/miniconda3/envs/ros2_humble/aarch64-conda-linux-gnu/include/c++/9.4.0/tuple(966): error: argument list for variable template "std::allocator_arg_t" is missing\n'}
+[6.963948] (yolo_detect) StderrLine: {'line': b'\n'}
+[6.964068] (yolo_detect) StderrLine: {'line': b'/open_app/miniconda3/envs/ros2_humble/aarch64-conda-linux-gnu/include/c++/9.4.0/tuple(976): error: argument list for variable template "std::allocator_arg_t" is missing\n'}
+[6.964237] (yolo_detect) StderrLine: {'line': b'\n'}
+[6.964358] (yolo_detect) StderrLine: {'line': b'/open_app/miniconda3/envs/ros2_humble/aarch64-conda-linux-gnu/include/c++/9.4.0/tuple(1062): error: argument list for variable template "std::allocator_arg_t" is missing\n'}
+[6.964479] (yolo_detect) StderrLine: {'line': b'\n'}
+[6.964649] (yolo_detect) StderrLine: {'line': b'/open_app/miniconda3/envs/ros2_humble/aarch64-conda-linux-gnu/include/c++/9.4.0/tuple(1073): error: argument list for variable template "std::allocator_arg_t" is missing\n'}
+[6.964794] (yolo_detect) StderrLine: {'line': b'\n'}
+[6.964959] (yolo_detect) StderrLine: {'line': b'/open_app/miniconda3/envs/ros2_humble/aarch64-conda-linux-gnu/include/c++/9.4.0/tuple(1085): error: argument list for variable template "std::allocator_arg_t" is missing\n'}
+[6.965120] (yolo_detect) StderrLine: {'line': b'\n'}
+[6.965249] (yolo_detect) StderrLine: {'line': b'/open_app/miniconda3/envs/ros2_humble/aarch64-conda-linux-gnu/include/c++/9.4.0/tuple(1095): error: argument list for variable template "std::allocator_arg_t" is missing\n'}
+[6.965425] (yolo_detect) StderrLine: {'line': b'\n'}
+[6.965549] (yolo_detect) StderrLine: {'line': b'/open_app/miniconda3/envs/ros2_humble/aarch64-conda-linux-gnu/include/c++/9.4.0/tuple(1105): error: argument list for variable template "std::allocator_arg_t" is missing\n'}
+[6.965716] (yolo_detect) StderrLine: {'line': b'\n'}
+[6.965839] (yolo_detect) StderrLine: {'line': b'/open_app/miniconda3/envs/ros2_humble/aarch64-conda-linux-gnu/include/c++/9.4.0/tuple(1111): error: argument list for variable template "std::allocator_arg_t" is missing\n'}
+[6.965962] (yolo_detect) StderrLine: {'line': b'\n'}
+[6.966082] (yolo_detect) StderrLine: {'line': b'/open_app/miniconda3/envs/ros2_humble/aarch64-conda-linux-gnu/include/c++/9.4.0/tuple(1115): error: argument list for variable template "std::allocator_arg_t" is missing\n'}
+[6.966203] (yolo_detect) StderrLine: {'line': b'\n'}
+[6.966324] (yolo_detect) StderrLine: {'line': b'/open_app/miniconda3/envs/ros2_humble/aarch64-conda-linux-gnu/include/c++/9.4.0/tuple(1124): error: argument list for variable template "std::allocator_arg_t" is missing\n'}
+[6.966444] (yolo_detect) StderrLine: {'line': b'\n'}
+[6.966562] (yolo_detect) StderrLine: {'line': b'/open_app/miniconda3/envs/ros2_humble/aarch64-conda-linux-gnu/include/c++/9.4.0/tuple(1136): error: argument list for variable template "std::allocator_arg_t" is missing\n'}
+[6.966683] (yolo_detect) StderrLine: {'line': b'\n'}
+[6.966802] (yolo_detect) StderrLine: {'line': b'/open_app/miniconda3/envs/ros2_humble/aarch64-conda-linux-gnu/include/c++/9.4.0/tuple(1148): error: argument list for variable template "std::allocator_arg_t" is missing\n'}
+[6.966920] (yolo_detect) StderrLine: {'line': b'\n'}
+[6.967035] (yolo_detect) StderrLine: {'line': b'/open_app/miniconda3/envs/ros2_humble/aarch64-conda-linux-gnu/include/c++/9.4.0/tuple(1158): error: argument list for variable template "std::allocator_arg_t" is missing\n'}
+[6.967154] (yolo_detect) StderrLine: {'line': b'\n'}
+[6.967274] (yolo_detect) StderrLine: {'line': b'/open_app/miniconda3/envs/ros2_humble/aarch64-conda-linux-gnu/include/c++/9.4.0/tuple(1169): error: argument list for variable template "std::allocator_arg_t" is missing\n'}
+[6.967415] (yolo_detect) StderrLine: {'line': b'\n'}
+[6.967537] (yolo_detect) StderrLine: {'line': b'/open_app/miniconda3/envs/ros2_humble/aarch64-conda-linux-gnu/include/c++/9.4.0/tuple(1179): error: argument list for variable template "std::allocator_arg_t" is missing\n'}
+[6.967672] (yolo_detect) StderrLine: {'line': b'\n'}
+[6.967793] (yolo_detect) StderrLine: {'line': b'/open_app/miniconda3/envs/ros2_humble/aarch64-conda-linux-gnu/include/c++/9.4.0/tuple(1189): error: argument list for variable template "std::allocator_arg_t" is missing\n'}
+[6.967913] (yolo_detect) StderrLine: {'line': b'\n'}
+[6.968030] (yolo_detect) StderrLine: {'line': b'/open_app/miniconda3/envs/ros2_humble/aarch64-conda-linux-gnu/include/c++/9.4.0/tuple(1199): error: argument list for variable template "std::allocator_arg_t" is missing\n'}
+[6.968149] (yolo_detect) StderrLine: {'line': b'\n'}
+[6.972904] (yolo_detect) StderrLine: {'line': b'/open_app/miniconda3/envs/ros2_humble/aarch64-conda-linux-gnu/include/c++/9.4.0/bits/refwrap.h(102): error: class template "std::_Mem_fn_traits" has already been defined\n'}
+[6.973356] (yolo_detect) StderrLine: {'line': b'\n'}
+[6.973637] (yolo_detect) StderrLine: {'line': b'/open_app/miniconda3/envs/ros2_humble/aarch64-conda-linux-gnu/include/c++/9.4.0/bits/refwrap.h(102): error: class template "std::_Mem_fn_traits" has already been defined\n'}
+[6.973947] (yolo_detect) StderrLine: {'line': b'\n'}
+[6.974229] (yolo_detect) StderrLine: {'line': b'/open_app/miniconda3/envs/ros2_humble/aarch64-conda-linux-gnu/include/c++/9.4.0/bits/refwrap.h(102): error: class template "std::_Mem_fn_traits" has already been defined\n'}
+[6.974424] (yolo_detect) StderrLine: {'line': b'\n'}
+[6.974554] (yolo_detect) StderrLine: {'line': b'/open_app/miniconda3/envs/ros2_humble/aarch64-conda-linux-gnu/include/c++/9.4.0/bits/refwrap.h(102): error: class template "std::_Mem_fn_traits" has already been defined\n'}
+[6.974682] (yolo_detect) StderrLine: {'line': b'\n'}
+[6.974806] (yolo_detect) StderrLine: {'line': b'/open_app/miniconda3/envs/ros2_humble/aarch64-conda-linux-gnu/include/c++/9.4.0/bits/refwrap.h(102): error: class template "std::_Mem_fn_traits" has already been defined\n'}
+[6.974929] (yolo_detect) StderrLine: {'line': b'\n'}
+[6.975050] (yolo_detect) StderrLine: {'line': b'/open_app/miniconda3/envs/ros2_humble/aarch64-conda-linux-gnu/include/c++/9.4.0/bits/refwrap.h(102): error: class template "std::_Mem_fn_traits" has already been defined\n'}
+[6.975179] (yolo_detect) StderrLine: {'line': b'\n'}
+[6.975302] (yolo_detect) StderrLine: {'line': b'/open_app/miniconda3/envs/ros2_humble/aarch64-conda-linux-gnu/include/c++/9.4.0/bits/refwrap.h(102): error: class template "std::_Mem_fn_traits" has already been defined\n'}
+[6.975425] (yolo_detect) StderrLine: {'line': b'\n'}
+[6.975545] (yolo_detect) StderrLine: {'line': b'/open_app/miniconda3/envs/ros2_humble/aarch64-conda-linux-gnu/include/c++/9.4.0/bits/refwrap.h(102): error: class template "std::_Mem_fn_traits" has already been defined\n'}
+[6.975666] (yolo_detect) StderrLine: {'line': b'\n'}
+[6.975785] (yolo_detect) StderrLine: {'line': b'/open_app/miniconda3/envs/ros2_humble/aarch64-conda-linux-gnu/include/c++/9.4.0/bits/refwrap.h(103): error: class template "std::_Mem_fn_traits" has already been defined\n'}
+[6.975918] (yolo_detect) StderrLine: {'line': b'\n'}
+[6.976042] (yolo_detect) StderrLine: {'line': b'/open_app/miniconda3/envs/ros2_humble/aarch64-conda-linux-gnu/include/c++/9.4.0/bits/refwrap.h(103): error: class template "std::_Mem_fn_traits" has already been defined\n'}
+[6.976176] (yolo_detect) StderrLine: {'line': b'\n'}
+[6.976295] (yolo_detect) StderrLine: {'line': b'/open_app/miniconda3/envs/ros2_humble/aarch64-conda-linux-gnu/include/c++/9.4.0/bits/refwrap.h(103): error: class template "std::_Mem_fn_traits" has already been defined\n'}
+[6.976416] (yolo_detect) StderrLine: {'line': b'\n'}
+[6.976600] (yolo_detect) StderrLine: {'line': b'/open_app/miniconda3/envs/ros2_humble/aarch64-conda-linux-gnu/include/c++/9.4.0/bits/refwrap.h(103): error: class template "std::_Mem_fn_traits" has already been defined\n'}
+[6.976742] (yolo_detect) StderrLine: {'line': b'\n'}
+[6.976864] (yolo_detect) StderrLine: {'line': b'/open_app/miniconda3/envs/ros2_humble/aarch64-conda-linux-gnu/include/c++/9.4.0/bits/refwrap.h(103): error: class template "std::_Mem_fn_traits" has already been defined\n'}
+[6.977044] (yolo_detect) StderrLine: {'line': b'\n'}
+[6.977230] (yolo_detect) StderrLine: {'line': b'/open_app/miniconda3/envs/ros2_humble/aarch64-conda-linux-gnu/include/c++/9.4.0/bits/refwrap.h(103): error: class template "std::_Mem_fn_traits" has already been defined\n'}
+[6.977357] (yolo_detect) StderrLine: {'line': b'\n'}
+[6.977477] (yolo_detect) StderrLine: {'line': b'/open_app/miniconda3/envs/ros2_humble/aarch64-conda-linux-gnu/include/c++/9.4.0/bits/refwrap.h(103): error: class template "std::_Mem_fn_traits" has already been defined\n'}
+[6.977608] (yolo_detect) StderrLine: {'line': b'\n'}
+[6.977732] (yolo_detect) StderrLine: {'line': b'/open_app/miniconda3/envs/ros2_humble/aarch64-conda-linux-gnu/include/c++/9.4.0/bits/refwrap.h(103): error: class template "std::_Mem_fn_traits" has already been defined\n'}
+[6.977855] (yolo_detect) StderrLine: {'line': b'\n'}
+[6.977974] (yolo_detect) StderrLine: {'line': b'/open_app/miniconda3/envs/ros2_humble/aarch64-conda-linux-gnu/include/c++/9.4.0/bits/refwrap.h(104): error: class template "std::_Mem_fn_traits" has already been defined\n'}
+[6.978116] (yolo_detect) StderrLine: {'line': b'\n'}
+[6.978237] (yolo_detect) StderrLine: {'line': b'/open_app/miniconda3/envs/ros2_humble/aarch64-conda-linux-gnu/include/c++/9.4.0/bits/refwrap.h(104): error: class template "std::_Mem_fn_traits" has already been defined\n'}
+[6.978358] (yolo_detect) StderrLine: {'line': b'\n'}
+[6.978477] (yolo_detect) StderrLine: {'line': b'/open_app/miniconda3/envs/ros2_humble/aarch64-conda-linux-gnu/include/c++/9.4.0/bits/refwrap.h(104): error: class template "std::_Mem_fn_traits" has already been defined\n'}
+[6.978599] (yolo_detect) StderrLine: {'line': b'\n'}
+[6.978719] (yolo_detect) StderrLine: {'line': b'/open_app/miniconda3/envs/ros2_humble/aarch64-conda-linux-gnu/include/c++/9.4.0/bits/refwrap.h(104): error: class template "std::_Mem_fn_traits" has already been defined\n'}
+[6.978854] (yolo_detect) StderrLine: {'line': b'\n'}
+[6.978976] (yolo_detect) StderrLine: {'line': b'/open_app/miniconda3/envs/ros2_humble/aarch64-conda-linux-gnu/include/c++/9.4.0/bits/refwrap.h(104): error: class template "std::_Mem_fn_traits" has already been defined\n'}
+[6.979109] (yolo_detect) StderrLine: {'line': b'\n'}
+[6.979227] (yolo_detect) StderrLine: {'line': b'/open_app/miniconda3/envs/ros2_humble/aarch64-conda-linux-gnu/include/c++/9.4.0/bits/refwrap.h(104): error: class template "std::_Mem_fn_traits" has already been defined\n'}
+[6.979346] (yolo_detect) StderrLine: {'line': b'\n'}
+[6.979462] (yolo_detect) StderrLine: {'line': b'/open_app/miniconda3/envs/ros2_humble/aarch64-conda-linux-gnu/include/c++/9.4.0/bits/refwrap.h(104): error: class template "std::_Mem_fn_traits" has already been defined\n'}
+[6.979631] (yolo_detect) StderrLine: {'line': b'\n'}
+[6.979756] (yolo_detect) StderrLine: {'line': b'/open_app/miniconda3/envs/ros2_humble/aarch64-conda-linux-gnu/include/c++/9.4.0/bits/refwrap.h(104): error: class template "std::_Mem_fn_traits" has already been defined\n'}
+[6.979877] (yolo_detect) StderrLine: {'line': b'\n'}
+[6.979995] (yolo_detect) StderrLine: {'line': b'/open_app/miniconda3/envs/ros2_humble/aarch64-conda-linux-gnu/include/c++/9.4.0/bits/refwrap.h(346): error: argument list for class template "std::reference_wrapper" is missing\n'}
+[6.980115] (yolo_detect) StderrLine: {'line': b'\n'}
+[6.980233] (yolo_detect) StderrLine: {'line': b'/open_app/miniconda3/envs/ros2_humble/aarch64-conda-linux-gnu/include/c++/9.4.0/bits/refwrap.h(346): error: expected a ")"\n'}
+[6.980354] (yolo_detect) StderrLine: {'line': b'\n'}
+[6.980639] (yolo_detect) StderrLine: {'line': b'/open_app/miniconda3/envs/ros2_humble/aarch64-conda-linux-gnu/include/c++/9.4.0/bits/refwrap.h(345): error: too few template parameters -- does not match previous declaration (declared \n'}
+[6.980771] (yolo_detect) StderrLine: {'line': b'/open_app/miniconda3/envs/ros2_humble/aarch64-conda-linux-gnu/include/c++/9.4.0/array(243): here)\n'}
+[6.980895] (yolo_detect) StderrLine: {'line': b'\n'}
+[6.981016] (yolo_detect) StderrLine: {'line': b'/open_app/miniconda3/envs/ros2_humble/aarch64-conda-linux-gnu/include/c++/9.4.0/bits/refwrap.h(346): error: expected a ";"\n'}
+[6.981723] (yolo_detect) StderrLine: {'line': b'\n'}
+[6.981930] (yolo_detect) StderrLine: {'line': b'/open_app/miniconda3/envs/ros2_humble/aarch64-conda-linux-gnu/include/c++/9.4.0/bits/std_function.h(644): error: argument list for class template "std::function" is missing\n'}
+[6.982067] (yolo_detect) StderrLine: {'line': b'\n'}
+[6.982192] (yolo_detect) StderrLine: {'line': b'/open_app/miniconda3/envs/ros2_humble/aarch64-conda-linux-gnu/include/c++/9.4.0/bits/std_function.h(644): error: expected a type specifier\n'}
+[6.982318] (yolo_detect) StderrLine: {'line': b'\n'}
+[6.982438] (yolo_detect) StderrLine: {'line': b'/open_app/miniconda3/envs/ros2_humble/aarch64-conda-linux-gnu/include/c++/9.4.0/bits/std_function.h(644): error: function returning function is not allowed\n'}
+[6.982560] (yolo_detect) StderrLine: {'line': b'\n'}
+[6.982680] (yolo_detect) StderrLine: {'line': b'/open_app/miniconda3/envs/ros2_humble/aarch64-conda-linux-gnu/include/c++/9.4.0/bits/std_function.h(644): error: template parameter "_Res" may not be redeclared in this scope\n'}
+[6.982823] (yolo_detect) StderrLine: {'line': b'\n'}
+[6.982942] (yolo_detect) StderrLine: {'line': b'/open_app/miniconda3/envs/ros2_humble/aarch64-conda-linux-gnu/include/c++/9.4.0/bits/std_function.h(644): error: expected a ";"\n'}
+[6.983064] (yolo_detect) StderrLine: {'line': b'\n'}
+[6.983182] (yolo_detect) StderrLine: {'line': b'/open_app/miniconda3/envs/ros2_humble/aarch64-conda-linux-gnu/include/c++/9.4.0/bits/std_function.h(648): error: argument list for class template "std::function" is missing\n'}
+[6.983301] (yolo_detect) StderrLine: {'line': b'\n'}
+[6.983418] (yolo_detect) StderrLine: {'line': b'/open_app/miniconda3/envs/ros2_humble/aarch64-conda-linux-gnu/include/c++/9.4.0/bits/std_function.h(648): error: template parameter "_Functor" may not be redeclared in this scope\n'}
+[6.983539] (yolo_detect) StderrLine: {'line': b'\n'}
+[6.983656] (yolo_detect) StderrLine: {'line': b'/open_app/miniconda3/envs/ros2_humble/aarch64-conda-linux-gnu/include/c++/9.4.0/bits/std_function.h(648): error: expected a ";"\n'}
+[6.983802] (yolo_detect) StderrLine: {'line': b'\n'}
+[7.022111] (-) TimerEvent: {}
+[7.033920] (yolo_detect) StderrLine: {'line': b'/open_app/miniconda3/envs/ros2_humble/aarch64-conda-linux-gnu/include/c++/9.4.0/optional(1230): error: argument list for class template "std::optional" is missing\n'}
+[7.034365] (yolo_detect) StderrLine: {'line': b'\n'}
+[7.034531] (yolo_detect) StderrLine: {'line': b'/open_app/miniconda3/envs/ros2_humble/aarch64-conda-linux-gnu/include/c++/9.4.0/optional(1230): error: too few template parameters -- does not match previous declaration (declared \n'}
+[7.034678] (yolo_detect) StderrLine: {'line': b'/open_app/miniconda3/envs/ros2_humble/aarch64-conda-linux-gnu/include/c++/9.4.0/array(243): here)\n'}
+[7.034813] (yolo_detect) StderrLine: {'line': b'\n'}
+[7.034940] (yolo_detect) StderrLine: {'line': b'/open_app/miniconda3/envs/ros2_humble/aarch64-conda-linux-gnu/include/c++/9.4.0/optional(1230): error: expected a ";"\n'}
+[7.035068] (yolo_detect) StderrLine: {'line': b'\n'}
+[7.046956] (yolo_detect) StderrLine: {'line': b'/open_app/miniconda3/envs/ros2_humble/aarch64-conda-linux-gnu/include/c++/9.4.0/bits/unordered_map.h(1152): error: argument list for class template "std::unordered_map" is missing\n'}
+[7.047379] (yolo_detect) StderrLine: {'line': b'\n'}
+[7.047534] (yolo_detect) StderrLine: {'line': b'/open_app/miniconda3/envs/ros2_humble/aarch64-conda-linux-gnu/include/c++/9.4.0/bits/unordered_map.h(1152): error: expected a ")"\n'}
+[7.047669] (yolo_detect) StderrLine: {'line': b'\n'}
+[7.048128] (yolo_detect) StderrLine: {'line': b'/open_app/miniconda3/envs/ros2_humble/aarch64-conda-linux-gnu/include/c++/9.4.0/bits/unordered_map.h(1152): error: template parameter "_InputIterator" may not be redeclared in this scope\n'}
+[7.048277] (yolo_detect) StderrLine: {'line': b'\n'}
+[7.048405] (yolo_detect) StderrLine: {'line': b'/open_app/miniconda3/envs/ros2_humble/aarch64-conda-linux-gnu/include/c++/9.4.0/bits/unordered_map.h(1153): error: expected a ";"\n'}
+[7.048531] (yolo_detect) StderrLine: {'line': b'\n'}
+[7.048652] (yolo_detect) StderrLine: {'line': b'/open_app/miniconda3/envs/ros2_humble/aarch64-conda-linux-gnu/include/c++/9.4.0/bits/unordered_map.h(1165): error: argument list for class template "std::unordered_map" is missing\n'}
+[7.048775] (yolo_detect) StderrLine: {'line': b'\n'}
+[7.048893] (yolo_detect) StderrLine: {'line': b'Error limit reached.\n'}
+[7.049012] (yolo_detect) StderrLine: {'line': b'100 errors detected in the compilation of "/home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/src/yolo_detect/./yolo/preprocess.cu".\n'}
+[7.049162] (yolo_detect) StderrLine: {'line': b'Compilation terminated.\n'}
+[7.074312] (yolo_detect) StderrLine: {'line': b'\x1b[31mCMake Error at yolo_detect_generated_preprocess.cu.o.cmake:280 (message):\n'}
+[7.075048] (yolo_detect) StderrLine: {'line': b'  Error generating file\n'}
+[7.075462] (yolo_detect) StderrLine: {'line': b'  /home/dji/DJI_workshop/LZP_PSDK/ros2_workplace/build/yolo_detect/CMakeFiles/yolo_detect.dir/./yolo/./yolo_detect_generated_preprocess.cu.o\n'}
+[7.075841] (yolo_detect) StderrLine: {'line': b'\n'}
+[7.076129] (yolo_detect) StderrLine: {'line': b'\x1b[0m\n'}
+[7.077242] (yolo_detect) StderrLine: {'line': b'make[2]: *** [CMakeFiles/yolo_detect.dir/build.make:77: CMakeFiles/yolo_detect.dir/yolo/yolo_detect_generated_preprocess.cu.o] Error 1\n'}
+[7.078158] (yolo_detect) StderrLine: {'line': b'make[1]: *** [CMakeFiles/Makefile2:84: CMakeFiles/yolo_detect.dir/all] Error 2\n'}
+[7.078578] (yolo_detect) StderrLine: {'line': b'make: *** [Makefile:146: all] Error 2\n'}
+[7.082109] (yolo_detect) CommandEnded: {'returncode': 2}
+[7.115793] (yolo_detect) JobEnded: {'identifier': 'yolo_detect', 'rc': 2}
+[7.122178] (-) TimerEvent: {}
+[7.127372] (-) EventReactorShutdown: {}
